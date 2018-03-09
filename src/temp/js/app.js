@@ -1,0 +1,1 @@
+alert("⛔ZAPOZNAC SIE Z README.MD NAJPIERW !!!!!! ⛔");

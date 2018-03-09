@@ -1,0 +1,23 @@
+{
+  "name": "bs4starter",
+  "version": "1.0.0",
+  "description": "SKN Konsultingu IT page",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.11.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
