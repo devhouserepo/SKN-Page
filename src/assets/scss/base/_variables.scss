@@ -1,10 +1,19 @@
 // variables example below ;
-$gradient-color-1: #3831b2;
-$gradient-color-2: #120f3c;
-$bg-color: #1c1c64;
-$font-color: #fff;
-$primary-color: #008ed6;
-$secondary-blue: #0081ff;
-$dark-overlay: rgba(0, 0, 0, 0.7);
-$icon-size: 30px;
-$blue-color: #0172e1;
+
+/** BACKGROUND COLORS **/
+
+$bg-color-1: #000039;
+$bg-box-color-1: #242467;
+$bg-button-color-1: #2e2f5d;
+$bg-button-color-2: #4f5178;
+$bg-input-focus-1: #eaecfc;
+$textarea-border-color-1: #4f5178;
+
+
+/** FONTS AND TEXT COLORS**/
+
+$text-font-1: 'Roboto', sans-serif;
+
+$text-color-1: #ffffff;
+$text-color-2: #000000;
+
