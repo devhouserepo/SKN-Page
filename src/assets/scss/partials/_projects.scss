@@ -77,14 +77,21 @@
     -webkit-transform: scale(2,2); /* Safari */
     transform: scale(2,2); /* Standard syntax */
   }
+
+  &:hover .project_title{
+    color:black;
+    margin-top: 8%;
+    font-size: 15px;
+  }
 }
 
 .project_title {
   font-size: 19px;
   color: white;
-  // font-weight: 400;
+  line-height: 1.2;
   text-align: center;
-  margin-top: 42%;
+  margin-top: 41%;
+  transition: all .6s ease-in-out;
 }
 
 .button {
