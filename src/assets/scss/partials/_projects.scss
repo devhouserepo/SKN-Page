@@ -2,6 +2,14 @@
 //   background-color: $bg-color;
 // }
 
+a {
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .projects {
   font-family: 'Roboto';
   margin-top: 200px;
@@ -22,10 +30,6 @@
   position: absolute;
   right: -170px;
   z-index: 3;
-
-  :nth-child(2) {
-    margin-top: 40px;
-  }
 }
 
 .projects__second-row {
@@ -35,16 +39,11 @@
   position: absolute;
   right: -170px;
   z-index: 3;
-
-  :nth-child(2) {
-    margin-top: 40px;
-    z-index: 3;
-  }
 }
 
 
 .projects__box {
-  // background-image: url('/assets/images/skn1.jpg');
+  background-image: url('/assets/images/skn1.jpg');
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
   margin: auto;
@@ -56,7 +55,7 @@
 
 .projects__box2 {
   // background-color: grey;
-  // background-image: url('/assets/images/skn2.jpg');
+  background-image: url('/assets/images/skn2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
@@ -79,34 +78,62 @@
   }
 
   &:hover .project_title{
-    color:black;
-    margin-top: 8%;
-    font-size: 15px;
+    margin-top: 5%;
+    font-size: 14px;
+  }
+
+  &:hover .project-about-mini{
+    opacity: 0;
+  }
+
+  &:hover .project-about {
+    opacity: 1;
+    font-size: 9px;
+    margin-top: -17%;
   }
 }
 
+
 .project_title {
-  font-size: 19px;
+  font-size: 22px;
   color: white;
   line-height: 1.2;
   text-align: center;
-  margin-top: 41%;
+  margin-top: 20%;
   transition: all .6s ease-in-out;
 }
 
-.button {
-  left: 65px;
-  opacity: 0;
-  position: absolute;
-  top: 120px;
+.project-about-mini {
+  color: white;
+  line-height: 1.1;
   text-align: center;
-  width: 50px;
+  margin-top: 14px;
+  font-size: 16px;
+}
 
-  a {
-    border: solid 2px white;
+.project-about {
+  color: white;
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 16px;
+  opacity: 0;
+  transition: all .6s ease-in-out;
+}
+
+.button-more-about-project {
+  margin-left: 30%;
+  width: 60px;
+  height: 16px;
+  font-size: 9px;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  margin-top: 9px;
+
+  &:hover {
+    text-decoration: none;
     color: white;
-    text-align: center;
-    z-index: 1;
   }
 }
 
@@ -122,8 +149,5 @@
     margin-bottom: -130px;
     position: relative;
     right: 0;
-  }
-  .projects__title {
-    display: none;
   }
 }
