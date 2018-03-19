@@ -168,76 +168,9 @@ table {
   right: -170px;
   z-index: 3;
 }
-  
-.section__contact {
-  width: 100vw;
-  height: 100vh;
-  color: #ffffff;
-}
-
-.section__contact .modal {
-  color: #000000;
-}
-
-.projects__first-row::after {
-  content: "";
-  position: absolute;
-  width: 600px;
-  height: 2px;
-  background: #fff;
-  -webkit-transform: rotateZ(80deg);
-  transform: rotateZ(80deg);
-  top: 240px;
-  left: -100px;
-  z-index: -1;
-}
-
-.projects__first-row::before {
-  content: "";
-  position: absolute;
-  width: 550px;
-  height: 2px;
-  background: #fff;
-  -webkit-transform: rotateZ(10deg);
-  transform: rotateZ(10deg);
-  top: 500px;
-  left: 200px;
-  z-index: -1;
-}
-
-.section__contact__text p {
-  position: relative;
-  z-index: 1;
-}
 
 .projects__first-row :nth-child(2) {
   margin-top: 40px;
-}
-
-.projects__first-row :nth-child(2)::before {
-  content: "";
-  position: absolute;
-  width: 298px;
-  height: 2px;
-  background: #fff;
-  -webkit-transform: rotateZ(0deg);
-  transform: rotateZ(0deg);
-  top: 40px;
-  left: 180px;
-  z-index: -1;
-}
-
-.projects__first-row :nth-child(2)::after {
-  content: "";
-  position: absolute;
-  width: 298px;
-  height: 2px;
-  background: #fff;
-  -webkit-transform: rotateZ(45deg);
-  transform: rotateZ(45deg);
-  top: 12px;
-  left: 135px;
-  z-index: -1;
 }
 
 .projects__second-row {
@@ -249,39 +182,12 @@ table {
   z-index: 3;
 }
 
-.projects__second-row::before {
-  content: "";
-  position: absolute;
-  width: 390px;
-  height: 3px;
-  background: #fff;
-  -webkit-transform: rotateZ(90deg);
-  transform: rotateZ(90deg);
-  top: -24px;
-  left: 549px;
-  z-index: -1;
-}
-
-.projects__second-row::after {
-  content: "";
-  position: absolute;
-  width: 387px;
-  height: 3px;
-  background: #fff;
-  -webkit-transform: rotateZ(0deg);
-  transform: rotateZ(0deg);
-  top: -430px;
-  left: 149px;
-  z-index: -1;
-}
-
 .projects__second-row :nth-child(2) {
   margin-top: 40px;
   z-index: 3;
 }
 
 .projects__box {
-  background-image: url("/assets/images/skn1.jpg");
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
   margin: auto;
@@ -290,23 +196,7 @@ table {
   padding: 25px;
 }
 
-.projects__box:hover {
-  -webkit-box-shadow: 0px 0px 150px #000000;
-          box-shadow: 0px 0px 150px #000000;
-  -webkit-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  z-index: 2;
-}
-
-.projects__box:hover .button {
-  opacity: 1;
-}
-
 .projects__box2 {
-  background-color: grey;
-  background-image: url("/assets/images/skn2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
@@ -317,18 +207,28 @@ table {
   padding: 25px;
 }
 
-.projects__box2:hover {
-  -webkit-box-shadow: 0px 0px 150px #000000;
-          box-shadow: 0px 0px 150px #000000;
-  -webkit-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  z-index: 2;
+.projects__box, .projects__box2 {
+  background-color: red;
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+  transition: -webkit-transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
+  transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
 }
 
-.projects__box2:hover .button {
-  opacity: 1;
+.projects__box:hover, .projects__box2:hover {
+  background-color: green;
+  /* IE 9 */
+  -webkit-transform: scale(2, 2);
+  /* Safari */
+  transform: scale(2, 2);
+  /* Standard syntax */
+}
+
+.project_title {
+  font-size: 19px;
+  color: white;
+  text-align: center;
+  margin-top: 42%;
 }
 
 .button {
@@ -363,66 +263,6 @@ table {
   .projects__title {
     display: none;
   }
-}
-
-#projects p {
-  color: white;
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-  line-height: 100px;
-}
-
-.beforeafter1::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 2px;
-  background: #fff;
-  -webkit-transform: rotateZ(90deg);
-  transform: rotateZ(90deg);
-  top: 280px;
-  left: 450px;
-  z-index: -2;
-}
-
-.beforeafter1::after {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 2px;
-  background: #fff;
-  -webkit-transform: rotateZ(90deg);
-  transform: rotateZ(90deg);
-  top: 180px;
-  left: 750px;
-  z-index: -2;
-}
-
-.beforeafter2::before {
-  content: "";
-  position: absolute;
-  width: 160px;
-  height: 2px;
-  background: #fff;
-  -webkit-transform: rotateZ(0deg);
-  transform: rotateZ(0deg);
-  top: 340px;
-  left: 192px;
-  z-index: -2;
-}
-
-.beforeafter2::after {
-  content: "";
-  position: absolute;
-  width: 175px;
-  height: 2px;
-  background: #fff;
-  -webkit-transform: rotateZ(145deg);
-  transform: rotateZ(145deg);
-  top: 289px;
-  left: 335px;
-  z-index: -2;
 }
 
 .section {
