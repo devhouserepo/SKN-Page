@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    alert("ddd");
     $("#click").click(function() {
         $("#form").slideToggle("slow");
         $("#form2").slideToggle("slow");
