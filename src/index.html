@@ -47,7 +47,7 @@
       </div>
 
     </header>
-<<<<<<< HEAD
+
 
     <!-- HEADER END -->
     <section id="projects" class="projects pt-4">
@@ -146,29 +146,6 @@
 
       <!-- Model END -->
 
-      <div class="section__contact__text col flex-column d-flex align-items-center">
-
-        <svg width="1000" height="570">
-
-          <path class="path" d="M0,560 L600,500 755,375 765,0" style="stroke-width: 3; stroke: #ffffff; fill: none; " />
-
-        </svg>
-
-        <p>
-          <span>Już dziś masz szansę dołączyć do jednego z najbardziej</span>
-          <span>aktywnych kół naukowych!</span>
-          <span>Jesteśmy grupą ambitnych ludzi, którzy nie tylko mają wiele</span>
-          <span>świetnych pomysłów, ale przede wszystkim z konsekwencją</span>
-          <span>wcielają je w życie,</span>
-          <span>It's not about great ideas, it's about making ideas happen!</span>
-          <span>To właśnie tym się kierujemy, łącząc obszar IT z biznesem.</span>
-          <span>Dołącz do nas, zdobądź wartościowe umiejętności i bądź</span>
-          <span>atrakcyjnym kandydatem dla najbardziej prestiżowych firm.</span>
-          <span>Już teraz wypełnij krótki formularz, spotkaj się z nami</span>
-          <span>i razem zacznijmy kształtować Twoją przyszłość.</span>
-        </p>
-
-=======
 
     <!-- HEADER END -->
 
@@ -226,7 +203,7 @@
           <span>i razem zacznijmy kształtować Twoją przyszłość.</span>
         </p>
 
->>>>>>> dev
+
         <button id="click3" data-toggle="modal" data-target="#exampleModalCenter" name="submit" type="submit">Rekrutacja</button>
 
       </div>
@@ -262,36 +239,36 @@
 
             <!-- CONTACT FORM START -->
 
-            <form class="form d-flex" action="">
+            <form class="form d-flex form-modal" action="">
 
               <fieldset id="form" class="form__items-left">
 
                   <div class="form-item">
                     <label for="formName">Imie</label>
-                    <input id="formName" type="text" name="formName"  placeholder="Imię" required />
+                    <input id="formName" type="text" name="formName"  placeholder="Imię" required  class="validationField"/>
                   </div>
 
                   <div class="form-item">
                         <label for="formSurname">Nazwisko</label>
-                      <input id="formSurname" type="text" name="formSurname"  placeholder="Nazwisko" required />
+                      <input id="formSurname" type="text" name="formSurname"  placeholder="Nazwisko" required class="validationField"/>
 
                   </div>
 
                   <div class="form-item">
                     <label for="formSchool">Uczelnia</label>
-                    <input id="formSchool" type="text" name="formSchool" placeholder="Uczelnia" required />
+                    <input id="formSchool" type="text" name="formSchool" placeholder="Uczelnia" required class="validationField"/>
 
                   </div>
 
                   <div class="form-item">
                     <label for="formDepartment">Wydział</label>
-                    <input id="formDepartment" type="text" name="formDepartment" placeholder="Wydział" required />
+                    <input id="formDepartment" type="text" name="formDepartment" placeholder="Wydział" required class="validationField" />
 
                   </div>
 
                   <div class="form-item">
                     <label for="formEmail">E-maill</label>
-                    <input id="formEmail" type="email" name="formEmail" placeholder="E-maillaaa" required />
+                    <input id="formEmail" type="email" name="formEmail" placeholder="E-maillaaa" required class="validationField"/>
 
                   </div>
 
@@ -301,13 +278,13 @@
 
                 <div class="form-item">
 
-                  <textarea id="formMessage" name="formMessage" placeholder="Treść wiadomości"></textarea>
+                  <textarea id="formMessage" name="formMessage" placeholder="Treść wiadomości" class="textarea"></textarea>
 
                 </div>
 
                 <div class="form-item">
 
-                  <input type="submit" value="Wyślij" />
+                  <input class="form-submit form-submit--modal" type="submit" value="Wyślij" />
 
                 </div>
 

@@ -168,16 +168,6 @@ table {
   right: -170px;
   z-index: 3;
 }
-  
-.section__contact {
-  width: 100vw;
-  height: 100vh;
-  color: #ffffff;
-}
-
-.section__contact .modal {
-  color: #000000;
-}
 
 .projects__first-row::after {
   content: "";
@@ -203,11 +193,6 @@ table {
   top: 500px;
   left: 200px;
   z-index: -1;
-}
-
-.section__contact__text p {
-  position: relative;
-  z-index: 1;
 }
 
 .projects__first-row :nth-child(2) {
