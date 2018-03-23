@@ -194,9 +194,8 @@ a:hover {
 }
 
 .singular-project-container:hover .projects-shape-1, .singular-project-container:hover .projects-shape-2 {
-  background-color: red;
-  width: 400px;
-  height: 400px;
+  -webkit-transform: scale(2, 2);
+  transform: scale(2, 2);
 }
 
 .projects-shape-1, .projects-shape-2 {
@@ -212,7 +211,6 @@ a:hover {
 }
 
 .projects-shape-1 {
-  background-color: navy;
   background-image: url("/assets/images/skn1.jpg");
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
@@ -220,7 +218,6 @@ a:hover {
 }
 
 .projects-shape-2 {
-  background-color: grey;
   background-image: url("/assets//images/skn2.jpg");
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
   clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);

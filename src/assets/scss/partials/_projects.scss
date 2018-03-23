@@ -1,10 +1,20 @@
-// body {
-//   background-color: $bg-color;
-// }
+@mixin transform($x,$y) {
+  -ms-transform: scale($x,$y);
+  -webkit-transform: scale($x,$y);
+  -moz-transform: scale($x,$y);
+  transform: scale($x,$y);
+}
+
+@mixin transform-origin($x,$y) {
+  -ms-transform-origin: ($x + 0px) ($y + 0px);
+  -webkit-transform-origin: ($x + 0px) ($y + 0px); 
+  -moz-transform-origin: ($x + 0px) ($y + 0px); 
+  transform-origin: ($x + 0px) ($y + 0px);
+}
+
 
 a {
-  text-decoration: none;
-  
+  text-decoration: none; 
   &:hover {
     text-decoration: none;
   }
@@ -52,9 +62,9 @@ a {
   // position: relative;
 
   &:hover .projects-shape-1, &:hover .projects-shape-2 {
-    background-color: red;
-    width: 400px;
-    height: 400px;
+    @include transform(2,2)
+    // width: 400px;
+    // height: 400px;
   }
 }
 
@@ -70,16 +80,10 @@ a {
   // left: 0;
   z-index: 1;
   transition: all .6s ease-in-out;
-
-  // &:hover {
-  //   width: 400px;
-  //   height: 400px;
-  // }
 }
 
 
 .projects-shape-1 {
-  background-color: navy;
   background-image: url('/assets/images/skn1.jpg');
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
@@ -88,7 +92,6 @@ a {
 
 
 .projects-shape-2 {
-  background-color: grey;
   background-image: url('/assets//images/skn2.jpg');
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
   clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
