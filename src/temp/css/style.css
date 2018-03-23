@@ -209,6 +209,7 @@ a:hover {
 }
 
 .projects__box, .projects__box2 {
+  background-color: red;
   -webkit-transition: -webkit-transform .6s ease-in-out;
   transition: -webkit-transform .6s ease-in-out;
   transition: transform .6s ease-in-out;
@@ -216,6 +217,7 @@ a:hover {
 }
 
 .projects__box:hover, .projects__box2:hover {
+  background-color: green;
   /* IE 9 */
   -webkit-transform: scale(2, 2);
   /* Safari */
@@ -236,6 +238,10 @@ a:hover {
   opacity: 1;
   font-size: 9px;
   margin-top: -17%;
+}
+
+.projects__box:hover .button-more-about-project, .projects__box2:hover .button-more-about-project {
+  opacity: 1;
 }
 
 .project_title {
@@ -276,6 +282,7 @@ a:hover {
   text-align: center;
   color: white;
   margin-top: 9px;
+  opacity: 0;
 }
 
 .button-more-about-project:hover {

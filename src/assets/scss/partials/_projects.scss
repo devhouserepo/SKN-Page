@@ -66,15 +66,12 @@ a {
   padding: 25px;
 }
 
-// .projects_box1_project_box_2:hover {
-//     -ms-transform: scale(2,2); /* IE 9 */
-//     -webkit-transform: scale(2,2); /* Safari */
-//     transform: scale(2,2); /* Standard syntax */
-// }
 
 .projects__box, .projects__box2 {
+    background-color: red;
     transition: transform .6s ease-in-out;
   &:hover {
+    background-color: green;
     -ms-transform: scale(2,2); /* IE 9 */
     -webkit-transform: scale(2,2); /* Safari */
     transform: scale(2,2); /* Standard syntax */
@@ -95,9 +92,9 @@ a {
     margin-top: -17%;
   }
   
-  // &:hover .button-more-about-project {
-  //   opacity: 1;
-  // }
+  &:hover .button-more-about-project {
+    opacity: 1;
+  }
 }
 
 
@@ -137,7 +134,7 @@ a {
   text-align: center;
   color: white;
   margin-top: 9px;
-  // opacity: 0;
+  opacity: 0;
 
   &:hover {
     text-decoration: none;
