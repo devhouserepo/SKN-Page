@@ -18,20 +18,17 @@ $(document).ready(function() {
 
     // Projects section
 
-    $(".button-more-about-project").hide()
 
     $(".projects__box, .projects__box2").mouseenter(function() {
         $(".button-more-about-project").hide()
         setTimeout(function() {
-            $(".button-more-about-project").show()
-        }, 800)
+            $(".button-more-about-project").fadeIn("slow")
+        }, 600)
     })
 
 
     $(".projects__box, .projects__box2").mouseleave(function() {
-        setTimeout(function() {
-            $(".button-more-about-project").hide()
-        }, 200)
+            $(".button-more-about-project").fadeOut("slow")
     })
 
     // Project section ends

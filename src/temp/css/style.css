@@ -276,6 +276,7 @@ a:hover {
   text-align: center;
   color: white;
   margin-top: 9px;
+  display: none;
 }
 
 .button-more-about-project:hover {
