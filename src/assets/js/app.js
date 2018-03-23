@@ -24,6 +24,7 @@ $(document).ready(function() {
         setTimeout(function() {
             $(".button-more-about-project").show()
         }, 900); 
+        $(this).addClass("projects_box1_project_box_2")
     })
 
     $(".projects__box, .projects__box2").mouseout(function() {
