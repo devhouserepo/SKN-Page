@@ -1,16 +1,16 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $("#click").click(function() {
+    $("#click").click(function () {
         $("#form").slideToggle("slow");
         $("#form2").slideToggle("slow");
     });
 
-    $("#click2").click(function() {
+    $("#click2").click(function () {
         $("#form").slideToggle("slow");
         $("#form2").slideToggle("slow");
     });
 
-    $("#myModal").on("shown.bs.modal", function() {
+    $("#myModal").on("shown.bs.modal", function () {
         $("#myInput").trigger("focus");
     });
 
@@ -18,17 +18,20 @@ $(document).ready(function() {
 
     // Projects section
 
-
-    $(".projects__box, .projects__box2").mouseenter(function() {
+    $(".button-more-about-project").hide()
+    $(".projects-shape-1, .projects-shape-2").mouseenter(function (targetObject) {
         $(".button-more-about-project").hide()
-        setTimeout(function() {
-            $(".button-more-about-project").fadeIn("slow")
-        }, 600)
+        setTimeout(function (a) {
+            a.fadeIn("slow")
+        }, 600, $(targetObject.currentTarget).find(".button-more-about-project"))
     })
 
 
-    $(".projects__box, .projects__box2").mouseleave(function() {
-            $(".button-more-about-project").fadeOut("slow")
+    $(".projects-shape-1, .projects-shape-2").mouseleave(function (targetObject) {
+        let a = $(targetObject.currentTarget).find(".button-more-about-project")
+        a.fadeOut("slow", function() {
+            a.hide()
+        })
     })
 
     // Project section ends
