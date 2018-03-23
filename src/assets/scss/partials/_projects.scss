@@ -55,22 +55,33 @@ a {
   position:absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 4;
 }
 
 .singular-project-container {
-  // position: relative;
 
   &:hover .projects-shape-1, &:hover .projects-shape-2 {
-    @include transform(2,2)
+    z-index: 3;
+    @include transform(2,2);
+    background-size: 400px;
     // width: 400px;
     // height: 400px;
   }
+
+  &:hover .project_title {
+    font-size: 20px;
+    margin-top: 3%;
+  }
+
+  // &:hover .project-about {
+  //   opacity: 1;
+  // }
 }
 
 .projects-shape-1 , .projects-shape-2 {
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 900px;
   margin: auto;
   height: 200px;
   width: 200px;
@@ -78,12 +89,13 @@ a {
   // position:absolute;
   // top: 0;
   // left: 0;
-  z-index: 1;
+  z-index: 2;
   transition: all .6s ease-in-out;
 }
 
 
 .projects-shape-1 {
+  background-color: gray;
   background-image: url('/assets/images/skn1.jpg');
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
@@ -92,6 +104,7 @@ a {
 
 
 .projects-shape-2 {
+  background-color: red;
   background-image: url('/assets//images/skn2.jpg');
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
   clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
@@ -122,7 +135,9 @@ a {
   text-align: center;
   margin-top: 14px;
   font-size: 16px;
-  // transition: all .6s ease-in-out;
+  opacity: 0;
+  // transition: opacity .9s ease-in-out;
+  // transition-delay: 0.8s;
 }
 
 .button-more-about-project {
