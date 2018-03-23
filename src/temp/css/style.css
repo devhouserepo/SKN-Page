@@ -240,6 +240,10 @@ a:hover {
   margin-top: -17%;
 }
 
+.projects__box:hover .button-more-about-project, .projects__box2:hover .button-more-about-project {
+  opacity: 1;
+}
+
 .project_title {
   font-size: 22px;
   color: white;
@@ -278,6 +282,7 @@ a:hover {
   text-align: center;
   color: white;
   margin-top: 9px;
+  opacity: 0;
 }
 
 .button-more-about-project:hover {

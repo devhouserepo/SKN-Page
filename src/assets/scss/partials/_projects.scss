@@ -91,6 +91,10 @@ a {
     font-size: 9px;
     margin-top: -17%;
   }
+  
+  &:hover .button-more-about-project {
+    opacity: 1;
+  }
 }
 
 
@@ -130,6 +134,7 @@ a {
   text-align: center;
   color: white;
   margin-top: 9px;
+  opacity: 0;
 
   &:hover {
     text-decoration: none;
