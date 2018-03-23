@@ -18,18 +18,18 @@ $(document).ready(function() {
 
     // Projects section
 
-    $(".button-more-about-project").hide
+    $(".button-more-about-project").hide()
 
     $(".projects__box, .projects__box2").mouseover(function() {
         setTimeout(function() {
-            $(".button-more-about-project").show
-        }, 1800); 
+            $(".button-more-about-project").show()
+        }, 900); 
     })
 
     $(".projects__box, .projects__box2").mouseout(function() {
         setTimeout(function() {
-            $(".button-more-about-project").hide
-        }, 1800); 
+            $(".button-more-about-project").hide()
+        }, 200); 
     })
 
     // Project section ends
