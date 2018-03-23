@@ -54,8 +54,8 @@ a {
 
 
 .projects__box2 {
-  // background-color: grey;
-  background-image: url('/assets/images/skn2.jpg');
+  background-color: grey;
+  // background-image: url('/assets/images/skn2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
@@ -68,10 +68,9 @@ a {
 
 
 .projects__box, .projects__box2 {
-    background-color: red;
     transition: transform .6s ease-in-out;
   &:hover {
-    background-color: green;
+
     -ms-transform: scale(2,2); /* IE 9 */
     -webkit-transform: scale(2,2); /* Safari */
     transform: scale(2,2); /* Standard syntax */
@@ -92,9 +91,7 @@ a {
     margin-top: -17%;
   }
   
-  &:hover .button-more-about-project {
-    opacity: 1;
-  }
+
 }
 
 
@@ -134,7 +131,6 @@ a {
   text-align: center;
   color: white;
   margin-top: 9px;
-  opacity: 0;
 
   &:hover {
     text-decoration: none;

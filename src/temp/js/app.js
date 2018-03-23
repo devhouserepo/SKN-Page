@@ -20,16 +20,18 @@ $(document).ready(function() {
 
     $(".button-more-about-project").hide()
 
-    $(".projects__box, .projects__box2").mouseover(function() {
+    $(".projects__box, .projects__box2").mouseenter(function() {
+        $(".button-more-about-project").hide()
         setTimeout(function() {
             $(".button-more-about-project").show()
-        }, 900); 
+        }, 800)
     })
 
-    $(".projects__box, .projects__box2").mouseout(function() {
+
+    $(".projects__box, .projects__box2").mouseleave(function() {
         setTimeout(function() {
             $(".button-more-about-project").hide()
-        }, 200); 
+        }, 200)
     })
 
     // Project section ends
