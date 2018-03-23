@@ -48,16 +48,23 @@ a {
   z-index: 2;
 }
 
-// .singular-project-container {
-//   position: relative;
-// }
+.singular-project-container {
+  // position: relative;
+
+  &:hover .projects-shape-1, &:hover .projects-shape-2 {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+  }
+}
 
 .projects-shape-1 , .projects-shape-2 {
   background-repeat: no-repeat;
   background-position: center;
   margin: auto;
   height: 200px;
-  max-width: 200px;
+  width: 200px;
+  max-width: 400px;
   // position:absolute;
   // top: 0;
   // left: 0;
@@ -70,10 +77,6 @@ a {
   // }
 }
 
-.projects-shape-1:hover {
-  width: 400px;
-  height: 400px;
-}
 
 .projects-shape-1 {
   background-color: navy;
@@ -86,7 +89,7 @@ a {
 
 .projects-shape-2 {
   background-color: grey;
-  background-image: url('/assets/images/skn2.jpg');
+  background-image: url('/assets//images/skn2.jpg');
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
   clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
 }
