@@ -199,69 +199,23 @@ a:hover {
 }
 
 .singular-project-container:hover .projects-shape-1, .singular-project-container:hover .projects-shape-2 {
+  -ms-transform: scale(2, 2);
   /* Internet Explorer and Microsoft Edge */
-  -webkit-animation: expandProjectShape 2s forwards;
-  /* Safari 4+ */
-  /* Fx 5+ */
+  -webkit-transform: scale(2, 2);
+  /* Safari */
+  -moz-transform: scale(2, 2);
+  /* Firefox */
+  -o-animation: scale(2, 2);
   /* Opera 12+ */
-  animation: expandProjectShape 2s forwards;
-  /* IE 10+, Fx 29+ */
+  transform: scale(2, 2);
   z-index: 3;
   background-size: 400px;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
 }
 
 .singular-project-container:hover.project-about {
   height: 60px;
-}
-
-@-webkit-keyframes expandProjectShape {
-  0% {
-    -ms-transform: scale(1, 1);
-    /* Internet Explorer and Microsoft Edge */
-    -webkit-transform: scale(1, 1);
-    /* Safari */
-    -moz-transform: scale(1, 1);
-    /* Firefox */
-    -o-animation: scale(1, 1);
-    /* Opera 12+ */
-    transform: scale(1, 1);
-  }
-  100% {
-    -ms-transform: scale(2, 2);
-    /* Internet Explorer and Microsoft Edge */
-    -webkit-transform: scale(2, 2);
-    /* Safari */
-    -moz-transform: scale(2, 2);
-    /* Firefox */
-    -o-animation: scale(2, 2);
-    /* Opera 12+ */
-    transform: scale(2, 2);
-  }
-}
-
-@keyframes expandProjectShape {
-  0% {
-    -ms-transform: scale(1, 1);
-    /* Internet Explorer and Microsoft Edge */
-    -webkit-transform: scale(1, 1);
-    /* Safari */
-    -moz-transform: scale(1, 1);
-    /* Firefox */
-    -o-animation: scale(1, 1);
-    /* Opera 12+ */
-    transform: scale(1, 1);
-  }
-  100% {
-    -ms-transform: scale(2, 2);
-    /* Internet Explorer and Microsoft Edge */
-    -webkit-transform: scale(2, 2);
-    /* Safari */
-    -moz-transform: scale(2, 2);
-    /* Firefox */
-    -o-animation: scale(2, 2);
-    /* Opera 12+ */
-    transform: scale(2, 2);
-  }
 }
 
 .projects-shape-1, .projects-shape-2 {
@@ -273,8 +227,10 @@ a:hover {
   width: 200px;
   max-width: 400px;
   z-index: 2;
-  -webkit-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 
 .projects-shape-1 {

@@ -78,9 +78,11 @@ a {
   }
 
   &:hover .projects-shape-1, &:hover .projects-shape-2 {
-    @include animationBasicHover(expandProjectShape, 2, forwards);
+    // @include animationBasicHover(expandProjectShape, 2, forwards);
+    @include transform(2,2);
     z-index: 3;
     background-size: 400px;
+    transition: all .8s ease-in-out;
   }
 
   &:hover.project-about {
@@ -89,10 +91,11 @@ a {
 
 }
 
-@keyframes expandProjectShape {
-  0% {@include transform(1,1)}
-  100% {@include transform(2,2)}
-}
+// project-box-1 & project-box-2 expands animation
+// @keyframes expandProjectShape {
+//   0% {@include transform(1,1)}
+//   100% {@include transform(2,2)}
+// }
 
 
 .projects-shape-1 , .projects-shape-2 {
@@ -103,11 +106,9 @@ a {
   height: 200px;
   width: 200px;
   max-width: 400px;
-  // position:absolute;
-  // top: 0;
-  // left: 0;
   z-index: 2;
-  transition: all .6s ease-in-out;
+  transition: all .8s ease-in-out;
+  transition-delay: 1s;
 }
 
 
