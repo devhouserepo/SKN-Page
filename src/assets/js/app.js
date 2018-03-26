@@ -18,20 +18,19 @@ $(document).ready(function () {
 
     // Projects section
 
+
     $(".singular-project-container").mouseenter(function(e) {
-        console.log(e.currentTarget)
         let currentTarget = e.currentTarget
-        setTimeout(function(currentTarget) {        
-            $(".project-about").css("opacity", "1")
-        }, 700)
+        setTimeout(function(target) {       
+            $(target).find(".project-about").css("opacity", "1")
+        }, 700, currentTarget)
     })
 
     $(".singular-project-container").mouseleave(function(e) {
-        setTimeout(function() {
- 
-            // let targetObject = e.currentTarget
-            $(".project-about").css("opacity", "0")
-        }, 100)
+        let currentTarget = e.currentTarget
+        setTimeout(function(target) {  
+            $(target).find(".project-about").css("opacity", "0")
+        }, 200, currentTarget)
     })
 
 
