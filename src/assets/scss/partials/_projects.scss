@@ -70,6 +70,7 @@ a {
 }
 
 
+// Project hover transitions and animations triggers
 .singular-project-container {
 
   &:hover .project_title {
@@ -78,25 +79,36 @@ a {
   }
 
   &:hover .projects-shape-1, &:hover .projects-shape-2 {
-    // @include animationBasicHover(expandProjectShape, 2, forwards);
     @include transform(2,2);
     z-index: 3;
     background-size: 400px;
     transition: all .8s ease-in-out;
   }
 
-  &:hover.project-about {
-    height: 60px;
+  &:hover .project-about {
+    @include animationBasicHover(showProjectAbout, 2, forwards);
   }
 
 }
 
-// project-box-1 & project-box-2 expands animation
-// @keyframes expandProjectShape {
-//   0% {@include transform(1,1)}
-//   100% {@include transform(2,2)}
-// }
+// Show and fade in .project-about animation
+@keyframes showProjectAbout {
+  0% {opacity: 0}
+  35% {opacity: 0}
+  100% {opacity: 1}
+}
 
+
+
+.project-about {
+  color: white;
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 16px;
+  height: 60px;
+  opacity: 0;
+}
 
 .projects-shape-1 , .projects-shape-2 {
   background-repeat: no-repeat;
@@ -108,7 +120,7 @@ a {
   max-width: 400px;
   z-index: 2;
   transition: all .8s ease-in-out;
-  transition-delay: 1s;
+  transition-delay: 0.7s;
 }
 
 
@@ -147,17 +159,6 @@ a {
   font-size: 16px;
 }
 
-.project-about {
-  color: white;
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 14px;
-  font-size: 16px;
-  height: 60px;
-  // opacity: 0;
-  // transition: opacity .9s ease-in-out;
-  // transition-delay: 0.8s;
-}
 
 .button-more-about-project {
   margin-left: 30%;

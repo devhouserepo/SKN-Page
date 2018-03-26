@@ -214,8 +214,48 @@ a:hover {
   transition: all .8s ease-in-out;
 }
 
-.singular-project-container:hover.project-about {
+.singular-project-container:hover .project-about {
+  /* Internet Explorer and Microsoft Edge */
+  -webkit-animation: showProjectAbout 2s forwards;
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  animation: showProjectAbout 2s forwards;
+  /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes showProjectAbout {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showProjectAbout {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.project-about {
+  color: white;
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 16px;
   height: 60px;
+  opacity: 0;
 }
 
 .projects-shape-1, .projects-shape-2 {
@@ -229,8 +269,8 @@ a:hover {
   z-index: 2;
   -webkit-transition: all .8s ease-in-out;
   transition: all .8s ease-in-out;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
 }
 
 .projects-shape-1 {
@@ -264,15 +304,6 @@ a:hover {
   text-align: center;
   margin-top: 14px;
   font-size: 16px;
-}
-
-.project-about {
-  color: white;
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 14px;
-  font-size: 16px;
-  height: 60px;
 }
 
 .button-more-about-project {
