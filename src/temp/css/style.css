@@ -348,6 +348,18 @@ a:hover {
   font-size: 16px;
 }
 
+#startup {
+  margin-top: 26px;
+}
+
+#devhouse {
+  margin-top: -26px;
+}
+
+#boot-camp {
+  margin-top: 21px;
+}
+
 #twoj-projekt-title {
   margin-top: 12%;
 }
