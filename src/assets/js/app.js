@@ -20,20 +20,32 @@ $(document).ready(function () {
 
 
     $(".singular-project-container").mouseenter(function(e) {
-        let currentTarget = e.currentTarget
-        setTimeout(function(target) {       
-            $(target).find(".project-about").css("opacity", "1")
-        }, 700, currentTarget)
+        console.log($(".singular-project-container"))
+         let expandSingularProjectContainer = {
+            'width': '400px',
+            'height' : '400px',
+            'z-index': 3
+        }
+    
+        $(this).children(".projects-shape-1, .projects-shape-2").css(expandSingularProjectContainer)
+
+        // let currentTarget = e.currentTarget
+        // setTimeout(function(target) {       
+        //     $(target).find(".project-about").css("opacity", "1")
+        // }, 700, currentTarget)
     })
 
+
     $(".singular-project-container").mouseleave(function(e) {
-        let currentTarget = e.currentTarget
-        setTimeout(function(target) {  
-            $(target).find(".project-about").css("opacity", "0")
-        }, 200, currentTarget)
+        let collapseSingularProjectContainer = {
+            'width': '200px',
+            'height' : '200px',
+            'z-index': 2
+        }
+
+        $(this).children(".projects-shape-1, .projects-shape-2").css(collapseSingularProjectContainer)
     })
 
 
     // Project section ends
-
 });

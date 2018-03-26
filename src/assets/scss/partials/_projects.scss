@@ -60,18 +60,18 @@ a {
 
 .singular-project-container {
 
-  &:hover .projects-shape-1, &:hover .projects-shape-2 {
-    z-index: 3;
-    @include transform(2,2);
-    background-size: 400px;
-    // width: 400px;
-    // height: 400px;
-  }
+  // &:hover .projects-shape-1, &:hover .projects-shape-2 {
+  //   z-index: 3;
+  //   @include transform(2,2);
+  //   background-size: 400px;
+  //   // width: 400px;
+  //   // height: 400px;
+  // }
 
-  &:hover .project_title {
-    font-size: 20px;
-    margin-top: 3%;
-  }
+  // &:hover .project_title {
+  //   font-size: 20px;
+  //   margin-top: 3%;
+  // }
 
   // &:hover .project-about {
   //   opacity: 1;
@@ -136,7 +136,7 @@ a {
   margin-top: 14px;
   font-size: 16px;
   height: 60px;
-  opacity: 0;
+  // opacity: 0;
   // transition: opacity .9s ease-in-out;
   // transition-delay: 0.8s;
 }
