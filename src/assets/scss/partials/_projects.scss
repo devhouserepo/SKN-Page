@@ -1,16 +1,27 @@
 @mixin transform($x,$y) {
-  -ms-transform: scale($x,$y);
-  -webkit-transform: scale($x,$y);
-  -moz-transform: scale($x,$y);
+  -ms-transform: scale($x,$y); /* Internet Explorer and Microsoft Edge */
+  -webkit-transform: scale($x,$y); /* Safari */
+  -moz-transform: scale($x,$y); /* Firefox */
+  -o-animation: scale($x,$y); /* Opera 12+ */
   transform: scale($x,$y);
 }
 
 @mixin transform-origin($x,$y) {
-  -ms-transform-origin: ($x + 0px) ($y + 0px);
-  -webkit-transform-origin: ($x + 0px) ($y + 0px); 
-  -moz-transform-origin: ($x + 0px) ($y + 0px); 
+  -ms-transform-origin: ($x + 0px) ($y + 0px); /* Internet Explorer and Microsoft Edge */
+  -webkit-transform-origin: ($x + 0px) ($y + 0px); /* Safari */
+  -moz-transform-origin: ($x + 0px) ($y + 0px); /* Firefox */
+  -o-transform-origin: ($x + 0px) ($y + 0px); /* Opera 12+ */
   transform-origin: ($x + 0px) ($y + 0px);
 }
+
+@mixin animationBasicHover($animationName, $duration, $animationFillMode) {
+  -ms-animation:     $animationName $duration * 1s $animationFillMode; /* Internet Explorer and Microsoft Edge */
+  -webkit-animation: $animationName $duration * 1s $animationFillMode; /* Safari 4+ */
+  -moz-animation:    $animationName $duration * 1s $animationFillMode; /* Fx 5+ */
+  -o-animation:      $animationName $duration * 1s $animationFillMode; /* Opera 12+ */
+  animation:         $animationName $duration * 1s $animationFillMode; /* IE 10+, Fx 29+ */
+  }
+
 
 
 a {
@@ -58,25 +69,31 @@ a {
   z-index: 4;
 }
 
+
 .singular-project-container {
 
-  // &:hover .projects-shape-1, &:hover .projects-shape-2 {
-  //   z-index: 3;
-  //   @include transform(2,2);
-  //   background-size: 400px;
-  //   // width: 400px;
-  //   // height: 400px;
-  // }
+  &:hover .project_title {
+    font-size: 20px;
+    margin-top: 3%;
+  }
 
-  // &:hover .project_title {
-  //   font-size: 20px;
-  //   margin-top: 3%;
-  // }
+  &:hover .projects-shape-1, &:hover .projects-shape-2 {
+    @include animationBasicHover(expandProjectShape, 2, forwards);
+    z-index: 3;
+    background-size: 400px;
+  }
 
-  // &:hover .project-about {
-  //   opacity: 1;
-  // }
+  &:hover.project-about {
+    height: 60px;
+  }
+
 }
+
+@keyframes expandProjectShape {
+  0% {@include transform(1,1)}
+  100% {@include transform(2,2)}
+}
+
 
 .projects-shape-1 , .projects-shape-2 {
   background-repeat: no-repeat;
