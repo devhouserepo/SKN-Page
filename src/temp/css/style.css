@@ -701,3 +701,81 @@ table {
 .section__form .form__items-right .form-item input:focus {
   outline: none;
 }
+
+.partners {
+  font-family: "Roboto";
+  margin-bottom: 100px;
+  color: white;
+}
+
+.navy_bg {
+  border-left: 450px solid #000039;
+  border-top: 277px solid #000039;
+  border-right: 2100px solid transparent;
+  position: absolute;
+  left: 1px;
+  z-index: 1;
+}
+
+.navy_bg p {
+  left: -150px;
+  position: absolute;
+  top: -140px;
+  width: 600px;
+}
+
+.white_bg {
+  background-color: white;
+  height: 700px;
+}
+
+.second {
+  width: 80%;
+}
+
+.col-4 {
+  color: black;
+  top: 400px;
+}
+
+.col-2 {
+  color: black;
+  top: 470px;
+}
+
+.col-2:nth-of-type(1) {
+  left: 60px;
+}
+
+.col-2:nth-of-type(2) {
+  left: 80px;
+}
+
+.col-2:nth-of-type(3) {
+  left: 40px;
+}
+
+.col-2:nth-of-type(4) {
+  right: 20px;
+}
+
+.img {
+  opacity: 0.7;
+  position: absolute;
+  width: 60%;
+  z-index: 0;
+}
+
+.third {
+  color: grey;
+  font-size: 140px;
+  font-weight: bold;
+  left: 250px;
+  position: relative;
+  top: -50px;
+  opacity: 0.3;
+}
+
+#partner1, #partner2, #partner3, #partner4 {
+  text-align: justify;
+}

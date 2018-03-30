@@ -12,4 +12,9 @@ $(document).ready(function() {
     $("#myModal").on("shown.bs.modal", function() {
         $("#myInput").trigger("focus");
     });
+
+    $('div').on('click', function(){
+   var target = $(this).attr('rel');
+   $("#"+target).show().siblings("div").hide();
+   });
 });
