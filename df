@@ -1,0 +1,91 @@
+[33mcommit 103a70455f5b8db66293190582ebc56785ea2f7e[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/SISK-17/project-box-js-animation[m[33m, [m[1;32mfeature/SISK-17/projects-hover-grow[m[33m)[m
+Author: Aleks <aleks.grunwald@gmail.com>
+Date:   Fri Mar 23 02:32:50 2018 +0100
+
+    Show and hide show-more-about-project button written in javascript. Started adding svg bckg
+
+[33mcommit 16ee5f94cffe71dc6776961b432da3b8b0ad0336[m[33m ([m[1;31morigin/feature/SISK-17/projects-hover-grow[m[33m)[m
+Author: Aleks <aleks.grunwald@gmail.com>
+Date:   Mon Mar 19 19:34:36 2018 +0100
+
+    Info about project and button appears on hover
+
+[33mcommit c15351d9be825d7c16ca079d7d2e28684bd0469a[m
+Author: Aleks <aleks.grunwald@gmail.com>
+Date:   Mon Mar 19 18:28:25 2018 +0100
+
+    Project title going up
+
+[33mcommit ad7469905a5312d6496ffb6e58bd32dd2564138e[m
+Author: Aleks <aleks.grunwald@gmail.com>
+Date:   Mon Mar 19 18:10:57 2018 +0100
+
+    Basic scaling and color change on hover; Without white lines in the background
+
+[33mcommit 45df6dc9bbc9f1dc052e84dfa737bc4e96925173[m[33m ([m[1;32mdev[m[33m)[m
+Merge: 161cf23 6cb3318
+Author: Aleks <aleks.grunwald@gmail.com>
+Date:   Mon Mar 19 00:45:01 2018 +0100
+
+    Merge branch 'SISK-17' into dev
+
+[33mcommit 6cb33188985509bd83e5bd34d74963adfbdc5491[m[33m ([m[1;32mSISK-17[m[33m)[m
+Merge: 964e6bb 161cf23
+Author: Aleks <aleks.grunwald@gmail.com>
+Date:   Mon Mar 19 00:42:39 2018 +0100
+
+    trying to resolve SISK-17 problems
+
+[33mcommit 161cf23f57f6eb8c6b0f0ec50f4287a359a1a515[m
+Author: Aleks <aleks.grunwald@gmail.com>
+Date:   Sun Mar 18 23:41:29 2018 +0100
+
+    test - okok in index
+
+[33mcommit 964e6bb73f7607cef61e05f08a6af5f869f9e186[m[33m ([m[1;31morigin/SISK-17[m[33m)[m
+Author: Aleksander <aleksander.ziolkowski90@gmail.com>
+Date:   Sun Mar 18 22:22:30 2018 +0100
+
+    features/SISK-17/projectsTabMockup
+
+[33mcommit 7d8bfe12d28b16810292b6834afc0e7c8d9d11fc[m
+Merge: 61df6f0 680ecf4
+Author: Piotr <30327636+pio-kniaz@users.noreply.github.com>
+Date:   Fri Mar 16 01:14:06 2018 +0100
+
+    Merge pull request #2 from devhouserepo/editContact
+    
+     form , MQ mixins , modal added
+
+[33mcommit 680ecf49913ee842cd7c5e314eef16e56bc296f8[m[33m ([m[1;31morigin/editContact[m[33m)[m
+Author: pio-kniaz <pio.kniaz@gmail.com>
+Date:   Fri Mar 16 01:11:01 2018 +0100
+
+     form , MQ mixins , modal added
+
+[33mcommit 61df6f036c1e2bf02b6c183db9ee4059e5488b75[m
+Merge: 7d55c4f ba17a6b
+Author: Piotr <30327636+pio-kniaz@users.noreply.github.com>
+Date:   Mon Mar 12 22:59:02 2018 +0100
+
+    Merge pull request #1 from devhouserepo/feature/SISK-14
+    
+    feature/SISK-14:Header&Contact finished
+
+[33mcommit ba17a6b579051c24de9fb46681e79485aafd4056[m[33m ([m[1;31morigin/feature/SISK-14[m[33m)[m
+Author: pio-kniaz <pio.kniaz@gmail.com>
+Date:   Mon Mar 12 22:51:29 2018 +0100
+
+    feature/SISK-14:Header&Contact finished
+
+[33mcommit 7d55c4fbf2b0d11d51f4a545c44be6493c04d718[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: pio-kniaz <pio.kniaz@gmail.com>
+Date:   Fri Mar 9 22:03:35 2018 +0100
+
+    Project Start
+
+[33mcommit 892ee943f98be0331982325156d5ca76d2d6c6dd[m
+Author: pio-kniaz <pio.kniaz@gmail.com>
+Date:   Fri Mar 9 21:44:33 2018 +0100
+
+    first commit
