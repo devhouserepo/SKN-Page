@@ -1,6 +1,5 @@
 .section {
     position: relative;
-
     &__contact {
         width: 100vw;
         height: 100vh;
@@ -12,7 +11,7 @@
             span {
                 display: block;
                 font-size: 0.9em;
-                font-family: $text-font-1;
+                font-family: $text-font-1; 
                 line-height: 21px;
                 text-align: center;
                 letter-spacing: 0.7px;
@@ -46,6 +45,39 @@
                 }
             }
         }
+        .modal {            
+            font-family: $text-font-1;
+            .close {
+                &:focus {
+                    outline: none;
+                }
+            }
+            .modal-body {
+                .form-recruitment {
+                    .form-item {
+                        input {
+                            border: 1px solid #777aad;
+                            border-radius: 2px;
+                            outline: 0;
+                            font-family: $text-font-1;
+                            font-size: 1em;
+                            padding: 5px;
+                            margin: 15px 0 15px 0;
+                            color: #777aad;
+                            &::placeholder {
+                                color: #e8e9ff;
+                            }
+                        }
+                    }
+                }
+            }
+            .btn,
+            .btn-primary,
+            .btn-secondary {
+                @include btn-base($bg-button-color-1, $text-color-1);
+                margin: 0 0 0 15px;
+            }
+        }
     }
     &__box {
         width: 500px;
@@ -63,12 +95,12 @@
             transform: skew(-3deg) rotateZ(-2deg);
         }
         &::after {
-            content: "";
+            content: '';
             position: absolute;
-            transform: rotateZ(240deg);
+            transform:rotateZ(240deg);
             z-index: 1;
-            width: 0;
-            height: 0;
+            width: 0; 
+            height: 0; 
             border-top: 90px solid transparent;
             border-bottom: 90px solid transparent;
             border-left: 90px solid $bg-color-1;
@@ -76,12 +108,12 @@
             left: -10px;
         }
         &::before {
-            content: "";
+            content: '';
             position: absolute;
-            transform: rotateZ(60deg);
+            transform:rotateZ(60deg);
             z-index: 1;
-            width: 0;
-            height: 0;
+            width: 0; 
+            height: 0; 
             border-top: 90px solid transparent;
             border-bottom: 90px solid transparent;
             border-left: 90px solid $bg-color-1;
@@ -124,7 +156,7 @@
         button {
             @include btn-base($bg-button-color-1, $text-color-1);
         }
-        button:nth-child(4) {
+        button:nth-child(4){
             margin: 0 0 0 10px;
         }
         .form {
@@ -140,6 +172,9 @@
                 .form-item {
                     display: flex;
                     flex-direction: column;
+                    label {
+                        display: none;
+                    }
                     input,
                     textarea {
                         margin: 12px 0 0 0;
@@ -151,12 +186,8 @@
                         padding: 0 0 0 5px;
                         height: 30px;
                     }
-                    label {
-                        visibility: hidden;
-                        height: 0;
-                    }
                     input:focus {
-                        background: $bg-input-focus-1;
+                     background: $bg-input-focus-1;
                     }
                 }
             }
