@@ -310,6 +310,24 @@ a:hover {
           transition-delay: 0.7s;
 }
 
+.projects-shape-1 :nth-child(2), .projects-shape-2 :nth-child(2) {
+  margin-top: 40px;
+}
+
+.projects__second-row {
+  left: -170px;
+  margin-top: 260px;
+  margin-bottom: -100px;
+  position: absolute;
+  right: -170px;
+  z-index: 3;
+}
+
+.projects__second-row :nth-child(2) {
+  margin-top: 40px;
+  z-index: 3;
+}
+
 .projects-shape-1 {
   background-image: url("/assets/images/skn1.jpg");
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
@@ -377,6 +395,22 @@ a:hover {
   max-width: 390px;
 }
 
+#twoj-projekt .button {
+  left: 65px;
+  opacity: 0;
+  position: absolute;
+  top: 120px;
+  text-align: center;
+  width: 50px;
+}
+
+#twoj-projekt a {
+  border: solid 2px white;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
 .giant-header {
   color: white;
   font-weight: bold;
@@ -401,6 +435,9 @@ a:hover {
     margin-bottom: -130px;
     position: relative;
     right: 0;
+  }
+  .projects__title {
+    display: none;
   }
 }
 
@@ -492,6 +529,76 @@ a:hover {
   }
 }
 
+.section__contact .modal {
+  font-family: "Roboto", sans-serif;
+}
+
+.section__contact .modal .close:focus {
+  outline: none;
+}
+
+.section__contact .modal .modal-body .form-recruitment .form-item input {
+  border: 1px solid #777aad;
+  border-radius: 2px;
+  outline: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  padding: 5px;
+  margin: 15px 0 15px 0;
+  color: #777aad;
+}
+
+.section__contact .modal .modal-body .form-recruitment .form-item input::-webkit-input-placeholder {
+  color: #e8e9ff;
+}
+
+.section__contact .modal .modal-body .form-recruitment .form-item input:-ms-input-placeholder {
+  color: #e8e9ff;
+}
+
+.section__contact .modal .modal-body .form-recruitment .form-item input::-ms-input-placeholder {
+  color: #e8e9ff;
+}
+
+.section__contact .modal .modal-body .form-recruitment .form-item input::placeholder {
+  color: #e8e9ff;
+}
+
+.section__contact .modal .btn,
+.section__contact .modal .btn-primary,
+.section__contact .modal .btn-secondary {
+  z-index: 2;
+  position: relative;
+  margin: 30px 0 0 0;
+  padding: 0 15px 0 15px;
+  min-width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  background: #2e2f5d;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+  color: #ffffff;
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  letter-spacing: 0.8px;
+  margin: 0 0 0 15px;
+}
+
+.section__contact .modal .btn:hover,
+.section__contact .modal .btn-primary:hover,
+.section__contact .modal .btn-secondary:hover {
+  background: #4f5178;
+}
+
+.section__contact .modal .btn:focus,
+.section__contact .modal .btn-primary:focus,
+.section__contact .modal .btn-secondary:focus {
+  outline: none;
+}
+
 .section__box {
   width: 500px;
   height: 150px;
@@ -513,7 +620,7 @@ a:hover {
 }
 
 .section__box::after {
-  content: "";
+  content: '';
   position: absolute;
   -webkit-transform: rotateZ(240deg);
           transform: rotateZ(240deg);
@@ -528,7 +635,7 @@ a:hover {
 }
 
 .section__box::before {
-  content: "";
+  content: '';
   position: absolute;
   -webkit-transform: rotateZ(60deg);
           transform: rotateZ(60deg);
@@ -634,6 +741,10 @@ a:hover {
           flex-direction: column;
 }
 
+.section__form .form__items-left .form-item label, .section__form .form__items-right .form-item label {
+  display: none;
+}
+
 .section__form .form__items-left .form-item input,
 .section__form .form__items-left .form-item textarea, .section__form .form__items-right .form-item input,
 .section__form .form__items-right .form-item textarea {
@@ -645,11 +756,6 @@ a:hover {
   height: 23px;
   padding: 0 0 0 5px;
   height: 30px;
-}
-
-.section__form .form__items-left .form-item label, .section__form .form__items-right .form-item label {
-  visibility: hidden;
-  height: 0;
 }
 
 .section__form .form__items-left .form-item input:focus, .section__form .form__items-right .form-item input:focus {
@@ -698,7 +804,7 @@ a:hover {
 
 .partners {
   font-family: "Roboto";
-  margin-bottom: 100px;
+  margin-bottom: 110px;
   color: white;
 }
 
@@ -772,4 +878,192 @@ a:hover {
 
 #partner1, #partner2, #partner3, #partner4 {
   text-align: justify;
+}
+
+.section {
+  position: relative;
+}
+
+.section__reference {
+  width: 100vw;
+  height: 100vh;
+  color: black;
+}
+
+.section__reference__box-left {
+  background: #ffffff;
+  width: 700px;
+  height: 650px;
+  -webkit-transform: skew(2deg);
+          transform: skew(2deg);
+  position: relative;
+  top: 54px;
+  right: 215px;
+}
+
+.section__reference__box-left::after {
+  content: '';
+  position: absolute;
+  -webkit-transform: rotateZ(225deg);
+          transform: rotateZ(225deg);
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-top: 190px solid transparent;
+  border-bottom: 190px solid transparent;
+  border-left: 190px solid #000039;
+  top: -125px;
+  left: -100px;
+}
+
+.section__reference__box-left::before {
+  content: '';
+  position: absolute;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent;
+  border-bottom: 150px solid transparent;
+  border-left: 150px solid #000039;
+  right: -65px;
+  top: 470px;
+}
+
+.section__reference__box-left .carousel {
+  position: absolute;
+  top: 60px;
+  left: 210px;
+  -webkit-transform: skew(-2deg);
+          transform: skew(-2deg);
+}
+
+.section__reference__box-left .carousel::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 70px;
+  height: 457px;
+  background-color: #fff;
+  top: 133px;
+  left: -213px;
+}
+
+.section__reference__box-left .carousel .carousel-indicators li,
+.section__reference__box-left .carousel .carousel-indicators .active {
+  width: 13px;
+  height: 13px;
+  border-radius: 50px;
+  border: 1px solid #838383;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.section__reference__box-left .carousel .carousel-indicators .active {
+  background-color: #ababab;
+}
+
+.section__reference__box-left .carousel-item {
+  width: 450px;
+  min-height: 430px;
+  background: #fff;
+  text-align: center;
+  font-size: 0.8em;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.4px;
+}
+
+.section__reference__box-left .carousel-item img {
+  width: 100px;
+}
+
+.section__reference__box-left .carousel-item span {
+  display: block;
+  margin: 3px 0 0 0;
+}
+
+.section__reference__box-left .carousel-item p {
+  margin: 25px 0 0 0;
+}
+
+.section__reference__box-left .carousel-item img:nth-child(4) {
+  margin: 40px 0 0 0;
+  width: 80px;
+}
+
+.section__reference__box-right svg {
+  position: absolute;
+  bottom: -235px;
+  left: 30px;
+  z-index: 2;
+}
+
+.section__reference__box-right .path {
+  stroke-dasharray: 1550;
+  stroke-dashoffset: 1550;
+  -webkit-animation: dash 4s linear forwards;
+          animation: dash 4s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.section__reference__box-right .carousel {
+  position: absolute;
+  bottom: -220px;
+  left: 100px;
+}
+
+.section__reference__box-right .carousel::after {
+  content: '';
+  position: absolute;
+  -webkit-transform: rotateZ(225deg);
+          transform: rotateZ(225deg);
+  z-index: 1;
+  border-top: 115px solid transparent;
+  border-bottom: 115px solid transparent;
+  border-left: 124px solid #000039;
+  bottom: 315px;
+  left: -91px;
+}
+
+.section__reference__box-right .carousel .carousel-indicators li,
+.section__reference__box-right .carousel .carousel-indicators .active {
+  width: 13px;
+  height: 13px;
+  border-radius: 50px;
+  border: 1px solid #838383;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.section__reference__box-right .carousel .carousel-indicators .active {
+  background-color: #ababab;
+}
+
+.section__reference__box-right .carousel-item {
+  width: 450px;
+  min-height: 430px;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8em;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.4px;
+}
+
+.section__reference__box-right .carousel-item img {
+  width: 100px;
+}
+
+.section__reference__box-right .carousel-item span {
+  display: block;
+  margin: 3px 0 0 0;
+}
+
+.section__reference__box-right .carousel-item p {
+  margin: 25px 0 0 0;
 }

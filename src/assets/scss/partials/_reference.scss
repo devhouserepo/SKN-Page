@@ -1,0 +1,164 @@
+.section {
+    position: relative;
+    &__reference {
+        width: 100vw;
+        height: 100vh;
+        color: black;
+        &__box-left {
+            background: #ffffff;
+            width: 700px;
+            height: 650px;
+            transform: skew(2deg);
+            position: relative;
+            top: 54px;
+            right: 215px;
+            &::after {
+                content: '';
+                position: absolute;
+                transform:rotateZ(225deg);
+                z-index: 1;
+                width: 0; 
+                height: 0; 
+                border-top: 190px solid transparent;
+                border-bottom: 190px solid transparent;
+                border-left: 190px solid $bg-color-1;
+                top: -125px;
+                left: -100px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                transform:rotateZ(45deg);
+                z-index: 1;
+                width: 0; 
+                height: 0; 
+                border-top: 150px solid transparent;
+                border-bottom: 150px solid transparent;
+                border-left: 150px solid $bg-color-1;
+                right: -65px;
+                top: 470px;
+            }
+            .carousel {
+                position: absolute;
+                top: 60px;
+                left: 210px;
+                transform: skew(-2deg);
+                &::after {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    width: 70px; 
+                    height: 457px;
+                    background-color:#fff; 
+                    top: 133px;
+                    left: -213px;
+                }
+                .carousel-indicators {
+                    li,
+                    .active {
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 50px;
+                        border: 1px solid #838383;
+                        background-color: #fff;
+                        cursor: pointer;
+                    }
+                    .active {
+                        background-color: #ababab;
+                    }
+                }
+            }
+            .carousel-item {
+                width: 450px;
+                min-height: 430px;
+                background: #fff;
+                text-align: center;
+                font-size: 0.8em;
+                font-family: $text-font-1;
+                letter-spacing: 0.4px; 
+                img {
+                    width: 100px;
+                } 
+                span {
+                    display: block;
+                    margin: 3px 0 0 0;
+                }
+                p {
+                    margin: 25px 0 0 0;
+                }
+                img:nth-child(4) {
+                    margin: 40px 0 0 0;
+                    width: 80px;
+                }
+            }
+        }
+        &__box-right {
+            
+            svg {
+                position: absolute;
+                bottom: -235px;
+                left: 30px;
+                z-index: 2;
+            }
+            .path {
+                stroke-dasharray: 1550;
+                stroke-dashoffset: 1550;
+                animation: dash 4s linear forwards;
+            }
+            @keyframes dash {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+            .carousel {
+                position: absolute;
+                bottom: -220px;
+                left: 100px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    transform:rotateZ(225deg);
+                    z-index: 1;
+                    border-top: 115px solid transparent;
+                    border-bottom: 115px solid transparent;
+                    border-left: 124px solid $bg-color-1;
+                    bottom:315px;
+                    left: -91px;
+                }
+                .carousel-indicators {
+                    li,
+                    .active {
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 50px;
+                        border: 1px solid #838383;
+                        background-color: #fff;
+                        cursor: pointer;
+                    }
+                    .active {
+                        background-color: #ababab;
+                    }
+                }
+            }
+            .carousel-item {
+                width: 450px;
+                min-height: 430px;
+                color: #fff;
+                text-align: center;
+                font-size: 0.8em;
+                font-family: $text-font-1;
+                letter-spacing: 0.4px; 
+                img {
+                    width: 100px;
+                } 
+                span {
+                    display: block;
+                    margin: 3px 0 0 0;
+                }
+                p {
+                    margin: 25px 0 0 0;
+                }
+            }
+        }
+    }
+}
