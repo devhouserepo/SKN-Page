@@ -545,13 +545,17 @@
 
                     <div class="form-item__row">
 
-                      <input type="radio" required name="formYear" value="I" /> I
-                      <input type="radio" required name="formYear" value="II" /> II
-                      <input type="radio" required name="formYear" value="III" /> III
-                      <input type="radio" required name="formYear" value="IV" /> IV
-                      <input type="radio" required name="formYear" value="I rok MGR" /> I rok MGR
-                      <input type="radio" required name="formYear" value="II rok MGR" /> II rok MGR
-                      <input type="radio" required name="formYear" value="absolwent" /> Jestem absolwentem
+                      <input type="radio" required name="formYear" value="I" /> <span>I</span>
+                      <input type="radio" required name="formYear" value="II" /> <span>II</span>
+                      <input type="radio" required name="formYear" value="III" /> <span>III</span>
+                      <input type="radio" required name="formYear" value="IV" /> <span>IV</span>
+
+                    </div>
+                    <div class="form-item__row">
+
+                      <input type="radio" required name="formYear" value="I rok MGR" /> <span>I rok MGR</span>
+                      <input type="radio" required name="formYear" value="II rok MGR" /> <span>II rok MGR</span>
+                      <input type="radio" required name="formYear" value="absolwent" /> <span>Jestem absolwentem</span>
 
                     </div>
     
@@ -574,9 +578,9 @@
 
                   <div class="form-item d-flex flex-column">
 
-                    <label for="formAboutRecruitment">6. Opowiedz nam coś ciekawego o sobie i swoich zainteresowaniach :)</label>
-                    <p>To jedyne otwarte pytanie. Zaskocz nas :)</p>
-                    <input id="formAboutRecruitment" type="text" name="formAboutRecruitment"  placeholder="Tekst" required />
+                    <label for="formAboutRecruitment">6. Opowiedz nam coś ciekawego o sobie :)</label>
+                    <p>To jedyne otwarte pytanie. Zaskocz nas!</p>
+                    <textarea id="formAboutRecruitment" name="formAboutRecruitment"  placeholder="Tekst" required></textarea>
     
                   </div>
 
@@ -584,11 +588,11 @@
 
                     <label for="formDepartmentChoiceRecruitment">7. W jakim dziale chciałbyś/chciałabyś spróbować swoich sił:</label>
 
-                    <div class="form-item__row">
+                    <div class="form-item__row-checkbox-departmentChoice">
 
-                      <input type="checkbox" name="formDepartmentChoiceRecruitment" value="Marketing" />Partnerstwa i marketingu
-                      <input type="checkbox" name="formDepartmentChoiceRecruitment" value="IT" />IT
-                      <input type="checkbox" name="formDepartmentChoiceRecruitment" value="Operation" />Operacyjnym
+                      <input type="checkbox" name="formDepartmentChoiceRecruitment" value="Marketing" /><span>Partnerstwa i marketingu</span>
+                      <input type="checkbox" name="formDepartmentChoiceRecruitment" value="IT" /><span>IT</span>
+                      <input type="checkbox" name="formDepartmentChoiceRecruitment" value="Operation" /><span>Operacyjnym</span>
 
                     </div>
 
@@ -599,14 +603,28 @@
                     <label for="formProjectRecruitment">8. W tworzenie którego projektu chcesz się zaangażować:</label>
                     <p>Wszelkie informacje o projektach znajdziesz na www.sknkonsultingu.it</p>
 
-                    <div class="form-item__row">
+                    <div class="form-item__row-checkbox">
 
-                      <input type="checkbox" name="formProjectRecruitment" value="ThinkIT" />Konferencja ThinkIT
-                      <input type="checkbox" name="formProjectRecruitment" value="Lead" />Lead in IT
-                      <input type="checkbox" name="formProjectRecruitment" value="Start-up" />Start-up Game
-                      <input type="checkbox" name="formProjectRecruitment" value="SkillTrade" />SkillTrade
-                      <input type="checkbox" name="formProjectRecruitment" value="Devhouse" />DevHouse - Wsparcie na starcie
-                      <input type="checkbox" name="formProjectRecruitment" value="MyProject" />Mam swój pomysł na projekt!
+                      <div class="form-item__row-checkbox-projectRecruitment">
+                        
+                        <input type="checkbox" name="formProjectRecruitment" value="ThinkIT" /><span>Konferencja ThinkIT</span>
+                        <input type="checkbox" name="formProjectRecruitment" value="Lead" /><span>Lead in IT</span>
+                        <input type="checkbox" name="formProjectRecruitment" value="Start-up" /><span>Start-up Game</span>
+
+                      </div>
+
+                      <div class="form-item__row-checkbox-projectRecruitment">
+
+                        <input type="checkbox" name="formProjectRecruitment" value="SkillTrade" /><span>SkillTrade</span>
+                        <input type="checkbox" name="formProjectRecruitment" value="Devhouse" /><span>DevHouse - Wsparcie na starcie</span>
+
+                      </div>
+
+                      <div class="form-item__row-checkbox-projectRecruitment">
+
+                        <input type="checkbox" name="formProjectRecruitment" value="MyProject" /><span>Mam swój pomysł na projekt!</span>
+
+                      </div>
 
                     </div>
 
@@ -614,7 +632,7 @@
 
                   <div class="form-item d-flex flex-column">
 
-                    <label for="formHoursRecruitment">9. Ile godzin tygodniowo jesteś w stanie poświęcić na działalność w kole:</label>
+                    <label for="formHoursRecruitment">9. Ile godzin tygodniowo możesz poświęcić na działalność:</label>
                     <input id="formHoursRecruitment" type="number" name="formHoursRecruitment"  placeholder="Ilość godzin" required />
     
                   </div>

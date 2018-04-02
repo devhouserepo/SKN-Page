@@ -537,31 +537,58 @@ a:hover {
   outline: none;
 }
 
-.section__contact .modal .modal-body .form-recruitment .form-item input {
-  border: 1px solid #777aad;
-  border-radius: 2px;
+.section__contact .modal .modal-body .form-recruitment .form-item input, .section__contact .modal .modal-body .form-recruitment .form-item textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #777aad;
   outline: 0;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
-  padding: 5px;
+  padding: 0px 5px 5px 0px;
+  margin: 15px 0 15px 17px;
+}
+
+.section__contact .modal .modal-body .form-recruitment .form-item textarea {
+  height: 100px;
+}
+
+.section__contact .modal .modal-body .form-recruitment .form-item__row:nth-child(2) {
+  margin: 15px 0 0 0;
+}
+
+.section__contact .modal .modal-body .form-recruitment .form-item__row:nth-child(3) {
   margin: 15px 0 15px 0;
-  color: #777aad;
 }
 
-.section__contact .modal .modal-body .form-recruitment .form-item input::-webkit-input-placeholder {
-  color: #e8e9ff;
+.section__contact .modal .modal-body .form-recruitment .form-item__row input, .section__contact .modal .modal-body .form-recruitment .form-item__row .form-item textarea, .section__contact .modal .modal-body .form-recruitment .form-item .form-item__row textarea {
+  margin: 0 0 0 20px;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
 }
 
-.section__contact .modal .modal-body .form-recruitment .form-item input:-ms-input-placeholder {
-  color: #e8e9ff;
+.section__contact .modal .modal-body .form-recruitment .form-item__row span {
+  position: relative;
+  bottom: 2px;
+  left: 2px;
 }
 
-.section__contact .modal .modal-body .form-recruitment .form-item input::-ms-input-placeholder {
-  color: #e8e9ff;
+.section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-departmentChoice input, .section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-departmentChoice .form-item textarea, .section__contact .modal .modal-body .form-recruitment .form-item .form-item__row-checkbox-departmentChoice textarea, .section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-projectRecruitment input, .section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-projectRecruitment .form-item textarea, .section__contact .modal .modal-body .form-recruitment .form-item .form-item__row-checkbox-projectRecruitment textarea {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
 }
 
-.section__contact .modal .modal-body .form-recruitment .form-item input::placeholder {
-  color: #e8e9ff;
+.section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-departmentChoice span, .section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-projectRecruitment span {
+  position: relative;
+  left: 5px;
+  bottom: 1px;
+}
+
+.section__contact .modal .modal-body .form-recruitment .form-item p {
+  font-size: 0.8em;
+  margin: 10px 0 0 18px;
 }
 
 .section__contact .modal .btn,
@@ -745,8 +772,8 @@ a:hover {
   display: none;
 }
 
-.section__form .form__items-left .form-item input,
-.section__form .form__items-left .form-item textarea, .section__form .form__items-right .form-item input,
+.section__form .form__items-left .form-item input, .section__form .form__items-left .section__contact .modal .modal-body .form-recruitment .form-item textarea, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-left .form-item textarea,
+.section__form .form__items-left .form-item textarea, .section__form .form__items-right .form-item input, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea,
 .section__form .form__items-right .form-item textarea {
   margin: 12px 0 0 0;
   border: 1px solid #4f5178;
@@ -758,7 +785,7 @@ a:hover {
   height: 30px;
 }
 
-.section__form .form__items-left .form-item input:focus, .section__form .form__items-right .form-item input:focus {
+.section__form .form__items-left .form-item input:focus, .section__form .form__items-left .section__contact .modal .modal-body .form-recruitment .form-item textarea:focus, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-left .form-item textarea:focus, .section__form .form__items-right .form-item input:focus, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea:focus, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:focus {
   background: #eaecfc;
 }
 
@@ -772,7 +799,7 @@ a:hover {
   padding: 8px 0 0 5px;
 }
 
-.section__form .form__items-right .form-item input {
+.section__form .form__items-right .form-item input, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea {
   z-index: 2;
   position: relative;
   margin: 30px 0 0 0;
@@ -794,11 +821,11 @@ a:hover {
       align-self: center;
 }
 
-.section__form .form__items-right .form-item input:hover {
+.section__form .form__items-right .form-item input:hover, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea:hover, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:hover {
   background: #4f5178;
 }
 
-.section__form .form__items-right .form-item input:focus {
+.section__form .form__items-right .form-item input:focus, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea:focus, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:focus {
   outline: none;
 }
 
