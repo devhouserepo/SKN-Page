@@ -56,17 +56,55 @@
                 .form-recruitment {
                     .form-item {
                         input {
-                            border: 1px solid #777aad;
-                            border-radius: 2px;
+                            border-top: none;
+                            border-left: none;
+                            border-right: none;
+                            border-bottom: 1px solid #777aad;
                             outline: 0;
                             font-family: $text-font-1;
                             font-size: 1em;
-                            padding: 5px;
+                            padding: 0px 5px 5px 0px;
+                            margin: 15px 0 15px 17px;
+                        }
+                        textarea {
+                            @extend input;
+                            height: 100px;
+                        }
+                        &__row:nth-child(2){
+                            margin: 15px 0 0 0;
+                        }
+                        &__row:nth-child(3){
                             margin: 15px 0 15px 0;
-                            color: #777aad;
-                            &::placeholder {
-                                color: #e8e9ff;
+                        }
+                        &__row {
+                            input {
+                                margin: 0 0 0 20px;
+                                cursor: pointer;
+                                width: 15px;
+                                height: 15px;
                             }
+                            span {
+                                position: relative;
+                                bottom: 2px;
+                                left: 2px;
+                            }
+                        }
+                        &__row-checkbox-departmentChoice,
+                        &__row-checkbox-projectRecruitment {
+                            input {
+                             cursor: pointer;
+                             width: 15px;
+                             height: 15px;
+                            }
+                            span {
+                                position: relative;
+                                left: 5px;
+                                bottom: 1px;
+                            }
+                        }
+                        p {
+                            font-size: 0.8em;
+                            margin: 10px 0 0 18px;
                         }
                     }
                 }
