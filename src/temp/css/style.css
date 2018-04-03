@@ -411,6 +411,10 @@ a:hover {
   z-index: 1;
 }
 
+.section-projects-background {
+  position: absolute;
+}
+
 .giant-header {
   color: white;
   font-weight: bold;
@@ -418,8 +422,8 @@ a:hover {
   opacity: 0.05;
   font-size: 119px;
   position: absolute;
-  top: 39%;
-  left: -32%;
+  top: 136%;
+  left: -85%;
   z-index: 1;
 }
 
@@ -1093,4 +1097,21 @@ a:hover {
 
 .section__reference__box-right .carousel-item p {
   margin: 25px 0 0 0;
+}
+
+.main-text {
+  background-color: gray;
+}
+
+.about-member {
+  background-color: #a6e2c9;
+}
+
+.members-thumbnails {
+  background-color: #90aae2;
+}
+
+.member-thumb {
+  background-color: #c7c7c7;
+  border-radius: 50%;
 }

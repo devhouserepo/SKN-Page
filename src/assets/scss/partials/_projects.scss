@@ -262,6 +262,10 @@ a {
 
 // section background
 
+.section-projects-background {
+  position: absolute;
+}
+
 .giant-header {
   color: white;
   font-weight: bold;
@@ -269,8 +273,8 @@ a {
   opacity: 0.05;
   font-size: 119px;
   position: absolute;
-  top: 39%;
-  left: -32%;
+  top: 136%;
+  left: -85%;
   z-index: 1;
 }
 
