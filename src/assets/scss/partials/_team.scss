@@ -1,0 +1,81 @@
+p {
+    color: white;
+}
+
+
+.main-text {
+    // background-color: rgb(204, 119, 21);
+    width: 600px;
+    margin: 10% 0 10% 0;
+
+}
+
+
+
+
+.members {
+    // background-color: rgb(139, 32, 134);
+    display: flex;
+    width: 100%;
+}
+
+.member-container {
+    // background-color: rgb(11, 105, 66);
+    flex: 2 2 50%;
+    margin-left: 0;
+}
+
+.member-paragraphs {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.member-info-details {
+    // background-color: rgb(64, 57, 95);
+    flex: 1 1 100%;
+}
+
+.name-surname {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 26px 0;
+}
+
+.photo-max {
+    width: 45%;
+    height: 45%;
+    overflow: hidden;
+    border-radius: 50%; 
+}
+
+
+
+
+.members-thumbnails {
+    flex: 2 2 50%;
+    // background-color: rgb(144, 170, 226);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.thumbnail-container {
+    // background-color: rgb(230, 215, 84);
+    height: 70px;
+    display: flex;
+    margin: 5px;
+}
+
+.thumb-photo {
+    background-color: rgb(64, 31, 139);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+
+}
+
+.thumb-name-surname {
+    padding: 4px;
+
+}

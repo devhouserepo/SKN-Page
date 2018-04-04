@@ -411,6 +411,10 @@ a:hover {
   z-index: 1;
 }
 
+.section-projects-background {
+  position: absolute;
+}
+
 .giant-header {
   color: white;
   font-weight: bold;
@@ -418,8 +422,8 @@ a:hover {
   opacity: 0.05;
   font-size: 119px;
   position: absolute;
-  top: 39%;
-  left: -32%;
+  top: 136%;
+  left: -85%;
   z-index: 1;
 }
 
@@ -1093,4 +1097,88 @@ a:hover {
 
 .section__reference__box-right .carousel-item p {
   margin: 25px 0 0 0;
+}
+
+p {
+  color: white;
+}
+
+.main-text {
+  width: 600px;
+  margin: 10% 0 10% 0;
+}
+
+.members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.member-container {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 2 50%;
+          flex: 2 2 50%;
+  margin-left: 0;
+}
+
+.member-paragraphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.member-info-details {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.name-surname {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 26px 0;
+}
+
+.photo-max {
+  width: 45%;
+  height: 45%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.members-thumbnails {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 2 50%;
+          flex: 2 2 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thumbnail-container {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+}
+
+.thumb-photo {
+  background-color: #401f8b;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.thumb-name-surname {
+  padding: 4px;
 }
