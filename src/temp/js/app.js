@@ -2,74 +2,90 @@ $(document).ready(function () {
 
     let number = 0;
 
-    $( "#private-button" ).click(function() {
+    $("#private-button").click(function () {
 
-        if(number === 2) {
+        if (number === 2) {
 
-            $( "#form-contact, #form-content" ).slideUp( "slow" );
+            $("#form-contact, #form-content").slideUp("slow");
 
-            setTimeout(function(){
+            setTimeout(function () {
 
-                document.getElementsByName('formSchool')[0].placeholder='Uczelnia';
-                document.getElementsByName('formDepartment')[0].placeholder='Wydział';
-                
+                document.getElementsByName('formSchool')[0].placeholder = 'Uczelnia';
+                document.getElementsByName('formDepartment')[0].placeholder = 'Wydział';
+
             }, 0700);
 
         }
 
-        $( "#form-contact, #form-content" ).slideDown( "slow" );
+        $("#form-contact, #form-content").slideDown("slow");
 
         number = 1;
-        
+
     });
 
-    $( "#company-button" ).click(function() {
+    $("#company-button").click(function () {
 
-        if(number === 1) {
+        if (number === 1) {
 
-            $( "#form-contact, #form-content" ).slideUp( "slow" );
+            $("#form-contact, #form-content").slideUp("slow");
 
-        } else if(number === 0) {
+        } else if (number === 0) {
 
-            document.getElementsByName('formSchool')[0].placeholder='Firma';
-            document.getElementsByName('formDepartment')[0].placeholder='Dział';
+            document.getElementsByName('formSchool')[0].placeholder = 'Firma';
+            document.getElementsByName('formDepartment')[0].placeholder = 'Dział';
 
         }
 
-        setTimeout(function(){
+        setTimeout(function () {
 
-            document.getElementsByName('formSchool')[0].placeholder='Firma';
-            document.getElementsByName('formDepartment')[0].placeholder='Dział';
+            document.getElementsByName('formSchool')[0].placeholder = 'Firma';
+            document.getElementsByName('formDepartment')[0].placeholder = 'Dział';
 
         }, 0700);
 
         number = 2;
 
-        $( "#form-contact, #form-content" ).slideDown( "slow" );
-        
+        $("#form-contact, #form-content").slideDown("slow");
+
     });
 
     $("#myModal").on("shown.bs.modal", function () {
 
         $("#myInput").trigger("focus");
-        
+
     });
 
 
-    $('div').on('click', function(){
+    $('div').on('click', function () {
 
         var target = $(this).attr('rel');
 
-        $("#"+target).show().siblings("div").hide();
+        $("#" + target).show().siblings("div").hide();
 
     });
+
 
 
 
     // TEAM section START
 
-    
+    let namesArray
+    $.getJSON('../../members.json', function (data) {
+        // $.each(data, function (i, item) {
+        //    console.log(data[i].first_name)
+        // })
+        namesArray = data
+    })
+
+    console.log(JSON.stringify(namesArray))
+
+    // $('members-thumbnails').
+
+
 
     // TEAM section END
+
+
+
 
 });
