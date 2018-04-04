@@ -205,7 +205,8 @@ a:hover {
   margin-top: -12%;
 }
 
-.singular-project-container:hover .projects-shape-1, .singular-project-container:hover .projects-shape-2 {
+.singular-project-container:hover .projects-shape-1,
+.singular-project-container:hover .projects-shape-2 {
   -ms-transform: scale(2, 2);
   /* Internet Explorer and Microsoft Edge */
   -webkit-transform: scale(2, 2);
@@ -217,8 +218,8 @@ a:hover {
   transform: scale(2, 2);
   z-index: 3;
   background-size: 400px;
-  -webkit-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .singular-project-container:hover .project-about {
@@ -295,7 +296,8 @@ a:hover {
   color: white;
 }
 
-.projects-shape-1, .projects-shape-2 {
+.projects-shape-1,
+.projects-shape-2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 900px;
@@ -304,13 +306,14 @@ a:hover {
   width: 200px;
   max-width: 400px;
   z-index: 2;
-  -webkit-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
   -webkit-transition-delay: 0.7s;
           transition-delay: 0.7s;
 }
 
-.projects-shape-1 :nth-child(2), .projects-shape-2 :nth-child(2) {
+.projects-shape-1 :nth-child(2),
+.projects-shape-2 :nth-child(2) {
   margin-top: 40px;
 }
 
@@ -355,8 +358,8 @@ a:hover {
   color: white;
   text-align: center;
   margin-top: 20%;
-  -webkit-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .project-about-mini {
@@ -422,8 +425,7 @@ a:hover {
   opacity: 0.05;
   font-size: 119px;
   position: absolute;
-  top: 136%;
-  left: -85%;
+  top: 100%;
   z-index: 1;
 }
 
