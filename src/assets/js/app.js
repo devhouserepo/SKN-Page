@@ -62,6 +62,7 @@ $(document).ready(function () {
 
         $("#" + target).show().siblings("div").hide();
 
+
     });
 
 
@@ -69,17 +70,32 @@ $(document).ready(function () {
 
     // TEAM section START
 
-    let namesArray
+
     $.getJSON('../../members.json', function (data) {
-        // $.each(data, function (i, item) {
-        //    console.log(data[i].first_name)
+        $.each(data, function (index, item) {
+            $('.members-thumbnails')
+                .append(`<div class="flex-column align-items-center thumbnail-container">
+                <div class="thumb-photo-div"><img class="thumb-img"></img></div>
+                <p class="thumb-name-surname">`
+                    + data[index].first_name + ` ` + data[index].last_name
+                    + `</p>
+                </div>`)
+            $('.thumb-img').eq(index)
+                .attr({
+                    id: data[index].first_name + data[index].last_name,
+                    src: data[index].photo
+                })
+
+        })
+
+        // $(".thumbnail-container").each(function(index, item) {
+        //     $(this).attr({
+        //         id: "",
+        //         src: ""
+        //     })
         // })
-        namesArray = data
     })
 
-    console.log(JSON.stringify(namesArray))
-
-    // $('members-thumbnails').
 
 
 

@@ -218,8 +218,8 @@ a:hover {
   transform: scale(2, 2);
   z-index: 3;
   background-size: 400px;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .singular-project-container:hover .project-about {
@@ -306,15 +306,10 @@ a:hover {
   width: 200px;
   max-width: 400px;
   z-index: 2;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
-  -webkit-transition-delay: 0.7s;
-          transition-delay: 0.7s;
-}
-
-.projects-shape-1 :nth-child(2),
-.projects-shape-2 :nth-child(2) {
-  margin-top: 40px;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 .projects__second-row {
@@ -323,11 +318,6 @@ a:hover {
   margin-bottom: -100px;
   position: absolute;
   right: -170px;
-  z-index: 3;
-}
-
-.projects__second-row :nth-child(2) {
-  margin-top: 40px;
   z-index: 3;
 }
 
@@ -374,7 +364,7 @@ a:hover {
 }
 
 #devhouse {
-  margin-top: -26px;
+  margin-top: -30px;
 }
 
 #boot-camp {
@@ -383,6 +373,10 @@ a:hover {
 
 #twoj-projekt-title {
   margin-top: 12%;
+}
+
+#thinkit {
+  margin-top: -1%;
 }
 
 #twoj-projekt .project-about {
@@ -407,13 +401,6 @@ a:hover {
   width: 50px;
 }
 
-#twoj-projekt a {
-  border: solid 2px white;
-  color: white;
-  text-align: center;
-  z-index: 1;
-}
-
 .section-projects-background {
   position: absolute;
 }
@@ -426,6 +413,7 @@ a:hover {
   font-size: 119px;
   position: absolute;
   top: 100%;
+  left: -81%;
   z-index: 1;
 }
 
@@ -1012,6 +1000,7 @@ a:hover {
 }
 
 .section__reference__box-left .carousel-item span {
+  color: #000039;
   display: block;
   margin: 3px 0 0 0;
 }
@@ -1174,10 +1163,10 @@ p {
   margin: 5px;
 }
 
-.thumb-photo {
+.thumb-photo-div {
   background-color: #401f8b;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
 }
 

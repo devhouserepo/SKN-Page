@@ -85,7 +85,7 @@ a {
         @include transform(2, 2);
         z-index: 3;
         background-size: 400px;
-        transition: all 0.8s ease-in-out;
+        transition: all 0.7s ease-in-out;
     }
 
     &:hover .project-about {
@@ -150,12 +150,8 @@ a {
     width: 200px;
     max-width: 400px;
     z-index: 2;
-    transition: all 0.8s ease-in-out;
-    transition-delay: 0.7s;
-
-    :nth-child(2) {
-        margin-top: 40px;
-    }
+    transition: all 0.7s ease-in-out;
+    transition-delay: 0.2s;
 }
 
 .projects__second-row {
@@ -165,11 +161,6 @@ a {
     position: absolute;
     right: -170px;
     z-index: 3;
-
-    :nth-child(2) {
-        margin-top: 40px;
-        z-index: 3;
-    }
 }
 
 .projects-shape-1 {
@@ -279,7 +270,7 @@ a {
     margin-top: 26px;
 }
 #devhouse {
-    margin-top: -26px;
+    margin-top: -30px;
 }
 #boot-camp {
     margin-top: 30px;
@@ -287,6 +278,11 @@ a {
 #twoj-projekt-title {
     margin-top: 12%;
 }
+
+#thinkit {
+    margin-top: -1%;
+}
+
 #twoj-projekt {
     .project-about {
         margin-left: 18px;
@@ -307,12 +303,6 @@ a {
         text-align: center;
         width: 50px;
     }
-    a {
-        border: solid 2px white;
-        color: white;
-        text-align: center;
-        z-index: 1;
-    }
 }
 // section background
 .section-projects-background {
@@ -326,6 +316,7 @@ a {
     font-size: 119px;
     position: absolute;
     top: 100%;
+    left: -81%;
     z-index: 1;
 }
 @media (max-width: 768px) {
