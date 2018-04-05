@@ -5,7 +5,7 @@
     "last_name": "Penddreth",
     "info": "To jest o Jeanette. O Jeanette jest to. Aenean Jeanette Jeanette, odio at Jeanettesuscipit maximus, to Jeanette jest o Jeanette.",
     "linkedin": "http://www.cartoonnetwork.com",
-    "photo": "./images/members/cazary-zajkowski.png"
+    "photo": "./assets/images/members/cazary-zajkowski.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "last_name": "Frediani",
     "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
     "linkedin": "http://www.twitter.com",
-    "photo": "./images/members/chlopak.jpg"
+    "photo": "./assets/images/members/dziewczyna.jpeg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "last_name": "Bea",
     "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
     "linkedin": "http://www.booooooom.com",
-    "photo": "./images/members/dziewczyna.jpg"
+    "photo": "./assets/images/members/chlopak.jpg"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "last_name": "Valek",
     "info": "To jest o Willard Willard. O Willard Willard jest to. Aenean Willard placerat, odio at Willard suscipit Willard maximus, to jest o Willard.",
     "linkedin": "http://www.linkedin.com",
-    "photo": "./images/members/patryk-plewko.jpg"
+    "photo": "./assets/images/members/patryk-plewko.jpg"
   },
   {
     "id": 1,
@@ -37,7 +37,7 @@
     "last_name": "Penddreth",
     "info": "To jest o Jeanette. O Jeanette jest to. Aenean Jeanette Jeanette, odio at Jeanettesuscipit maximus, to Jeanette jest o Jeanette.",
     "linkedin": "http://www.cartoonnetwork.com",
-    "photo": "./images/members/cazary-zajkowski.png"
+    "photo": "./assets/images/members/cazary-zajkowski.png"
   },
   {
     "id": 2,
@@ -45,7 +45,7 @@
     "last_name": "Frediani",
     "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
     "linkedin": "http://www.twitter.com",
-    "photo": "./images/members/chlopak.jpg"
+    "photo": "./assets/images/members/dziewczyna.jpeg"
   },
   {
     "id": 3,
@@ -53,7 +53,7 @@
     "last_name": "Bea",
     "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
     "linkedin": "http://www.booooooom.com",
-    "photo": "./images/members/dziewczyna.jpg"
+    "photo": "./assets/images/members/chlopak.jpg"
   },
   {
     "id": 4,
@@ -61,7 +61,7 @@
     "last_name": "Valek",
     "info": "To jest o Willard Willard. O Willard Willard jest to. Aenean Willard placerat, odio at Willard suscipit Willard maximus, to jest o Willard.",
     "linkedin": "http://www.linkedin.com",
-    "photo": "./images/members/patryk-plewko.jpg"
+    "photo": "./assets/images/members/patryk-plewko.jpg"
   },
   {
     "id": 1,
@@ -69,7 +69,7 @@
     "last_name": "Penddreth",
     "info": "To jest o Jeanette. O Jeanette jest to. Aenean Jeanette Jeanette, odio at Jeanettesuscipit maximus, to Jeanette jest o Jeanette.",
     "linkedin": "http://www.cartoonnetwork.com",
-    "photo": "./images/members/cazary-zajkowski.png"
+    "photo": "./assets/images/members/cazary-zajkowski.png"
   },
   {
     "id": 2,
@@ -77,7 +77,7 @@
     "last_name": "Frediani",
     "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
     "linkedin": "http://www.twitter.com",
-    "photo": "./images/members/chlopak.jpg"
+    "photo": "./assets/images/members/dziewczyna.jpeg"
   },
   {
     "id": 3,
@@ -85,7 +85,7 @@
     "last_name": "Bea",
     "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
     "linkedin": "http://www.booooooom.com",
-    "photo": "./images/members/dziewczyna.jpg"
+    "photo": "./assets/images/members/chlopak.jpg"
   },
   {
     "id": 4,
@@ -93,7 +93,7 @@
     "last_name": "Valek",
     "info": "To jest o Willard Willard. O Willard Willard jest to. Aenean Willard placerat, odio at Willard suscipit Willard maximus, to jest o Willard.",
     "linkedin": "http://www.linkedin.com",
-    "photo": "./images/members/patryk-plewko.jpg"
+    "photo": "./assets/images/members/patryk-plewko.jpg"
   },
   {
     "id": 1,
@@ -101,7 +101,7 @@
     "last_name": "Penddreth",
     "info": "To jest o Jeanette. O Jeanette jest to. Aenean Jeanette Jeanette, odio at Jeanettesuscipit maximus, to Jeanette jest o Jeanette.",
     "linkedin": "http://www.cartoonnetwork.com",
-    "photo": "./images/members/cazary-zajkowski.png"
+    "photo": "./assets/images/members/cazary-zajkowski.png"
   },
   {
     "id": 2,
@@ -109,7 +109,7 @@
     "last_name": "Frediani",
     "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
     "linkedin": "http://www.twitter.com",
-    "photo": "./images/members/chlopak.jpg"
+    "photo": "./assets/images/members/dziewczyna.jpeg"
   },
   {
     "id": 3,
@@ -117,7 +117,7 @@
     "last_name": "Bea",
     "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
     "linkedin": "http://www.booooooom.com",
-    "photo": "./images/members/dziewczyna.jpg"
+    "photo": "./assets/images/members/chlopak.jpg"
   },
   {
     "id": 4,
@@ -125,7 +125,7 @@
     "last_name": "Valek",
     "info": "To jest o Willard Willard. O Willard Willard jest to. Aenean Willard placerat, odio at Willard suscipit Willard maximus, to jest o Willard.",
     "linkedin": "http://www.linkedin.com",
-    "photo": "./images/members/patryk-plewko.jpg"
+    "photo": "./assets/images/members/patryk-plewko.jpg"
   },
   {
     "id": 1,
@@ -133,7 +133,7 @@
     "last_name": "Penddreth",
     "info": "To jest o Jeanette. O Jeanette jest to. Aenean Jeanette Jeanette, odio at Jeanettesuscipit maximus, to Jeanette jest o Jeanette.",
     "linkedin": "http://www.cartoonnetwork.com",
-    "photo": "./images/members/cazary-zajkowski.png"
+    "photo": "./assets/images/members/cazary-zajkowski.png"
   },
   {
     "id": 2,
@@ -141,7 +141,7 @@
     "last_name": "Frediani",
     "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
     "linkedin": "http://www.twitter.com",
-    "photo": "./images/members/chlopak.jpg"
+    "photo": "./assets/images/members/dziewczyna.jpeg"
   },
   {
     "id": 3,
@@ -149,7 +149,7 @@
     "last_name": "Bea",
     "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
     "linkedin": "http://www.booooooom.com",
-    "photo": "./images/members/dziewczyna.jpg"
+    "photo": "./assets/images/members/chlopak.jpg"
   },
   {
     "id": 4,
@@ -157,7 +157,7 @@
     "last_name": "Valek",
     "info": "To jest o Willard Willard. O Willard Willard jest to. Aenean Willard placerat, odio at Willard suscipit Willard maximus, to jest o Willard.",
     "linkedin": "http://www.linkedin.com",
-    "photo": "./images/members/patryk-plewko.jpg"
+    "photo": "./assets/images/members/patryk-plewko.jpg"
   },
   {
     "id": 1,
@@ -165,7 +165,7 @@
     "last_name": "Penddreth",
     "info": "To jest o Jeanette. O Jeanette jest to. Aenean Jeanette Jeanette, odio at Jeanettesuscipit maximus, to Jeanette jest o Jeanette.",
     "linkedin": "http://www.cartoonnetwork.com",
-    "photo": "./images/members/cazary-zajkowski.png"
+    "photo": "./assets/images/members/cazary-zajkowski.png"
   },
   {
     "id": 2,
@@ -173,7 +173,7 @@
     "last_name": "Frediani",
     "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
     "linkedin": "http://www.twitter.com",
-    "photo": "./images/members/chlopak.jpg"
+    "photo": "./assets/images/members/dziewczyna.jpeg"
   },
   {
     "id": 3,
@@ -181,7 +181,7 @@
     "last_name": "Bea",
     "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
     "linkedin": "http://www.booooooom.com",
-    "photo": "./images/members/dziewczyna.jpg"
+    "photo": "./assets/images/members/chlopak.jpg"
   },
   {
     "id": 4,
@@ -189,7 +189,7 @@
     "last_name": "Valek",
     "info": "To jest o Willard Willard. O Willard Willard jest to. Aenean Willard placerat, odio at Willard suscipit Willard maximus, to jest o Willard.",
     "linkedin": "http://www.linkedin.com",
-    "photo": "./images/members/patryk-plewko.jpg"
+    "photo": "./assets/images/members/patryk-plewko.jpg"
   },
   {
     "id": 1,
@@ -197,7 +197,7 @@
     "last_name": "Penddreth",
     "info": "To jest o Jeanette. O Jeanette jest to. Aenean Jeanette Jeanette, odio at Jeanettesuscipit maximus, to Jeanette jest o Jeanette.",
     "linkedin": "http://www.cartoonnetwork.com",
-    "photo": "./images/members/cazary-zajkowski.png"
+    "photo": "./assets/images/members/cazary-zajkowski.png"
   },
   {
     "id": 2,
@@ -205,7 +205,7 @@
     "last_name": "Frediani",
     "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
     "linkedin": "http://www.twitter.com",
-    "photo": "./images/members/chlopak.jpg"
+    "photo": "./assets/images/members/dziewczyna.jpeg"
   },
   {
     "id": 3,
@@ -213,7 +213,7 @@
     "last_name": "Bea",
     "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
     "linkedin": "http://www.booooooom.com",
-    "photo": "./images/members/dziewczyna.jpg"
+    "photo": "./assets/images/members/chlopak.jpg"
   },
   {
     "id": 4,
@@ -221,7 +221,7 @@
     "last_name": "Valek",
     "info": "To jest o Willard Willard. O Willard Willard jest to. Aenean Willard placerat, odio at Willard suscipit Willard maximus, to jest o Willard.",
     "linkedin": "http://www.linkedin.com",
-    "photo": "./images/members/patryk-plewko.jpg"
+    "photo": "./assets/images/members/patryk-plewko.jpg"
   },
   {
     "id": 1,
@@ -229,7 +229,7 @@
     "last_name": "Penddreth",
     "info": "To jest o Jeanette. O Jeanette jest to. Aenean Jeanette Jeanette, odio at Jeanettesuscipit maximus, to Jeanette jest o Jeanette.",
     "linkedin": "http://www.cartoonnetwork.com",
-    "photo": "./images/members/cazary-zajkowski.png"
+    "photo": "./assets/images/members/cazary-zajkowski.png"
   },
   {
     "id": 2,
@@ -237,7 +237,7 @@
     "last_name": "Frediani",
     "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
     "linkedin": "http://www.twitter.com",
-    "photo": "./images/members/chlopak.jpg"
+    "photo": "./assets/images/members/dziewczyna.jpeg"
   },
   {
     "id": 3,
@@ -245,7 +245,7 @@
     "last_name": "Bea",
     "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
     "linkedin": "http://www.booooooom.com",
-    "photo": "./images/members/dziewczyna.jpg"
+    "photo": "./assets/images/members/chlopak.jpg"
   },
   {
     "id": 4,
@@ -253,7 +253,7 @@
     "last_name": "Valek",
     "info": "To jest o Willard Willard. O Willard Willard jest to. Aenean Willard placerat, odio at Willard suscipit Willard maximus, to jest o Willard.",
     "linkedin": "http://www.linkedin.com",
-    "photo": "./images/members/patryk-plewko.jpg"
+    "photo": "./assets/images/members/patryk-plewko.jpg"
   },
   {
     "id": 1,
@@ -261,7 +261,7 @@
     "last_name": "Penddreth",
     "info": "To jest o Jeanette. O Jeanette jest to. Aenean Jeanette Jeanette, odio at Jeanettesuscipit maximus, to Jeanette jest o Jeanette.",
     "linkedin": "http://www.cartoonnetwork.com",
-    "photo": "./images/members/cazary-zajkowski.png"
+    "photo": "./assets/images/members/cazary-zajkowski.png"
   },
   {
     "id": 2,
@@ -269,7 +269,7 @@
     "last_name": "Frediani",
     "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
     "linkedin": "http://www.twitter.com",
-    "photo": "./images/members/chlopak.jpg"
+    "photo": "./assets/images/members/dziewczyna.jpeg"
   },
   {
     "id": 3,
@@ -277,7 +277,7 @@
     "last_name": "Bea",
     "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
     "linkedin": "http://www.booooooom.com",
-    "photo": "./images/members/dziewczyna.jpg"
+    "photo": "./assets/images/members/chlopak.jpg"
   },
   {
     "id": 4,
@@ -285,6 +285,6 @@
     "last_name": "Valek",
     "info": "To jest o Willard Willard. O Willard Willard jest to. Aenean Willard placerat, odio at Willard suscipit Willard maximus, to jest o Willard.",
     "linkedin": "http://www.linkedin.com",
-    "photo": "./images/members/patryk-plewko.jpg"
+    "photo": "./assets/images/members/patryk-plewko.jpg"
   }
 ]

@@ -75,7 +75,7 @@ $(document).ready(function () {
         $.each(data, function (index, item) {
             $('.members-thumbnails')
                 .append(`<div class="flex-column align-items-center thumbnail-container">
-                <div class="thumb-photo-div"><img class="thumb-img"></img></div>
+                <img class="thumb-img"></img>
                 <p class="thumb-name-surname">`
                     + data[index].first_name + ` ` + data[index].last_name
                     + `</p>
@@ -83,8 +83,12 @@ $(document).ready(function () {
             $('.thumb-img').eq(index)
                 .attr({
                     id: data[index].first_name + data[index].last_name,
-                    src: data[index].photo
+                    alt: data[index].first_name + ' ' + data[index].last_name,
+                    src: data[index].photo,
+                    width: "50px",
+                    height: "50px"
                 })
+
 
         })
 
