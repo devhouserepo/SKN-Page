@@ -73,8 +73,8 @@ $(document).ready(function () {
 
     $.getJSON('../../members.json', function (data) {
         $.each(data, function (index, item) {
-            $('.members-thumbnails')
-                .append(`<div class="flex-column align-items-center thumbnail-container">
+            $('.members-thumbnails-container')
+                .append(`<div class="flex-column align-items-center one-thumbnail-container">
                 <img class="thumb-img"></img>
                 <p class="thumb-name-surname">`
                     + data[index].first_name + ` ` + data[index].last_name
@@ -85,8 +85,8 @@ $(document).ready(function () {
                     id: data[index].first_name + data[index].last_name,
                     alt: data[index].first_name + ' ' + data[index].last_name,
                     src: data[index].photo,
-                    width: "50px",
-                    height: "50px"
+                    width: "45px",
+                    height: "45px"
                 })
 
 

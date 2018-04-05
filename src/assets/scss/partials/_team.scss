@@ -1,16 +1,21 @@
+.team-section-container {
+    // background-color: lightblue;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    position: relative;
+}
+
 p {
     color: white;
 }
 
-.thumb-img {
-    border-radius: 50% !important;
-}
+
 
 .main-text {
     // background-color: rgb(204, 119, 21);
     width: 600px;
     margin: 10% 0 10% 0;
-
+    z-index: 5;
 }
 
 
@@ -20,9 +25,13 @@ p {
     // background-color: rgb(139, 32, 134);
     display: flex;
     width: 100%;
+    z-index: 5;
 }
 
-.member-container {
+
+
+
+.max-member-container {
     // background-color: rgb(11, 105, 66);
     flex: 2 2 50%;
     margin-left: 0;
@@ -30,39 +39,50 @@ p {
     position: relative;
 }
 
-.photo-max-container {
-    position: absolute;
-    top: 19%;
+
+.max-photo-container {
+    margin-top: 14%;
 }
 
-.member-paragraphs {
+.max-photo {
+    &:before {
+        position: relative;
+        color: white;
+        top: 43%;
+        left: 23%;
+        content: 'Wybierz osobę'
+    }
+    // background-image: url("/assets/images/members/chlopak.jpg");
+    background-color: rgba(177, 185, 230, 0.37);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.max-member-paragraphs {
+    // background-color: hotpink;
     display: flex;
     flex: 1 1 100%;
-    position: absolute;
-    top: 50%;
+    margin-top: 7%;
 }
 
-.member-info-details {
+.max-name-surname {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.max-member-info-details {
     // background-color: rgb(64, 57, 95);
     flex: 1 1 100%;
 }
 
-.name-surname {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px 0 26px 0;
-}
-
-.photo-max {
-    width: 85%;
-    height: 85%;
-    border-radius: 50%; 
-}
 
 
 
 
-.members-thumbnails {
+
+.members-thumbnails-container {
     flex: 2 2 50%;
     // background-color: rgb(144, 170, 226);
     display: flex;
@@ -70,28 +90,35 @@ p {
     align-items: center;
 }
 
-.thumbnail-container {
+.one-thumbnail-container {
     // background-color: rgb(230, 215, 84);
     display: flex;
     margin: 5px;
 }
 
+.thumb-img {
+    border-radius: 50% !important;
+}
+
 .thumb-name-surname {
     padding: 1px;
+    font-size: 13px;
 }
 
 
-//backgroun team 
-// .section-team-background {
-//     position: absolute;
-// }
-// .giant-header {
-//     color: white;
-//     font-weight: bold;
-//     letter-spacing: 7px;
-//     opacity: 0.05;
-//     font-size: 119px;
-//     // position: absolute;
-//     top: 30%;
-//     left: 18%;
+
+
+.section-team-background {
+    background-color: rgb(83, 112, 74);
+    z-index: 1;
+}
+.giant-header-members {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 10px;
+    opacity: 0.1;
+    font-size: 122px;
+    position: absolute;
+    top: 39%;
+    left: 14%;
 }

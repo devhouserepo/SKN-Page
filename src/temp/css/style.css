@@ -1,7 +1,9 @@
+@charset "UTF-8";
 /** BACKGROUND COLORS **/
 /** FONTS AND TEXT COLORS**/
 body {
   background: #000039;
+  font-family: "Roboto", sans-serif;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -405,11 +407,11 @@ a:hover {
   position: absolute;
 }
 
-.giant-header {
+.giant-header-projects {
   color: white;
   font-weight: bold;
   letter-spacing: 7px;
-  opacity: 0.05;
+  opacity: 0.1;
   font-size: 119px;
   position: absolute;
   top: 100%;
@@ -1090,17 +1092,22 @@ a:hover {
   margin: 25px 0 0 0;
 }
 
-p {
-  color: white;
+.team-section-container {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
 
-.thumb-img {
-  border-radius: 50% !important;
+p {
+  color: white;
 }
 
 .main-text {
   width: 600px;
   margin: 10% 0 10% 0;
+  z-index: 5;
 }
 
 .members {
@@ -1108,9 +1115,10 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  z-index: 5;
 }
 
-.member-container {
+.max-member-container {
   -webkit-box-flex: 2;
       -ms-flex: 2 2 50%;
           flex: 2 2 50%;
@@ -1119,41 +1127,48 @@ p {
   position: relative;
 }
 
-.photo-max-container {
-  position: absolute;
-  top: 19%;
+.max-photo-container {
+  margin-top: 14%;
 }
 
-.member-paragraphs {
+.max-photo {
+  background-color: rgba(177, 185, 230, 0.37);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.max-photo:before {
+  position: relative;
+  color: white;
+  top: 43%;
+  left: 23%;
+  content: 'Wybierz osobę';
+}
+
+.max-member-paragraphs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
-  position: absolute;
-  top: 50%;
+  margin-top: 7%;
 }
 
-.member-info-details {
+.max-name-surname {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.max-member-info-details {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
 }
 
-.name-surname {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 20px 0 26px 0;
-}
-
-.photo-max {
-  width: 85%;
-  height: 85%;
-  border-radius: 50%;
-}
-
-.members-thumbnails {
+.members-thumbnails-container {
   -webkit-box-flex: 2;
       -ms-flex: 2 2 50%;
           flex: 2 2 50%;
@@ -1167,27 +1182,34 @@ p {
           align-items: center;
 }
 
-.thumbnail-container {
+.one-thumbnail-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 5px;
 }
 
+.thumb-img {
+  border-radius: 50% !important;
+}
+
 .thumb-name-surname {
   padding: 1px;
+  font-size: 13px;
 }
 
 .section-team-background {
-  position: absolute;
+  background-color: #53704a;
+  z-index: 1;
 }
 
-.giant-header {
+.giant-header-members {
   color: white;
   font-weight: bold;
-  letter-spacing: 7px;
-  opacity: 0.05;
-  font-size: 119px;
-  top: 30%;
-  left: 18%;
+  letter-spacing: 10px;
+  opacity: 0.1;
+  font-size: 122px;
+  position: absolute;
+  top: 39%;
+  left: 14%;
 }

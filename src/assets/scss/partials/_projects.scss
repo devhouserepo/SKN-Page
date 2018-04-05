@@ -308,17 +308,18 @@ a {
 .section-projects-background {
     position: absolute;
 }
-.giant-header {
+.giant-header-projects {
     color: white;
     font-weight: bold;
     letter-spacing: 7px;
-    opacity: 0.05;
+    opacity: 0.1;
     font-size: 119px;
     position: absolute;
     top: 100%;
     left: -81%;
     z-index: 1;
 }
+
 @media (max-width: 768px) {
     .projects__first-row {
         left: 0;
