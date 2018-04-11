@@ -1248,8 +1248,6 @@ p {
 .navigation__item a {
   color: #fff;
   position: relative;
-  -webkit-transition: all 3s;
-  transition: all 3s;
 }
 
 .navigation__item a:hover::after {
