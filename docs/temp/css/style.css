@@ -10,87 +10,19 @@ body {
    v2.0 | 20110126
    License: none (public domain)
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -100,17 +32,8 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -118,21 +41,17 @@ body {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
   content: none;
 }
 
@@ -198,8 +117,7 @@ table {
   color: #ffffff;
 }
 
-.header__content p:nth-child(4) span:nth-child(1),
-.header__content p:nth-child(4) span:nth-child(2) {
+.header__content p:nth-child(4) span:nth-child(1), .header__content p:nth-child(4) span:nth-child(2) {
   line-height: 32px;
   display: block;
   position: relative;
@@ -216,8 +134,7 @@ table {
   left: 1px;
 }
 
-.header__content p:nth-child(5),
-.header__content p:nth-child(6) {
+.header__content p:nth-child(5), .header__content p:nth-child(6) {
   font-size: 0.95rem;
   line-height: 19px;
   margin: 60px 0 0 700px;
@@ -225,8 +142,7 @@ table {
   color: #ffffff;
 }
 
-.header__content p:nth-child(5) span,
-.header__content p:nth-child(6) span {
+.header__content p:nth-child(5) span, .header__content p:nth-child(6) span {
   display: block;
 }
 
@@ -395,7 +311,7 @@ a:hover {
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
   -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 .projects__second-row {
@@ -409,96 +325,24 @@ a:hover {
 
 .projects-shape-1 {
   background-image: url("../../assets/images/skn1.jpg");
-  -webkit-clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 30%,
-    100% 100%,
-    70% 100%,
-    30% 100%,
-    0% 70%,
-    0 0
-  );
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 30%,
-    100% 100%,
-    70% 100%,
-    30% 100%,
-    0% 70%,
-    0 0
-  );
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
 }
 
 .projects-shape-1 .project-about {
-  -webkit-clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 30%,
-    100% 100%,
-    70% 100%,
-    30% 100%,
-    0% 70%,
-    0 0
-  );
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 30%,
-    100% 100%,
-    70% 100%,
-    30% 100%,
-    0% 70%,
-    0 0
-  );
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
 }
 
 .projects-shape-2 {
   background-image: url("../../assets/images/skn2.jpg");
-  -webkit-clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 0,
-    100% 70%,
-    70% 100%,
-    30% 100%,
-    0 100%,
-    0% 30%
-  );
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 0,
-    100% 70%,
-    70% 100%,
-    30% 100%,
-    0 100%,
-    0% 30%
-  );
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
 }
 
 .projects-shape-2 .project-about {
-  -webkit-clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 0,
-    100% 70%,
-    70% 100%,
-    30% 100%,
-    0 100%,
-    0% 30%
-  );
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 0,
-    100% 70%,
-    70% 100%,
-    30% 100%,
-    0 100%,
-    0% 30%
-  );
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
 }
 
 .project_title {
@@ -666,7 +510,7 @@ a:hover {
   stroke-dasharray: 1200;
   stroke-dashoffset: 1200;
   -webkit-animation: dash 2.5s linear forwards;
-  animation: dash 2.5s linear forwards;
+          animation: dash 2.5s linear forwards;
 }
 
 @-webkit-keyframes dash {
@@ -689,8 +533,7 @@ a:hover {
   outline: none;
 }
 
-.section__contact .modal .modal-body .form-recruitment .form-item input,
-.section__contact .modal .modal-body .form-recruitment .form-item textarea {
+.section__contact .modal .modal-body .form-recruitment .form-item input, .section__contact .modal .modal-body .form-recruitment .form-item textarea {
   border-top: none;
   border-left: none;
   border-right: none;
@@ -706,37 +549,15 @@ a:hover {
   height: 100px;
 }
 
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item__row:nth-child(2) {
+.section__contact .modal .modal-body .form-recruitment .form-item__row:nth-child(2) {
   margin: 15px 0 0 0;
 }
 
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item__row:nth-child(3) {
+.section__contact .modal .modal-body .form-recruitment .form-item__row:nth-child(3) {
   margin: 15px 0 15px 0;
 }
 
-.section__contact .modal .modal-body .form-recruitment .form-item__row input,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item__row
-  .form-item
-  textarea,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item
-  .form-item__row
-  textarea {
+.section__contact .modal .modal-body .form-recruitment .form-item__row input, .section__contact .modal .modal-body .form-recruitment .form-item__row .form-item textarea, .section__contact .modal .modal-body .form-recruitment .form-item .form-item__row textarea {
   margin: 0 0 0 20px;
   cursor: pointer;
   width: 15px;
@@ -749,63 +570,13 @@ a:hover {
   left: 2px;
 }
 
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item__row-checkbox-departmentChoice
-  input,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item__row-checkbox-departmentChoice
-  .form-item
-  textarea,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item
-  .form-item__row-checkbox-departmentChoice
-  textarea,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item__row-checkbox-projectRecruitment
-  input,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item__row-checkbox-projectRecruitment
-  .form-item
-  textarea,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item
-  .form-item__row-checkbox-projectRecruitment
-  textarea {
+.section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-departmentChoice input, .section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-departmentChoice .form-item textarea, .section__contact .modal .modal-body .form-recruitment .form-item .form-item__row-checkbox-departmentChoice textarea, .section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-projectRecruitment input, .section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-projectRecruitment .form-item textarea, .section__contact .modal .modal-body .form-recruitment .form-item .form-item__row-checkbox-projectRecruitment textarea {
   cursor: pointer;
   width: 15px;
   height: 15px;
 }
 
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item__row-checkbox-departmentChoice
-  span,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item__row-checkbox-projectRecruitment
-  span {
+.section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-departmentChoice span, .section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-projectRecruitment span {
   position: relative;
   left: 5px;
   bottom: 1px;
@@ -860,7 +631,7 @@ a:hover {
   left: -25px;
   bottom: -76px;
   -webkit-transform: skew(3deg) rotateZ(2deg);
-  transform: skew(3deg) rotateZ(2deg);
+          transform: skew(3deg) rotateZ(2deg);
 }
 
 .section__box img {
@@ -868,14 +639,14 @@ a:hover {
   width: 110px;
   height: 115px;
   -webkit-transform: skew(-3deg) rotateZ(-2deg);
-  transform: skew(-3deg) rotateZ(-2deg);
+          transform: skew(-3deg) rotateZ(-2deg);
 }
 
 .section__box::after {
-  content: "";
+  content: '';
   position: absolute;
   -webkit-transform: rotateZ(240deg);
-  transform: rotateZ(240deg);
+          transform: rotateZ(240deg);
   z-index: 1;
   width: 0;
   height: 0;
@@ -887,10 +658,10 @@ a:hover {
 }
 
 .section__box::before {
-  content: "";
+  content: '';
   position: absolute;
   -webkit-transform: rotateZ(60deg);
-  transform: rotateZ(60deg);
+          transform: rotateZ(60deg);
   z-index: 1;
   width: 0;
   height: 0;
@@ -904,7 +675,7 @@ a:hover {
 .section__box__text {
   font-family: "Roboto", sans-serif;
   -webkit-transform: skew(-3deg) rotateZ(-2deg);
-  transform: skew(-3deg) rotateZ(-2deg);
+          transform: skew(-3deg) rotateZ(-2deg);
   margin: 0 0 0 35px;
 }
 
@@ -919,8 +690,7 @@ a:hover {
   font-size: 0.9em;
 }
 
-.section__box__text p::after,
-.section__box__text p::before {
+.section__box__text p::after, .section__box__text p::before {
   content: none;
 }
 
@@ -979,63 +749,27 @@ a:hover {
   width: 520px;
 }
 
-.section__form .form__items-left,
-.section__form .form__items-right {
+.section__form .form__items-left, .section__form .form__items-right {
   width: 200px;
   display: none;
 }
 
-.section__form .form__items-left .form-item,
-.section__form .form__items-right .form-item {
+.section__form .form__items-left .form-item, .section__form .form__items-right .form-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.section__form .form__items-left .form-item label,
-.section__form .form__items-right .form-item label {
+.section__form .form__items-left .form-item label, .section__form .form__items-right .form-item label {
   display: none;
 }
 
-.section__form .form__items-left .form-item input,
-.section__form
-  .form__items-left
-  .section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item
-  textarea,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .section__form
-  .form__items-left
-  .form-item
-  textarea,
-.section__form .form__items-left .form-item textarea,
-.section__form .form__items-right .form-item input,
-.section__form
-  .form__items-right
-  .section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item
-  textarea,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .section__form
-  .form__items-right
-  .form-item
-  textarea,
+.section__form .form__items-left .form-item input, .section__form .form__items-left .section__contact .modal .modal-body .form-recruitment .form-item textarea, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-left .form-item textarea,
+.section__form .form__items-left .form-item textarea, .section__form .form__items-right .form-item input, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea,
 .section__form .form__items-right .form-item textarea {
   margin: 12px 0 0 0;
   border: 1px solid #4f5178;
@@ -1047,40 +781,7 @@ a:hover {
   height: 30px;
 }
 
-.section__form .form__items-left .form-item input:focus,
-.section__form
-  .form__items-left
-  .section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item
-  textarea:focus,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .section__form
-  .form__items-left
-  .form-item
-  textarea:focus,
-.section__form .form__items-right .form-item input:focus,
-.section__form
-  .form__items-right
-  .section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item
-  textarea:focus,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .section__form
-  .form__items-right
-  .form-item
-  textarea:focus {
+.section__form .form__items-left .form-item input:focus, .section__form .form__items-left .section__contact .modal .modal-body .form-recruitment .form-item textarea:focus, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-left .form-item textarea:focus, .section__form .form__items-right .form-item input:focus, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea:focus, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:focus {
   background: #eaecfc;
 }
 
@@ -1094,23 +795,7 @@ a:hover {
   padding: 8px 0 0 5px;
 }
 
-.section__form .form__items-right .form-item input,
-.section__form
-  .form__items-right
-  .section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item
-  textarea,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .section__form
-  .form__items-right
-  .form-item
-  textarea {
+.section__form .form__items-right .form-item input, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea {
   z-index: 2;
   position: relative;
   margin: 30px 0 0 0;
@@ -1129,46 +814,14 @@ a:hover {
   transition: 0.3s;
   letter-spacing: 0.8px;
   -ms-flex-item-align: center;
-  align-self: center;
+      align-self: center;
 }
 
-.section__form .form__items-right .form-item input:hover,
-.section__form
-  .form__items-right
-  .section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item
-  textarea:hover,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .section__form
-  .form__items-right
-  .form-item
-  textarea:hover {
+.section__form .form__items-right .form-item input:hover, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea:hover, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:hover {
   background: #4f5178;
 }
 
-.section__form .form__items-right .form-item input:focus,
-.section__form
-  .form__items-right
-  .section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .form-item
-  textarea:focus,
-.section__contact
-  .modal
-  .modal-body
-  .form-recruitment
-  .section__form
-  .form__items-right
-  .form-item
-  textarea:focus {
+.section__form .form__items-right .form-item input:focus, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea:focus, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:focus {
   outline: none;
 }
 
@@ -1246,10 +899,7 @@ a:hover {
   opacity: 0.3;
 }
 
-#partner1,
-#partner2,
-#partner3,
-#partner4 {
+#partner1, #partner2, #partner3, #partner4 {
   text-align: justify;
 }
 
@@ -1268,17 +918,17 @@ a:hover {
   width: 700px;
   height: 650px;
   -webkit-transform: skew(2deg);
-  transform: skew(2deg);
+          transform: skew(2deg);
   position: relative;
   top: 54px;
   right: 215px;
 }
 
 .section__reference__box-left::after {
-  content: "";
+  content: '';
   position: absolute;
   -webkit-transform: rotateZ(225deg);
-  transform: rotateZ(225deg);
+          transform: rotateZ(225deg);
   z-index: 1;
   width: 0;
   height: 0;
@@ -1290,10 +940,10 @@ a:hover {
 }
 
 .section__reference__box-left::before {
-  content: "";
+  content: '';
   position: absolute;
   -webkit-transform: rotateZ(45deg);
-  transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
   z-index: 1;
   width: 0;
   height: 0;
@@ -1309,11 +959,11 @@ a:hover {
   top: 60px;
   left: 210px;
   -webkit-transform: skew(-2deg);
-  transform: skew(-2deg);
+          transform: skew(-2deg);
 }
 
 .section__reference__box-left .carousel::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   width: 70px;
@@ -1377,7 +1027,7 @@ a:hover {
   stroke-dasharray: 1550;
   stroke-dashoffset: 1550;
   -webkit-animation: dash 4s linear forwards;
-  animation: dash 4s linear forwards;
+          animation: dash 4s linear forwards;
 }
 
 @keyframes dash {
@@ -1393,10 +1043,10 @@ a:hover {
 }
 
 .section__reference__box-right .carousel::after {
-  content: "";
+  content: '';
   position: absolute;
   -webkit-transform: rotateZ(225deg);
-  transform: rotateZ(225deg);
+          transform: rotateZ(225deg);
   z-index: 1;
   border-top: 115px solid transparent;
   border-bottom: 115px solid transparent;
@@ -1470,8 +1120,8 @@ p {
 
 .max-member-container {
   -webkit-box-flex: 2;
-  -ms-flex: 2 2 50%;
-  flex: 2 2 50%;
+      -ms-flex: 2 2 50%;
+          flex: 2 2 50%;
   margin-left: 0;
   top: 8%;
   position: relative;
@@ -1493,7 +1143,7 @@ p {
   color: white;
   top: 43%;
   left: 23%;
-  content: "Wybierz osobę";
+  content: 'Wybierz osobę';
 }
 
 .max-member-paragraphs {
@@ -1501,8 +1151,8 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   margin-top: 7%;
 }
 
@@ -1514,22 +1164,22 @@ p {
 
 .max-member-info-details {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 .members-thumbnails-container {
   -webkit-box-flex: 2;
-  -ms-flex: 2 2 50%;
-  flex: 2 2 50%;
+      -ms-flex: 2 2 50%;
+          flex: 2 2 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .one-thumbnail-container {
@@ -1585,8 +1235,8 @@ p {
 
 .navigation__body {
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .navigation__item {
@@ -1598,8 +1248,6 @@ p {
 .navigation__item a {
   color: #fff;
   position: relative;
-  -webkit-transition: all 3s;
-  transition: all 3s;
 }
 
 .navigation__item a:hover::after {
@@ -1607,7 +1255,7 @@ p {
   display: block;
   opacity: 1;
   -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+          transform: scaleX(1);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin: auto;
@@ -1622,7 +1270,7 @@ p {
   left: 0;
   right: 0;
   -webkit-transform: scaleX(0);
-  transform: scaleX(0);
+          transform: scaleX(0);
   content: "";
   width: 90%;
   margin: auto;
