@@ -1127,22 +1127,20 @@ p {
   position: relative;
 }
 
-.max-photo-container {
-  margin-top: 14%;
-}
-
 .max-photo {
   background-color: rgba(177, 185, 230, 0.37);
+  position: absolute;
+  margin-top: 14%;
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
 .max-photo:before {
-  position: relative;
+  position: absolute;
   color: white;
-  top: 43%;
-  left: 23%;
+  top: 45%;
+  left: 25%;
   content: 'Wybierz osobę';
 }
 

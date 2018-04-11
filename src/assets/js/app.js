@@ -71,6 +71,13 @@ $(document).ready(function () {
     // TEAM section START
 
 
+    function showInfoAboutMember(data, index) {
+        console.log(data[index])
+        $('.max-photo').css('background-image', 'url(' + data[index].photo + ')')
+    }
+
+
+
     $.getJSON('../../members.json', function (data) {
         $.each(data, function (index, item) {
             $('.members-thumbnails-container')
@@ -83,21 +90,16 @@ $(document).ready(function () {
             $('.thumb-img').eq(index)
                 .attr({
                     id: data[index].first_name + data[index].last_name,
-                    alt: data[index].first_name + ' ' + data[index].last_name,
+                    alt: data[index].first_name + ' ' + data[index].last_name + '. Zdjęcie.',
                     src: data[index].photo,
                     width: "45px",
                     height: "45px"
                 })
-
-
+                .click(function() {
+                    $('.max-photo').css('background-image', 'url(' + data[index].photo + ')')
+                    // showInfoAboutMember(data, index)
+                })
         })
-
-        // $(".thumbnail-container").each(function(index, item) {
-        //     $(this).attr({
-        //         id: "",
-        //         src: ""
-        //     })
-        // })
     })
 
 
