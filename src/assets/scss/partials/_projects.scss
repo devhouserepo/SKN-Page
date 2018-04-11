@@ -1,339 +1,336 @@
 @mixin transform($x, $y) {
-    -ms-transform: scale($x, $y); /* Internet Explorer and Microsoft Edge */
-    -webkit-transform: scale($x, $y); /* Safari */
-    -moz-transform: scale($x, $y); /* Firefox */
-    -o-animation: scale($x, $y); /* Opera 12+ */
-    transform: scale($x, $y);
+  -ms-transform: scale($x, $y); /* Internet Explorer and Microsoft Edge */
+  -webkit-transform: scale($x, $y); /* Safari */
+  -moz-transform: scale($x, $y); /* Firefox */
+  -o-animation: scale($x, $y); /* Opera 12+ */
+  transform: scale($x, $y);
 }
 
 @mixin transform-origin($x, $y) {
-    -ms-transform-origin: ($x + 0px) ($y + 0px); /* Internet Explorer and Microsoft Edge */
-    -webkit-transform-origin: ($x + 0px) ($y + 0px); /* Safari */
-    -moz-transform-origin: ($x + 0px) ($y + 0px); /* Firefox */
-    -o-transform-origin: ($x + 0px) ($y + 0px); /* Opera 12+ */
-    transform-origin: ($x + 0px) ($y + 0px);
+  -ms-transform-origin: ($x + 0px) ($y + 0px); /* Internet Explorer and Microsoft Edge */
+  -webkit-transform-origin: ($x + 0px) ($y + 0px); /* Safari */
+  -moz-transform-origin: ($x + 0px) ($y + 0px); /* Firefox */
+  -o-transform-origin: ($x + 0px) ($y + 0px); /* Opera 12+ */
+  transform-origin: ($x + 0px) ($y + 0px);
 }
 
 @mixin animationBasicHover($animationName, $duration, $animationFillMode) {
-    -ms-animation: $animationName $duration * 1s $animationFillMode; /* Internet Explorer and Microsoft Edge */
-    -webkit-animation: $animationName $duration * 1s $animationFillMode; /* Safari 4+ */
-    -moz-animation: $animationName $duration * 1s $animationFillMode; /* Fx 5+ */
-    -o-animation: $animationName $duration * 1s $animationFillMode; /* Opera 12+ */
-    animation: $animationName $duration * 1s $animationFillMode; /* IE 10+, Fx 29+ */
+  -ms-animation: $animationName $duration * 1s $animationFillMode; /* Internet Explorer and Microsoft Edge */
+  -webkit-animation: $animationName $duration * 1s $animationFillMode; /* Safari 4+ */
+  -moz-animation: $animationName $duration * 1s $animationFillMode; /* Fx 5+ */
+  -o-animation: $animationName $duration * 1s $animationFillMode; /* Opera 12+ */
+  animation: $animationName $duration * 1s $animationFillMode; /* IE 10+, Fx 29+ */
 }
 
 a {
+  text-decoration: none;
+  &:hover {
     text-decoration: none;
-    &:hover {
-        text-decoration: none;
-    }
+  }
 }
 
 .projects {
-    font-family: "Roboto";
-    margin-top: 200px;
-    padding-bottom: 200px;
+  font-family: "Roboto";
+  margin-top: 200px;
+  padding-bottom: 200px;
 }
 
 .projects_container {
-    margin-top: 150px;
-    max-width: 700px;
-    min-height: 400px;
-    position: relative;
+  margin-top: 150px;
+  max-width: 700px;
+  min-height: 400px;
+  position: relative;
 }
 
 .projects__first-row {
-    left: -170px;
-    margin-top: -115px;
-    position: absolute;
-    right: -170px;
-    z-index: 3;
+  left: -170px;
+  margin-top: -115px;
+  position: absolute;
+  right: -170px;
+  z-index: 3;
 }
 
 .projects__second-row {
-    left: -170px;
-    margin-top: 260px;
-    margin-bottom: -100px;
-    position: absolute;
-    right: -170px;
-    z-index: 3;
+  left: -170px;
+  margin-top: 260px;
+  margin-bottom: -100px;
+  position: absolute;
+  right: -170px;
+  z-index: 3;
 }
 
 .project-paragraphs {
-    position: absolute;
-    margin: auto;
-    height: 65px;
-    top: 50;
-    left: 0;
-    z-index: 4;
+  position: absolute;
+  margin: auto;
+  height: 65px;
+  top: 50;
+  left: 0;
+  z-index: 4;
 }
 
 // Project hover transitions and animations triggers
 .singular-project-container {
-    &:hover .project_title {
-        font-size: 20px;
-        margin-top: -10%;
-    }
+  &:hover .project_title {
+    font-size: 20px;
+    margin-top: -10%;
+  }
 
-    &:hover #twoj-projekt-title {
-        font-size: 20px;
-        margin-top: -12%;
-    }
+  &:hover #twoj-projekt-title {
+    font-size: 20px;
+    margin-top: -12%;
+  }
 
-    &:hover .projects-shape-1,
-    &:hover .projects-shape-2 {
-        @include transform(2, 2);
-        z-index: 3;
-        background-size: 400px;
-        transition: all 0.7s ease-in-out;
-    }
+  &:hover .projects-shape-1,
+  &:hover .projects-shape-2 {
+    @include transform(2, 2);
+    z-index: 3;
+    background-size: 400px;
+    transition: all 0.7s ease-in-out;
+  }
 
-    &:hover .project-about {
-        @include animationBasicHover(showProjectAboutandButton, 2, forwards);
-    }
+  &:hover .project-about {
+    @include animationBasicHover(showProjectAboutandButton, 2, forwards);
+  }
 
-    &:hover .button-more-about-project {
-        @include animationBasicHover(showProjectAboutandButton, 2, forwards);
-    }
+  &:hover .button-more-about-project {
+    @include animationBasicHover(showProjectAboutandButton, 2, forwards);
+  }
 }
 
 // Show and fade in .project-about animation
 @keyframes showProjectAboutandButton {
-    0% {
-        opacity: 0;
-    }
-    35% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .project-about {
-    color: white;
-    line-height: 1.1;
-    text-align: justify;
-    text-justify: inter-character;
-    margin-top: 14px;
-    font-size: 16px;
-    opacity: 0;
-    display: inline-block;
+  color: white;
+  line-height: 1.1;
+  text-align: justify;
+  text-justify: inter-character;
+  margin-top: 14px;
+  font-size: 16px;
+  opacity: 0;
+  display: inline-block;
 }
 
 .button-more-about-project {
-    margin: 17px auto 0 auto;
-    padding-top: 4px;
-    width: 80px;
-    height: 26px;
-    font-size: 16px;
-    border: 1px solid white;
-    text-align: center;
-    color: white;
-    opacity: 0;
-    position: relative;
-    display: block;
+  margin: 17px auto 0 auto;
+  padding-top: 4px;
+  width: 80px;
+  height: 26px;
+  font-size: 16px;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  position: relative;
+  display: block;
 
-    &:hover {
-        text-decoration: none;
-        color: white;
-    }
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .projects-shape-1,
 .projects-shape-2 {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 900px;
-    margin: auto;
-    height: 200px;
-    width: 200px;
-    max-width: 400px;
-    z-index: 2;
-    transition: all 0.7s ease-in-out;
-    transition-delay: 0.2s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 900px;
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  max-width: 400px;
+  z-index: 2;
+  transition: all 0.7s ease-in-out;
+  transition-delay: 0.2s;
 }
 
 .projects__second-row {
-    left: -170px;
-    margin-top: 260px;
-    margin-bottom: -100px;
-    position: absolute;
-    right: -170px;
-    z-index: 3;
+  left: -170px;
+  margin-top: 260px;
+  margin-bottom: -100px;
+  position: absolute;
+  right: -170px;
+  z-index: 3;
 }
 
 .projects-shape-1 {
-    background-image: url("/assets/images/skn1.jpg");
+  background-image: url("../../assets/images/skn1.jpg");
+  -webkit-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 100%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0 0
+  );
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 100%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0 0
+  );
+  .project-about {
     -webkit-clip-path: polygon(
-        30% 0%,
-        70% 0%,
-        100% 30%,
-        100% 100%,
-        70% 100%,
-        30% 100%,
-        0% 70%,
-        0 0
+      30% 0%,
+      70% 0%,
+      100% 30%,
+      100% 100%,
+      70% 100%,
+      30% 100%,
+      0% 70%,
+      0 0
     );
     clip-path: polygon(
-        30% 0%,
-        70% 0%,
-        100% 30%,
-        100% 100%,
-        70% 100%,
-        30% 100%,
-        0% 70%,
-        0 0
+      30% 0%,
+      70% 0%,
+      100% 30%,
+      100% 100%,
+      70% 100%,
+      30% 100%,
+      0% 70%,
+      0 0
     );
-    .project-about {
-        -webkit-clip-path: polygon(
-            30% 0%,
-            70% 0%,
-            100% 30%,
-            100% 100%,
-            70% 100%,
-            30% 100%,
-            0% 70%,
-            0 0
-        );
-        clip-path: polygon(
-            30% 0%,
-            70% 0%,
-            100% 30%,
-            100% 100%,
-            70% 100%,
-            30% 100%,
-            0% 70%,
-            0 0
-        );
-    }
+  }
 }
 .projects-shape-2 {
-    background-image: url("/assets//images/skn2.jpg");
+  background-image: url("../../assets/images/skn2.jpg");
+  -webkit-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 0,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0 100%,
+    0% 30%
+  );
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 0,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0 100%,
+    0% 30%
+  );
+  .project-about {
     -webkit-clip-path: polygon(
-        30% 0%,
-        70% 0%,
-        100% 0,
-        100% 70%,
-        70% 100%,
-        30% 100%,
-        0 100%,
-        0% 30%
+      30% 0%,
+      70% 0%,
+      100% 0,
+      100% 70%,
+      70% 100%,
+      30% 100%,
+      0 100%,
+      0% 30%
     );
     clip-path: polygon(
-        30% 0%,
-        70% 0%,
-        100% 0,
-        100% 70%,
-        70% 100%,
-        30% 100%,
-        0 100%,
-        0% 30%
+      30% 0%,
+      70% 0%,
+      100% 0,
+      100% 70%,
+      70% 100%,
+      30% 100%,
+      0 100%,
+      0% 30%
     );
-    .project-about {
-        -webkit-clip-path: polygon(
-            30% 0%,
-            70% 0%,
-            100% 0,
-            100% 70%,
-            70% 100%,
-            30% 100%,
-            0 100%,
-            0% 30%
-        );
-        clip-path: polygon(
-            30% 0%,
-            70% 0%,
-            100% 0,
-            100% 70%,
-            70% 100%,
-            30% 100%,
-            0 100%,
-            0% 30%
-        );
-    }
+  }
 }
 .project_title {
-    font-size: 22px;
-    color: white;
-    text-align: center;
-    margin-top: 20%;
-    transition: all 0.6s ease-in-out;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  margin-top: 20%;
+  transition: all 0.6s ease-in-out;
 }
 .project-about-mini {
-    color: white;
-    text-align: center;
-    margin-top: 14px;
-    font-size: 16px;
+  color: white;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 16px;
 }
 #startup {
-    margin-top: 26px;
+  margin-top: 26px;
 }
 #devhouse {
-    margin-top: -30px;
+  margin-top: -30px;
 }
 #boot-camp {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 #twoj-projekt-title {
-    margin-top: 12%;
+  margin-top: 12%;
 }
-
 #thinkit {
-    margin-top: -1%;
+  margin-top: -1%;
 }
-
 #twoj-projekt {
-    .project-about {
-        margin-left: 18px;
-        margin-right: 7px;
-    }
-    .projects-shape-2 {
-        background-color: #0f0f4d;
-        background-image: none;
-        height: 180px;
-        width: 180px;
-        max-width: 390px;
-    }
-    .button {
-        left: 65px;
-        opacity: 0;
-        position: absolute;
-        top: 120px;
-        text-align: center;
-        width: 50px;
-    }
+  .project-about {
+    margin-left: 18px;
+    margin-right: 7px;
+  }
+  .projects-shape-2 {
+    background-color: #0f0f4d;
+    background-image: none;
+    height: 180px;
+    width: 180px;
+    max-width: 390px;
+  }
+  .button {
+    left: 65px;
+    opacity: 0;
+    position: absolute;
+    top: 120px;
+    text-align: center;
+    width: 50px;
+  }
 }
 // section background
 .section-projects-background {
-    position: absolute;
+  position: absolute;
 }
 .giant-header-projects {
-    color: white;
-    font-weight: bold;
-    letter-spacing: 7px;
-    opacity: 0.1;
-    font-size: 119px;
-    position: absolute;
-    top: 100%;
-    left: -81%;
-    z-index: 1;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 7px;
+  opacity: 0.1;
+  font-size: 119px;
+  position: absolute;
+  top: 100%;
+  left: -81%;
+  z-index: 1;
 }
-
 @media (max-width: 768px) {
-    .projects__first-row {
-        left: 0;
-        position: relative;
-        right: 0;
-    }
-    .projects__second-row {
-        left: 0;
-        margin-top: 10px;
-        margin-bottom: -130px;
-        position: relative;
-        right: 0;
-    }
-    .projects__title {
-        display: none;
-    }
+  .projects__first-row {
+    left: 0;
+    position: relative;
+    right: 0;
+  }
+  .projects__second-row {
+    left: 0;
+    margin-top: 10px;
+    margin-bottom: -130px;
+    position: relative;
+    right: 0;
+  }
+  .projects__title {
+    display: none;
+  }
 }
