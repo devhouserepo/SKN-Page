@@ -324,7 +324,7 @@ a:hover {
 }
 
 .projects-shape-1 {
-  background-image: url("/assets/images/skn1.jpg");
+  background-image: url("../../assets/images/skn1.jpg");
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
 }
@@ -335,7 +335,7 @@ a:hover {
 }
 
 .projects-shape-2 {
-  background-image: url("/assets//images/skn2.jpg");
+  background-image: url("../../assets/images/skn2.jpg");
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
   clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
 }
