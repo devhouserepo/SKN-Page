@@ -405,9 +405,55 @@ a:hover {
   opacity: 0.1;
   font-size: 119px;
   position: absolute;
-  top: 100%;
-  left: -81%;
+  top: 161px;
+  left: -240px;
   z-index: 1;
+}
+
+.svg-1 {
+  position: absolute;
+  z-index: 1;
+  left: -100px;
+  top: -50px;
+}
+
+.path-1 {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  -webkit-animation: dash 4s linear forwards;
+          animation: dash 4s linear forwards;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.svg-2 {
+  position: absolute;
+  z-index: 1;
+  left: -200px;
+  top: -200px;
+}
+
+.path-2 {
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash 4s linear forwards;
+          animation: dash 4s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -502,12 +548,6 @@ a:hover {
   stroke-dashoffset: 1200;
   -webkit-animation: dash 2.5s linear forwards;
           animation: dash 2.5s linear forwards;
-}
-
-@-webkit-keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
 }
 
 @keyframes dash {
@@ -826,7 +866,7 @@ a:hover {
   border-top: 277px solid #000039;
   color: white;
   position: absolute;
-  left: 1px;
+  left: 0;
   z-index: 1;
 }
 
@@ -1228,6 +1268,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 p {
@@ -1246,6 +1288,8 @@ p {
   display: flex;
   width: 100%;
   z-index: 5;
+  top: -60px;
+  position: relative;
 }
 
 .max-member-container {
@@ -1253,8 +1297,9 @@ p {
       -ms-flex: 2 2 50%;
           flex: 2 2 50%;
   margin-left: 0;
-  top: 8%;
+  top: 50px;
   position: relative;
+  z-index: 2;
 }
 
 .max-photo-container {
@@ -1342,6 +1387,26 @@ p {
   position: absolute;
   top: 39%;
   left: 14%;
+}
+
+.svg-3 {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -190px;
+}
+
+.path-3 {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  -webkit-animation: dash 3s linear forwards;
+          animation: dash 3s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 .navigation {
