@@ -90,18 +90,9 @@ table {
   position: relative;
 }
 
-.header__content p:nth-child(2) {
-  margin: 50px 0 0 25px;
-  font-size: 1.4em;
-  letter-spacing: 1px;
-  color: #ffffff;
-  z-index: 2;
-  position: relative;
-}
-
 .header__content h1:nth-child(3) {
-  margin: 15px 0 0 -15px;
-  font-size: 8em;
+  margin: 55px 0 0 2px;
+  font-size: 7.8em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -112,7 +103,7 @@ table {
 
 .header__content p:nth-child(4) {
   font-size: 1.6em;
-  margin: 5px 0 0 700px;
+  margin: 15px 0 0 700px;
   font-weight: 500;
   color: #ffffff;
 }
@@ -135,9 +126,9 @@ table {
 }
 
 .header__content p:nth-child(5), .header__content p:nth-child(6) {
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   line-height: 19px;
-  margin: 60px 0 0 700px;
+  margin: 80px 0 0 700px;
   letter-spacing: 0.8px;
   color: #ffffff;
 }
@@ -997,8 +988,9 @@ a:hover {
   letter-spacing: 0.4px;
 }
 
-.section__reference__box-left .carousel-item img {
+.section__reference__box-left .carousel-item img:nth-child(1) {
   width: 100px;
+  border-radius: 100px;
 }
 
 .section__reference__box-left .carousel-item span {
@@ -1013,7 +1005,7 @@ a:hover {
 
 .section__reference__box-left .carousel-item img:nth-child(4) {
   margin: 40px 0 0 0;
-  width: 80px;
+  height: 20px;
 }
 
 .section__reference__box-right svg {
@@ -1081,6 +1073,7 @@ a:hover {
 
 .section__reference__box-right .carousel-item img {
   width: 100px;
+  border-radius: 100px;
 }
 
 .section__reference__box-right .carousel-item span {
@@ -1242,7 +1235,8 @@ p {
 .navigation__item {
   margin: 0 8px;
   letter-spacing: 0.7px;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .navigation__item a {
