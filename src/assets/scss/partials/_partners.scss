@@ -1,13 +1,14 @@
 .partners {
   font-family: "Roboto";
   margin-bottom: 110px;
-  color: white;
+
 }
 
 .navy_bg {
   border-left: 450px solid #000039;
   border-top: 277px solid #000039;
-  border-right: 2100px solid transparent;
+  //border-right: 2100px solid transparent;
+  color: white;
   position: absolute;
   left: 1px;
   z-index: 1;
@@ -23,6 +24,10 @@
 .white_bg {
   background-color: white;
   height: 700px;
+
+  p {
+    color: black;
+  }
 }
 
 .second {
@@ -31,7 +36,7 @@
 
 .col-4 {
   color: black;
-  top: 400px;
+  top: 500px;
 }
 
 .col-2 {
@@ -40,18 +45,51 @@
 
   &:nth-of-type(1) {
     left: 60px;
-  }
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+animation-iteration-count: infinite;
+animation-name: example;
+animation-duration: 2s;
+} &:hover {
+animation-duration: 0s;
+cursor: pointer;
+}
+
 
   &:nth-of-type(2) {
     left: 80px;
+    -webkit-animation-name: example1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: infinite;
+    animation-name: example1;
+    animation-duration: 2s;
+    } &:hover {
+      animation-duration: 0s;
+      cursor: pointer;
   }
 
   &:nth-of-type(3) {
     left: 40px;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: infinite;
+    animation-name: example;
+    animation-duration: 2s;
+    } &:hover {
+      animation-duration: 0s;
+      cursor: pointer;
   }
 
   &:nth-of-type(4) {
     right: 20px;
+    -webkit-animation-name: example1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: infinite;
+    animation-name: example1;
+    animation-duration: 2s;
+    } &:hover {
+      animation-duration: 0s;
+      cursor: pointer;
   }
 }
 
@@ -66,9 +104,9 @@
   color: grey;
   font-size: 140px;
   font-weight:bold;
-  left: 250px;
+  left: 290px;
   position: relative;
-  top: -50px;
+  top: -30px;
   opacity: 0.3;
 
 }
@@ -76,3 +114,37 @@
 #partner1, #partner2, #partner3, #partner4 {
     text-align: justify;
 }
+
+@keyframes example {
+    0%   {top:490px;}
+    25%  {top:460px;}
+    50%  {top:490px;}
+    75%  {top:460px;}
+    100%  {top:490px;}
+  }
+
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {top:490px;}
+    25%  {top:460px;}
+    50%  {top:490px;}
+    75%  {top:460px;}
+    100%  {top:490px;}
+  }
+
+  @keyframes example1 {
+      0%   {top:460px;}
+      25%  {top:490px;}
+      50%  {top:460px;}
+      75%  {top:490px;}
+      100%  {top:460px;}
+    }
+
+    /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example1 {
+      0%   {top:460px;}
+      25%  {top:490px;}
+      50%  {top:460px;}
+      75%  {top:490px;}
+      100%  {top:460px;}
+    }
