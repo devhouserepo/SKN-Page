@@ -1128,6 +1128,8 @@ p {
 }
 
 .max-photo {
+  background-position: center;
+  background-size: 260px auto;
   background-color: rgba(177, 185, 230, 0.37);
   position: relative;
   margin-top: 22%;
@@ -1217,7 +1219,7 @@ p {
   font-weight: bold;
   letter-spacing: 4px;
   opacity: 0.09;
-  font-size: 2.8em;
+  font-size: 2.7em;
   margin-top: 5%;
 }
 
@@ -1226,7 +1228,7 @@ p {
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 7px;
   position: absolute;
-  top: 104%;
+  top: 106%;
   left: 4%;
 }
 

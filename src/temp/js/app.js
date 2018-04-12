@@ -71,45 +71,95 @@ $(document).ready(function () {
     // TEAM section START
 
 
-    function showInfoAboutMember(data, index) {
-        console.log(data[index])
-        $('.max-photo').css('background-image', 'url(' + data[index].photo + ')')
+    // function showInfoAboutMember(data, index) {
+    //     console.log(data[index])
+    //     $('.max-photo').css('background-image', 'url(' + data[index].photo + ')')
+    // }
+
+
+    function getDevhouseJSON() {
+        $.getJSON('../../skn-members/devhouse.json', function (data) {
+            $.each(data, function (index, item) {
+                $('.members-thumbnails-container')
+                    .append(
+                        `<div class="flex-column align-items-center one-thumbnail-container">
+                    <img class="thumb-img"></img>
+                    <p class="thumb-name-surname">`
+                        + data[index].first_name + ` ` + data[index].last_name +
+                        `</p>
+                    </div>`
+                    )
+                $('.thumb-img').eq(index)
+                    .attr({
+                        id: data[index].first_name + data[index].last_name,
+                        alt: data[index].first_name + ' ' + data[index].last_name + '. Zdjęcie.',
+                        src: data[index].photo
+                    })
+                    .click(function () {
+                        $('.max-member-paragraphs').empty()
+                        $('.wybierz-osobe').remove()
+                        $('.max-photo').css('background-image', 'url(' + data[index].photo + ')')
+                        $('.max-member-paragraphs').append(
+                            `<p class="max-name-surname">`
+                            + data[index].first_name + ` ` + data[index].last_name +
+                            `</p>
+                        <p class="max-member-info-details">`
+                            + data[index].info +
+                            `</p>`
+                        )
+                    })
+            })
+        })
     }
 
 
+    getDevhouseJSON()
 
-    $.getJSON('../../skn-members/devhouse.json', function (data) {
-        $.each(data, function (index, item) {
-            $('.members-thumbnails-container')
-                .append(
-                    `<div class="flex-column align-items-center one-thumbnail-container">
-                    <img class="thumb-img"></img>
-                    <p class="thumb-name-surname">`
-                    + data[index].first_name + ` ` + data[index].last_name + 
-                    `</p>
-                    </div>`
-                )
-            $('.thumb-img').eq(index)
-                .attr({
-                    id: data[index].first_name + data[index].last_name,
-                    alt: data[index].first_name + ' ' + data[index].last_name + '. Zdjęcie.',
-                    src: data[index].photo
-                })
-                .click(function () {
-                    $('.max-member-paragraphs').empty()
-                    $('.wybierz-osobe').remove()
-                    $('.max-photo').css('background-image', 'url(' + data[index].photo + ')')
-                    $('.max-member-paragraphs').append(
-                        `<p class="max-name-surname">`
-                         + data[index].first_name + ` ` + data[index].last_name +
+
+    $('#team-devhouse').click(function() {
+        $('.members-thumbnails-container').empty()
+        getDevhouseJSON()
+    }) 
+
+
+
+    $('#team-startup').click(function() {
+        $('.members-thumbnails-container').empty()
+        $.getJSON('../../skn-members/startup.json', function (data) {
+            $.each(data, function (index, item) {
+                $('.members-thumbnails-container')
+                    .append(
+                        `<div class="flex-column align-items-center one-thumbnail-container">
+                        <img class="thumb-img"></img>
+                        <p class="thumb-name-surname">`
+                        + data[index].first_name + ` ` + data[index].last_name +
                         `</p>
-                        <p class="max-member-info-details">`
-                          + data[index].info + 
-                        `</p>`
+                        </div>`
                     )
-                })
+                $('.thumb-img').eq(index)
+                    .attr({
+                        id: data[index].first_name + data[index].last_name,
+                        alt: data[index].first_name + ' ' + data[index].last_name + '. Zdjęcie.',
+                        src: data[index].photo
+                    })
+                    .click(function () {
+                        $('.max-member-paragraphs').empty()
+                        $('.wybierz-osobe').remove()
+                        $('.max-photo').css('background-image', 'url(' + data[index].photo + ')')
+                        $('.max-member-paragraphs').append(
+                            `<p class="max-name-surname">`
+                            + data[index].first_name + ` ` + data[index].last_name +
+                            `</p>
+                            <p class="max-member-info-details">`
+                            + data[index].info +
+                            `</p>`
+                        )
+                    })
+            })
         })
+
     })
+
 
 
 
