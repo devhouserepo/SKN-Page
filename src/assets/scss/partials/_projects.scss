@@ -313,10 +313,47 @@ a {
   opacity: 0.1;
   font-size: 119px;
   position: absolute;
-  top: 100%;
-  left: -81%;
+  top: 161px;
+  left: -240px;
   z-index: 1;
 }
+
+.svg-1 {
+  position: absolute;
+  z-index: 1;
+  left: -100px;
+  top: -50px;
+}
+
+.path-1 {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: dash 4s linear forwards;
+}
+@keyframes dash {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+.svg-2 {
+  position: absolute;
+  z-index: 1;
+  left: -200px;
+  top: -200px;
+}
+
+.path-2 {
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  animation: dash 4s linear forwards;
+}
+@keyframes dash {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .projects__first-row {
     left: 0;
