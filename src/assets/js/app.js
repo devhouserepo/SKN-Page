@@ -78,26 +78,35 @@ $(document).ready(function () {
 
 
 
-    $.getJSON('../../members.json', function (data) {
+    $.getJSON('../../skn-members/devhouse.json', function (data) {
         $.each(data, function (index, item) {
             $('.members-thumbnails-container')
-                .append(`<div class="flex-column align-items-center one-thumbnail-container">
-                <img class="thumb-img"></img>
-                <p class="thumb-name-surname">`
-                    + data[index].first_name + ` ` + data[index].last_name
-                    + `</p>
-                </div>`)
+                .append(
+                    `<div class="flex-column align-items-center one-thumbnail-container">
+                    <img class="thumb-img"></img>
+                    <p class="thumb-name-surname">`
+                    + data[index].first_name + ` ` + data[index].last_name + 
+                    `</p>
+                    </div>`
+                )
             $('.thumb-img').eq(index)
                 .attr({
                     id: data[index].first_name + data[index].last_name,
                     alt: data[index].first_name + ' ' + data[index].last_name + '. Zdjęcie.',
-                    src: data[index].photo,
-                    width: "45px",
-                    height: "45px"
+                    src: data[index].photo
                 })
-                .click(function() {
+                .click(function () {
+                    $('.max-member-paragraphs').empty()
+                    $('.wybierz-osobe').remove()
                     $('.max-photo').css('background-image', 'url(' + data[index].photo + ')')
-                    // showInfoAboutMember(data, index)
+                    $('.max-member-paragraphs').append(
+                        `<p class="max-name-surname">`
+                         + data[index].first_name + ` ` + data[index].last_name +
+                        `</p>
+                        <p class="max-member-info-details">`
+                          + data[index].info + 
+                        `</p>`
+                    )
                 })
         })
     })
