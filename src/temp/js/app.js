@@ -47,12 +47,7 @@ $(document).ready(function() {
       .hide();
   });
 
-  // TEAM section START
-
-        $("#" + target).show().siblings("div").hide();
-
-
-    });
+ 
 
 
 
@@ -163,7 +158,7 @@ $(document).ready(function() {
     //         src: ""
     //     })
     // })
-  });
+
 
   // TEAM section END
 });
