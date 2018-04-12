@@ -23,7 +23,7 @@
 
 .white_bg {
   background-color: white;
-  height: 700px;
+  height: 650px;
 
   p {
     color: black;
@@ -46,10 +46,10 @@
   &:nth-of-type(1) {
     left: 60px;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
 animation-iteration-count: infinite;
 animation-name: example;
-animation-duration: 2s;
+animation-duration: 5s;
 } &:hover {
 animation-duration: 0s;
 cursor: pointer;
@@ -59,10 +59,10 @@ cursor: pointer;
   &:nth-of-type(2) {
     left: 80px;
     -webkit-animation-name: example1; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
     animation-iteration-count: infinite;
     animation-name: example1;
-    animation-duration: 2s;
+    animation-duration: 5s;
     } &:hover {
       animation-duration: 0s;
       cursor: pointer;
@@ -71,10 +71,10 @@ cursor: pointer;
   &:nth-of-type(3) {
     left: 40px;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
     animation-iteration-count: infinite;
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: 5s;
     } &:hover {
       animation-duration: 0s;
       cursor: pointer;
@@ -83,10 +83,10 @@ cursor: pointer;
   &:nth-of-type(4) {
     right: 20px;
     -webkit-animation-name: example1; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
     animation-iteration-count: infinite;
     animation-name: example1;
-    animation-duration: 2s;
+    animation-duration: 5s;
     } &:hover {
       animation-duration: 0s;
       cursor: pointer;
@@ -104,7 +104,7 @@ cursor: pointer;
   color: grey;
   font-size: 140px;
   font-weight:bold;
-  left: 290px;
+  left: 280px;
   position: relative;
   top: -30px;
   opacity: 0.3;
@@ -116,35 +116,35 @@ cursor: pointer;
 }
 
 @keyframes example {
-    0%   {top:490px;}
-    25%  {top:460px;}
-    50%  {top:490px;}
-    75%  {top:460px;}
-    100%  {top:490px;}
+    0%   {top:480px;}
+    25%  {top:470px;}
+    50%  {top:480px;}
+    75%  {top:470px;}
+    100%  {top:480px;}
   }
 
   /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
-    0%   {top:490px;}
-    25%  {top:460px;}
-    50%  {top:490px;}
-    75%  {top:460px;}
-    100%  {top:490px;}
-  }
+  0%   {top:480px;}
+  25%  {top:470px;}
+  50%  {top:480px;}
+  75%  {top:470px;}
+  100%  {top:480px;}
+}
 
-  @keyframes example1 {
-      0%   {top:460px;}
-      25%  {top:490px;}
-      50%  {top:460px;}
-      75%  {top:490px;}
-      100%  {top:460px;}
-    }
+@keyframes example1 {
+  0%   {top:470px;}
+  25%  {top:480px;}
+  50%  {top:470px;}
+  75%  {top:480px;}
+  100%  {top:470px;}
+}
 
     /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes example1 {
-      0%   {top:460px;}
-      25%  {top:490px;}
-      50%  {top:460px;}
-      75%  {top:490px;}
-      100%  {top:460px;}
-    }
+@-webkit-keyframes example1 {
+  0%   {top:470px;}
+  25%  {top:480px;}
+  50%  {top:470px;}
+  75%  {top:480px;}
+  100%  {top:470px;}
+}
