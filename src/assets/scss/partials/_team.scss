@@ -3,6 +3,8 @@
     font-family: "Roboto", sans-serif;
     display: flex;
     position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 
 p {
@@ -25,6 +27,8 @@ p {
     display: flex;
     width: 100%;
     z-index: 5;
+    top: -60px;
+    position: relative;
 }
 
 
@@ -34,7 +38,7 @@ p {
     // background-color: rgba(11, 105, 66, 0.938);
     flex: 2 2 50%;
     margin-left: 0;
-    top: 8%;
+    top: 50px;
     position: relative;
     display: block;
 }
@@ -197,3 +201,21 @@ p {
     top: 41%;
     left: 14%;
 }
+
+.svg-3 {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -190px;
+  }
+
+  .path-3 {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    animation: dash 3s linear forwards;
+  }
+  @keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+  }

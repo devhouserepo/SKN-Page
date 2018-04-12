@@ -1,64 +1,53 @@
-$(document).ready(function () {
+$(document).ready(function() {
+  let number = 0;
 
-    let number = 0;
+  $("#private-button").click(function() {
+    if (number === 2) {
+      $("#form-contact, #form-content").slideUp("slow");
 
-    $("#private-button").click(function () {
+      setTimeout(function() {
+        document.getElementsByName("formSchool")[0].placeholder = "Uczelnia";
+        document.getElementsByName("formDepartment")[0].placeholder = "Wydział";
+      }, 0700);
+    }
 
-        if (number === 2) {
+    $("#form-contact, #form-content").slideDown("slow");
 
-            $("#form-contact, #form-content").slideUp("slow");
+    number = 1;
+  });
 
-            setTimeout(function () {
+  $("#company-button").click(function() {
+    if (number === 1) {
+      $("#form-contact, #form-content").slideUp("slow");
+    } else if (number === 0) {
+      document.getElementsByName("formSchool")[0].placeholder = "Firma";
+      document.getElementsByName("formDepartment")[0].placeholder = "Dział";
+    }
 
-                document.getElementsByName('formSchool')[0].placeholder = 'Uczelnia';
-                document.getElementsByName('formDepartment')[0].placeholder = 'Wydział';
+    setTimeout(function() {
+      document.getElementsByName("formSchool")[0].placeholder = "Firma";
+      document.getElementsByName("formDepartment")[0].placeholder = "Dział";
+    }, 0700);
 
-            }, 0700);
+    number = 2;
 
-        }
+    $("#form-contact, #form-content").slideDown("slow");
+  });
 
-        $("#form-contact, #form-content").slideDown("slow");
+  $("#myModal").on("shown.bs.modal", function() {
+    $("#myInput").trigger("focus");
+  });
 
-        number = 1;
+  $("div").on("click", function() {
+    var target = $(this).attr("rel");
 
-    });
+    $("#" + target)
+      .show()
+      .siblings("div")
+      .hide();
+  });
 
-    $("#company-button").click(function () {
-
-        if (number === 1) {
-
-            $("#form-contact, #form-content").slideUp("slow");
-
-        } else if (number === 0) {
-
-            document.getElementsByName('formSchool')[0].placeholder = 'Firma';
-            document.getElementsByName('formDepartment')[0].placeholder = 'Dział';
-
-        }
-
-        setTimeout(function () {
-
-            document.getElementsByName('formSchool')[0].placeholder = 'Firma';
-            document.getElementsByName('formDepartment')[0].placeholder = 'Dział';
-
-        }, 0700);
-
-        number = 2;
-
-        $("#form-contact, #form-content").slideDown("slow");
-
-    });
-
-    $("#myModal").on("shown.bs.modal", function () {
-
-        $("#myInput").trigger("focus");
-
-    });
-
-
-    $('div').on('click', function () {
-
-        var target = $(this).attr('rel');
+  // TEAM section START
 
         $("#" + target).show().siblings("div").hide();
 
@@ -168,5 +157,13 @@ $(document).ready(function () {
 
 
 
+    // $(".thumbnail-container").each(function(index, item) {
+    //     $(this).attr({
+    //         id: "",
+    //         src: ""
+    //     })
+    // })
+  });
 
+  // TEAM section END
 });
