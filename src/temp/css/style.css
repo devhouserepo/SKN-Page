@@ -878,7 +878,7 @@ a:hover {
 
 .white_bg {
   background-color: white;
-  height: 700px;
+  height: 650px;
 }
 
 .white_bg p {
@@ -903,13 +903,12 @@ a:hover {
   left: 60px;
   -webkit-animation-name: example;
   /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 5s;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   animation-name: example;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 5s;
 }
 
 .col-2:hover {
@@ -922,13 +921,12 @@ a:hover {
   left: 80px;
   -webkit-animation-name: example1;
   /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 5s;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   animation-name: example1;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 5s;
 }
 
 .col-2:hover {
@@ -941,13 +939,12 @@ a:hover {
   left: 40px;
   -webkit-animation-name: example;
   /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 5s;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   animation-name: example;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 5s;
 }
 
 .col-2:hover {
@@ -960,13 +957,12 @@ a:hover {
   right: 20px;
   -webkit-animation-name: example1;
   /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 5s;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   animation-name: example1;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 5s;
 }
 
 .col-2:hover {
@@ -986,7 +982,7 @@ a:hover {
   color: grey;
   font-size: 140px;
   font-weight: bold;
-  left: 290px;
+  left: 280px;
   position: relative;
   top: -30px;
   opacity: 0.3;
@@ -998,75 +994,75 @@ a:hover {
 
 @keyframes example {
   0% {
-    top: 490px;
+    top: 480px;
   }
   25% {
-    top: 460px;
+    top: 470px;
   }
   50% {
-    top: 490px;
+    top: 480px;
   }
   75% {
-    top: 460px;
+    top: 470px;
   }
   100% {
-    top: 490px;
+    top: 480px;
   }
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
   0% {
-    top: 490px;
+    top: 480px;
   }
   25% {
-    top: 460px;
+    top: 470px;
   }
   50% {
-    top: 490px;
+    top: 480px;
   }
   75% {
-    top: 460px;
+    top: 470px;
   }
   100% {
-    top: 490px;
+    top: 480px;
   }
 }
 
 @keyframes example1 {
   0% {
-    top: 460px;
+    top: 470px;
   }
   25% {
-    top: 490px;
+    top: 480px;
   }
   50% {
-    top: 460px;
+    top: 470px;
   }
   75% {
-    top: 490px;
+    top: 480px;
   }
   100% {
-    top: 460px;
+    top: 470px;
   }
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example1 {
   0% {
-    top: 460px;
+    top: 470px;
   }
   25% {
-    top: 490px;
+    top: 480px;
   }
   50% {
-    top: 460px;
+    top: 470px;
   }
   75% {
-    top: 490px;
+    top: 480px;
   }
   100% {
-    top: 460px;
+    top: 470px;
   }
 }
 
