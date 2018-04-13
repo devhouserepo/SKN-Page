@@ -5,6 +5,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 
@@ -51,13 +52,14 @@ p {
 
 
 .members-bg-line-container {
-    background-color: rgba(19, 180, 92, 0.185);
-    // align-self: flex-start;
+    // background-color: rgba(19, 180, 92, 0.185);
+    align-self: flex-start;
     position: absolute;
     z-index: 1;
-    // width: 50vw;
-    // height: 100vh;
+    width: 1400px;
+    height: 95%;
     top: 152px;
+    left: -600px;
   }
 
 
@@ -80,7 +82,7 @@ p {
     // background-image: url("/assets/images/members/chlopak.jpg");
     background-position: center;
     background-size: 260px auto;
-    background-color: rgba(177, 185, 230, 0.37);
+    background-color: #414479;
     position: relative;
     z-index: 10;
     margin-top: 22%;
@@ -97,7 +99,7 @@ p {
 }
 
 .max-member-paragraphs {
-    background-color: rgba(255, 105, 180, 0.466);
+    // background-color: rgba(255, 105, 180, 0.466);
     display: block;
     flex: 1 1 100%;
     margin-top: 9%;
@@ -128,6 +130,7 @@ p {
     // background-color: rgb(183, 224, 33);
     flex: 2 2 50%;
     position: relative;
+    z-index: 11;
 }
 
 
