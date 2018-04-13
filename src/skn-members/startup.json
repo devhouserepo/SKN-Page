@@ -1,24 +1,24 @@
 [
     {
       "id": 1,
-      "first_name": "Jeanette",
-      "last_name": "Penddreth",
-      "info": "To jest o Jeanette. O Jeanette jest to. Aenean Jeanette Jeanette, odio at Jeanettesuscipit maximus, to Jeanette jest o Jeanette.",
+      "first_name": "Klaudia",
+      "last_name": "Jarębska",
+      "info": "To jest opis Klaudii. To jest opis Klaudii. To jest opis Klaudii.<br> To jest opis Klaudii. To jest opis Klaudii.",
       "linkedin": "",
-      "photo": "./assets/images/members/cazary-zajkowski.png"
-    },
-    {
-      "id": 2,
-      "first_name": "Aleksandra",
-      "last_name": "Grunwald",
-      "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
-      "linkedin": "",
-      "photo": "./assets/images/members/dziewczyna.jpeg"
+      "photo": "./assets/images/members/klaudia_jarebska_mini.jpg"
     },
     {
       "id": 3,
-      "first_name": "Noell",
-      "last_name": "Bea",
+      "first_name": "Aleksandra",
+      "last_name": "Grunwald",
+      "info": "Programistka front-end. Projektant produktu i grafiki z wykształcenia (Uniwersytet Artystyczny w Poznaniu). Członek koła SKN Konsultingu IT w projektach StartUp game i DevHouse.",
+      "linkedin": "https://www.linkedin.com/in/aleksandragrunwald/",
+      "photo": "./assets/images/members/grunwald.png"
+    },
+    {
+      "id": 3,
+      "first_name": "Denis",
+      "last_name": "Szuszpanov",
       "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
       "linkedin": "",
       "photo": "./assets/images/members/chlopak.jpg"
@@ -26,16 +26,16 @@
     {
       "id": 4,
       "first_name": "Karol",
-      "last_name": "Valek",
-      "info": "To jest o Willard Willard. O Willard Willard jest to. Aenean Willard placerat, odio at Willard suscipit Willard maximus, to jest o Willard.",
+      "last_name": "Piątkowski",
+      "info": "To jest opis Karola.  To jest opis Karola. To jest opis Karola. To jest opis Karola. ",
       "linkedin": "http://www.linkedin.com",
       "photo": "./assets/images/members/chowder.jpg"
     },
     {
       "id": 1,
       "first_name": "Józef",
-      "last_name": "Penddreth",
-      "info": "To jest o Jeanette. O Jeanette jest to. Aenean Jeanette Jeanette, odio at Jeanettesuscipit maximus, to Jeanette jest o Jeanette.",
+      "last_name": "Jósefowicz",
+      "info": "To jest opis Józefa. To jest opis Karola. To jest opis Karola. To jest opis Karola. ",
       "linkedin": "http://www.cartoonnetwork.com",
       "photo": "./assets/images/members/cazary-zajkowski.png"
     },
@@ -45,7 +45,7 @@
       "last_name": "Malicki",
       "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
       "linkedin": "http://www.twitter.com",
-      "photo": "./assets/images/members/dziewczyna.jpeg"
+      "photo": "./assets/images/members/dziewczyna.jpg"
     },
     {
       "id": 3,
@@ -77,7 +77,7 @@
       "last_name": "Frediani",
       "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
       "linkedin": "http://www.twitter.com",
-      "photo": "./assets/images/members/dziewczyna.jpeg"
+      "photo": "./assets/images/members/dziewczyna.jpg"
     },
     {
       "id": 4,

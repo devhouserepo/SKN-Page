@@ -81,7 +81,7 @@ p {
 .max-photo {
     // background-image: url("/assets/images/members/chlopak.jpg");
     background-position: center;
-    background-size: 260px auto;
+    background-size: 220px auto;
     background-color: #414479;
     position: relative;
     z-index: 10;
@@ -123,6 +123,14 @@ p {
     margin-top: 37px;
     padding: 0 7px 0 7px;
     border: 1px solid rgba(255, 255, 255, 0.089);
+    z-index: 100;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+
+    &:hover {
+        background-color: rgba(123, 124, 194, 0.315);
+    }
 }
 
 
