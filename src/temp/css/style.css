@@ -1307,11 +1307,30 @@ p {
   display: block;
 }
 
+.members-bg-line-container {
+  background-color: rgba(19, 180, 92, 0.185);
+  position: absolute;
+  z-index: 1;
+  top: 152px;
+}
+
+.members-bg-line {
+  -webkit-animation: dash 3s linear forwards;
+          animation: dash 3s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 .max-photo {
   background-position: center;
   background-size: 260px auto;
   background-color: rgba(177, 185, 230, 0.37);
   position: relative;
+  z-index: 10;
   margin-top: 22%;
   width: 200px;
   height: 200px;
@@ -1326,6 +1345,7 @@ p {
 }
 
 .max-member-paragraphs {
+  background-color: rgba(255, 105, 180, 0.466);
   display: block;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
@@ -1475,26 +1495,6 @@ p {
   position: absolute;
   top: 21vh;
   left: 28vw;
-}
-
-.members-bg-line-container {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: -120px;
-}
-
-.members-bg-line {
-  stroke-dasharray: 1200;
-  stroke-dashoffset: 1200;
-  -webkit-animation: dash 3s linear forwards;
-          animation: dash 3s linear forwards;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
 }
 
 .navigation {

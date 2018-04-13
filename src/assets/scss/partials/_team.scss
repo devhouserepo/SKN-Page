@@ -1,11 +1,12 @@
 .team-section-container {
-    // background-color: lightblue;
+    // background-color: rgb(233, 80, 10);
     font-family: "Roboto", sans-serif;
     display: flex;
     position: relative;
     width: 100vw;
     height: 100vh;
 }
+
 
 p {
     color: white;
@@ -48,12 +49,40 @@ p {
 
 
 
+
+.members-bg-line-container {
+    background-color: rgba(19, 180, 92, 0.185);
+    // align-self: flex-start;
+    position: absolute;
+    z-index: 1;
+    // width: 50vw;
+    // height: 100vh;
+    top: 152px;
+  }
+
+
+  .members-bg-line {
+    // stroke-dasharray: 1200;
+    // stroke-dashoffset: 1200;
+    animation: dash 3s linear forwards;
+  }
+  @keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+  }
+
+
+
+
+
 .max-photo {
     // background-image: url("/assets/images/members/chlopak.jpg");
     background-position: center;
     background-size: 260px auto;
     background-color: rgba(177, 185, 230, 0.37);
     position: relative;
+    z-index: 10;
     margin-top: 22%;
     width: 200px;
     height: 200px;
@@ -68,7 +97,7 @@ p {
 }
 
 .max-member-paragraphs {
-    // background-color: hotpink;
+    background-color: rgba(255, 105, 180, 0.466);
     display: block;
     flex: 1 1 100%;
     margin-top: 9%;
@@ -159,17 +188,6 @@ p {
 }
 
 
-// .projects-buttons {
-//     // background-color: rgb(223, 111, 37);
-//     display: inline-grid;
-//     grid-template-columns: repeat(5, 1fr);
-//     grid-gap: 7px;
-//     // justify-items: center;
-//     position: absolute;
-//     top: 106%;
-//     left: 4%;
-// }
-
 .projects-buttons {
     // background-color: rgb(223, 111, 37);
     display: flex;
@@ -232,35 +250,3 @@ p {
     top: 21vh;
     left: 28vw;
 }
-
-
-
-.members-bg-line-container {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: -120px;
-  }
-
-  .members-bg-line {
-    stroke-dasharray: 1200;
-    stroke-dashoffset: 1200;
-    animation: dash 3s linear forwards;
-  }
-  @keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-    }
-  }
-
-
-// .active-team-name {
-//     color: white;
-//     font-weight: bold;
-//     letter-spacing: 5px;
-//     opacity: 0.4;
-//     font-size: 2.3em;;
-//     position: absolute;
-//     top: -8%;
-//     right: 11%;
-// }
