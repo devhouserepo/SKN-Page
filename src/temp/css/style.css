@@ -1279,6 +1279,12 @@ p {
   width: 600px;
   margin: 10% 0 10% 0;
   z-index: 5;
+  font-size: 1em;
+  line-height: 27px;
+}
+
+#poznaj-lepiej {
+  font-size: 1.3em;
 }
 
 .members {
@@ -1357,7 +1363,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 480px;
+  max-height: 50vh;
+  overflow-y: auto;
 }
 
 .one-thumbnail-container {
@@ -1365,7 +1372,10 @@ p {
   display: -ms-flexbox;
   display: flex;
   margin: 5px;
-  width: 128px;
+  width: 97px;
+  height: 82px;
+  text-align: center;
+  line-height: 13px;
 }
 
 .thumb-img {
@@ -1382,8 +1392,9 @@ p {
 }
 
 .thumb-name-surname {
-  padding: 1px;
+  margin: 9px 0 0 0;
   font-size: 12px;
+  line-height: 14px;
 }
 
 #projekty-btns-container {
@@ -1393,32 +1404,34 @@ p {
 #team-section-projekty-header {
   color: white;
   font-weight: bold;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   opacity: 0.09;
-  font-size: 2.7em;
-  margin-top: 5%;
+  font-size: 1.3em;
+  margin-top: 14%;
 }
 
 .projects-buttons {
-  display: inline-grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 7px;
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   top: 106%;
   left: 4%;
+  margin: 4% 0 8% 0;
 }
 
 .project-btn {
-  grid-column: auto;
-  grid-row: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 6px;
-  border-radius: 5px;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.144);
   background: transparent;
-  background: rgba(46, 47, 93, 0.459);
-  opacity: 0.8;
+  opacity: 0.7;
   font-size: 0.8em;
-  letter-spacing: 0.8px;
+  font-weight: bold;
+  letter-spacing: 2px;
   color: #ffffff;
   cursor: pointer;
   -webkit-transition: 0.3s;
@@ -1445,22 +1458,22 @@ p {
 .giant-header-members {
   color: white;
   font-weight: bold;
-  letter-spacing: 10px;
-  opacity: 0.1;
-  font-size: 122px;
+  letter-spacing: 9px;
+  opacity: 0.07;
+  font-size: 99px;
   position: absolute;
-  top: 41%;
-  left: 14%;
+  top: 21vh;
+  left: 28vw;
 }
 
-.svg-3 {
+.members-bg-line-container {
   position: absolute;
   z-index: 1;
   bottom: 0;
-  left: -190px;
+  left: -120px;
 }
 
-.path-3 {
+.members-bg-line {
   stroke-dasharray: 1200;
   stroke-dashoffset: 1200;
   -webkit-animation: dash 3s linear forwards;
