@@ -1,37 +1,48 @@
 $(document).ready(function () {
-    let number = 0;
+
+    let number = null;
 
     $("#private-button").click(function () {
         if (number === 2) {
-            $("#form-contact, #form-content").slideUp("slow");
 
+            $("#form-contact, #form-content").slideToggle(600);
+        
             setTimeout(function () {
                 document.getElementsByName("formSchool")[0].placeholder = "Uczelnia";
                 document.getElementsByName("formDepartment")[0].placeholder = "Wydział";
-            }, 0700);
+            }, 0550);
+        } else if (number === 1 || number === null) {
+
+            $("#form-contact, #form-content").slideToggle(600);
+
         }
 
-        $("#form-contact, #form-content").slideDown("slow");
-
         number = 1;
+        
     });
 
     $("#company-button").click(function () {
         if (number === 1) {
-            $("#form-contact, #form-content").slideUp("slow");
-        } else if (number === 0) {
-            document.getElementsByName("formSchool")[0].placeholder = "Firma";
-            document.getElementsByName("formDepartment")[0].placeholder = "Dział";
+
+            $("#form-contact, #form-content").slideToggle(600);
+
+        } else if (number === 2 || number === null) {
+
+            $("#form-contact, #form-content").slideToggle(600);
+
+            setTimeout(function () {
+                document.getElementsByName("formSchool")[0].placeholder = "Firma";
+                document.getElementsByName("formDepartment")[0].placeholder = "Dział";
+            }, 0200);
+
         }
 
         setTimeout(function () {
             document.getElementsByName("formSchool")[0].placeholder = "Firma";
             document.getElementsByName("formDepartment")[0].placeholder = "Dział";
-        }, 0700);
+        }, 0550);
 
         number = 2;
-
-        $("#form-contact, #form-content").slideDown("slow");
     });
 
     $("#myModal").on("shown.bs.modal", function () {
