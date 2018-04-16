@@ -169,3 +169,22 @@
         }
     }
 }
+
+@media (min-width: 1600px) { 
+
+    .section { 
+        &__reference {
+            &__box-left {
+                right: 141px;
+            }
+            &__box-right {             
+                svg {
+                    left: 105px;
+                }
+                .carousel {
+                    left: 175px;
+                }
+            }
+        }
+    }
+}

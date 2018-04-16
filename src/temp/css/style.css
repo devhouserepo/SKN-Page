@@ -515,7 +515,7 @@ a:hover {
   padding: 0 15px 0 15px;
   min-width: 150px;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 1px;
   border: 0;
   background: #2e2f5d;
   font-family: "Roboto", sans-serif;
@@ -626,7 +626,7 @@ a:hover {
   padding: 0 15px 0 15px;
   min-width: 150px;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 1px;
   border: 0;
   background: #2e2f5d;
   font-family: "Roboto", sans-serif;
@@ -746,7 +746,7 @@ a:hover {
   padding: 0 15px 0 15px;
   min-width: 150px;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 1px;
   border: 0;
   background: #2e2f5d;
   font-family: "Roboto", sans-serif;
@@ -832,7 +832,7 @@ a:hover {
   padding: 0 15px 0 15px;
   min-width: 150px;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 1px;
   border: 0;
   background: #2e2f5d;
   font-family: "Roboto", sans-serif;
@@ -845,6 +845,12 @@ a:hover {
   letter-spacing: 0.8px;
   -ms-flex-item-align: center;
       align-self: center;
+  -webkit-animation-name: button-animation;
+          animation-name: button-animation;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .section__form .form__items-right .form-item input:hover, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea:hover, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:hover {
@@ -853,6 +859,42 @@ a:hover {
 
 .section__form .form__items-right .form-item input:focus, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea:focus, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:focus {
   outline: none;
+}
+
+@-webkit-keyframes button-animation {
+  0% {
+    top: 5px;
+  }
+  25% {
+    top: 0px;
+  }
+  50% {
+    top: 5px;
+  }
+  75% {
+    top: 0px;
+  }
+  100% {
+    top: 5px;
+  }
+}
+
+@keyframes button-animation {
+  0% {
+    top: 5px;
+  }
+  25% {
+    top: 0px;
+  }
+  50% {
+    top: 5px;
+  }
+  75% {
+    top: 0px;
+  }
+  100% {
+    top: 5px;
+  }
 }
 
 .partners {
@@ -1255,6 +1297,18 @@ a:hover {
 
 .section__reference__box-right .carousel-item p {
   margin: 25px 0 0 0;
+}
+
+@media (min-width: 1600px) {
+  .section__reference__box-left {
+    right: 141px;
+  }
+  .section__reference__box-right svg {
+    left: 105px;
+  }
+  .section__reference__box-right .carousel {
+    left: 175px;
+  }
 }
 
 .team-section-container {
