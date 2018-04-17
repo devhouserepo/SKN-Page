@@ -197,6 +197,22 @@
         button:nth-child(4){
             margin: 0 0 0 10px;
         }
+        .modal-dialog {
+            font-family: $text-font-1;
+            font-size: 1.2em;
+            .modal-content {
+                .modal-body {
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .modal-footer {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
         .form {
             z-index: 2;
             position: relative;

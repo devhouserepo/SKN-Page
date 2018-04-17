@@ -771,6 +771,33 @@ a:hover {
   margin: 0 0 0 10px;
 }
 
+.section__form .modal-dialog {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+}
+
+.section__form .modal-dialog .modal-content .modal-body {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__form .modal-dialog .modal-content .modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .section__form .form {
   z-index: 2;
   position: relative;
