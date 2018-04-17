@@ -1,48 +1,38 @@
 $(document).ready(function () {
-
-    let number = null;
+    let number = 0;
 
     $("#private-button").click(function () {
         if (number === 2) {
-
-            $("#form-contact, #form-content").slideToggle(600);
         
             setTimeout(function () {
                 document.getElementsByName("formSchool")[0].placeholder = "Uczelnia";
                 document.getElementsByName("formDepartment")[0].placeholder = "Wydział";
-            }, 0550);
-        } else if (number === 1 || number === null) {
-
-            $("#form-contact, #form-content").slideToggle(600);
-
+            }, 0600);
         }
 
         number = 1;
+
+        $("#form-contact, #form-content").slideToggle(600);
+
         
     });
 
     $("#company-button").click(function () {
         if (number === 1) {
 
-            $("#form-contact, #form-content").slideToggle(600);
-
-        } else if (number === 2 || number === null) {
-
-            $("#form-contact, #form-content").slideToggle(600);
-
             setTimeout(function () {
                 document.getElementsByName("formSchool")[0].placeholder = "Firma";
                 document.getElementsByName("formDepartment")[0].placeholder = "Dział";
-            }, 0200);
-
-        }
-
-        setTimeout(function () {
+            }, 0600);
+           
+        } else if (number === 0) {
             document.getElementsByName("formSchool")[0].placeholder = "Firma";
             document.getElementsByName("formDepartment")[0].placeholder = "Dział";
-        }, 0550);
+        }
 
         number = 2;
+        
+        $("#form-contact, #form-content").slideToggle(600);
     });
 
     $("#myModal").on("shown.bs.modal", function () {

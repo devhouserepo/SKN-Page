@@ -792,6 +792,34 @@
 
         <!-- CONTACT FORM START -->
 
+        <!-- MODAL START -->
+
+        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+          <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content">
+
+              <div class="modal-body">
+                
+                Dziękujemy za wiadomość.
+
+              </div>
+
+              <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- MODAL END -->
+
         <form class="form d-flex form-modal" action="">
 
           <fieldset id="form-contact" class="form__items-left">
@@ -837,7 +865,7 @@
 
             <div class="form-item">
 
-              <input class="form-submit form-submit--modal" type="submit" value="Wyślij" />
+              <input class="form-submit form-submit--modal" type="submit" value="Wyślij" data-toggle="modal" data-target="#exampleModalCenter2"/>
 
             </div>
 
