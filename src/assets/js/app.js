@@ -1,4 +1,10 @@
 $(document).ready(function () {
+         $('#fullpage').fullpage({
+        anchors:['start', 'projekty', 'partnerzy', 'członkowie', 'referencje', 'kontakt'],
+        sectionSelector: '.section',
+        slideSelector: '.slide2'
+    });
+
     let number = 0;
 
     $("#private-button").click(function () {
@@ -190,4 +196,6 @@ $(document).ready(function () {
 
 
     // TEAM section END
+
+
 });

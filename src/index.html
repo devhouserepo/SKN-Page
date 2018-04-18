@@ -10,11 +10,14 @@
   <link rel="stylesheet" href="./temp/css/bootstrap.css">
   <link rel="stylesheet" href="./temp/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="temp/css/jquery.fullPage.css" />
   <title>SKN Konsultingu It</title>
 
 </head>
 
 <body>
+
+
   <div class="container navigation ">
 
     <!-- HEADER START -->
@@ -25,32 +28,33 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse navigation__body" id="navbarSupportedContent">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#start">
           <img class="navigation__logo img-rsponsive" src="./assets/images/logo.1.png" alt="SKN Logo"> </a>
         <ul class="navbar-nav">
           <li class="nav-item navigation__item">
-            <a class="nav-link" href="#">projekty
+            <a class="nav-link" href="#projekty">projekty
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item navigation__item">
-            <a class="nav-link" href="#">partnerzy</a>
+            <a class="nav-link" href="#partnerzy">partnerzy</a>
           </li>
           <li class="nav-item navigation__item">
-            <a class="nav-link" href="#">rekrutacja</a>
+            <a class="nav-link" href="#kontakt">rekrutacja</a>
           </li>
           <li class="nav-item navigation__item">
-            <a class="nav-link" href="#">członkowie</a>
+            <a class="nav-link" href="#członkowie">członkowie</a>
           </li>
           <li class="nav-item navigation__item">
-            <a class="nav-link" href="#">kontakt</a>
+            <a class="nav-link" href="#kontakt">kontakt</a>
           </li>
         </ul>
       </div>
     </nav>
   </div>
 
-  <header class="d-flex justify-content-center align-items-center header">
+   <div id="fullpage">
+  <div class="section"><header class="d-flex justify-content-center align-items-center header">
 
     <div class="container header__content">
 
@@ -84,9 +88,8 @@
 
   <!-- HEADER END -->
 
-
-
-  <!-- PROJECTS SECTION START -->
+</div>
+  <div class="section"><!-- PROJECTS SECTION START -->
 
   <section id="projects" class="projects pt-4">
     <div class="projects_container container">
@@ -202,7 +205,8 @@
   <!-- PROJECTS SECTION END -->
 
 
-
+</div>
+  <div class="section"> 
 
   <!-- PARTNERS SECTION START -->
 
@@ -280,11 +284,8 @@
     </div>
   </section>
 
-  <!-- PARTNERS SECTION END -->
-
-
-
-  <!-- TEAM SECTION START -->
+  <!-- PARTNERS SECTION END --></div>
+  <div class="section"><!-- TEAM SECTION START -->
 
   <section id="team" class="flex-column d-flex align-items-center team-section-container">
     <div class="container members-section-without-bg-line">
@@ -332,7 +333,9 @@
     </svg> -->
   </section>
 
-  <!-- TEAM SECTION END-->
+  <!-- TEAM SECTION END--></div>
+    <div class="section">
+  
 
 
 
@@ -536,8 +539,8 @@
   <!-- REFERENCES SECTION END -->
 
 
-
-
+</div>
+  <div class="section">
   <!-- CONTACT SECTION START -->
 
   <section class="container d-flex justify-content-center align-items-center section__contact">
@@ -881,12 +884,23 @@
 
   </section>
 
-  <!-- CONTACT SECTION END -->
+  <!-- CONTACT SECTION END --></div>
+</div>
+
+  
+
+ 
+
+
+
+
 
   <script src="temp/js/jquery.min.js"></script>
   <script src="temp/js/popper.min.js"></script>
   <script src="temp/js/bootstrap.min.js"></script>
   <script src="temp/js/app.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="temp/js/jquery.fullPage.js"></script>
 
 </body>
 
