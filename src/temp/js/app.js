@@ -1,15 +1,11 @@
 $(document).ready(function () {
-         $('#fullpage').fullpage({
-        anchors:['start', 'projekty', 'partnerzy', 'członkowie', 'referencje', 'kontakt'],
-        sectionSelector: '.section',
-        slideSelector: '.slide2'
-    });
+
 
     let number = 0;
 
     $("#private-button").click(function () {
         if (number === 2) {
-        
+
             setTimeout(function () {
                 document.getElementsByName("formSchool")[0].placeholder = "Uczelnia";
                 document.getElementsByName("formDepartment")[0].placeholder = "Wydział";
@@ -20,7 +16,7 @@ $(document).ready(function () {
 
         $("#form-contact, #form-content").slideToggle(600);
 
-        
+
     });
 
     $("#company-button").click(function () {
@@ -30,14 +26,14 @@ $(document).ready(function () {
                 document.getElementsByName("formSchool")[0].placeholder = "Firma";
                 document.getElementsByName("formDepartment")[0].placeholder = "Dział";
             }, 0600);
-           
+
         } else if (number === 0) {
             document.getElementsByName("formSchool")[0].placeholder = "Firma";
             document.getElementsByName("formDepartment")[0].placeholder = "Dział";
         }
 
         number = 2;
-        
+
         $("#form-contact, #form-content").slideToggle(600);
     });
 
@@ -196,6 +192,12 @@ $(document).ready(function () {
 
 
     // TEAM section END
+
+    $('#fullpage').fullpage({
+   anchors:['start', 'projekty', 'partnerzy', 'członkowie', 'referencje', 'kontakt'],
+   sectionSelector: '.section',
+   slideSelector: '.slide2'
+});
 
 
 });

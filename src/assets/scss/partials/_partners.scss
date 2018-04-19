@@ -8,22 +8,24 @@
   border-left: 450px solid #000039;
   border-top: 277px solid #000039;
   //border-right: 2100px solid transparent;
+  -webkit-clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 67%, 29% 100%, 0 100%, 0% 70%, 0% 30%);
+clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 67%, 29% 100%, 0 100%, 0% 70%, 0% 30%);
   color: white;
   position: absolute;
   left: 0;
   z-index: 1;
 
   p {
-    left: -150px;
+    left: -220px;
     position: absolute;
-    top: -140px;
+    top: -160px;
     width: 600px;
   }
 }
 
 .white_bg {
   background-color: white;
-  height: 650px;
+  height: 850px;
 
   p {
     color: black;
@@ -36,12 +38,12 @@
 
 .col-4 {
   color: black;
-  top: 500px;
+  top: 690px;
 }
 
 .col-2 {
   color: black;
-  top: 470px;
+  top: 670px;
 
   &:nth-of-type(1) {
     left: 60px;
@@ -96,7 +98,7 @@ cursor: pointer;
 .img {
   opacity: 0.7;
   position: absolute;
-  width: 60%;
+  width: 1200px;
   z-index: 0;
 }
 
@@ -104,9 +106,9 @@ cursor: pointer;
   color: grey;
   font-size: 140px;
   font-weight:bold;
-  left: 280px;
-  position: relative;
-  top: -30px;
+  position: absolute;
+  top: 480px;
+  left: 250px;
   opacity: 0.3;
 
 }
@@ -116,35 +118,35 @@ cursor: pointer;
 }
 
 @keyframes example {
-    0%   {top:480px;}
-    25%  {top:470px;}
-    50%  {top:480px;}
-    75%  {top:470px;}
-    100%  {top:480px;}
+    0%   {top:680px;}
+    25%  {top:670px;}
+    50%  {top:680px;}
+    75%  {top:670px;}
+    100%  {top:680px;}
   }
 
   /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
-  0%   {top:480px;}
-  25%  {top:470px;}
-  50%  {top:480px;}
-  75%  {top:470px;}
-  100%  {top:480px;}
+  0%   {top:680px;}
+  25%  {top:670px;}
+  50%  {top:680px;}
+  75%  {top:670px;}
+  100%  {top:680px;}
 }
 
 @keyframes example1 {
-  0%   {top:470px;}
-  25%  {top:480px;}
-  50%  {top:470px;}
-  75%  {top:480px;}
-  100%  {top:470px;}
+  0%   {top:670px;}
+  25%  {top:680px;}
+  50%  {top:670px;}
+  75%  {top:680px;}
+  100%  {top:670px;}
 }
 
     /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example1 {
-  0%   {top:470px;}
-  25%  {top:480px;}
-  50%  {top:470px;}
-  75%  {top:480px;}
-  100%  {top:470px;}
+  0%   {top:670px;}
+  25%  {top:680px;}
+  50%  {top:670px;}
+  75%  {top:680px;}
+  100%  {top:670px;}
 }
