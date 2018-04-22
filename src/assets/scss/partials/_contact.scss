@@ -1,274 +1,286 @@
 .section {
-    position: relative;
-    &__contact {
-        width: 100vw;
-        height: 100vh;
-        color: $text-color-1;
-        .modal {
-            color: $text-color-2;
-        }
-        &__text {
-            span {
-                display: block;
-                font-size: 0.9em;
-                font-family: $text-font-1; 
-                line-height: 21px;
-                text-align: center;
-                letter-spacing: 0.7px;
-            }
-            p {
-                position: relative;
-                z-index: 1;
-                span:nth-child(3),
-                span:nth-child(6),
-                span:nth-child(8),
-                span:nth-child(10) {
-                    margin: 20px 0 0 0;
-                }
-            }
-            button {
-                @include btn-base($bg-button-color-1, $text-color-1);
-            }
-            svg {
-                position: absolute;
-                z-index: 1;
-                top: -37px;
-            }
-            .path {
-                stroke-dasharray: 1200;
-                stroke-dashoffset: 1200;
-                animation: dash 2.5s linear forwards;
-            }
-            @keyframes dash {
-                to {
-                    stroke-dashoffset: 0;
-                }
-            }
-        }
-        .modal {            
-            font-family: $text-font-1;
-            .close {
-                &:focus {
-                    outline: none;
-                }
-            }
-            .modal-body {
-                .form-recruitment {
-                    .form-item {
-                        input {
-                            border-top: none;
-                            border-left: none;
-                            border-right: none;
-                            border-bottom: 1px solid #777aad;
-                            outline: 0;
-                            font-family: $text-font-1;
-                            font-size: 1em;
-                            padding: 0px 5px 5px 0px;
-                            margin: 15px 0 15px 17px;
-                        }
-                        textarea {
-                            @extend input;
-                            height: 100px;
-                        }
-                        &__row:nth-child(2){
-                            margin: 15px 0 0 0;
-                        }
-                        &__row:nth-child(3){
-                            margin: 15px 0 15px 0;
-                        }
-                        &__row {
-                            input {
-                                margin: 0 0 0 20px;
-                                cursor: pointer;
-                                width: 15px;
-                                height: 15px;
-                            }
-                            span {
-                                position: relative;
-                                bottom: 2px;
-                                left: 2px;
-                            }
-                        }
-                        &__row-checkbox-departmentChoice,
-                        &__row-checkbox-projectRecruitment {
-                            input {
-                             cursor: pointer;
-                             width: 15px;
-                             height: 15px;
-                            }
-                            span {
-                                position: relative;
-                                left: 5px;
-                                bottom: 1px;
-                            }
-                        }
-                        p {
-                            font-size: 0.8em;
-                            margin: 10px 0 0 18px;
-                        }
-                    }
-                }
-            }
-            .btn,
-            .btn-primary,
-            .btn-secondary {
-                @include btn-base($bg-button-color-1, $text-color-1);
-                margin: 0 0 0 15px;
-            }
-        }
+  position: relative;
+  &__contact {
+    width: 100vw;
+    height: 100vh;
+    color: $text-color-1;
+    .modal {
+      color: $text-color-2;
+      top: auto;
+      bottom: auto;
     }
-    &__box {
-        width: 500px;
-        height: 150px;
-        background: $bg-box-color-1;
-        z-index: 0;
-        position: relative;
-        left: -25px;
-        bottom: -76px;
-        transform: skew(3deg) rotateZ(2deg);
-        img {
-            margin: 23px 0 0 60px;
-            width: 110px;
-            height: 115px;
-            transform: skew(-3deg) rotateZ(-2deg);
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            transform:rotateZ(240deg);
-            z-index: 1;
-            width: 0; 
-            height: 0; 
-            border-top: 90px solid transparent;
-            border-bottom: 90px solid transparent;
-            border-left: 90px solid $bg-color-1;
-            top: -115px;
-            left: -10px;
-        }
-        &::before {
-            content: '';
-            position: absolute;
-            transform:rotateZ(60deg);
-            z-index: 1;
-            width: 0; 
-            height: 0; 
-            border-top: 90px solid transparent;
-            border-bottom: 90px solid transparent;
-            border-left: 90px solid $bg-color-1;
-            right: -20px;
-            top: 90px;
-        }
-        &__text {
-            font-family: $text-font-1;
-            transform: skew(-3deg) rotateZ(-2deg);
-            margin: 0 0 0 35px;
-            h4 {
-                font-size: 1.2em;
-                margin: 25px 0 0 0;
-            }
-            p {
-                span {
-                    display: block;
-                    margin: 13px 0 0 0;
-                    font-size: 0.9em;
-                }
-                &::after,
-                &::before {
-                    content: none;
-                }
-            }
-        }
-    }
-    &__form {
+    &__text {
+      span {
+        display: block;
+        font-size: 0.9em;
         font-family: $text-font-1;
-        margin: 0 0 0 45px;
-        h4 {
-            font-size: 1.1em;
-            margin: 100px 0 0 0;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.7px;
+      }
+      p {
+        position: relative;
+        z-index: 1;
+        span:nth-child(3),
+        span:nth-child(6),
+        span:nth-child(8),
+        span:nth-child(10) {
+          margin: 20px 0 0 0;
         }
-
-        h5 {
-            font-size: 1em;
-            margin: 20px 0 0 0;
+      }
+      button {
+        @include btn-base($bg-button-color-1, $text-color-1);
+      }
+      svg {
+        position: absolute;
+        z-index: 1;
+        top: -37px;
+      }
+      .path {
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        animation: dash 2.5s linear forwards;
+      }
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
         }
-        button {
-            @include btn-base($bg-button-color-1, $text-color-1);
-        }
-        button:nth-child(4){
-            margin: 0 0 0 10px;
-        }
-        .modal-dialog {
-            font-family: $text-font-1;
-            font-size: 1.2em;
-            .modal-content {
-                .modal-body {
-                    height: 100px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                .modal-footer {
-                    display: flex;
-                    justify-content: center;
-                }
-            }
-        }
-        .form {
-            z-index: 2;
-            position: relative;
-            margin: 20px 0 0 0;
-            height: 280px;
-            width: 520px;
-            &__items-left,
-            &__items-right {
-                width: 200px;
-                display: none;
-                .form-item {
-                    display: flex;
-                    flex-direction: column;
-                    label {
-                        display: none;
-                    }
-                    input,
-                    textarea {
-                        margin: 12px 0 0 0;
-                        border: 1px solid $textarea-border-color-1;
-                        outline: 0;
-                        font-family: $text-font-1;
-                        font-size: 0.8em;
-                        height: 23px;
-                        padding: 0 0 0 5px;
-                        height: 30px;
-                    }
-                    input:focus {
-                     background: $bg-input-focus-1;
-                    }
-                }
-            }
-            &__items-right {
-                width: 300px;
-                margin: 0 0 0 30px;
-                .form-item {
-                    textarea {
-                        height: 198px;
-                        padding: 8px 0 0 5px;
-                    }
-                    input {
-                        @include btn-base($bg-button-color-1, $text-color-1);
-                        align-self: center;
-                        animation-name: button-animation;
-                        animation-duration: 2.5s;
-                        animation-iteration-count: infinite;
-                    }
-                    @keyframes button-animation {
-                        0%   {top:5px;}
-                        25%  {top:0px;}
-                        50%  {top:5px;}
-                        75%  {top:0px;}
-                        100%  {top:5px;}
-                      }
-                }
-            }
-        }
+      }
     }
+    .modal {
+      font-family: $text-font-1;
+      .close {
+        &:focus {
+          outline: none;
+        }
+      }
+      .modal-body {
+        .form-recruitment {
+          .form-item {
+            input {
+              border-top: none;
+              border-left: none;
+              border-right: none;
+              border-bottom: 1px solid #777aad;
+              outline: 0;
+              font-family: $text-font-1;
+              font-size: 1em;
+              padding: 0px 5px 5px 0px;
+              margin: 15px 0 15px 17px;
+            }
+            textarea {
+              @extend input;
+              height: 100px;
+            }
+            &__row:nth-child(2) {
+              margin: 15px 0 0 0;
+            }
+            &__row:nth-child(3) {
+              margin: 15px 0 15px 0;
+            }
+            &__row {
+              input {
+                margin: 0 0 0 20px;
+                cursor: pointer;
+                width: 15px;
+                height: 15px;
+              }
+              span {
+                position: relative;
+                bottom: 2px;
+                left: 2px;
+              }
+            }
+            &__row-checkbox-departmentChoice,
+            &__row-checkbox-projectRecruitment {
+              input {
+                cursor: pointer;
+                width: 15px;
+                height: 15px;
+              }
+              span {
+                position: relative;
+                left: 5px;
+                bottom: 1px;
+              }
+            }
+            p {
+              font-size: 0.8em;
+              margin: 10px 0 0 18px;
+            }
+          }
+        }
+      }
+      .btn,
+      .btn-primary,
+      .btn-secondary {
+        @include btn-base($bg-button-color-1, $text-color-1);
+        margin: 0 0 0 15px;
+      }
+    }
+  }
+  &__box {
+    width: 500px;
+    height: 150px;
+    background: $bg-box-color-1;
+    z-index: 0;
+    position: relative;
+    left: -25px;
+    bottom: -76px;
+    transform: skew(3deg) rotateZ(2deg);
+    img {
+      margin: 23px 0 0 60px;
+      width: 110px;
+      height: 115px;
+      transform: skew(-3deg) rotateZ(-2deg);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      transform: rotateZ(240deg);
+      z-index: 1;
+      width: 0;
+      height: 0;
+      border-top: 90px solid transparent;
+      border-bottom: 90px solid transparent;
+      border-left: 90px solid $bg-color-1;
+      top: -115px;
+      left: -10px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      transform: rotateZ(60deg);
+      z-index: 1;
+      width: 0;
+      height: 0;
+      border-top: 90px solid transparent;
+      border-bottom: 90px solid transparent;
+      border-left: 90px solid $bg-color-1;
+      right: -20px;
+      top: 90px;
+    }
+    &__text {
+      font-family: $text-font-1;
+      transform: skew(-3deg) rotateZ(-2deg);
+      margin: 0 0 0 35px;
+      h4 {
+        font-size: 1.2em;
+        margin: 25px 0 0 0;
+      }
+      p {
+        span {
+          display: block;
+          margin: 13px 0 0 0;
+          font-size: 0.9em;
+        }
+        &::after,
+        &::before {
+          content: none;
+        }
+      }
+    }
+  }
+  &__form {
+    font-family: $text-font-1;
+    margin: 0 0 0 45px;
+    h4 {
+      font-size: 1.1em;
+      margin: 100px 0 0 0;
+    }
+
+    h5 {
+      font-size: 1em;
+      margin: 20px 0 0 0;
+    }
+    button {
+      @include btn-base($bg-button-color-1, $text-color-1);
+    }
+    button:nth-child(4) {
+      margin: 0 0 0 10px;
+    }
+    .modal-dialog {
+      font-family: $text-font-1;
+      font-size: 1.2em;
+      .modal-content {
+        .modal-body {
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .modal-footer {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    .form {
+      z-index: 2;
+      position: relative;
+      margin: 20px 0 0 0;
+      height: 280px;
+      width: 520px;
+      &__items-left,
+      &__items-right {
+        width: 200px;
+        display: none;
+        .form-item {
+          display: flex;
+          flex-direction: column;
+          label {
+            display: none;
+          }
+          input,
+          textarea {
+            margin: 12px 0 0 0;
+            border: 1px solid $textarea-border-color-1;
+            outline: 0;
+            font-family: $text-font-1;
+            font-size: 0.8em;
+            height: 23px;
+            padding: 0 0 0 5px;
+            height: 30px;
+          }
+          input:focus {
+            background: $bg-input-focus-1;
+          }
+        }
+      }
+      &__items-right {
+        width: 300px;
+        margin: 0 0 0 30px;
+        .form-item {
+          textarea {
+            height: 198px;
+            padding: 8px 0 0 5px;
+          }
+          input {
+            @include btn-base($bg-button-color-1, $text-color-1);
+            align-self: center;
+            animation-name: button-animation;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+          }
+          @keyframes button-animation {
+            0% {
+              top: 5px;
+            }
+            25% {
+              top: 0px;
+            }
+            50% {
+              top: 5px;
+            }
+            75% {
+              top: 0px;
+            }
+            100% {
+              top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
