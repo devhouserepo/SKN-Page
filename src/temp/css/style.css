@@ -150,32 +150,34 @@ a:hover {
 
 .projects {
   font-family: "Roboto";
-  margin-top: 200px;
-  padding-bottom: 200px;
 }
 
 .projects_container {
-  margin-top: 150px;
-  max-width: 700px;
-  min-height: 400px;
+  width: 100vw;
+  height: 100vh;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.projects__first-row {
-  left: -170px;
-  margin-top: -115px;
-  position: absolute;
-  right: -170px;
-  z-index: 3;
-}
-
-.projects__second-row {
-  left: -170px;
-  margin-top: 260px;
-  margin-bottom: -100px;
-  position: absolute;
-  right: -170px;
-  z-index: 3;
+.container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .project-paragraphs {
@@ -185,11 +187,11 @@ a:hover {
   top: 50;
   left: 0;
   z-index: 4;
+  cursor: pointer;
 }
 
 .singular-project-container:hover .project_title {
   font-size: 20px;
-  margin-top: -10%;
 }
 
 .singular-project-container:hover #twoj-projekt-title {
@@ -199,15 +201,15 @@ a:hover {
 
 .singular-project-container:hover .projects-shape-1,
 .singular-project-container:hover .projects-shape-2 {
-  -ms-transform: scale(2, 2);
+  -ms-transform: scale(1.6, 1.6);
   /* Internet Explorer and Microsoft Edge */
-  -webkit-transform: scale(2, 2);
+  -webkit-transform: scale(1.6, 1.6);
   /* Safari */
-  -moz-transform: scale(2, 2);
+  -moz-transform: scale(1.6, 1.6);
   /* Firefox */
-  -o-animation: scale(2, 2);
+  -o-animation: scale(1.6, 1.6);
   /* Opera 12+ */
-  transform: scale(2, 2);
+  transform: scale(1.6, 1.6);
   z-index: 3;
   background-size: 400px;
   -webkit-transition: all 0.7s ease-in-out;
@@ -302,15 +304,7 @@ a:hover {
   transition: all 0.7s ease-in-out;
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
-}
-
-.projects__second-row {
-  left: -170px;
-  margin-top: 260px;
-  margin-bottom: -100px;
-  position: absolute;
-  right: -170px;
-  z-index: 3;
+  position: relative;
 }
 
 .projects-shape-1 {
@@ -352,31 +346,41 @@ a:hover {
 }
 
 #startup {
-  margin-top: 26px;
+  position: relative;
+  right: 110px;
+  top: 60px;
 }
 
 #devhouse {
-  margin-top: -30px;
+  position: relative;
+  right: 80px;
+  bottom: 40px;
 }
 
 #boot-camp {
-  margin-top: 30px;
-}
-
-#twoj-projekt-title {
-  margin-top: 12%;
+  position: relative;
+  right: 30px;
+  top: 100px;
 }
 
 #thinkit {
-  margin-top: -1%;
+  position: relative;
+  top: 20px;
 }
 
-#twoj-projekt .project-about {
-  margin-left: 18px;
-  margin-right: 7px;
+.lead {
+  position: relative;
+  bottom: 30px;
+  left: 80px;
 }
 
-#twoj-projekt .projects-shape-2 {
+.twoj-projekt {
+  position: relative;
+  top: 80px;
+  left: 80px;
+}
+
+.twoj-projekt .projects-shape-2 {
   background-color: #0f0f4d;
   background-image: none;
   height: 180px;
@@ -384,7 +388,7 @@ a:hover {
   max-width: 390px;
 }
 
-#twoj-projekt .button {
+.twoj-projekt .button {
   left: 65px;
   opacity: 0;
   position: absolute;
@@ -404,23 +408,23 @@ a:hover {
   opacity: 0.1;
   font-size: 119px;
   position: absolute;
-  top: 161px;
-  left: -240px;
+  right: -80px;
+  bottom: -95px;
   z-index: 1;
 }
 
 .svg-1 {
   position: absolute;
   z-index: 1;
-  left: -100px;
-  top: -50px;
+  bottom: -300px;
+  right: -200px;
 }
 
 .path-1 {
-  stroke-dasharray: 1500;
-  stroke-dashoffset: 1500;
-  -webkit-animation: dash 4s linear forwards;
-          animation: dash 4s linear forwards;
+  stroke-dasharray: 1600;
+  stroke-dashoffset: 1600;
+  -webkit-animation: dash 6s linear forwards;
+          animation: dash 6s linear forwards;
 }
 
 @-webkit-keyframes dash {
@@ -438,15 +442,14 @@ a:hover {
 .svg-2 {
   position: absolute;
   z-index: 1;
-  left: -200px;
-  top: -200px;
+  top: -220px;
 }
 
 .path-2 {
   stroke-dasharray: 1700;
   stroke-dashoffset: 1700;
-  -webkit-animation: dash 4s linear forwards;
-          animation: dash 4s linear forwards;
+  -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
 }
 
 @keyframes dash {
@@ -456,18 +459,6 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .projects__first-row {
-    left: 0;
-    position: relative;
-    right: 0;
-  }
-  .projects__second-row {
-    left: 0;
-    margin-top: 10px;
-    margin-bottom: -130px;
-    position: relative;
-    right: 0;
-  }
   .projects__title {
     display: none;
   }
