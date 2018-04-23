@@ -483,12 +483,6 @@ a:hover {
   color: #ffffff;
 }
 
-.section__contact .modal {
-  color: #000000;
-  top: auto;
-  bottom: auto;
-}
-
 .section__contact__text span {
   display: block;
   font-size: 0.9em;
@@ -555,103 +549,6 @@ a:hover {
   to {
     stroke-dashoffset: 0;
   }
-}
-
-.section__contact .modal {
-  font-family: "Roboto", sans-serif;
-}
-
-.section__contact .modal .close:focus {
-  outline: none;
-}
-
-.section__contact .modal .modal-body .form-recruitment .form-item input, .section__contact .modal .modal-body .form-recruitment .form-item textarea {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid #777aad;
-  outline: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 1em;
-  padding: 0px 5px 5px 0px;
-  margin: 15px 0 15px 17px;
-}
-
-.section__contact .modal .modal-body .form-recruitment .form-item textarea {
-  height: 100px;
-}
-
-.section__contact .modal .modal-body .form-recruitment .form-item__row:nth-child(2) {
-  margin: 15px 0 0 0;
-}
-
-.section__contact .modal .modal-body .form-recruitment .form-item__row:nth-child(3) {
-  margin: 15px 0 15px 0;
-}
-
-.section__contact .modal .modal-body .form-recruitment .form-item__row input, .section__contact .modal .modal-body .form-recruitment .form-item__row .form-item textarea, .section__contact .modal .modal-body .form-recruitment .form-item .form-item__row textarea {
-  margin: 0 0 0 20px;
-  cursor: pointer;
-  width: 15px;
-  height: 15px;
-}
-
-.section__contact .modal .modal-body .form-recruitment .form-item__row span {
-  position: relative;
-  bottom: 2px;
-  left: 2px;
-}
-
-.section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-departmentChoice input, .section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-departmentChoice .form-item textarea, .section__contact .modal .modal-body .form-recruitment .form-item .form-item__row-checkbox-departmentChoice textarea, .section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-projectRecruitment input, .section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-projectRecruitment .form-item textarea, .section__contact .modal .modal-body .form-recruitment .form-item .form-item__row-checkbox-projectRecruitment textarea {
-  cursor: pointer;
-  width: 15px;
-  height: 15px;
-}
-
-.section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-departmentChoice span, .section__contact .modal .modal-body .form-recruitment .form-item__row-checkbox-projectRecruitment span {
-  position: relative;
-  left: 5px;
-  bottom: 1px;
-}
-
-.section__contact .modal .modal-body .form-recruitment .form-item p {
-  font-size: 0.8em;
-  margin: 10px 0 0 18px;
-}
-
-.section__contact .modal .btn,
-.section__contact .modal .btn-primary,
-.section__contact .modal .btn-secondary {
-  z-index: 2;
-  position: relative;
-  margin: 30px 0 0 0;
-  padding: 0 15px 0 15px;
-  min-width: 150px;
-  height: 40px;
-  border-radius: 1px;
-  border: 0;
-  background: #2e2f5d;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.8em;
-  color: #ffffff;
-  cursor: pointer;
-  opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  letter-spacing: 0.8px;
-  margin: 0 0 0 15px;
-}
-
-.section__contact .modal .btn:hover,
-.section__contact .modal .btn-primary:hover,
-.section__contact .modal .btn-secondary:hover {
-  background: #4f5178;
-}
-
-.section__contact .modal .btn:focus,
-.section__contact .modal .btn-primary:focus,
-.section__contact .modal .btn-secondary:focus {
-  outline: none;
 }
 
 .section__box {
@@ -773,33 +670,6 @@ a:hover {
   margin: 0 0 0 10px;
 }
 
-.section__form .modal-dialog {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
-}
-
-.section__form .modal-dialog .modal-content .modal-body {
-  height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.section__form .modal-dialog .modal-content .modal-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .section__form .form {
   z-index: 2;
   position: relative;
@@ -827,8 +697,8 @@ a:hover {
   display: none;
 }
 
-.section__form .form__items-left .form-item input, .section__form .form__items-left .section__contact .modal .modal-body .form-recruitment .form-item textarea, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-left .form-item textarea,
-.section__form .form__items-left .form-item textarea, .section__form .form__items-right .form-item input, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea,
+.section__form .form__items-left .form-item input, .section__form .form__items-left .modal-first .modal-body .form-recruitment .form-item textarea, .modal-first .modal-body .form-recruitment .section__form .form__items-left .form-item textarea,
+.section__form .form__items-left .form-item textarea, .section__form .form__items-right .form-item input, .section__form .form__items-right .modal-first .modal-body .form-recruitment .form-item textarea, .modal-first .modal-body .form-recruitment .section__form .form__items-right .form-item textarea,
 .section__form .form__items-right .form-item textarea {
   margin: 12px 0 0 0;
   border: 1px solid #4f5178;
@@ -840,7 +710,7 @@ a:hover {
   height: 30px;
 }
 
-.section__form .form__items-left .form-item input:focus, .section__form .form__items-left .section__contact .modal .modal-body .form-recruitment .form-item textarea:focus, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-left .form-item textarea:focus, .section__form .form__items-right .form-item input:focus, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea:focus, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:focus {
+.section__form .form__items-left .form-item input:focus, .section__form .form__items-left .modal-first .modal-body .form-recruitment .form-item textarea:focus, .modal-first .modal-body .form-recruitment .section__form .form__items-left .form-item textarea:focus, .section__form .form__items-right .form-item input:focus, .section__form .form__items-right .modal-first .modal-body .form-recruitment .form-item textarea:focus, .modal-first .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:focus {
   background: #eaecfc;
 }
 
@@ -854,7 +724,7 @@ a:hover {
   padding: 8px 0 0 5px;
 }
 
-.section__form .form__items-right .form-item input, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea {
+.section__form .form__items-right .form-item input, .section__form .form__items-right .modal-first .modal-body .form-recruitment .form-item textarea, .modal-first .modal-body .form-recruitment .section__form .form__items-right .form-item textarea {
   z-index: 2;
   position: relative;
   margin: 30px 0 0 0;
@@ -882,11 +752,11 @@ a:hover {
           animation-iteration-count: infinite;
 }
 
-.section__form .form__items-right .form-item input:hover, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea:hover, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:hover {
+.section__form .form__items-right .form-item input:hover, .section__form .form__items-right .modal-first .modal-body .form-recruitment .form-item textarea:hover, .modal-first .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:hover {
   background: #4f5178;
 }
 
-.section__form .form__items-right .form-item input:focus, .section__form .form__items-right .section__contact .modal .modal-body .form-recruitment .form-item textarea:focus, .section__contact .modal .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:focus {
+.section__form .form__items-right .form-item input:focus, .section__form .form__items-right .modal-first .modal-body .form-recruitment .form-item textarea:focus, .modal-first .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:focus {
   outline: none;
 }
 
@@ -1599,12 +1469,23 @@ p {
   z-index: 200;
   -webkit-transition: background-color 0.4s linear;
   transition: background-color 0.4s linear;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation.scrolled {
-  background-color: rgba(33, 29, 29, 0.9);
-  -webkit-transition: background-color 0.4s linear;
-  transition: background-color 0.4s linear;
+  background-color: rgba(33, 29, 29, 0.6);
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
 }
 
 .navigation__navbar {
@@ -1672,4 +1553,156 @@ p {
           transform: translateX(0px);
   -webkit-transition: all 2s linear;
   transition: all 2s linear;
+}
+
+.modal {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+
+.modal .close:focus {
+  outline: none;
+}
+
+.modal .btn,
+.modal .btn-primary,
+.modal .btn-secondary {
+  z-index: 2;
+  position: relative;
+  margin: 30px 0 0 0;
+  padding: 0 15px 0 15px;
+  min-width: 150px;
+  height: 40px;
+  border-radius: 1px;
+  border: 0;
+  background: #2e2f5d;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+  color: #ffffff;
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  letter-spacing: 0.8px;
+  margin: 0 0 0 15px;
+}
+
+.modal .btn:hover,
+.modal .btn-primary:hover,
+.modal .btn-secondary:hover {
+  background: #4f5178;
+}
+
+.modal .btn:focus,
+.modal .btn-primary:focus,
+.modal .btn-secondary:focus {
+  outline: none;
+}
+
+.modal-first .modal-body .form-recruitment .form-item label {
+  margin: 6px 0 6px 0;
+}
+
+.modal-first .modal-body .form-recruitment .form-item input, .modal-first .modal-body .form-recruitment .form-item textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #777aad;
+  outline: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  padding: 0px 5px 5px 0px;
+  margin: 15px 0 15px 17px;
+}
+
+.modal-first .modal-body .form-recruitment .form-item input[type=text], .modal-first .modal-body .form-recruitment .form-item textarea[type=text],
+.modal-first .modal-body .form-recruitment .form-item input[type=email], .modal-first .modal-body .form-recruitment .form-item textarea[type=email],
+.modal-first .modal-body .form-recruitment .form-item input[type=number], .modal-first .modal-body .form-recruitment .form-item textarea[type=number],
+.modal-first .modal-body .form-recruitment .form-item textarea {
+  width: 100%;
+  padding: 12px 17px;
+  margin: 15px 0;
+  border: 2px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  background: white;
+}
+
+.modal-first .modal-body .form-recruitment .form-item input[type=text]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type=text]:focus,
+.modal-first .modal-body .form-recruitment .form-item input[type=email]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type=email]:focus,
+.modal-first .modal-body .form-recruitment .form-item input[type=number]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type=number]:focus,
+.modal-first .modal-body .form-recruitment .form-item textarea:focus {
+  border: 2px solid #555;
+}
+
+.modal-first .modal-body .form-recruitment .form-item textarea {
+  height: 100px;
+}
+
+.modal-first .modal-body .form-recruitment .form-item__row:nth-child(2) {
+  margin: 15px 0 0 0;
+}
+
+.modal-first .modal-body .form-recruitment .form-item__row:nth-child(3) {
+  margin: 15px 0 15px 0;
+}
+
+.modal-first .modal-body .form-recruitment .form-item__row input[type=radio], .modal-first .modal-body .form-recruitment .form-item__row .form-item textarea[type=radio], .modal-first .modal-body .form-recruitment .form-item .form-item__row textarea[type=radio] {
+  margin: 0 0 0 15px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.modal-first .modal-body .form-recruitment .form-item__row span {
+  position: relative;
+  bottom: 4px;
+  left: 2px;
+}
+
+.modal-first .modal-body .form-recruitment .form-item__row-checkbox-departmentChoice input, .modal-first .modal-body .form-recruitment .form-item__row-checkbox-departmentChoice .form-item textarea, .modal-first .modal-body .form-recruitment .form-item .form-item__row-checkbox-departmentChoice textarea, .modal-first .modal-body .form-recruitment .form-item__row-checkbox-projectRecruitment input, .modal-first .modal-body .form-recruitment .form-item__row-checkbox-projectRecruitment .form-item textarea, .modal-first .modal-body .form-recruitment .form-item .form-item__row-checkbox-projectRecruitment textarea {
+  margin: 10px 0px 10px 15px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.modal-first .modal-body .form-recruitment .form-item__row-checkbox-departmentChoice span, .modal-first .modal-body .form-recruitment .form-item__row-checkbox-projectRecruitment span {
+  position: relative;
+  left: 5px;
+  bottom: 4px;
+}
+
+.modal-first .modal-body .form-recruitment .form-item p {
+  font-size: 0.8em;
+  margin: 10px 0 6px 18px;
+  color: grey;
+}
+
+.modal-second .modal-dialog {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+}
+
+.modal-second .modal-dialog .modal-content .modal-body {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-second .modal-dialog .modal-content .modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

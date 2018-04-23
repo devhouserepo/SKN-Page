@@ -4,11 +4,6 @@
     width: 100vw;
     height: 100vh;
     color: $text-color-1;
-    .modal {
-      color: $text-color-2;
-      top: auto;
-      bottom: auto;
-    }
     &__text {
       span {
         display: block;
@@ -45,77 +40,6 @@
         to {
           stroke-dashoffset: 0;
         }
-      }
-    }
-    .modal {
-      font-family: $text-font-1;
-      .close {
-        &:focus {
-          outline: none;
-        }
-      }
-      .modal-body {
-        .form-recruitment {
-          .form-item {
-            input {
-              border-top: none;
-              border-left: none;
-              border-right: none;
-              border-bottom: 1px solid #777aad;
-              outline: 0;
-              font-family: $text-font-1;
-              font-size: 1em;
-              padding: 0px 5px 5px 0px;
-              margin: 15px 0 15px 17px;
-            }
-            textarea {
-              @extend input;
-              height: 100px;
-            }
-            &__row:nth-child(2) {
-              margin: 15px 0 0 0;
-            }
-            &__row:nth-child(3) {
-              margin: 15px 0 15px 0;
-            }
-            &__row {
-              input {
-                margin: 0 0 0 20px;
-                cursor: pointer;
-                width: 15px;
-                height: 15px;
-              }
-              span {
-                position: relative;
-                bottom: 2px;
-                left: 2px;
-              }
-            }
-            &__row-checkbox-departmentChoice,
-            &__row-checkbox-projectRecruitment {
-              input {
-                cursor: pointer;
-                width: 15px;
-                height: 15px;
-              }
-              span {
-                position: relative;
-                left: 5px;
-                bottom: 1px;
-              }
-            }
-            p {
-              font-size: 0.8em;
-              margin: 10px 0 0 18px;
-            }
-          }
-        }
-      }
-      .btn,
-      .btn-primary,
-      .btn-secondary {
-        @include btn-base($bg-button-color-1, $text-color-1);
-        margin: 0 0 0 15px;
       }
     }
   }
@@ -198,22 +122,6 @@
     }
     button:nth-child(4) {
       margin: 0 0 0 10px;
-    }
-    .modal-dialog {
-      font-family: $text-font-1;
-      font-size: 1.2em;
-      .modal-content {
-        .modal-body {
-          height: 100px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .modal-footer {
-          display: flex;
-          justify-content: center;
-        }
-      }
     }
     .form {
       z-index: 2;

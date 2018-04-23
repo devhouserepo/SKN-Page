@@ -222,6 +222,7 @@ $(document).ready(function() {
         elem.classList.remove("active");
       });
       anchorsLink[index - 1].classList.add("active");
+
     }
   });
 });

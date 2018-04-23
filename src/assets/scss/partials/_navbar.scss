@@ -5,9 +5,14 @@
   text-align: right;
   z-index: 200;
   transition: background-color 0.4s linear;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   &.scrolled {
-    background-color: rgba(33, 29, 29, 0.9);
-    transition: background-color 0.4s linear;
+    background-color: rgba(33, 29, 29, 0.6);
+    transition: background-color 0.3s linear;
+
   }
   &__navbar {
     text-align: right;
