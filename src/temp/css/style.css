@@ -1258,7 +1258,7 @@ p {
   width: 1400px;
   height: 125%;
   top: 18px;
-  right: -247px;
+  right: -253px;
 }
 
 .max-photo {
@@ -1303,7 +1303,8 @@ p {
 
 .linkedin-btn {
   display: inline-block;
-  margin-top: 37px;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
   padding: 0 7px 0 7px;
   border: 1px solid rgba(255, 255, 255, 0.089);
   z-index: 100;
