@@ -50,6 +50,8 @@ $(document).ready(function() {
   //     $('.max-photo').css('background-image', 'url(' + data[index].photo + ')')
   // }
 
+  
+
   let teamDevhouse = "#team-devhouse";
   let teamStartUp = "#team-startup";
   let teamLEAD = "#team-lead";
@@ -103,7 +105,7 @@ $(document).ready(function() {
             );
             if (data[index].linkedin != "") {
               $(".max-member-paragraphs").append(
-                `<a class="linkedin-btn" href="` +
+                `<a class="linkedin-btn" target="_blank" href="` +
                   data[index].linkedin +
                   `"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
               );
@@ -225,4 +227,7 @@ $(document).ready(function() {
 
     }
   });
+
+
+
 });

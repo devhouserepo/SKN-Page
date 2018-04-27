@@ -1221,18 +1221,11 @@ a:hover {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  padding: 13vh 0 0 0;
 }
 
 p {
   color: white;
-}
-
-.main-text {
-  width: 600px;
-  margin: 10% 0 10% 0;
-  z-index: 5;
-  font-size: 1em;
-  line-height: 27px;
 }
 
 #poznaj-lepiej {
@@ -1254,31 +1247,18 @@ p {
       -ms-flex: 2 2 50%;
           flex: 2 2 50%;
   margin-left: 0;
-  top: 50px;
+  top: 35vh;
   position: relative;
   display: block;
 }
 
 .members-bg-line-container {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   position: absolute;
   z-index: 1;
   width: 1400px;
   height: 125%;
-  top: 152px;
-  left: -600px;
-}
-
-.members-bg-line {
-  -webkit-animation: dash 3s linear forwards;
-          animation: dash 3s linear forwards;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
+  top: 18px;
+  right: -247px;
 }
 
 .max-photo {
@@ -1287,7 +1267,6 @@ p {
   background-color: #414479;
   position: relative;
   z-index: 10;
-  margin-top: 22%;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -1331,6 +1310,7 @@ p {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  position: relative;
 }
 
 .linkedin-btn:hover {
@@ -1457,8 +1437,8 @@ p {
   opacity: 0.07;
   font-size: 99px;
   position: absolute;
-  top: 21vh;
-  left: 28vw;
+  top: -12vh;
+  right: 0px;
 }
 
 .navigation {
