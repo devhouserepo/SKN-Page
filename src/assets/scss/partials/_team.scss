@@ -6,6 +6,9 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    padding: 13vh 0 0 0;
+    // align-items: center;
+    // justify-content: center;
 }
 
 
@@ -13,16 +16,6 @@ p {
     color: white;
 }
 
-
-
-.main-text {
-    // background-color: rgb(204, 119, 21);
-    width: 600px;
-    margin: 10% 0 10% 0;
-    z-index: 5;
-    font-size: 1em;
-    line-height: 27px;
-}
 
 #poznaj-lepiej {
     font-size: 1.3em;
@@ -40,10 +33,10 @@ p {
 
 
 .max-member-container {
-    // background-color: rgba(11, 105, 66, 0.938);
+    // background-color: rgba(11, 105, 66, 0.164);
     flex: 2 2 50%;
     margin-left: 0;
-    top: 50px;
+    top: 35vh;
     position: relative;
     display: block;
 }
@@ -52,27 +45,26 @@ p {
 
 
 .members-bg-line-container {
-    // background-color: rgba(19, 180, 92, 0.185);
-    align-self: flex-start;
+    // background-color: rgba(19, 180, 92, 0.116);
     position: absolute;
     z-index: 1;
     width: 1400px;
     height: 125%;
-    top: 152px;
-    left: -600px;
+    top: 18px;
+    right: -253px;
   }
 
 
-  .members-bg-line {
-    // stroke-dasharray: 1200;
-    // stroke-dashoffset: 1200;
-    animation: dash 3s linear forwards;
-  }
-  @keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-    }
-  }
+//   .members-bg-line {
+//     // stroke-dasharray: 1200;
+//     // stroke-dashoffset: 1200;
+//     animation: dash 3s linear forwards;
+//   }
+//   @keyframes dash {
+//     to {
+//         stroke-dashoffset: 0;
+//     }
+//   }
 
 
 
@@ -85,7 +77,6 @@ p {
     background-color: #414479;
     position: relative;
     z-index: 10;
-    margin-top: 22%;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -120,13 +111,15 @@ p {
 
 .linkedin-btn {
     display: inline-block;
-    margin-top: 37px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
     padding: 0 7px 0 7px;
     border: 1px solid rgba(255, 255, 255, 0.089);
     z-index: 100;
     cursor: pointer;
     -webkit-transition: 0.2s;
     transition: 0.2s;
+    position: relative;
 
     &:hover {
         background-color: rgba(123, 124, 194, 0.315);
@@ -258,6 +251,6 @@ p {
     opacity: 0.07;
     font-size: 99px;
     position: absolute;
-    top: 21vh;
-    left: 28vw;
+    top: -12vh;
+    right: 0px;
 }
