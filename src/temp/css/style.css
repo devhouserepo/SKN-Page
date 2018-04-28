@@ -140,6 +140,87 @@ table {
   margin: 20px 0 0 700px;
 }
 
+@media (min-width: 1600px) {
+  .header__content::after {
+    top: -118px;
+    left: -398px;
+  }
+  .header__content img {
+    margin: 135px 0 0 -32px;
+    width: 330px;
+  }
+  .header__content h1:nth-child(3) {
+    margin: 65px 0 0 -60px;
+    font-size: 8.7em;
+  }
+  .header__content p:nth-child(4) {
+    font-size: 1.8em;
+    margin: 25px 0 0 715px;
+  }
+  .header__content p:nth-child(4) span:nth-child(1), .header__content p:nth-child(4) span:nth-child(2) {
+    line-height: 38px;
+  }
+  .header__content p:nth-child(4) span:nth-child(2) {
+    line-height: 32px;
+  }
+  .header__content p:nth-child(4) span:nth-child(2)::after {
+    content: "";
+    width: 138px;
+    top: 45px;
+  }
+  .header__content p:nth-child(5), .header__content p:nth-child(6) {
+    font-size: 1rem;
+    line-height: 21px;
+    margin: 90px 0 0 715px;
+    width: 500px;
+  }
+  .header__content p:nth-child(6) {
+    font-size: 1rem;
+    line-height: 21px;
+    margin: 20px 0 0 715px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .header__content::after {
+    top: -118px;
+  }
+  .header__content img {
+    margin: 135px 0 0 -78px;
+    width: 350px;
+  }
+  .header__content h1:nth-child(3) {
+    margin: 65px 0 0 -128px;
+    font-size: 9.5em;
+  }
+  .header__content p:nth-child(4) {
+    font-size: 2em;
+    margin: 45px 0 0 715px;
+  }
+  .header__content p:nth-child(4) span:nth-child(1), .header__content p:nth-child(4) span:nth-child(2) {
+    line-height: 38px;
+  }
+  .header__content p:nth-child(4) span:nth-child(2) {
+    line-height: 32px;
+  }
+  .header__content p:nth-child(4) span:nth-child(2)::after {
+    content: "";
+    width: 150px;
+    top: 45px;
+  }
+  .header__content p:nth-child(5), .header__content p:nth-child(6) {
+    font-size: 1rem;
+    line-height: 21px;
+    margin: 110px 0 0 715px;
+    width: 500px;
+  }
+  .header__content p:nth-child(6) {
+    font-size: 1rem;
+    line-height: 21px;
+    margin: 20px 0 0 715px;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -201,7 +282,11 @@ a:hover {
 }
 
 .singular-project-container:hover .projects-shape-1,
-.singular-project-container:hover .projects-shape-2 {
+.singular-project-container:hover .projects-shape-2,
+.singular-project-container:hover .projects-shape-3,
+.singular-project-container:hover .projects-shape-4,
+.singular-project-container:hover .projects-shape-5,
+.singular-project-container:hover .projects-shape-6 {
   -ms-transform: scale(1.6, 1.6);
   /* Internet Explorer and Microsoft Edge */
   -webkit-transform: scale(1.6, 1.6);
@@ -212,9 +297,34 @@ a:hover {
   /* Opera 12+ */
   transform: scale(1.6, 1.6);
   z-index: 3;
-  background-size: 400px;
+  background-size: 300px;
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
+}
+
+.singular-project-container:hover .projects-shape-1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/images/projects_photos/devhouse.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/images/projects_photos/devhouse.png");
+}
+
+.singular-project-container:hover .projects-shape-2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/images/projects_photos/thinkit.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/images/projects_photos/thinkit.png");
+}
+
+.singular-project-container:hover .projects-shape-3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/images/projects_photos/leadinit.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/images/projects_photos/leadinit.png");
+}
+
+.singular-project-container:hover .projects-shape-4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/images/projects_photos/startup.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/images/projects_photos/startup.png");
+}
+
+.singular-project-container:hover .projects-shape-5 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/images/projects_photos/bootcamp.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/images/projects_photos/bootcamp.png");
 }
 
 .singular-project-container:hover .project-about {
@@ -264,8 +374,7 @@ a:hover {
 .project-about {
   color: white;
   line-height: 1.1;
-  text-align: justify;
-  text-justify: inter-character;
+  text-align: center;
   margin-top: 14px;
   font-size: 16px;
   opacity: 0;
@@ -279,23 +388,31 @@ a:hover {
   height: 26px;
   font-size: 16px;
   border: 1px solid white;
+  border-radius: 1px;
   text-align: center;
   color: white;
   opacity: 0;
   position: relative;
   display: block;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
 }
 
 .button-more-about-project:hover {
   text-decoration: none;
-  color: white;
+  color: black;
+  background-color: #fff;
 }
 
 .projects-shape-1,
-.projects-shape-2 {
+.projects-shape-2,
+.projects-shape-3,
+.projects-shape-4,
+.projects-shape-5,
+.projects-shape-6 {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 900px;
+  background-size: 600px;
   margin: auto;
   height: 200px;
   width: 200px;
@@ -308,26 +425,43 @@ a:hover {
   position: relative;
 }
 
-.projects-shape-1 {
-  background-image: url("../../assets/images/skn1.jpg");
+.projects-shape-1,
+.projects-shape-6 {
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
 }
 
-.projects-shape-1 .project-about {
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
+.projects-shape-2,
+.projects-shape-3,
+.projects-shape-4,
+.projects-shape-5 {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
+}
+
+.projects-shape-1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/devhouse.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/devhouse.png");
 }
 
 .projects-shape-2 {
-  background-image: url("../../assets/images/skn2.jpg");
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
-  clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/thinkit.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/thinkit.png");
 }
 
-.projects-shape-2 .project-about {
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
-  clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
+.projects-shape-3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/leadinit.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/leadinit.png");
+}
+
+.projects-shape-4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/startup.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/startup.png");
+}
+
+.projects-shape-5 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/bootcamp.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/bootcamp.png");
 }
 
 .project_title {
@@ -381,7 +515,7 @@ a:hover {
   left: 80px;
 }
 
-.twoj-projekt .projects-shape-2 {
+.twoj-projekt .projects-shape-6 {
   background-color: #0f0f4d;
   background-image: none;
   height: 180px;
@@ -449,8 +583,10 @@ a:hover {
 .path-2 {
   stroke-dasharray: 1700;
   stroke-dashoffset: 1700;
-  -webkit-animation: dash 7s linear forwards;
-          animation: dash 7s linear forwards;
+  -webkit-animation: dash 9.5s linear forwards;
+          animation: dash 9.5s linear forwards;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
 }
 
 @keyframes dash {
