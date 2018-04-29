@@ -604,7 +604,7 @@
 
             <!-- CONTACT FORM START -->
 
-            <form class="form d-flex form-modal" action="">
+            <form id="form-object"class="form d-flex form-modal" action="">
 
               <fieldset id="form-contact" class="form__items-left">
 
@@ -643,13 +643,13 @@
 
                 <div class="form-item">
 
-                  <textarea id="formMessage" name="formMessage" placeholder="Treść wiadomości" class="textarea"></textarea>
+                  <textarea id="formMessage" name="formMessage" placeholder="Treść wiadomości" class="textarea validateObjectTextArea"></textarea>
 
                 </div>
 
                 <div class="form-item">
 
-                  <input class="form-submit form-submit--modal" type="submit" value="Wyślij" data-toggle="modal" data-target="#exampleModalCenter2"
+                  <input class="form-submit form-submit--modal form-item--submit" type="submit" value="Wyślij"
                   />
 
                 </div>
@@ -763,7 +763,7 @@
 
                 <label for="formAboutRecruitment">6. Opowiedz nam coś ciekawego o sobie :)</label>
                 <p>To jedyne otwarte pytanie. Zaskocz nas!</p>
-                <textarea id="formAboutRecruitment" name="formAboutRecruitment" placeholder="Tekst" required></textarea>
+                <textarea class="" id="formAboutRecruitment" name="formAboutRecruitment" placeholder="Tekst" required></textarea>
 
               </div>
 
@@ -899,6 +899,7 @@
   <script src="temp/js/popper.min.js"></script>
   <script src="temp/js/bootstrap.min.js"></script>
   <script src="temp/js/app.js"></script>
+  <script src="temp/js/validation.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="temp/js/jquery.fullPage.js"></script>
 

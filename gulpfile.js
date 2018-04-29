@@ -27,7 +27,8 @@ gulp.task("js", function() {
       "node_modules/bootstrap/dist/js/bootstrap.min.js",
       "node_modules/jquery/dist/jquery.min.js",
       "node_modules/popper.js/dist/umd/popper.min.js",
-      "src/assets/js/app.js"
+      "src/assets/js/app.js",
+      "src/assets/js/validation.js"
     ])
     .pipe(gulp.dest("src/temp/js"))
     .pipe(browserSync.stream());
@@ -38,7 +39,12 @@ gulp.task("Appjs", function() {
     .pipe(gulp.dest("src/temp/js"))
     .pipe(browserSync.stream());
 });
-
+gulp.task("Validatejs", function() {
+  return gulp
+    .src("src/assets/js/validation.js")
+    .pipe(gulp.dest("src/temp/js"))
+    .pipe(browserSync.stream());
+});
 // Watch Sass & Serve
 gulp.task("serve", ["sass"], function() {
   browserSync.init({
@@ -55,7 +61,7 @@ gulp.task("serve", ["sass"], function() {
 // Watch App.js
 gulp.task("ScriptsRefresh", ["Appjs"], function() {
   gulp.watch(["src/assets/js/app.js"], ["Appjs"]);
-
+  gulp.watch(["src/assets/js/validation.js"], ["Validatejs"]);
   gulp.watch("src/assets/js/*.js").on("change", browserSync.reload);
 });
 

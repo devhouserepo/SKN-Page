@@ -821,6 +821,15 @@ a:hover {
           flex-direction: column;
 }
 
+.section__form .form__items-left .form-item--submit.btn-animate, .section__form .form__items-right .form-item--submit.btn-animate {
+  -webkit-animation: button-animation 2s infinite;
+          animation: button-animation 2s infinite;
+}
+
+.section__form .form__items-left .form-item--submit:focus, .section__form .form__items-right .form-item--submit:focus {
+  background-color: #2e2f5d;
+}
+
 .section__form .form__items-left .form-item label, .section__form .form__items-right .form-item label {
   display: none;
 }
@@ -836,10 +845,6 @@ a:hover {
   height: 23px;
   padding: 0 0 0 5px;
   height: 30px;
-}
-
-.section__form .form__items-left .form-item input:focus, .section__form .form__items-left .modal-first .modal-body .form-recruitment .form-item textarea:focus, .modal-first .modal-body .form-recruitment .section__form .form__items-left .form-item textarea:focus, .section__form .form__items-right .form-item input:focus, .section__form .form__items-right .modal-first .modal-body .form-recruitment .form-item textarea:focus, .modal-first .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:focus {
-  background: #eaecfc;
 }
 
 .section__form .form__items-right {
@@ -872,12 +877,6 @@ a:hover {
   letter-spacing: 0.8px;
   -ms-flex-item-align: center;
       align-self: center;
-  -webkit-animation-name: button-animation;
-          animation-name: button-animation;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 .section__form .form__items-right .form-item input:hover, .section__form .form__items-right .modal-first .modal-body .form-recruitment .form-item textarea:hover, .modal-first .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:hover {

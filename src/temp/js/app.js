@@ -217,7 +217,7 @@ $(document).ready(function() {
         document.getElementById("navbar").classList.remove("scrolled");
       }
       const anchorsLink = document.querySelectorAll(".navbar-nav li a");
-      console.log(anchor, index, anchorsLink);
+      // console.log(anchor, index, anchorsLink);
       anchorsLink.forEach(elem => {
         elem.classList.remove("active");
       });

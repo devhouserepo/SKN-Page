@@ -120,6 +120,7 @@
     button {
       @include btn-base($bg-button-color-1, $text-color-1);
     }
+
     button:nth-child(4) {
       margin: 0 0 0 10px;
     }
@@ -136,6 +137,12 @@
         .form-item {
           display: flex;
           flex-direction: column;
+          &--submit.btn-animate {
+            animation: button-animation 2s infinite;
+          }
+          &--submit:focus {
+            background-color: $bg-button-color-1;
+          }
           label {
             display: none;
           }
@@ -151,7 +158,7 @@
             height: 30px;
           }
           input:focus {
-            background: $bg-input-focus-1;
+            // background: $bg-button-color-1;
           }
         }
       }
@@ -166,9 +173,6 @@
           input {
             @include btn-base($bg-button-color-1, $text-color-1);
             align-self: center;
-            animation-name: button-animation;
-            animation-duration: 2.5s;
-            animation-iteration-count: infinite;
           }
           @keyframes button-animation {
             0% {
