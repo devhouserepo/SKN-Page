@@ -9,22 +9,57 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  &__toggler {
+    display: none;
+    @media (max-width: 991px) {
+      border-top: 2px solid white;
+      display: block;
+      position: absolute;
+      left: 3%;
+      z-index: 20;
+      max-width: 35px;
+    }
+    ::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      border-bottom: 2px solid white;
+      width: 100%;
+    }
+    ::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      border-top: 2px solid white;
+      width: 100%;
+      transform: translateY(6px);
+    }
+  }
   &.scrolled {
     background-color: rgba(33, 29, 29, 0.6);
     transition: background-color 0.3s linear;
-
   }
   &__navbar {
     text-align: right;
     z-index: 3;
-    // position: absolute;
     width: 100%;
-    // left: 0;
-    // right: 0;
+  }
+  &__primary {
+    @media (max-width: 991px) {
+      text-align: center;
+      padding-top: 130px;
+    }
   }
   &__logo {
     width: 11%;
     margin-right: 20px;
+    @media (max-width: 991px) {
+      max-width: 130px;
+      margin-left: 10px;
+      width: 15%;
+    }
   }
   &__body {
     justify-content: flex-end;
@@ -35,6 +70,10 @@
     letter-spacing: 0.7px;
     font-size: 0.9rem;
     font-family: $text-font-1;
+    @media (max-width: 991px) {
+      max-width: 130px;
+      margin: auto;
+    }
     a {
       color: #fff;
       position: relative;
@@ -42,17 +81,15 @@
       transform: scale(1);
     }
     a:hover {
-      transform: scale(1.13) !important;
+      transform: scale(1.13);
       transition: transform 0.2s linear;
     }
-    // a:hover::after {
-    //   width: 90%;
-    //   display: block;
-    //   opacity: 1;
-    //   transform: scaleX(1);
-    //   transition: all 0.3s ease-in-out;
-    //   margin: auto;
-    // }
+    &--first.active {
+    }
+    &--first.active::after {
+      text-decoration: none;
+      display: none;
+    }
     & .active {
       position: relative;
       transition: all 2s linear;

@@ -50,8 +50,6 @@ $(document).ready(function() {
   //     $('.max-photo').css('background-image', 'url(' + data[index].photo + ')')
   // }
 
-  
-
   let teamDevhouse = "#team-devhouse";
   let teamStartUp = "#team-startup";
   let teamLEAD = "#team-lead";
@@ -197,8 +195,8 @@ $(document).ready(function() {
       "start",
       "projekty",
       "partnerzy",
-      "członkowie",
-      "rekrutacja",
+      "zespol",
+      "referencje",
       "kontakt"
     ],
     sectionSelector: ".section",
@@ -224,10 +222,6 @@ $(document).ready(function() {
         elem.classList.remove("active");
       });
       anchorsLink[index - 1].classList.add("active");
-
     }
   });
-
-
-
 });
