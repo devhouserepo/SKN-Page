@@ -20,25 +20,17 @@
 
   <div class="navigation" id="navbar">
     <!-- HEADER START -->
-
+<button class="navbar-toggler navigation__toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+  aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon">X</span>
+</button>
     <nav class="navigation__navbar navbar-expand-lg navbar container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse navigation__body" id="navbarSupportedContent">
-        <!-- <a class="navbar-brand" href="#start">
-          <img class="navigation__logo img-rsponsive" src="./assets/images/logo.1.png" alt="SKN Logo"> </a> -->
-        <ul class="navbar-nav">
+        <ul class="navbar-nav navigation__primary">
           <li class="nav-item navigation__item">
-            <a class="nav-item navigation__item" href="#start">
+            <a class="nav-item navigation__item navigation__item--first" href="#start">
               <img class="navigation__logo img-rsponsive" src="./assets/images/logo.1.png" alt="SKN Logo"> </a>
           </li>
-          <!-- <li class="nav-item navigation__item">
-            <a class="nav-link" href="#start">Mapa
-              <span class="sr-only"></span>
-            </a>
-          </li> -->
           <li class="nav-item navigation__item">
             <a class="nav-link" href="#projekty">projekty
               <span class="sr-only">(current)</span>
@@ -48,10 +40,10 @@
             <a class="nav-link" href="#partnerzy">partnerzy</a>
           </li>
           <li class="nav-item navigation__item">
-            <a class="nav-link" href="#członkowie">członkowie</a>
+            <a class="nav-link" href="#zespol">zespół</a>
           </li>
           <li class="nav-item navigation__item">
-            <a class="nav-link" href="#rekrutacja">rekrutacja</a>
+            <a class="nav-link" href="#referencje">referencje</a>
           </li>
           <li class="nav-item navigation__item">
             <a class="nav-link" href="#kontakt">kontakt</a>
@@ -341,7 +333,7 @@
 
       <!-- TEAM SECTION END-->
 
-      
+
     </div>
     <div class="section">
 
@@ -612,7 +604,7 @@
 
             <!-- CONTACT FORM START -->
 
-            <form class="form d-flex form-modal" action="">
+            <form id="form-object"class="form d-flex form-modal" action="">
 
               <fieldset id="form-contact" class="form__items-left">
 
@@ -651,13 +643,13 @@
 
                 <div class="form-item">
 
-                  <textarea id="formMessage" name="formMessage" placeholder="Treść wiadomości" class="textarea"></textarea>
+                  <textarea id="formMessage" name="formMessage" placeholder="Treść wiadomości" class="textarea validateObjectTextArea"></textarea>
 
                 </div>
 
                 <div class="form-item">
 
-                  <input class="form-submit form-submit--modal" type="submit" value="Wyślij" data-toggle="modal" data-target="#exampleModalCenter2"
+                  <input class="form-submit form-submit--modal form-item--submit" type="submit" value="Wyślij"
                   />
 
                 </div>
@@ -771,7 +763,7 @@
 
                 <label for="formAboutRecruitment">6. Opowiedz nam coś ciekawego o sobie :)</label>
                 <p>To jedyne otwarte pytanie. Zaskocz nas!</p>
-                <textarea id="formAboutRecruitment" name="formAboutRecruitment" placeholder="Tekst" required></textarea>
+                <textarea class="" id="formAboutRecruitment" name="formAboutRecruitment" placeholder="Tekst" required></textarea>
 
               </div>
 
@@ -907,6 +899,7 @@
   <script src="temp/js/popper.min.js"></script>
   <script src="temp/js/bootstrap.min.js"></script>
   <script src="temp/js/app.js"></script>
+  <script src="temp/js/validation.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="temp/js/jquery.fullPage.js"></script>
 

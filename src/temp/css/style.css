@@ -821,6 +821,15 @@ a:hover {
           flex-direction: column;
 }
 
+.section__form .form__items-left .form-item--submit.btn-animate, .section__form .form__items-right .form-item--submit.btn-animate {
+  -webkit-animation: button-animation 2s infinite;
+          animation: button-animation 2s infinite;
+}
+
+.section__form .form__items-left .form-item--submit:focus, .section__form .form__items-right .form-item--submit:focus {
+  background-color: #2e2f5d;
+}
+
 .section__form .form__items-left .form-item label, .section__form .form__items-right .form-item label {
   display: none;
 }
@@ -836,10 +845,6 @@ a:hover {
   height: 23px;
   padding: 0 0 0 5px;
   height: 30px;
-}
-
-.section__form .form__items-left .form-item input:focus, .section__form .form__items-left .modal-first .modal-body .form-recruitment .form-item textarea:focus, .modal-first .modal-body .form-recruitment .section__form .form__items-left .form-item textarea:focus, .section__form .form__items-right .form-item input:focus, .section__form .form__items-right .modal-first .modal-body .form-recruitment .form-item textarea:focus, .modal-first .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:focus {
-  background: #eaecfc;
 }
 
 .section__form .form__items-right {
@@ -872,12 +877,6 @@ a:hover {
   letter-spacing: 0.8px;
   -ms-flex-item-align: center;
       align-self: center;
-  -webkit-animation-name: button-animation;
-          animation-name: button-animation;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 .section__form .form__items-right .form-item input:hover, .section__form .form__items-right .modal-first .modal-body .form-recruitment .form-item textarea:hover, .modal-first .modal-body .form-recruitment .section__form .form__items-right .form-item textarea:hover {
@@ -1591,6 +1590,41 @@ p {
           align-items: center;
 }
 
+.navigation__toggler {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .navigation__toggler {
+    border-top: 2px solid white;
+    display: block;
+    position: absolute;
+    left: 3%;
+    z-index: 20;
+    max-width: 35px;
+  }
+}
+
+.navigation__toggler ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+.navigation__toggler ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 2px solid white;
+  width: 100%;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
 .navigation.scrolled {
   background-color: rgba(33, 29, 29, 0.6);
   -webkit-transition: background-color 0.3s linear;
@@ -1603,9 +1637,24 @@ p {
   width: 100%;
 }
 
+@media (max-width: 991px) {
+  .navigation__primary {
+    text-align: center;
+    padding-top: 130px;
+  }
+}
+
 .navigation__logo {
   width: 11%;
   margin-right: 20px;
+}
+
+@media (max-width: 991px) {
+  .navigation__logo {
+    max-width: 130px;
+    margin-left: 10px;
+    width: 15%;
+  }
 }
 
 .navigation__body {
@@ -1621,6 +1670,13 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+@media (max-width: 991px) {
+  .navigation__item {
+    max-width: 130px;
+    margin: auto;
+  }
+}
+
 .navigation__item a {
   color: #fff;
   position: relative;
@@ -1633,12 +1689,17 @@ p {
 }
 
 .navigation__item a:hover {
-  -webkit-transform: scale(1.13) !important;
-          transform: scale(1.13) !important;
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
   -webkit-transition: -webkit-transform 0.2s linear;
   transition: -webkit-transform 0.2s linear;
   transition: transform 0.2s linear;
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.navigation__item--first.active::after {
+  text-decoration: none;
+  display: none;
 }
 
 .navigation__item .active {
