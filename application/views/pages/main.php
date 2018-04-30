@@ -1,5 +1,5 @@
-<?php echo $title ?>
-<?php echo base_url(); ?>
+
+
 <div class="navigation" id="navbar">
 	<!-- HEADER START -->
 <button class="navbar-toggler navigation__toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
