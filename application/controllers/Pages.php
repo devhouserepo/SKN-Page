@@ -6,7 +6,7 @@
  */
 class Pages extends CI_Controller
 {
- public function view($page)
+ public function view($page="main")
 	{
 		if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
 			show_404();
