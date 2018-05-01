@@ -1,5 +1,3 @@
-
-
 <div class="navigation" id="navbar">
 	<!-- HEADER START -->
 <button class="navbar-toggler navigation__toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -11,7 +9,8 @@ aria-expanded="false" aria-label="Toggle navigation">
 			<ul class="navbar-nav navigation__primary">
 				<li class="nav-item navigation__item">
 					<a class="nav-item navigation__item navigation__item--first" href="#start">
-						<img class="navigation__logo img-rsponsive" src="./assets/images/logo.1.png" alt="SKN Logo"> </a>
+						<img class="navigation__logo img-rsponsive" src="./assets/images/logo.1.png"
+						 alt="SKN Logo"> </a>
 				</li>
 				<li class="nav-item navigation__item">
 					<a class="nav-link" href="#projekty">projekty
@@ -88,8 +87,12 @@ aria-expanded="false" aria-label="Toggle navigation">
 										i aplikacji.
 									</p>
 								</div>
+									<a href="<?php echo base_url() ?>/lead">
 						<div id="lead-shape" class="projects-shape-1">
+
 						</div>
+						</a>
+
 					</div>
 					<div id="thinkit" class="col-sm-12 col-md-4 pb-4 singular-project-container thinkit">
 							<div class="project-paragraphs">
