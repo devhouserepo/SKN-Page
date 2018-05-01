@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['devhouse']="devhouse/index";
+$route['devhouse']="pages/devHouse";
 $route['thinkIt']="pages/thinkIt";
 $route['default_controller'] = 'pages/view';
 $route['(:any)']='pages/view/$1';
