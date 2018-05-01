@@ -1,5 +1,5 @@
 <div class="container">
-   <h1 style="color:white;text-align:center;">Lead Page Test i pobieranie danych z bazy</h1>
+   <h1 style="color:white;text-align:center;">ThinkIt Page Test </h1>
   <table class="table table-dark table-hover">
     <thead>
       <tr>

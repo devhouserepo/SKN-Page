@@ -12,5 +12,12 @@ class Pages extends CI_Controller
 		$this->load->view("pages/".$page,$data);
 		$this->load->view("templates/footer");
 	}
+  public function thinkIt()
+   {
+       $data['team']=$this->Team_model->team();
+     $this->load->view("templates/header");
+     $this->load->view("pages/thinkIt",$data);
+     $this->load->view("templates/footer");
+   }
 }
  ?>

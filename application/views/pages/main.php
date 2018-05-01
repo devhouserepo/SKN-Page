@@ -87,7 +87,7 @@ aria-expanded="false" aria-label="Toggle navigation">
 										i aplikacji.
 									</p>
 								</div>
-									<a href="<?php echo base_url() ?>/lead">
+									<a href="<?php echo base_url() ?>devhouse">
 						<div id="lead-shape" class="projects-shape-1">
 
 						</div>
@@ -103,8 +103,10 @@ aria-expanded="false" aria-label="Toggle navigation">
 										tych dziedzinach.
 									</p>
 								</div>
+								<a href="<?php echo base_url() ?>thinkIt">
 						<div id="startup-shape" class="projects-shape-2">
 						</div>
+						</a>
 					</div>
 					<div id="lead" class="col-sm-12 col-md-4 pb-4 singular-project-container lead">
 							<div class="project-paragraphs">
