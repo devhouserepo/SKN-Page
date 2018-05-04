@@ -1,5 +1,4 @@
 
-
 <div class="navigation" id="navbar">
 	<!-- HEADER START -->
 <button class="navbar-toggler navigation__toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -11,7 +10,8 @@ aria-expanded="false" aria-label="Toggle navigation">
 			<ul class="navbar-nav navigation__primary">
 				<li class="nav-item navigation__item">
 					<a class="nav-item navigation__item navigation__item--first" href="#start">
-						<img class="navigation__logo img-rsponsive" src="./assets/images/logo.1.png" alt="SKN Logo"> </a>
+						<img class="navigation__logo img-rsponsive" src="./assets/images/logo.1.png"
+						 alt="SKN Logo"> </a>
 				</li>
 				<li class="nav-item navigation__item">
 					<a class="nav-link" href="#projekty">projekty
@@ -88,8 +88,12 @@ aria-expanded="false" aria-label="Toggle navigation">
 										i aplikacji.
 									</p>
 								</div>
+									<a href="index.php/devhouse">
 						<div id="lead-shape" class="projects-shape-1">
+
 						</div>
+						</a>
+
 					</div>
 					<div id="thinkit" class="col-sm-12 col-md-4 pb-4 singular-project-container thinkit">
 							<div class="project-paragraphs">
@@ -100,8 +104,10 @@ aria-expanded="false" aria-label="Toggle navigation">
 										tych dziedzinach.
 									</p>
 								</div>
+								<a href="index.php/thinkIt">
 						<div id="startup-shape" class="projects-shape-2">
 						</div>
+						</a>
 					</div>
 					<div id="lead" class="col-sm-12 col-md-4 pb-4 singular-project-container lead">
 							<div class="project-paragraphs">
@@ -586,36 +592,36 @@ aria-expanded="false" aria-label="Toggle navigation">
 
 					<!-- CONTACT FORM START -->
 
-					<form id="form-object"class="form d-flex form-modal" action="">
+					<form id="form-object"class="form d-flex form-modal" action="<?php echo base_url() ?>index.php/contact/postEmail" method="post">
 
 						<fieldset id="form-contact" class="form__items-left">
 
 							<div class="form-item">
-								<label for="formName">Imie</label>
+								<label for="imie">Imie</label>
 								<input id="formName" type="text" name="formName" placeholder="Imię" required class="validationField" />
 							</div>
 
 							<div class="form-item">
-								<label for="formSurname">Nazwisko</label>
+								<label for="surname">Nazwisko</label>
 								<input id="formSurname" type="text" name="formSurname" placeholder="Nazwisko" required class="validationField" />
 
 							</div>
 
 							<div class="form-item">
-								<label for="formSchool">Uczelnia</label>
+								<label for="scholl">Uczelnia</label>
 								<input id="formSchool" type="text" name="formSchool" placeholder="Uczelnia" required class="validationField" />
 
 							</div>
 
 							<div class="form-item">
-								<label for="formDepartment">Wydział</label>
+								<label for="department">Wydział</label>
 								<input id="formDepartment" type="text" name="formDepartment" placeholder="Wydział" required class="validationField" />
 
 							</div>
 
 							<div class="form-item">
 								<label for="formEmail">E-mail</label>
-								<input id="formEmail" type="email" name="formEmail" placeholder="E-mail" required class="validationField" />
+								<input id="email" type="email" name="formEmail" placeholder="E-mail" required class="validationField" />
 
 							</div>
 

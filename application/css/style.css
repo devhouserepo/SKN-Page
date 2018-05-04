@@ -1344,6 +1344,7 @@ a:hover {
 		top: 670px;
 	}
 }
+
 .section {
 	position: relative;
 }
@@ -1397,7 +1398,6 @@ a:hover {
 	-webkit-transform: skew(-2deg);
 	transform: skew(-2deg);
 }
-
 .section__reference__box-left .carousel::after {
 	content: "";
 	position: absolute;

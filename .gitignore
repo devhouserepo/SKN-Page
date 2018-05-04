@@ -7,9 +7,9 @@ application/logs/*
 !application/logs/index.html
 
 !application/*/.htaccess
-
+aplication/database.php
 composer.lock
-
+database-on.php
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
