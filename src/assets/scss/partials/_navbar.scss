@@ -9,15 +9,23 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  &__navbar {
+    @media (max-width: 575px) {
+      background-color: rgba(33, 29, 29, 0.7);
+      min-height: 60px;
+      padding-bottom: 20px;
+    }
+  }
   &__toggler {
     display: none;
-    @media (max-width: 991px) {
+    @media (max-width: 575px) {
       border-top: 2px solid white;
       display: block;
       position: absolute;
-      left: 3%;
+      right: 3%;
       z-index: 20;
       max-width: 35px;
+      top: 20px;
     }
     ::after {
       content: "";
@@ -40,6 +48,9 @@
   &.scrolled {
     background-color: rgba(33, 29, 29, 0.6);
     transition: background-color 0.3s linear;
+    @media (max-width: 575px) {
+      background-color: transparent;
+    }
   }
   &__navbar {
     text-align: right;
@@ -47,7 +58,7 @@
     width: 100%;
   }
   &__primary {
-    @media (max-width: 991px) {
+    @media (max-width: 575px) {
       text-align: center;
       padding-top: 130px;
     }
@@ -55,10 +66,14 @@
   &__logo {
     width: 11%;
     margin-right: 20px;
-    @media (max-width: 991px) {
-      max-width: 130px;
+    @media (max-width: 766px) {
+      width: 5%;
+      max-width: 30px;
       margin-left: 10px;
-      width: 15%;
+      min-width: 25px;
+    }
+    @media (max-width: 575px) {
+      margin: 35px 0 10px 0;
     }
   }
   &__body {
@@ -70,9 +85,10 @@
     letter-spacing: 0.7px;
     font-size: 0.9rem;
     font-family: $text-font-1;
-    @media (max-width: 991px) {
+    @media (max-width: 575px) {
       max-width: 130px;
-      margin: auto;
+      // margin: auto;
+      text-align: left;
     }
     a {
       color: #fff;
@@ -83,6 +99,14 @@
     a:hover {
       transform: scale(1.13);
       transition: transform 0.2s linear;
+      @media (max-width: 575px) {
+        transform: none;
+      }
+    }
+    &--first {
+      @media (max-width: 575px) {
+        margin-left: 0;
+      }
     }
     &--first.active {
     }
@@ -92,7 +116,7 @@
     }
     & .active {
       position: relative;
-      transition: all 2s linear;
+      transition: all 0.2s linear;
     }
     & .active::after {
       transition: all 0.3s;
@@ -108,6 +132,9 @@
       transform: translateX(0px);
       // display: none !important;
       transition: all 2s linear;
+      @media (max-width: 575px) {
+        border-bottom: none;
+      }
     }
     // & .active {
     //   position: relative;
@@ -115,4 +142,11 @@
     //   border-bottom: 2px solid white;
     // }
   }
+}
+.no-transition {
+  -webkit-transition: height 0.01s;
+  -moz-transition: height 0.01s;
+  -ms-transition: height 0.01s;
+  -o-transition: height 0.01s;
+  transition: height 0.01s;
 }
