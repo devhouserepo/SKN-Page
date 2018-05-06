@@ -1595,18 +1595,27 @@ p {
           align-items: center;
 }
 
+@media (max-width: 575px) {
+  .navigation__navbar {
+    background-color: rgba(33, 29, 29, 0.7);
+    min-height: 60px;
+    padding-bottom: 20px;
+  }
+}
+
 .navigation__toggler {
   display: none;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   .navigation__toggler {
     border-top: 2px solid white;
     display: block;
     position: absolute;
-    left: 3%;
+    right: 3%;
     z-index: 20;
     max-width: 35px;
+    top: 20px;
   }
 }
 
@@ -1636,13 +1645,19 @@ p {
   transition: background-color 0.3s linear;
 }
 
+@media (max-width: 575px) {
+  .navigation.scrolled {
+    background-color: transparent;
+  }
+}
+
 .navigation__navbar {
   text-align: right;
   z-index: 3;
   width: 100%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   .navigation__primary {
     text-align: center;
     padding-top: 130px;
@@ -1654,11 +1669,18 @@ p {
   margin-right: 20px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 766px) {
   .navigation__logo {
-    max-width: 130px;
+    width: 5%;
+    max-width: 30px;
     margin-left: 10px;
-    width: 15%;
+    min-width: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  .navigation__logo {
+    margin: 35px 0 10px 0;
   }
 }
 
@@ -1675,10 +1697,10 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   .navigation__item {
     max-width: 130px;
-    margin: auto;
+    text-align: left;
   }
 }
 
@@ -1702,6 +1724,19 @@ p {
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
+@media (max-width: 575px) {
+  .navigation__item a:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .navigation__item--first {
+    margin-left: 0;
+  }
+}
+
 .navigation__item--first.active::after {
   text-decoration: none;
   display: none;
@@ -1709,8 +1744,8 @@ p {
 
 .navigation__item .active {
   position: relative;
-  -webkit-transition: all 2s linear;
-  transition: all 2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .navigation__item .active::after {
@@ -1728,6 +1763,17 @@ p {
           transform: translateX(0px);
   -webkit-transition: all 2s linear;
   transition: all 2s linear;
+}
+
+@media (max-width: 575px) {
+  .navigation__item .active::after {
+    border-bottom: none;
+  }
+}
+
+.no-transition {
+  -webkit-transition: height 0.01s;
+  transition: height 0.01s;
 }
 
 .modal {

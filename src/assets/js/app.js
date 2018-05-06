@@ -199,6 +199,7 @@ $(document).ready(function() {
       "referencje",
       "kontakt"
     ],
+    responsiveWidth: 991,
     sectionSelector: ".section",
     slideSelector: ".slide2",
     onLeave: function(index, nextIndex, direction) {
