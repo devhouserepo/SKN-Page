@@ -39,17 +39,22 @@ a {
   position: relative;
   display: flex;
   align-items: center;
-}
 
-.container1 {
-
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
-
+  @include phone {
+    flex-direction: column;
+  }
 }
+
+
+.projects__first-row, .projects__second-row {
+  @include phone {
+    flex-direction: column;
+  }
+}
+
 
 .project-paragraphs {
   position: absolute;
@@ -320,7 +325,12 @@ a {
   z-index: 1;
   bottom: -300px;
   right: -200px;
+
+  @include phone {
+      display: none;
+  }
 }
+
 
 
 .path-1 {
@@ -339,6 +349,10 @@ a {
   position: absolute;
   z-index: 1;
   top: -220px;
+
+  @include phone {
+      display: none;
+  }
 }
 
 .path-2 {
@@ -356,12 +370,6 @@ a {
 
 
 @media (max-width: 768px) {
-  .projects__first-row {
-
-  }
-  .projects__second-row {
-
-  }
   .projects__title {
     display: none;
   }
