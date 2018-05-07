@@ -258,15 +258,18 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
   }
 }
 
 @media (max-width: 500px) {
-  .projects__first-row, .projects__second-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .projects__first-row div, .projects__second-row div {
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 
@@ -434,10 +437,32 @@ a:hover {
   position: relative;
 }
 
+@media (max-width: 500px) {
+  .projects-shape-1,
+  .projects-shape-2,
+  .projects-shape-3,
+  .projects-shape-4,
+  .projects-shape-5,
+  .projects-shape-6 {
+    margin-top: 20px;
+    max-width: 450px;
+    min-width: 330px;
+    max-height: 450px;
+    min-height: 330px;
+  }
+}
+
 .projects-shape-1,
 .projects-shape-6 {
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
           clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
+}
+
+@media (max-width: 500px) {
+  .projects-shape-1,
+  .projects-shape-6 {
+    bottom: auto;
+  }
 }
 
 .projects-shape-2,
@@ -446,6 +471,15 @@ a:hover {
 .projects-shape-5 {
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
           clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
+}
+
+@media (max-width: 500px) {
+  .projects-shape-2,
+  .projects-shape-3,
+  .projects-shape-4,
+  .projects-shape-5 {
+    bottom: auto;
+  }
 }
 
 .projects-shape-1 {
@@ -480,6 +514,12 @@ a:hover {
   margin-top: 20%;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
+}
+
+@media (max-width: 500px) {
+  .project_title {
+    margin-top: 0;
+  }
 }
 
 .project-about-mini {
@@ -555,6 +595,12 @@ a:hover {
   right: -80px;
   bottom: -95px;
   z-index: 1;
+}
+
+@media (max-width: 500px) {
+  .giant-header-projects {
+    display: none;
+  }
 }
 
 .svg-1 {
