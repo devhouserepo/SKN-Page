@@ -55,3 +55,6 @@ $(".validateObjectTextArea")
       $(".form-submit").removeClass("btn-animate");
     }
   });
+$(".btn-secondary--close").on("click", function() {
+  $("#exampleModalCenter2").fadeOut();
+});
