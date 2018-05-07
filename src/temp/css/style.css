@@ -1836,9 +1836,9 @@ p {
   margin: 15px 0 15px 17px;
 }
 
-.modal-first .modal-body .form-recruitment .form-item input[type=text], .modal-first .modal-body .form-recruitment .form-item textarea[type=text],
-.modal-first .modal-body .form-recruitment .form-item input[type=email], .modal-first .modal-body .form-recruitment .form-item textarea[type=email],
-.modal-first .modal-body .form-recruitment .form-item input[type=number], .modal-first .modal-body .form-recruitment .form-item textarea[type=number],
+.modal-first .modal-body .form-recruitment .form-item input[type="text"], .modal-first .modal-body .form-recruitment .form-item textarea[type="text"],
+.modal-first .modal-body .form-recruitment .form-item input[type="email"], .modal-first .modal-body .form-recruitment .form-item textarea[type="email"],
+.modal-first .modal-body .form-recruitment .form-item input[type="number"], .modal-first .modal-body .form-recruitment .form-item textarea[type="number"],
 .modal-first .modal-body .form-recruitment .form-item textarea {
   width: 100%;
   padding: 12px 17px;
@@ -1850,9 +1850,9 @@ p {
   background: white;
 }
 
-.modal-first .modal-body .form-recruitment .form-item input[type=text]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type=text]:focus,
-.modal-first .modal-body .form-recruitment .form-item input[type=email]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type=email]:focus,
-.modal-first .modal-body .form-recruitment .form-item input[type=number]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type=number]:focus,
+.modal-first .modal-body .form-recruitment .form-item input[type="text"]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type="text"]:focus,
+.modal-first .modal-body .form-recruitment .form-item input[type="email"]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type="email"]:focus,
+.modal-first .modal-body .form-recruitment .form-item input[type="number"]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type="number"]:focus,
 .modal-first .modal-body .form-recruitment .form-item textarea:focus {
   border: 2px solid #555;
 }
@@ -1869,7 +1869,7 @@ p {
   margin: 15px 0 15px 0;
 }
 
-.modal-first .modal-body .form-recruitment .form-item__row input[type=radio], .modal-first .modal-body .form-recruitment .form-item__row .form-item textarea[type=radio], .modal-first .modal-body .form-recruitment .form-item .form-item__row textarea[type=radio] {
+.modal-first .modal-body .form-recruitment .form-item__row input[type="radio"], .modal-first .modal-body .form-recruitment .form-item__row .form-item textarea[type="radio"], .modal-first .modal-body .form-recruitment .form-item .form-item__row textarea[type="radio"] {
   margin: 0 0 0 15px;
   cursor: pointer;
   width: 18px;
@@ -1926,4 +1926,8 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#exampleModalCenter2 {
+  display: block;
 }

@@ -179,7 +179,6 @@ $(document).ready(function() {
       });
     });
   });
-
   // TEAM section END
 
   // $(".thumbnail-container").each(function(index, item) {
