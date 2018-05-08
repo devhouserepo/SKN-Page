@@ -1293,7 +1293,7 @@ a:hover {
 
 @media (max-width: 500px) {
   .svg-1 {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1324,7 +1324,7 @@ a:hover {
 
 @media (max-width: 500px) {
   .svg-2 {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1357,6 +1357,12 @@ a:hover {
   width: 100vw;
   height: 100vh;
   color: #ffffff;
+}
+
+@media (max-width: 500px) {
+  .section__contact {
+    display: none !important;
+  }
 }
 
 .section__contact__text span {
@@ -1679,6 +1685,12 @@ a:hover {
   font-family: "Roboto";
 }
 
+@media (max-width: 500px) {
+  .partners {
+    display: none !important;
+  }
+}
+
 .navy_bg {
   border-left: 450px solid #000039;
   border-top: 230px solid #000039;
@@ -1808,6 +1820,12 @@ a:hover {
   opacity: 0.15;
 }
 
+@media (max-width: 500px) {
+  .third {
+    display: none;
+  }
+}
+
 #partner1, #partner2, #partner3, #partner4 {
   text-align: justify;
 }
@@ -1901,6 +1919,12 @@ a:hover {
   width: 100vw;
   height: 100vh;
   color: black;
+}
+
+@media (max-width: 500px) {
+  .section__reference {
+    display: none !important;
+  }
 }
 
 .section__reference__box-left {

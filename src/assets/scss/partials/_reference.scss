@@ -1,6 +1,15 @@
 .section {
   position: relative;
   &__reference {
+
+// START ------ OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY
+
+@include phone{
+  display: none !important;
+}
+
+// END------ OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY
+
     width: 100vw;
     height: 100vh;
     color: black;

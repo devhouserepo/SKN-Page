@@ -1,7 +1,16 @@
 .partners {
   font-family: "Roboto";
     //margin-bottom: 110px;
+
+// START ------ OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY
+@include phone {
+  display: none !important;
 }
+// END------ OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY
+}
+
+
+
 
 .navy_bg {
   border-left: 450px solid #000039;
@@ -101,6 +110,8 @@ cursor: pointer;
   z-index: 0;
 }
 
+
+
 .third {
   color: grey;
   font-size: 140px;
@@ -110,7 +121,16 @@ cursor: pointer;
   //left: 250px;
   opacity: 0.15;
 
+// START ------ OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY
+
+  @include phone{
+    display: none;
+  }
+
+// END------ OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY OLA ZMIANY
 }
+
+
 
 #partner1, #partner2, #partner3, #partner4 {
     text-align: justify;

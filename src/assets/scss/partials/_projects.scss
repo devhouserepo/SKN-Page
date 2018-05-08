@@ -355,9 +355,10 @@ a {
     // top: -730px;
     // left: auto;
     // z-index: 1;
-
   }
 }
+
+
 .svg-1 {
   position: absolute;
   z-index: 1;
@@ -365,7 +366,7 @@ a {
   right: -200px;
 
   @include phone {
-      display: none;
+      display: none !important;
   }
 }
 
@@ -387,7 +388,7 @@ a {
   top: -220px;
 
   @include phone {
-      display: none;
+      display: none !important;
   }
 }
 .path-2 {
