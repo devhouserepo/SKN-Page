@@ -1,24 +1,24 @@
-.modal{
-    font-family: $text-font-1;
-    color: $text-color-2;
-    .close {
-        &:focus {
-        outline: none;
-      }
+.modal {
+  font-family: $text-font-1;
+  color: $text-color-2;
+  .close {
+    &:focus {
+      outline: none;
     }
-    .btn,
-    .btn-primary,
-    .btn-secondary {
-        @include btn-base($bg-button-color-1, $text-color-1);
-        margin: 0 0 0 15px;
-    }
+  }
+  .btn,
+  .btn-primary,
+  .btn-secondary {
+    @include btn-base($bg-button-color-1, $text-color-1);
+    margin: 0 0 0 15px;
+  }
 }
-.modal-first{
+.modal-first {
   .modal-body {
     .form-recruitment {
       .form-item {
         label {
-            margin: 6px 0 6px 0;
+          margin: 6px 0 6px 0;
         }
         input {
           border-top: none;
@@ -31,21 +31,21 @@
           padding: 0px 5px 5px 0px;
           margin: 15px 0 15px 17px;
         }
-        input[type=text],
-        input[type=email],
-        input[type=number],
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
         textarea {
-            width: 100%;
-            padding: 12px 17px;
-            margin: 15px 0;
-            border: 2px solid #ccc;
-            -webkit-transition: 0.5s;
-            transition: 0.5s;
-            outline: none;
-            background: white;
-            &:focus {
-                border: 2px solid #555;
-            }
+          width: 100%;
+          padding: 12px 17px;
+          margin: 15px 0;
+          border: 2px solid #ccc;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          outline: none;
+          background: white;
+          &:focus {
+            border: 2px solid #555;
+          }
         }
         textarea {
           @extend input;
@@ -58,7 +58,7 @@
           margin: 15px 0 15px 0;
         }
         &__row {
-          input[type=radio] {
+          input[type="radio"] {
             margin: 0 0 0 15px;
             cursor: pointer;
             width: 18px;
@@ -94,7 +94,7 @@
   }
 }
 
-.modal-second{
+.modal-second {
   .modal-dialog {
     font-family: $text-font-1;
     font-size: 1.2em;
@@ -111,4 +111,7 @@
       }
     }
   }
+}
+#exampleModalCenter2 {
+  display: block;
 }

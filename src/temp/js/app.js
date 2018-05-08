@@ -179,7 +179,6 @@ $(document).ready(function() {
       });
     });
   });
-
   // TEAM section END
 
   // $(".thumbnail-container").each(function(index, item) {
@@ -216,6 +215,13 @@ $(document).ready(function() {
     afterLoad: function(anchor, index) {
       if (index == 1) {
         document.getElementById("navbar").classList.remove("scrolled");
+      } else if (index == 2) {
+        $(".svg-1").css("display", "block");
+        $(".svg-2").css("display", "block");
+      } else if (index == 5) {
+        $(".svg-3").css("display", "block");
+      } else if (index == 6) {
+        $(".svg-4").css("display", "block");
       }
       const anchorsLink = document.querySelectorAll(".navbar-nav li a");
       // console.log(anchor, index, anchorsLink);
