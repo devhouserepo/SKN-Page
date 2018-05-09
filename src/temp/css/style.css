@@ -1832,6 +1832,10 @@ a:hover {
   color: black;
 }
 
+.section__reference .mobile {
+  display: none !important;
+}
+
 .section__reference__box-left {
   background: #ffffff;
   width: 700px;
@@ -2011,6 +2015,956 @@ a:hover {
 
 .section__reference__box-right .carousel-item p {
   margin: 25px 0 0 0;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .container .section__reference .mobile {
+    display: initial !important;
+    background: white;
+    width: 320px;
+    height: 650px;
+    position: relative;
+    top: 100px;
+  }
+  .container .section__reference .mobile::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(225deg);
+            transform: rotateZ(225deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 190px solid transparent;
+    border-bottom: 190px solid transparent;
+    border-left: 190px solid #000039;
+    top: -125px;
+    left: -100px;
+  }
+  .container .section__reference .mobile::before {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #000039;
+    right: -65px;
+    top: 470px;
+  }
+  .container .section__reference .mobile .carousel {
+    position: absolute;
+    top: 110px;
+    left: 140px;
+  }
+  .container .section__reference .mobile .carousel .carousel-indicators li,
+  .container .section__reference .mobile .carousel .carousel-indicators .active {
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    border: 1px solid #838383;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .container .section__reference .mobile .carousel .carousel-indicators .active {
+    background-color: #ababab;
+  }
+  .container .section__reference .mobile .carousel-item {
+    width: 320px;
+    min-height: 430px;
+    background: white;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.4px;
+  }
+  .container .section__reference .mobile .carousel-item img:nth-child(1) {
+    width: 100px;
+    border-radius: 100px;
+  }
+  .container .section__reference .mobile .carousel-item span {
+    color: #000039;
+    display: block;
+    margin: 3px 0 0 0;
+  }
+  .container .section__reference .mobile .carousel-item p {
+    margin: 25px 0 0 0;
+  }
+  .container .section__reference .mobile .carousel-item img:nth-child(4) {
+    margin: 40px 0 0 0;
+    height: 20px;
+  }
+  .container .section__reference__box-left {
+    display: none !important;
+  }
+  .container .section__reference__box-right {
+    display: none !important;
+  }
+  .container .section__reference__box-right .path {
+    stroke-dasharray: 1550;
+    stroke-dashoffset: 1550;
+    -webkit-animation: dash 4s linear forwards;
+            animation: dash 4s linear forwards;
+  }
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 414px) {
+  .section__reference .mobile {
+    display: initial !important;
+    background: #ffffff;
+    max-width: 700px;
+    height: 650px;
+    position: relative;
+    top: 84px;
+    right: -620px;
+  }
+  .section__reference .mobile::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(225deg);
+            transform: rotateZ(225deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 190px solid transparent;
+    border-bottom: 190px solid transparent;
+    border-left: 190px solid #000039;
+    top: -125px;
+    left: -100px;
+  }
+  .section__reference .mobile::before {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #000039;
+    right: -65px;
+    top: 470px;
+  }
+  .section__reference .mobile .carousel {
+    position: absolute;
+    top: 110px;
+    left: 140px;
+  }
+  .section__reference .mobile .carousel .carousel-indicators li,
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    border: 1px solid #838383;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    background-color: #ababab;
+  }
+  .section__reference .mobile .carousel-item {
+    width: 450px;
+    min-height: 430px;
+    background: white;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.4px;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(1) {
+    width: 100px;
+    border-radius: 100px;
+  }
+  .section__reference .mobile .carousel-item span {
+    color: #000039;
+    display: block;
+    margin: 3px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item p {
+    margin: 25px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(4) {
+    margin: 40px 0 0 0;
+    height: 20px;
+  }
+  .section__reference__box-left {
+    display: none !important;
+  }
+  .section__reference__box-right {
+    display: none !important;
+  }
+  .section__reference__box-right .path {
+    stroke-dasharray: 1550;
+    stroke-dashoffset: 1550;
+    -webkit-animation: dash 4s linear forwards;
+            animation: dash 4s linear forwards;
+  }
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 414px) and (min-height: 731px) and (max-height: 812px) {
+  .section__reference .mobile {
+    display: initial !important;
+    background: #ffffff;
+    max-width: 700px;
+    height: 650px;
+    position: relative;
+    top: 84px;
+    right: -620px;
+  }
+  .section__reference .mobile::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(225deg);
+            transform: rotateZ(225deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 190px solid transparent;
+    border-bottom: 190px solid transparent;
+    border-left: 190px solid #000039;
+    top: -125px;
+    left: -100px;
+  }
+  .section__reference .mobile::before {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #000039;
+    right: -65px;
+    top: 470px;
+  }
+  .section__reference .mobile .carousel {
+    position: absolute;
+    top: 110px;
+    left: 140px;
+  }
+  .section__reference .mobile .carousel .carousel-indicators li,
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    border: 1px solid #838383;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    background-color: #ababab;
+  }
+  .section__reference .mobile .carousel-item {
+    width: 450px;
+    min-height: 430px;
+    background: white;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.4px;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(1) {
+    width: 100px;
+    border-radius: 100px;
+  }
+  .section__reference .mobile .carousel-item span {
+    color: #000039;
+    display: block;
+    margin: 3px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item p {
+    margin: 25px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(4) {
+    margin: 40px 0 0 0;
+    height: 20px;
+  }
+  .section__reference__box-left {
+    display: none !important;
+  }
+  .section__reference__box-right {
+    display: none !important;
+  }
+  .section__reference__box-right .path {
+    stroke-dasharray: 1550;
+    stroke-dashoffset: 1550;
+    -webkit-animation: dash 4s linear forwards;
+            animation: dash 4s linear forwards;
+  }
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 414px) and (min-height: 812px) {
+  .section__reference .mobile {
+    display: initial !important;
+    background: #ffffff;
+    max-width: 700px;
+    height: 650px;
+    position: relative;
+    top: 84px;
+    right: -620px;
+  }
+  .section__reference .mobile::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(225deg);
+            transform: rotateZ(225deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 190px solid transparent;
+    border-bottom: 190px solid transparent;
+    border-left: 190px solid #000039;
+    top: -125px;
+    left: -100px;
+  }
+  .section__reference .mobile::before {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #000039;
+    right: -65px;
+    top: 470px;
+  }
+  .section__reference .mobile .carousel {
+    position: absolute;
+    top: 110px;
+    left: 140px;
+  }
+  .section__reference .mobile .carousel .carousel-indicators li,
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    border: 1px solid #838383;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    background-color: #ababab;
+  }
+  .section__reference .mobile .carousel-item {
+    width: 450px;
+    min-height: 430px;
+    background: white;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.4px;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(1) {
+    width: 100px;
+    border-radius: 100px;
+  }
+  .section__reference .mobile .carousel-item span {
+    color: #000039;
+    display: block;
+    margin: 3px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item p {
+    margin: 25px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(4) {
+    margin: 40px 0 0 0;
+    height: 20px;
+  }
+  .section__reference__box-left {
+    display: none !important;
+  }
+  .section__reference__box-right {
+    display: none !important;
+  }
+  .section__reference__box-right .path {
+    stroke-dasharray: 1550;
+    stroke-dashoffset: 1550;
+    -webkit-animation: dash 4s linear forwards;
+            animation: dash 4s linear forwards;
+  }
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@media (min-width: 414px) and (max-width: 576px) {
+  .section__reference .mobile {
+    display: initial !important;
+    background: #ffffff;
+    max-width: 700px;
+    height: 650px;
+    position: relative;
+    top: 84px;
+    right: -620px;
+  }
+  .section__reference .mobile::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(225deg);
+            transform: rotateZ(225deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 190px solid transparent;
+    border-bottom: 190px solid transparent;
+    border-left: 190px solid #000039;
+    top: -125px;
+    left: -100px;
+  }
+  .section__reference .mobile::before {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #000039;
+    right: -65px;
+    top: 470px;
+  }
+  .section__reference .mobile .carousel {
+    position: absolute;
+    top: 110px;
+    left: 140px;
+  }
+  .section__reference .mobile .carousel .carousel-indicators li,
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    border: 1px solid #838383;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    background-color: #ababab;
+  }
+  .section__reference .mobile .carousel-item {
+    width: 450px;
+    min-height: 430px;
+    background: white;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.4px;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(1) {
+    width: 100px;
+    border-radius: 100px;
+  }
+  .section__reference .mobile .carousel-item span {
+    color: #000039;
+    display: block;
+    margin: 3px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item p {
+    margin: 25px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(4) {
+    margin: 40px 0 0 0;
+    height: 20px;
+  }
+  .section__reference__box-left {
+    display: none !important;
+  }
+  .section__reference__box-right {
+    display: none !important;
+  }
+  .section__reference__box-right .path {
+    stroke-dasharray: 1550;
+    stroke-dashoffset: 1550;
+    -webkit-animation: dash 4s linear forwards;
+            animation: dash 4s linear forwards;
+  }
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .section__reference .mobile {
+    display: initial !important;
+    background: #ffffff;
+    max-width: 700px;
+    height: 650px;
+    position: relative;
+    top: 84px;
+    right: -620px;
+  }
+  .section__reference .mobile::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(225deg);
+            transform: rotateZ(225deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 190px solid transparent;
+    border-bottom: 190px solid transparent;
+    border-left: 190px solid #000039;
+    top: -125px;
+    left: -100px;
+  }
+  .section__reference .mobile::before {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #000039;
+    right: -65px;
+    top: 470px;
+  }
+  .section__reference .mobile .carousel {
+    position: absolute;
+    top: 110px;
+    left: 140px;
+  }
+  .section__reference .mobile .carousel .carousel-indicators li,
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    border: 1px solid #838383;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    background-color: #ababab;
+  }
+  .section__reference .mobile .carousel-item {
+    width: 450px;
+    min-height: 430px;
+    background: white;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.4px;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(1) {
+    width: 100px;
+    border-radius: 100px;
+  }
+  .section__reference .mobile .carousel-item span {
+    color: #000039;
+    display: block;
+    margin: 3px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item p {
+    margin: 25px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(4) {
+    margin: 40px 0 0 0;
+    height: 20px;
+  }
+  .section__reference__box-left {
+    display: none !important;
+  }
+  .section__reference__box-right {
+    display: none !important;
+  }
+  .section__reference__box-right .path {
+    stroke-dasharray: 1550;
+    stroke-dashoffset: 1550;
+    -webkit-animation: dash 4s linear forwards;
+            animation: dash 4s linear forwards;
+  }
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .section__reference .mobile {
+    display: initial !important;
+    background: #ffffff;
+    max-width: 700px;
+    height: 650px;
+    position: relative;
+    top: 84px;
+    right: -420px;
+  }
+  .section__reference .mobile::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(225deg);
+            transform: rotateZ(225deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 190px solid transparent;
+    border-bottom: 190px solid transparent;
+    border-left: 190px solid #000039;
+    top: -125px;
+    left: -100px;
+  }
+  .section__reference .mobile::before {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #000039;
+    right: -65px;
+    top: 470px;
+  }
+  .section__reference .mobile .carousel {
+    position: absolute;
+    top: 110px;
+    left: 140px;
+  }
+  .section__reference .mobile .carousel .carousel-indicators li,
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    border: 1px solid #838383;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    background-color: #ababab;
+  }
+  .section__reference .mobile .carousel-item {
+    width: 450px;
+    min-height: 430px;
+    background: white;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.4px;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(1) {
+    width: 100px;
+    border-radius: 100px;
+  }
+  .section__reference .mobile .carousel-item span {
+    color: #000039;
+    display: block;
+    margin: 3px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item p {
+    margin: 25px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(4) {
+    margin: 40px 0 0 0;
+    height: 20px;
+  }
+  .section__reference__box-left {
+    display: none !important;
+  }
+  .section__reference__box-right {
+    display: none !important;
+  }
+  .section__reference__box-right .path {
+    stroke-dasharray: 1550;
+    stroke-dashoffset: 1550;
+    -webkit-animation: dash 4s linear forwards;
+            animation: dash 4s linear forwards;
+  }
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .section__reference .mobile {
+    display: initial !important;
+    background: #ffffff;
+    max-width: 700px;
+    height: 650px;
+    position: relative;
+    top: 84px;
+    right: -620px;
+  }
+  .section__reference .mobile::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(225deg);
+            transform: rotateZ(225deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 190px solid transparent;
+    border-bottom: 190px solid transparent;
+    border-left: 190px solid #000039;
+    top: -125px;
+    left: -100px;
+  }
+  .section__reference .mobile::before {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #000039;
+    right: -65px;
+    top: 470px;
+  }
+  .section__reference .mobile .carousel {
+    position: absolute;
+    top: 110px;
+    left: 140px;
+  }
+  .section__reference .mobile .carousel .carousel-indicators li,
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    border: 1px solid #838383;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    background-color: #ababab;
+  }
+  .section__reference .mobile .carousel-item {
+    width: 450px;
+    min-height: 430px;
+    background: white;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.4px;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(1) {
+    width: 100px;
+    border-radius: 100px;
+  }
+  .section__reference .mobile .carousel-item span {
+    color: #000039;
+    display: block;
+    margin: 3px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item p {
+    margin: 25px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(4) {
+    margin: 40px 0 0 0;
+    height: 20px;
+  }
+  .section__reference__box-left {
+    display: none !important;
+  }
+  .section__reference__box-right {
+    display: none !important;
+  }
+  .section__reference__box-right .path {
+    stroke-dasharray: 1550;
+    stroke-dashoffset: 1550;
+    -webkit-animation: dash 4s linear forwards;
+            animation: dash 4s linear forwards;
+  }
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .section__reference .mobile {
+    display: initial !important;
+    background: #ffffff;
+    max-width: 700px;
+    height: 650px;
+    position: relative;
+    top: 54px;
+    right: -700px;
+  }
+  .section__reference .mobile .col-7 {
+    position: relative;
+  }
+  .section__reference .mobile::after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(225deg);
+            transform: rotateZ(225deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 190px solid transparent;
+    border-bottom: 190px solid transparent;
+    border-left: 190px solid #000039;
+    top: -125px;
+    left: -100px;
+  }
+  .section__reference .mobile::before {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #000039;
+    right: -65px;
+    top: 470px;
+  }
+  .section__reference .mobile .carousel {
+    position: absolute;
+    top: 110px;
+    left: 140px;
+  }
+  .section__reference .mobile .carousel .carousel-indicators li,
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    border: 1px solid #838383;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .section__reference .mobile .carousel .carousel-indicators .active {
+    background-color: #ababab;
+  }
+  .section__reference .mobile .carousel-item {
+    width: 450px;
+    min-height: 430px;
+    background: white;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.4px;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(1) {
+    width: 100px;
+    border-radius: 100px;
+  }
+  .section__reference .mobile .carousel-item span {
+    color: #000039;
+    display: block;
+    margin: 3px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item p {
+    margin: 25px 0 0 0;
+  }
+  .section__reference .mobile .carousel-item img:nth-child(4) {
+    margin: 40px 0 0 0;
+    height: 20px;
+  }
+  .section__reference__box-left {
+    display: none !important;
+  }
+  .section__reference__box-right {
+    display: none !important;
+  }
+  .section__reference__box-right .path {
+    stroke-dasharray: 1550;
+    stroke-dashoffset: 1550;
+    -webkit-animation: dash 4s linear forwards;
+            animation: dash 4s linear forwards;
+  }
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .section__reference__box-left {
+    right: 141px;
+  }
+  .section__reference__box-right svg {
+    left: 105px;
+  }
+  .section__reference__box-right .carousel {
+    left: 175px;
+  }
 }
 
 @media (min-width: 1600px) {
