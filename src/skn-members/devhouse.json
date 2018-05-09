@@ -3,144 +3,64 @@
     "id": 1,
     "first_name": "Piotr",
     "last_name": "Mikrut",
-    "info": "Piotr jest fanem wikingów i Elona Muska. Jeden z założycieli koła SKN Konsultingu IT",
+    "info": "Piotr jest współzałożycielem i prezesem SKN-u, gdzie pełni również rolę scrum mastera zespołu Devhouse. Na co dzień pracuje jak project manager w software housie. Jest uzależniony od dobrej kawy, vlogów oraz wcielenia pomysłów w życie!",
     "linkedin": "https://www.linkedin.com/in/piotr-mikrut-06b9a199/",
-    "photo": "./assets/images/members/piotr_mikrut.png"
+    "photo": "./assets/images/members/piotr-mikrut.png"
   },
   {
     "id": 2,
     "first_name": "Weronika",
     "last_name": "Sochacka",
-    "info": "Miłośniczka kotów i social media. Dużo czasu spędza przed ekranami z kotkami na kolanach",
+    "info": "Weronika studiuje finanse i rachunkowość w SGH. Interesuje się social media, SEO i językiem niemieckim. W SKN-ie uczy się Frontendu i działa w teamie marketingu. Prywatnie kocha koty i uwielbia malować paznokcie.",
     "linkedin": "https://www.linkedin.com/in/weronika-sochacka/",
-    "photo": "./assets/images/members/weronika.png"
+    "photo": "./assets/images/members/weronika-sochacka.png"
   },
   {
     "id": 3,
     "first_name": "Aleksandra",
     "last_name": "Grunwald",
-    "info": "Programistka front-end. Projektant produktu i grafiki z wykształcenia (Uniwersytet Artystyczny w Poznaniu). Członek koła SKN Konsultingu IT w projektach StartUp game i DevHouse.",
+    "info": "Ola jest programistką front-end. Z wykształcenia projektantem produktu i grafiki (Uniwersytet Artystyczny w Poznaniu). W SKN-ie Konsultingu IT działa w projektach StartUp game i DevHouse.",
     "linkedin": "https://www.linkedin.com/in/aleksandragrunwald/",
-    "photo": "./assets/images/members/grunwald.png"
+    "photo": "./assets/images/members/aleksandra-grunwald.png"
   },
   {
     "id": 4,
     "first_name": "Adam",
-    "last_name": "Rogulska",
-    "info": "Pasjonat JavaScript, biomechaniki i anatomii. Ten kolega również za mało o sobie napisał.",
-    "linkedin": "http://www.linkedin.com",
-    "photo": "./assets/images/members/adam.png"
+    "last_name": "Rogulski",
+    "info": "Adam jest Front End developerem - pasjonatem semantycznego i dobrze zaprojektowanego kodu, a w Kole działa w Devhouse. Hobbystycznie realizuje się jako fizjoterapeuta i trener personalny. W wolnych chwilach ćwiczy, gotuje i gra w Wiedźmina.",
+    "linkedin": "https://www.linkedin.com/in/adam-rogulski/",
+    "photo": "./assets/images/members/adam-rogulski.png"
   },
   {
     "id": 5,
     "first_name": "Aleksander",
     "last_name": "Ziółkowski",
-    "info": "Entuzjasta nowych technologii, w wolnych chwilach jeździ na rowerze. Grywa także chętnie w gry planszowe.",
+    "info": "Aleksander na co dzień zajmuje się analizą danych w instytucji finansowej. W SKN-ie jest członkiem zespołu Devhouse, gdzie jest odpowiedzialny za część pracy związanej z front endem. Jest zwolennikiem nowych technologii oraz aktywności na świeżym powietrzu.",
     "linkedin": "",
-    "photo": "./assets/images/members/aleksander.png"
+    "photo": "./assets/images/members/aleksander-ziolkowski.png"
   },
   {
     "id": 6,
     "first_name": "Piotr",
     "last_name": "Kniaź",
-    "info": "React JS/PHP developer w firmie Seraaq. Członek teamu DevHouse",
-    "linkedin": "http://www.twitter.com",
-    "photo": "./assets/images/members/piotr.png"
-  },
-  {
-    "id": 7,
-    "first_name": "Cyryl",
-    "last_name": "Kociecki",
-    "info": "Jeden z założycieli SKN Konsultingu IT. Tutaj opis. Niestety aktualnie go nie ma.",
-    "linkedin": "http://www.booooooom.com",
-    "photo": "./assets/images/members/chlopak.jpg"
-  },
-  {
-    "id": 8,
-    "first_name": "Chowder",
-    "last_name": "CartoonNetwork",
-    "info": "A 10-year-old chubby purple cat—bear—rabbit[2] hybrid who serves as an apprentice under the chef Mung Daal, Chowder lives with Mung Daal and his wife, Truffles, in a room at the top of the catering business. Chowder wants to become a great chef, but he is very impulsive and scatterbrained and often gives in to his urges. ",
-    "linkedin": "https://www.youtube.com/watch?v=pbBabtSwJXk",
-    "photo": "./assets/images/members/chowder.jpg"
-  },
-  {
-    "id": 9,
-    "first_name": "Adam",
-    "last_name": "Hanuszczak",
-    "info": "To jest opis Adam Hanuszczak. To jest opis Adam Hanuszczak. To jest opis Adam Hanuszczak. To jest opis Adam Hanuszczak. To jest opis Adam Hanuszczak.",
-    "linkedin": "",
-    "photo": "./assets/images/members/cazary-zajkowski.png"
-  },
-  {
-    "id": 10,
-    "first_name": "Lena",
-    "last_name": "Koczkodaj",
-    "info": "To jest opis Lena Koczkodaj. To jest opis Lena Koczkodaj. To jest opis Lena Koczkodaj. To jest opis Lena Koczkodaj. To jest opis Lena Koczkodaj.",
-    "linkedin": "",
-    "photo": "./assets/images/members/dziewczyna.jpg"
-  },
-  {
-    "id": 3,
-    "first_name": "Lena",
-    "last_name": "Olejnikowska",
-    "info": "To jest opis Lena Olejnikowska. To jest opis Lena Olejnikowska.",
-    "linkedin": "",
-    "photo": "./assets/images/members/chlopak.jpg"
-  },
-  {
-    "id": 4,
-    "first_name": "Łukasz",
-    "last_name": "Szczerbiński",
-    "info": "Pasjonat JavaScript, biomechaniki i anatomii. Ten kolega również za mało o sobie napisał.",
-    "linkedin": "",
-    "photo": "./assets/images/members/chowder.jpg"
-  },
-  {
-    "id": 5,
-    "first_name": "Małgorzata",
-    "last_name": "Kiszczak",
-    "info": "Entuzjasta nowych technologii, w wolnych chwilach jeździ na rowerze. Grywa także chętnie w gry planszowe.",
-    "linkedin": "",
-    "photo": "./assets/images/members/cazary-zajkowski.png"
-  },
-  {
-    "id": 6,
-    "first_name": "Małgorzata",
-    "last_name": "Maciejowska",
-    "info": "React JS/PHP developer w firmie Seraaq. Członek teamu DevHouse",
-    "linkedin": "",
-    "photo": "./assets/images/members/dziewczyna.jpg"
+    "info": "Piotr jest z wykształcenia dietetykiem, a z pasji i zawodu programistą w firmie Seraaq. Pisze głównie w JavaScript i PHP.",
+    "linkedin": "https://www.linkedin.com/in/piotr-knia%C5%BA-8b4484151/",
+    "photo": "./assets/images/members/piotr-kniaz.png"
   },
   {
     "id": 7,
     "first_name": "Piotr",
     "last_name": "Pilis",
-    "info": "Jeden z założycieli SKN Konsultingu IT. Tutaj opis. Niestety aktualnie go nie ma.",
-    "linkedin": "",
-    "photo": "./assets/images/members/chlopak.jpg"
+    "info": "Piotr jest Full-stack developerem, przedsiębiorcą, studentem. Posiada 3 letnie doświadczenie w rozwijaniu aplikacji webowych. Uważa, że działanie w kole naukowym to szansa na poznanie ambitnych ludzi.",
+    "linkedin": "https://www.linkedin.com/in/piotrpilis/",
+    "photo": "./assets/images/members/piotr-pilis.jpg"
   },
   {
     "id": 8,
-    "first_name": "Ola",
-    "last_name": "Ślubowska",
-    "info": "To jest opis Jana Kowalskiego. To jest opis Jana Kowalskiego. To jest opis Jana Kowalskiego. To jest opis Jana Kowalskiego.",
-    "linkedin": "",
-    "photo": "./assets/images/members/chowder.jpg"
-  },
-  {
-    "id": 9,
-    "first_name": "Katarzyna",
-    "last_name": "Kwiecińska",
-    "info": "To jest opis Katarzyny Kwiatkowskiej. To jest opis Katarzyny Kwiatkowskiej. To jest opis Katarzyny Kwiatkowskiej. To jest opis Katarzyny Kwiatkowskiej.",
-    "linkedin": "",
-    "photo": "./assets/images/members/cazary-zajkowski.png"
-  },
-  {
-    "id": 10,
-    "first_name": "Kamil",
-    "last_name": "Kamiński",
-    "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
-    "linkedin": "",
-    "photo": "./assets/images/members/dziewczyna.jpg"
+    "first_name": "Małgorzata",
+    "last_name": "Maciejowska",
+    "info": "Gosia pracuje na stanowisku HTML specialist, zajmuje się projektowaniem, programowaniem oraz obróbką graficzną szablonów. Kodowanie to dla niej przyjemność. Uważa, że SKN pozwali na dalszy rozwój oraz doskonalenie nabytej już wiedzy.",
+    "linkedin": "https://www.linkedin.com/in/małgorzata-maciejowska-705a5390/",
+    "photo": "./assets/images/members/malgorzata-maciejowska.jpg"
   }
 ]
