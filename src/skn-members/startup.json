@@ -1,122 +1,82 @@
 [
-    {
+     {
       "id": 1,
+      "first_name": "Łukasz",
+      "last_name": "Szczerbiński",
+      "info": "Łukasz jest wiceprezesem SKN-u. Studiuje Informatyczne Systemy Zarządzania i pracuje jako Project Manager, realizując projekty informatyczne. Uważa, że działalność w Kole daje możliwości, których nie oferują same studia.",
+      "linkedin": "https://www.linkedin.com/in/%C5%82ukasz-szczerbi%C5%84ski/",
+      "photo": "./assets/images/members/lukasz-szczerbinski.jpg"
+    },
+    {
+      "id": 2,
+      "first_name": "Zuza",
+      "last_name": "Walkiewicz",
+      "info": "Zuza jest studentką Informatycznych Systemów Zarządzania i pracuje jako tester systemów informatycznych. Interesuje się tematyką UX, marketingiem, a także kwestiami związanymi z analizą procesów biznesowych. SKN Konsultingu IT dało jej możliwość rozwoju, zaangażowania w projekty oraz poznania inspirujących ludzi.",
+      "linkedin": "https://www.linkedin.com/in/zuzanna-walkiewicz/",
+      "photo": "./assets/images/members/zuza-walkiewicz.jpg"
+    },
+    {
+      "id": 3,
       "first_name": "Klaudia",
       "last_name": "Jarębska",
-      "info": "To jest opis Klaudii. To jest opis Klaudii. To jest opis Klaudii.<br> To jest opis Klaudii. To jest opis Klaudii.",
-      "linkedin": "",
-      "photo": "./assets/images/members/klaudia_jarebska_mini.jpg"
-    },
-    {
-      "id": 3,
-      "first_name": "Aleksandra",
-      "last_name": "Grunwald",
-      "info": "Programistka front-end. Projektant produktu i grafiki z wykształcenia (Uniwersytet Artystyczny w Poznaniu). Członek koła SKN Konsultingu IT w projektach StartUp game i DevHouse.",
-      "linkedin": "https://www.linkedin.com/in/aleksandragrunwald/",
-      "photo": "./assets/images/members/grunwald.png"
-    },
-    {
-      "id": 3,
-      "first_name": "Denis",
-      "last_name": "Szuszpanov",
-      "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
-      "linkedin": "",
-      "photo": "./assets/images/members/chlopak.jpg"
+      "info": "Klaudia obecnie studiuje Inżynierię Zarządzania w IT na Politechnice Warszawskiej. W kole należy do działu analitycznego projektów. Na co dzień interesuje się innowacjami technologicznymi, rozwiązaniami biznesowymi oraz chmurami danych. Uważa, że to właśnie kreatywność ludzi jest motoryką rozwoju świata.",
+      "linkedin": "https://www.linkedin.com/in/klaudia-jar%C4%99bska-6a68b1128/",
+      "photo": "./assets/images/members/klaudia-jarebska.jpg"
     },
     {
       "id": 4,
-      "first_name": "Karol",
-      "last_name": "Piątkowski",
-      "info": "To jest opis Karola.  To jest opis Karola. To jest opis Karola. To jest opis Karola. ",
-      "linkedin": "http://www.linkedin.com",
-      "photo": "./assets/images/members/chowder.jpg"
+      "first_name": "Kasia",
+      "last_name": "Włodarczyk",
+      "info": "Kasia jest głównym koordynatorem marketingu w SKN-ie. Wierzy, że  o sukcesie decydują tylko ludzie i ich motywacja. Jest miłośniczką gór i wszystkiego, co ekstremalne.",
+      "linkedin": "https://www.linkedin.com/in/katarzyna-w%C5%82odarczyk-513683134/",
+      "photo": "./assets/images/members/kasia-wlodarczyk.jpg"
     },
     {
-      "id": 1,
-      "first_name": "Józef",
-      "last_name": "Jósefowicz",
-      "info": "To jest opis Józefa. To jest opis Karola. To jest opis Karola. To jest opis Karola. ",
-      "linkedin": "http://www.cartoonnetwork.com",
-      "photo": "./assets/images/members/cazary-zajkowski.png"
+    "id": 5,
+    "first_name": "Aleksandra",
+    "last_name": "Grunwald",
+    "info": "Ola jest programistką front-end. Z wykształcenia projektantem produktu i grafiki (Uniwersytet Artystyczny w Poznaniu). W SKN-ie Konsultingu IT działa w projektach StartUp game i DevHouse.",
+    "linkedin": "https://www.linkedin.com/in/aleksandragrunwald/",
+    "photo": "./assets/images/members/aleksandra-grunwald.png"
+  },
+    {
+      "id": 6,
+      "first_name": "Cyryl",
+      "last_name": "Kocięcki",
+      "info": "",
+      "linkedin": "https://www.linkedin.com/in/cyryl-koci%C4%99cki-98325386/",
+      "photo": "./assets/images/members/cyryl-kociecki.jpg"
     },
     {
-      "id": 2,
-      "first_name": "Giavani",
-      "last_name": "Malicki",
-      "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
-      "linkedin": "http://www.twitter.com",
-      "photo": "./assets/images/members/dziewczyna.jpg"
+      "id": 7,
+      "first_name": "Maciek",
+      "last_name": "Chmielewski",
+      "info": "Maciej w kole pełni rolę analityka. Jest absolwentem wydziału MEiL Politechniki Warszawskiej, a aktualnie studentem Finansów i Rachunkowości na Akademii Leona Koźmińskiego. Zawodowo związany z sektorem usług finansowych. Działalność w kole ceni sobie ze względu na możliwość kontaktu z branżą nowych technologii.",
+      "linkedin": "https://www.linkedin.com/in/maciej-chmielewski-05077a135/",
+      "photo": "./assets/images/members/maciej-chmielewski.jpg"
     },
     {
-      "id": 3,
-      "first_name": "Noell",
-      "last_name": "Bea",
-      "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
-      "linkedin": "http://www.booooooom.com",
-      "photo": "./assets/images/members/chlopak.jpg"
+      "id": 8,
+      "first_name": "Anton",
+      "last_name": "Katyrenchuk",
+      "info": "Anton jest programistą, w Kole pełni rolę Java Developera. Studiuje informatykę na Polsko-Japońskiej Akademii Technik Komputerowych. Wierzy, że w przyszłości koło stanie się jedną z najlepszych firm w Polsce.",
+      "linkedin": "https://www.linkedin.com/in/antonkatyrenchuk/",
+      "photo": "./assets/images/members/anton-katyrenchuk.jpg"
     },
     {
-      "id": 4,
-      "first_name": "Jan",
-      "last_name": "Valek",
-      "info": "To jest o Willard Willard. O Willard Willard jest to. Aenean Willard placerat, odio at Willard suscipit Willard maximus, to jest o Willard.",
-      "linkedin": "http://www.linkedin.com",
-      "photo": "./assets/images/members/chowder.jpg"
+      "id": 9,
+      "first_name": "Denys",
+      "last_name": "Shushpanov",
+      "info": "Denis pasjonuje się informatyką i rozwija swoje umietności, zarówno miękkie, jak i techniczne, uczestnicząc w projektach koła jako backend developer. Jego zdaniem każdy, kto chce rozwijać się wszechstronnie, musi podejmować większe wyzwania niż zaliczenie przedmiotów w bieżącym semestrze, na przyklad brać udział w organizacji studenckiej. Studiuje Computer Science na Politechnice Warszawskiej. Lubi spędzać czas ze znajomymi, na siłowni, jeżdżąc rowerem, a najlepiej - wszystko razem 🙂",
+      "linkedin": "https://www.linkedin.com/in/denys-shushpanov/",
+      "photo": "./assets/images/members/denys-shushpanov.jpg"
     },
     {
-      "id": 1,
-      "first_name": "Jeanette",
-      "last_name": "Penddreth",
-      "info": "To jest o Jeanette. O Jeanette jest to. Aenean Jeanette Jeanette, odio at Jeanettesuscipit maximus, to Jeanette jest o Jeanette.",
-      "linkedin": "http://www.cartoonnetwork.com",
-      "photo": "./assets/images/members/cazary-zajkowski.png"
-    },
-    {
-      "id": 2,
-      "first_name": "Giavani",
-      "last_name": "Frediani",
-      "info": "To jest o Giavani. O Giavani jest to Giavani. Giavani Aenean Giavani, odio at suscipit  Giavani maximus, to jest o Patryku.",
-      "linkedin": "http://www.twitter.com",
-      "photo": "./assets/images/members/dziewczyna.jpg"
-    },
-    {
-      "id": 4,
-      "first_name": "Katarzyna",
-      "last_name": "Valek",
-      "info": "To jest o Willard Willard. O Willard Willard jest to. Aenean Willard placerat, odio at Willard suscipit Willard maximus, to jest o Willard.",
-      "linkedin": "http://www.linkedin.com",
-      "photo": "./assets/images/members/chowder.jpg"
-    },
-    {
-      "id": 1,
-      "first_name": "Jeanette",
-      "last_name": "Penddreth",
-      "info": "To jest o Jeanette. O Jeanette jest to. Aenean Jeanette Jeanette, odio at Jeanettesuscipit maximus, to Jeanette jest o Jeanette.",
-      "linkedin": "http://www.cartoonnetwork.com",
-      "photo": "./assets/images/members/cazary-zajkowski.png"
-    },
-    {
-      "id": 3,
-      "first_name": "Noell",
-      "last_name": "Bea",
-      "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
-      "linkedin": "http://www.booooooom.com",
-      "photo": "./assets/images/members/chlopak.jpg"
-    },
-    {
-      "id": 3,
-      "first_name": "Noell",
-      "last_name": "Bea",
-      "info": "To jest o Bea. O Bea jest to. Aenean placerat, odio at suscipit maximus, to jest o Patryku.",
-      "linkedin": "http://www.booooooom.com",
-      "photo": "./assets/images/members/chlopak.jpg"
-    },
-    {
-      "id": 4,
-      "first_name": "Willard",
-      "last_name": "Valek",
-      "info": "To jest o Willard Willard. O Willard Willard jest to. Aenean Willard placerat, odio at Willard suscipit Willard maximus, to jest o Willard.",
-      "linkedin": "http://www.linkedin.com",
-      "photo": "./assets/images/members/chowder.jpg"
+      "id": 10,
+      "first_name": "Franek",
+      "last_name": "Okrzesik",
+      "info": "",
+      "linkedin": "https://www.linkedin.com/in/franciszek-okrzesik/",
+      "photo": "./assets/images/members/franciszek-okrzesik.jpg"
     }
   ]
