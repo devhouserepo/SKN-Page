@@ -22,6 +22,7 @@
   animation: $animationName $duration * 1s $animationFillMode; /* IE 10+, Fx 29+ */
 }
 
+
 a {
   text-decoration: none;
   &:hover {
@@ -29,9 +30,11 @@ a {
   }
 }
 
+
 .projects {
   font-family: "Roboto";
 }
+
 
 .projects_container {
   width: 100vw;
@@ -46,6 +49,13 @@ a {
   @include phone {
     flex-direction: column;
     height: auto;
+    position: static;
+  }
+
+  @media (min-width: 500px) and (max-width: 600px) {
+    flex-direction: column;
+    height: auto;
+    position: static;
   }
 }
 
@@ -356,6 +366,10 @@ a {
     // left: auto;
     // z-index: 1;
   }
+
+  @media (min-width: 500px) and (max-width: 600px) {
+    display: none;
+  }
 }
 
 
@@ -367,6 +381,10 @@ a {
 
   @include phone {
       display: none !important;
+  }
+
+  @media (min-width: 500px) and (max-width: 600px) {
+    display: none !important;
   }
 }
 
@@ -382,6 +400,9 @@ a {
     stroke-dashoffset: 0;
   }
 }
+
+
+
 .svg-2 {
   position: absolute;
   z-index: 1;
@@ -390,7 +411,13 @@ a {
   @include phone {
       display: none !important;
   }
+
+  @media (min-width: 500px) and (max-width: 600px) {
+    display: none !important;
+  }
 }
+
+
 .path-2 {
   stroke-dasharray: 1700;
   stroke-dashoffset: 1700;
