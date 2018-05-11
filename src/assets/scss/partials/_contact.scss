@@ -2,6 +2,9 @@
   position: relative;
   &__contact {
 
+
+    display: none !important;
+
     @include phone {
       display: none !important;
     }

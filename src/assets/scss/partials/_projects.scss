@@ -31,6 +31,8 @@ a {
 
 .projects {
   font-family: "Roboto";
+  // max-width: 90%;
+
 
   @include phone {
     position: absolute;
@@ -282,6 +284,15 @@ a {
 }
 
 
+
+@media (max-width: 900px) {
+  #startup, #devhouse, #thinkit, .lead, #thinkit, .twoj-projekt {
+    top: 0px;
+  }
+}
+
+
+
 #startup {
   position: relative;
   right: 110px;
@@ -323,6 +334,7 @@ a {
   @include phone {
     top: 0px;
   }
+
 }
 
 .lead {
@@ -362,9 +374,14 @@ a {
     width: 50px;
   }
 }
+
 // section background
 .section-projects-background {
   position: absolute;
+
+  @media (min-width: 500px) and (max-width: 900px) {
+    display: none !important;
+  }
 }
 
 .giant-header-projects {

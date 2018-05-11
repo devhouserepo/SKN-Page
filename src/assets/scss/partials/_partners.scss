@@ -1,6 +1,10 @@
 .partners {
   font-family: "Roboto";
+  overflow: hidden;
   //margin-bottom: 110px;
+
+  display: none !important;
+
 
   @include phone {
     display: block;

@@ -3,6 +3,8 @@
   position: relative;
   &__reference {
 
+    
+    display: none !important;
 
     @include phone {
       display: none !important;

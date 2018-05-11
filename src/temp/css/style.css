@@ -1216,6 +1216,12 @@ a:hover {
   font-size: 16px;
 }
 
+@media (max-width: 900px) {
+  #startup, #devhouse, #thinkit, .lead, #thinkit, .twoj-projekt {
+    top: 0px;
+  }
+}
+
 #startup {
   position: relative;
   right: 110px;
@@ -1313,6 +1319,12 @@ a:hover {
   position: absolute;
 }
 
+@media (min-width: 500px) and (max-width: 900px) {
+  .section-projects-background {
+    display: none !important;
+  }
+}
+
 .giant-header-projects {
   color: white;
   font-weight: bold;
@@ -1403,6 +1415,7 @@ a:hover {
 }
 
 .section__contact {
+  display: none !important;
   width: 100vw;
   height: 100vh;
   color: #ffffff;
@@ -1732,6 +1745,8 @@ a:hover {
 
 .partners {
   font-family: "Roboto";
+  overflow: hidden;
+  display: none !important;
 }
 
 @media (max-width: 500px) {
@@ -2051,6 +2066,7 @@ a:hover {
 }
 
 .section__reference {
+  display: none !important;
   width: 100vw;
   height: 100vh;
   color: black;
@@ -3229,6 +3245,7 @@ a:hover {
   height: 100vh;
   overflow: hidden;
   padding: 13vh 0 0 0;
+  display: none !important;
 }
 
 @media (max-width: 500px) {
@@ -3456,6 +3473,7 @@ p {
 }
 
 .navigation {
+  width: 100vw;
   position: fixed;
   left: 0;
   right: 0;
