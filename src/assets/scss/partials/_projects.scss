@@ -47,15 +47,15 @@ a {
   justify-content: center;
 
   @include phone {
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
-    height: auto;
-    position: static;
   }
 
   @media (min-width: 500px) and (max-width: 600px) {
     flex-direction: column;
     height: auto;
-    position: static;
+    position: relative;
   }
 }
 
