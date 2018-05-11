@@ -1,6 +1,12 @@
 .section {
   position: relative;
   &__contact {
+
+    @include phone {
+      display: none !important;
+    }
+  
+
     width: 100vw;
     height: 100vh;
     color: $text-color-1;

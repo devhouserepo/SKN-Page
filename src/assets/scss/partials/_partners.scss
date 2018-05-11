@@ -2,6 +2,12 @@
   font-family: "Roboto";
   //margin-bottom: 110px;
 
+  @include phone {
+    display: block;
+    position: absolute;
+    margin-top: 60px;
+  }
+
 }
 
 .navy_bg {

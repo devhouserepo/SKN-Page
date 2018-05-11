@@ -908,6 +908,13 @@ a:hover {
   font-family: "Roboto";
 }
 
+@media (max-width: 500px) {
+  .projects {
+    position: absolute;
+    margin-top: 40px;
+  }
+}
+
 .projects_container {
   width: 100vw;
   height: 100vh;
@@ -918,6 +925,25 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 500px) {
+  .projects_container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: block;
+    align-items: center;
+  }
 }
 
 .container1 {
@@ -934,6 +960,29 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 500px) {
+  .container1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
 }
 
 .project-paragraphs {
@@ -1100,6 +1149,18 @@ a:hover {
   position: relative;
 }
 
+@media (max-width: 500px) {
+  .projects-shape-1,
+  .projects-shape-2,
+  .projects-shape-3,
+  .projects-shape-4,
+  .projects-shape-5,
+  .projects-shape-6 {
+    min-width: 180px;
+    min-height: 180px;
+  }
+}
+
 .projects-shape-1,
 .projects-shape-6 {
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
@@ -1161,10 +1222,24 @@ a:hover {
   top: 60px;
 }
 
+@media (max-width: 500px) {
+  #startup {
+    top: 0px;
+    right: 0px;
+  }
+}
+
 #devhouse {
   position: relative;
   right: 80px;
   bottom: 40px;
+}
+
+@media (max-width: 500px) {
+  #devhouse {
+    right: 0px;
+    bottom: 0px;
+  }
 }
 
 #boot-camp {
@@ -1173,9 +1248,22 @@ a:hover {
   top: 100px;
 }
 
+@media (max-width: 500px) {
+  #boot-camp {
+    top: 0px;
+    right: 0px;
+  }
+}
+
 #thinkit {
   position: relative;
   top: 20px;
+}
+
+@media (max-width: 500px) {
+  #thinkit {
+    top: 0px;
+  }
 }
 
 .lead {
@@ -1184,10 +1272,24 @@ a:hover {
   left: 80px;
 }
 
+@media (max-width: 500px) {
+  .lead {
+    bottom: 0px;
+    left: 0px;
+  }
+}
+
 .twoj-projekt {
   position: relative;
   top: 80px;
   left: 80px;
+}
+
+@media (max-width: 500px) {
+  .twoj-projekt {
+    top: 0px;
+    left: 0px;
+  }
 }
 
 .twoj-projekt .projects-shape-6 {
@@ -1223,6 +1325,12 @@ a:hover {
   z-index: 1;
 }
 
+@media (max-width: 500px) {
+  .giant-header-projects {
+    display: none;
+  }
+}
+
 .svg-1 {
   position: absolute;
   z-index: 1;
@@ -1236,6 +1344,12 @@ a:hover {
   stroke-dashoffset: 1600;
   -webkit-animation: dash 6s linear forwards;
           animation: dash 6s linear forwards;
+}
+
+@media (max-width: 500px) {
+  .path-1 {
+    display: none;
+  }
 }
 
 @-webkit-keyframes dash {
@@ -1266,6 +1380,12 @@ a:hover {
           animation-delay: 1.9s;
 }
 
+@media (max-width: 500px) {
+  .path-2 {
+    display: none;
+  }
+}
+
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
@@ -1286,6 +1406,12 @@ a:hover {
   width: 100vw;
   height: 100vh;
   color: #ffffff;
+}
+
+@media (max-width: 500px) {
+  .section__contact {
+    display: none !important;
+  }
 }
 
 .section__contact__text span {
@@ -1608,6 +1734,14 @@ a:hover {
   font-family: "Roboto";
 }
 
+@media (max-width: 500px) {
+  .partners {
+    display: block;
+    position: absolute;
+    margin-top: 60px;
+  }
+}
+
 .navy_bg {
   border-left: 450px solid #000039;
   border-top: 230px solid #000039;
@@ -1922,8 +2056,20 @@ a:hover {
   color: black;
 }
 
+@media (max-width: 500px) {
+  .section__reference {
+    display: none !important;
+  }
+}
+
 .section__reference .mobile {
   display: none !important;
+}
+
+@media (max-width: 500px) {
+  .section__reference .mobile {
+    display: none !important;
+  }
 }
 
 .section__reference__box-left {
@@ -3083,6 +3229,12 @@ a:hover {
   height: 100vh;
   overflow: hidden;
   padding: 13vh 0 0 0;
+}
+
+@media (max-width: 500px) {
+  .team-section-container {
+    display: none !important;
+  }
 }
 
 p {

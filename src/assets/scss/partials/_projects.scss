@@ -31,6 +31,11 @@ a {
 
 .projects {
   font-family: "Roboto";
+
+  @include phone {
+    position: absolute;
+    margin-top: 40px;
+  }
 }
 
 .projects_container {
@@ -39,6 +44,19 @@ a {
   position: relative;
   display: flex;
   align-items: center;
+
+  @include phone {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: block;
+    align-items: center;
+  }
 }
 
 .container1 {
@@ -46,6 +64,19 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+ 
 }
 
 .project-paragraphs {
@@ -178,6 +209,14 @@ a {
   transition: all 0.7s ease-in-out;
   transition-delay: 0.2s;
   position: relative;
+
+  @include phone {
+      // max-width: 80%;
+      // max-height: 80%;
+      min-width: 180px;
+      min-height: 180px;
+    }
+    
 }
 
 .projects-shape-1,
@@ -241,38 +280,72 @@ a {
   margin-top: 14px;
   font-size: 16px;
 }
+
+
 #startup {
   position: relative;
   right: 110px;
   top: 60px;
+
+  @include phone {
+    top: 0px;
+    right: 0px;
+  }
 }
+
 #devhouse {
   position: relative;
   right: 80px;
   bottom: 40px;
+
+  @include phone {
+    right: 0px;
+    bottom: 0px;
+  }
 }
+
 #boot-camp {
   position: relative;
   right: 30px;
   top: 100px;
+
+  @include phone {
+    top: 0px;
+    right: 0px;
+  }
 }
-#twoj-projekt-title {
-}
+
+
 #thinkit {
   position: relative;
   top: 20px;
+
+  @include phone {
+    top: 0px;
+  }
 }
+
 .lead {
   position: relative;
   bottom: 30px;
   left: 80px;
+
+  @include phone {
+    bottom: 0px;
+    left: 0px;
+  }
 }
+
 .twoj-projekt {
   position: relative;
   top: 80px;
   left: 80px;
-  .project-about {
+
+  @include phone {
+    top: 0px;
+    left: 0px;
   }
+
   .projects-shape-6 {
     background-color: #0f0f4d;
     background-image: none;
@@ -293,6 +366,7 @@ a {
 .section-projects-background {
   position: absolute;
 }
+
 .giant-header-projects {
   color: white;
   font-weight: bold;
@@ -303,7 +377,12 @@ a {
   right: -80px;
   bottom: -95px;
   z-index: 1;
+
+  @include phone {
+    display: none;
+  }
 }
+
 .svg-1 {
   position: absolute;
   z-index: 1;
@@ -315,6 +394,10 @@ a {
   stroke-dasharray: 1600;
   stroke-dashoffset: 1600;
   animation: dash 6s linear forwards;
+
+  @include phone {
+    display: none;
+  }
 }
 @keyframes dash {
   to {
@@ -332,6 +415,10 @@ a {
   stroke-dashoffset: 1700;
   animation: dash 9.5s linear forwards;
   animation-delay: 1.9s;
+
+  @include phone {
+    display: none;
+  }
 }
 @keyframes dash {
   to {
