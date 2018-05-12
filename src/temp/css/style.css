@@ -908,10 +908,10 @@ a:hover {
   font-family: "Roboto";
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
   .projects {
     position: absolute;
-    margin-top: 40px;
+    margin-top: 270px;
   }
 }
 
@@ -927,7 +927,7 @@ a:hover {
           align-items: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
   .projects_container {
     width: 100vw;
     height: 100vh;
@@ -962,7 +962,7 @@ a:hover {
           align-items: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
   .container1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1149,7 +1149,7 @@ a:hover {
   position: relative;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
   .projects-shape-1,
   .projects-shape-2,
   .projects-shape-3,
@@ -1216,35 +1216,122 @@ a:hover {
   font-size: 16px;
 }
 
-@media (max-width: 900px) {
-  #startup, #devhouse, #thinkit, .lead, #thinkit, .twoj-projekt {
+#devhouse {
+  position: relative;
+  right: 10%;
+  top: -26px;
+}
+
+@media (max-width: 590px) {
+  #devhouse {
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 591px) and (max-width: 999px) {
+  #devhouse {
+    position: absolute;
+    left: 20%;
+    top: 0%;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+  #devhouse {
+    position: absolute;
+    left: 16%;
+    top: 0%;
+    bottom: 0px;
+  }
+}
+
+#thinkit {
+  position: relative;
+  top: 10%;
+  right: 3%;
+}
+
+@media (max-width: 590px) {
+  #thinkit {
     top: 0px;
+    right: 0px;
+  }
+}
+
+@media (min-width: 591px) and (max-width: 999px) {
+  #thinkit {
+    position: absolute;
+    right: 20%;
+    top: 0%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+  #thinkit {
+    position: absolute;
+    right: 16%;
+    top: 0%;
+  }
+}
+
+.lead {
+  position: relative;
+  bottom: 30px;
+  left: 3%;
+}
+
+@media (max-width: 590px) {
+  .lead {
+    bottom: 0px;
+    left: 0px;
+  }
+}
+
+@media (min-width: 591px) and (max-width: 999px) {
+  .lead {
+    position: absolute;
+    left: 20%;
+    top: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+  .lead {
+    position: absolute;
+    left: 16%;
+    top: 300px;
   }
 }
 
 #startup {
   position: relative;
-  right: 110px;
+  right: 14%;
   top: 60px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
   #startup {
-    top: 0px;
     right: 0px;
+    top: 0px;
   }
 }
 
-#devhouse {
-  position: relative;
-  right: 80px;
-  bottom: 40px;
+@media (min-width: 591px) and (max-width: 999px) {
+  #startup {
+    position: absolute;
+    top: 300px;
+    right: 20%;
+  }
 }
 
-@media (max-width: 500px) {
-  #devhouse {
-    right: 0px;
-    bottom: 0px;
+@media (min-width: 768px) and (max-width: 999px) {
+  #startup {
+    position: absolute;
+    top: 300px;
+    right: 16%;
   }
 }
 
@@ -1254,47 +1341,56 @@ a:hover {
   top: 100px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
   #boot-camp {
     top: 0px;
     right: 0px;
   }
 }
 
-#thinkit {
-  position: relative;
-  top: 20px;
-}
-
-@media (max-width: 500px) {
-  #thinkit {
-    top: 0px;
+@media (min-width: 591px) and (max-width: 999px) {
+  #boot-camp {
+    position: absolute;
+    right: 20%;
+    top: 570px;
   }
 }
 
-.lead {
-  position: relative;
-  bottom: 30px;
-  left: 80px;
-}
-
-@media (max-width: 500px) {
-  .lead {
-    bottom: 0px;
-    left: 0px;
+@media (min-width: 768px) and (max-width: 999px) {
+  #boot-camp {
+    position: absolute;
+    right: 16%;
+    top: 570px;
   }
 }
 
 .twoj-projekt {
   position: relative;
-  top: 80px;
-  left: 80px;
+  top: 78px;
+  left: 5%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
   .twoj-projekt {
     top: 0px;
     left: 0px;
+  }
+}
+
+@media (min-width: 591px) and (max-width: 999px) {
+  .twoj-projekt {
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    top: 570px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+  .twoj-projekt {
+    position: absolute;
+    left: 16%;
+    top: 570px;
   }
 }
 
@@ -1319,12 +1415,6 @@ a:hover {
   position: absolute;
 }
 
-@media (min-width: 500px) and (max-width: 900px) {
-  .section-projects-background {
-    display: none !important;
-  }
-}
-
 .giant-header-projects {
   color: white;
   font-weight: bold;
@@ -1332,14 +1422,40 @@ a:hover {
   opacity: 0.07;
   font-size: 119px;
   position: absolute;
-  right: -80px;
-  bottom: -95px;
+  right: -89px;
+  bottom: -94px;
   z-index: 1;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 1300px) and (max-width: 1510px) {
   .giant-header-projects {
-    display: none;
+    right: -130px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .giant-header-projects {
+    font-size: 109px;
+    right: -275px;
+    bottom: -90px;
+  }
+}
+
+@media (min-width: 591px) and (max-width: 999px) {
+  .giant-header-projects {
+    font-size: 90px;
+    right: -261px;
+    top: -620px;
+  }
+}
+
+@media (max-width: 590px) {
+  .giant-header-projects {
+    letter-spacing: 3px;
+    opacity: 0.13;
+    font-size: 51px;
+    right: -292px;
+    top: -1455px;
   }
 }
 
@@ -1358,7 +1474,7 @@ a:hover {
           animation: dash 6s linear forwards;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1300px) {
   .path-1 {
     display: none;
   }
@@ -1392,7 +1508,7 @@ a:hover {
           animation-delay: 1.9s;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1300px) {
   .path-2 {
     display: none;
   }
@@ -1401,12 +1517,6 @@ a:hover {
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .projects__title {
-    display: none;
   }
 }
 
@@ -1421,7 +1531,7 @@ a:hover {
   color: #ffffff;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
   .section__contact {
     display: none !important;
   }
@@ -1749,7 +1859,7 @@ a:hover {
   display: none !important;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
   .partners {
     display: block;
     position: absolute;
@@ -2072,7 +2182,7 @@ a:hover {
   color: black;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
   .section__reference {
     display: none !important;
   }
@@ -2082,7 +2192,7 @@ a:hover {
   display: none !important;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
   .section__reference .mobile {
     display: none !important;
   }
@@ -3248,7 +3358,7 @@ a:hover {
   display: none !important;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
   .team-section-container {
     display: none !important;
   }
