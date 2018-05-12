@@ -234,6 +234,9 @@ $(document).ready(function() {
       anchorsLink[index - 1].classList.add("active");
     }
   });
-
-  
+ $(document).ready(function(){
+  $('#nav-icon3').click(function(){
+    $(this).toggleClass('open');
+  });
+});
 });
