@@ -31,6 +31,11 @@ a {
 
 .projects {
   font-family: "Roboto";
+
+  @include phone {
+    position: absolute;
+    margin-top: 270px;
+  }
 }
 
 .projects_container {
@@ -39,6 +44,19 @@ a {
   position: relative;
   display: flex;
   align-items: center;
+
+  @include phone {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: block;
+    align-items: center;
+  }
 }
 
 .container1 {
@@ -46,6 +64,19 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+ 
 }
 
 .project-paragraphs {
@@ -178,6 +209,14 @@ a {
   transition: all 0.7s ease-in-out;
   transition-delay: 0.2s;
   position: relative;
+
+  @include phone {
+      // max-width: 80%;
+      // max-height: 80%;
+      min-width: 180px;
+      min-height: 180px;
+    }
+    
 }
 
 .projects-shape-1,
@@ -241,58 +280,175 @@ a {
   margin-top: 14px;
   font-size: 16px;
 }
-#startup {
-  position: relative;
-  right: 110px;
-  top: 60px;
-}
+
+
 #devhouse {
   position: relative;
-  right: 80px;
-  bottom: 40px;
+  right: 10%;
+  top: -26px;
+
+  @include phone {
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  @include tablet {
+    position: absolute;
+    left: 20%;
+    top: 0%;
+    bottom: 0px;
+  }
+
+  @media (min-width: 768px) and (max-width: 999px) {
+    position: absolute;
+    left: 16%;
+    top: 0%;
+    bottom: 0px;
+  }
 }
+
+
+#thinkit {
+  position: relative;
+  top: 10%;
+  right: 3%;
+
+  @include phone {
+    top: 0px;
+    right: 0px;
+  }
+
+  @include tablet {
+    position: absolute;
+    right: 20%;
+    top: 0%;
+  }
+
+  @media (min-width: 768px) and (max-width: 999px) {
+    position: absolute;
+    right: 16%;
+    top: 0%;
+  }
+}
+
+.lead {
+  position: relative;
+  bottom: 30px;
+  left: 3%;
+
+  @include phone {
+    bottom: 0px;
+    left: 0px;
+  }
+
+  @include tablet {
+    position: absolute;
+    left: 20%;
+    top: 300px;
+  }
+
+  @media (min-width: 768px) and (max-width: 999px) {
+    position: absolute;
+    left: 16%;
+    top: 300px;
+  }
+}
+
+
+#startup {
+  position: relative;
+  right: 14%;
+  top: 60px;
+
+  @include phone {
+    right: 0px;
+    top: 0px;
+  }
+
+  @include tablet {
+      position: absolute;
+      top: 300px;
+      right: 20%;
+    }
+
+    @media (min-width: 768px) and (max-width: 999px) {
+      position: absolute;
+      top: 300px;
+      right: 16%;
+    }
+}
+
+
 #boot-camp {
   position: relative;
   right: 30px;
   top: 100px;
+
+  @include phone {
+    top: 0px;
+    right: 0px;
+  }
+
+  @include tablet {
+    position: absolute;
+    right: 20%;
+    top: 570px;
+  }
+
+  @media (min-width: 768px) and (max-width: 999px) {
+    position: absolute;
+    right: 16%;
+    top: 570px;
+  }
 }
-#twoj-projekt-title {
-}
-#thinkit {
-  position: relative;
-  top: 20px;
-}
-.lead {
-  position: relative;
-  bottom: 30px;
-  left: 80px;
-}
+
+
 .twoj-projekt {
   position: relative;
-  top: 80px;
-  left: 80px;
-  .project-about {
+  top: 78px;
+  left: 5%;
+
+  @include phone {
+    top: 0px;
+    left: 0px;
   }
-  .projects-shape-6 {
-    background-color: #0f0f4d;
-    background-image: none;
-    height: 180px;
-    width: 180px;
-    max-width: 390px;
-  }
-  .button {
-    left: 65px;
-    opacity: 0;
+
+  @include tablet {
     position: absolute;
-    top: 120px;
-    text-align: center;
-    width: 50px;
+    top: 0px;
+    left: 20%;
+    top: 570px;
   }
+
+  @media (min-width: 768px) and (max-width: 999px) {
+    position: absolute;
+    left: 16%;
+    top: 570px;
+  }
+    .projects-shape-6 {
+      background-color: #0f0f4d;
+      background-image: none;
+      height: 180px;
+      width: 180px;
+      max-width: 390px;
+    }
+    .button {
+      left: 65px;
+      opacity: 0;
+      position: absolute;
+      top: 120px;
+      text-align: center;
+      width: 50px;
+    }
 }
+
+
 // section background
 .section-projects-background {
   position: absolute;
 }
+
 .giant-header-projects {
   color: white;
   font-weight: bold;
@@ -300,10 +456,38 @@ a {
   opacity: 0.07;
   font-size: 119px;
   position: absolute;
-  right: -80px;
-  bottom: -95px;
+  right: -89px;
+  bottom: -94px;
   z-index: 1;
+
+
+  @media (min-width: 1300px) and (max-width: 1510px) {
+    right: -130px;
+  }
+
+  @media (min-width: 1000px) and (max-width: 1300px) {
+    font-size: 109px;
+    right: -275px;
+    bottom: -90px;
+  }
+
+  @include tablet {
+    font-size: 90px;
+    right: -261px;
+    top: -620px;
+  }
+
+  @include phone {
+    letter-spacing: 3px;
+    opacity: 0.13;
+    font-size: 51px;
+    right: -292px;
+    top: -1455px;
+  }
 }
+
+
+
 .svg-1 {
   position: absolute;
   z-index: 1;
@@ -315,6 +499,10 @@ a {
   stroke-dasharray: 1600;
   stroke-dashoffset: 1600;
   animation: dash 6s linear forwards;
+
+  @media (max-width: 1300px) {
+    display: none;
+  }
 }
 @keyframes dash {
   to {
@@ -332,18 +520,26 @@ a {
   stroke-dashoffset: 1700;
   animation: dash 9.5s linear forwards;
   animation-delay: 1.9s;
+
+  @media (max-width: 1300px) {
+    display: none;
+  }
 }
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
   }
 }
-@media (max-width: 768px) {
-  .projects__first-row {
-  }
-  .projects__second-row {
-  }
-  .projects__title {
-    display: none;
-  }
-}
+
+
+// @media (max-width: 760px) {
+//   .projects__first-row {
+//     display: block;
+//   }
+//   .row {
+//     display: block;
+//   }
+//   .projects__second-row {
+//     display: block;
+//   }
+// }

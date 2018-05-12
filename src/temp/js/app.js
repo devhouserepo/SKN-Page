@@ -189,6 +189,9 @@ $(document).ready(function() {
   // })
 
   // TEAM section END
+
+
+
   $("#fullpage").fullpage({
     anchors: [
       "start",
@@ -231,4 +234,6 @@ $(document).ready(function() {
       anchorsLink[index - 1].classList.add("active");
     }
   });
+
+  
 });

@@ -27,3 +27,15 @@
         display: table;
     }
 }
+
+@mixin phone {
+    @media (max-width: 590px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 591px) and (max-width: 999px) {
+        @content;
+    }
+}
