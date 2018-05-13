@@ -287,25 +287,29 @@ a {
   right: 10%;
   top: -26px;
 
-  @include phone {
+  @media (max-width: 800px) {
     right: 0px;
-    left: 0px;
-    bottom: 0px;
+    top: 0px;
   }
 
-  @include tablet {
-    position: absolute;
-    left: 20%;
-    top: 0%;
-    bottom: 0px;
-  }
+  // @include phone {
+  //   right: 0px;
+  //   left: 0px;
+  //   bottom: 0px;
+  // }
 
-  @media (min-width: 768px) and (max-width: 999px) {
-    position: absolute;
-    left: 16%;
-    top: 0%;
-    bottom: 0px;
-  }
+  // @include tablet {
+  //   position: absolute;
+  //   left: 20%;
+  //   top: 0%;
+  //   bottom: 0px;
+  // }
+
+  // @media (min-width: 768px) and (max-width: 999px) {
+  //   right: 0px;
+  //   left: 0px;
+  //   bottom: 0px;
+  // }
 }
 
 
@@ -314,22 +318,26 @@ a {
   top: 10%;
   right: 3%;
 
-  @include phone {
+  @media (max-width: 800px) {
     top: 0px;
     right: 0px;
   }
 
-  @include tablet {
-    position: absolute;
-    right: 20%;
-    top: 0%;
-  }
+  // @include phone {
+  //   top: 0px;
+  //   right: 0px;
+  // }
 
-  @media (min-width: 768px) and (max-width: 999px) {
-    position: absolute;
-    right: 16%;
-    top: 0%;
-  }
+  // @include tablet {
+  //   position: absolute;
+  //   right: 20%;
+  //   top: 0%;
+  // }
+
+  // @media (min-width: 768px) and (max-width: 999px) {
+  //   top: 0px;
+  //   right: 0px;
+  // }
 }
 
 .lead {
@@ -337,22 +345,26 @@ a {
   bottom: 30px;
   left: 3%;
 
-  @include phone {
+  @media (max-width: 800px) {
     bottom: 0px;
     left: 0px;
   }
 
-  @include tablet {
-    position: absolute;
-    left: 20%;
-    top: 300px;
-  }
+  // @include phone {
+  //   top: 0px;
+  //   right: 0px;
+  // }
 
-  @media (min-width: 768px) and (max-width: 999px) {
-    position: absolute;
-    left: 16%;
-    top: 300px;
-  }
+  // @include tablet {
+  //   position: absolute;
+  //   left: 20%;
+  //   top: 300px;
+  // }
+
+  // @media (min-width: 768px) and (max-width: 999px) {
+  //   top: 0px;
+  //   right: 0px;
+  // }
 }
 
 
@@ -361,22 +373,26 @@ a {
   right: 14%;
   top: 60px;
 
-  @include phone {
+  @media (max-width: 800px) {
     right: 0px;
     top: 0px;
   }
 
-  @include tablet {
-      position: absolute;
-      top: 300px;
-      right: 20%;
-    }
+  // @include phone {
+  //   right: 0px;
+  //   top: 0px;
+  // }
 
-    @media (min-width: 768px) and (max-width: 999px) {
-      position: absolute;
-      top: 300px;
-      right: 16%;
-    }
+  // @include tablet {
+  //     position: absolute;
+  //     top: 300px;
+  //     right: 20%;
+  //   }
+
+  //   @media (min-width: 768px) and (max-width: 999px) {
+  //     right: 0px;
+  //     top: 0px;
+  //   }
 }
 
 
@@ -385,22 +401,26 @@ a {
   right: 30px;
   top: 100px;
 
-  @include phone {
-    top: 0px;
+  @media (max-width: 800px) { 
     right: 0px;
+    top: 0px;
   }
 
-  @include tablet {
-    position: absolute;
-    right: 20%;
-    top: 570px;
-  }
+  // @include phone {
+  //   top: 0px;
+  //   right: 0px;
+  // }
 
-  @media (min-width: 768px) and (max-width: 999px) {
-    position: absolute;
-    right: 16%;
-    top: 570px;
-  }
+  // @include tablet {
+  //   position: absolute;
+  //   right: 20%;
+  //   top: 570px;
+  // }
+
+  // @media (min-width: 768px) and (max-width: 999px) {
+  //   top: 0px;
+  //   right: 0px;
+  // }
 }
 
 
@@ -409,23 +429,29 @@ a {
   top: 78px;
   left: 5%;
 
-  @include phone {
+  @media (max-width: 800px) {
     top: 0px;
     left: 0px;
   }
 
-  @include tablet {
-    position: absolute;
-    top: 0px;
-    left: 20%;
-    top: 570px;
+  // @include phone {
+  //   top: 0px;
+  //   left: 0px;
+  // }
+
+  // @include tablet {
+  //   position: absolute;
+  //   top: 0px;
+  //   left: 20%;
+  //   top: 570px;
+  // }
+
+  // @media (min-width: 768px) and (max-width: 999px) {
+  //   top: 0px;
+  //   left: 0px;
   }
 
-  @media (min-width: 768px) and (max-width: 999px) {
-    position: absolute;
-    left: 16%;
-    top: 570px;
-  }
+
     .projects-shape-6 {
       background-color: #0f0f4d;
       background-image: none;
@@ -441,7 +467,6 @@ a {
       text-align: center;
       width: 50px;
     }
-}
 
 
 // section background
