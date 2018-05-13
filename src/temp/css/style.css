@@ -1875,6 +1875,7 @@ a:hover {
   .section__form {
     text-align: center;
     padding-top: 40px;
+    margin-left: 0px;
   }
   .__about {
     display: none !important;
@@ -1909,7 +1910,7 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 0px;
+    margin: 0px;
   }
   .col {
     margin-bottom: 600px;
