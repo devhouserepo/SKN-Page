@@ -27,9 +27,9 @@
       "id": 4,
       "first_name": "Jan",
       "last_name": "Dubiński",
-      "info": "",
+      "info": "Janek zajmuje się 2. edycją programu LEAD. Podczas studiów inżynierskich zainteresował się tematyką Machine Learningu i Data Science, co skłoniło go do studiowania informatyki. Koło traktuje jako świetną okazję do poznania nowych ludzi oraz poszerzenia swojej wiedzy.",
       "linkedin": "",
-      "photo": "./assets/images/members/jan-dubinski.jpg"
+      "photo": "./assets/images/members/jan-dubinski.png"
     },
     {
     "id": 5,
@@ -37,7 +37,7 @@
     "last_name": "Ajchel",
     "info": "Kuba jest studentem elektroniki na EiTI, pracującym jako programista baz danych. W SKN Konsultingu IT działa od poczatku istnienia koła.Współtworzył takie wydarzenia jak konferencja ThinkIT, gdzie był odpowiedzialny za koordynowanie Partnerstwa- działu odpowiedzialnego za pozyskiwanie firm współtworzących wydarzenie. Pełnił też funkcję koordynatora ścieżki Data Science, którą realizowaliśmy wspólnie z PwC Polska w ramch programu Lead in It. Jak sam przyznaje, dzięki działalności w kole nawiązał wiele wartościowych znajomości, współpracował z największymi firmami w Polsce oraz rozwinął swoje umiejętności miękkie, które na pewno przydadzą mu się w karierze ",
     "linkedin": "https://www.linkedin.com/in/jakubajchel/",
-    "photo": "./assets/images/members/jakub-ajchel.png"
+    "photo": "./assets/images/members/jakub-ajchel.jpg"
   },
     {
       "id": 6,
