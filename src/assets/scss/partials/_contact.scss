@@ -3,12 +3,12 @@
   &__contact {
 
 
-    display: none !important;
+    //display: none !important;
 
     @include phone {
-      display: none !important;
+      //display: none !important;
     }
-  
+
 
     width: 100vw;
     height: 100vh;
@@ -207,4 +207,87 @@
 }
 .svg-4 {
   display: none;
+}
+
+@media(max-width: 1200px){
+  .svg-4 {
+    display: none !important;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 768px){
+  .section__box {
+    left:100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section__contact {
+    flex-direction: column;
+  }
+
+  .section__contact__text {
+    margin-bottom: 150px;
+
+    button {
+      background-color: #2e2f5d;
+      padding: 15px 15px 20px 20px;
+    }
+  }
+
+  .section__form {
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .__about {
+    display: none !important;
+  }
+
+  .__about__motto {
+    font-size: 18px !important;
+    font-weight: 900;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  .recruitment {
+    display: block !important;
+    //margin-bottom: -15px;
+    font-size: 48px;
+    opacity: 0.3;
+    font-family: $text-font-1;
+    font-weight: 600;
+  }
+  .svg-4 {
+    display: none !important;
+  }
+
+#contactText {
+  text-align: center;
+}
+
+}
+
+@media (max-width:500px){
+  .section__box {
+    //display: flex;
+    //flex-direction: column;
+    margin-top: 0px;
+
+  }
+
+  .section__form {
+  flex-direction: column;
+  margin-left: 0px;
+  }
+
+  .col {
+    margin-bottom: 600px;
+  }
+
+  #company-button {
+    margin-top: 5px;
+    right: 5px;
+  }
+
 }

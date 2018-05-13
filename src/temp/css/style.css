@@ -1525,16 +1525,9 @@ a:hover {
 }
 
 .section__contact {
-  display: none !important;
   width: 100vw;
   height: 100vh;
   color: #ffffff;
-}
-
-@media (max-width: 590px) {
-  .section__contact {
-    display: none !important;
-  }
 }
 
 .section__contact__text span {
@@ -1851,6 +1844,80 @@ a:hover {
 
 .svg-4 {
   display: none;
+}
+
+@media (max-width: 1200px) {
+  .svg-4 {
+    display: none !important;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+  .section__box {
+    left: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section__contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section__contact__text {
+    margin-bottom: 150px;
+  }
+  .section__contact__text button {
+    background-color: #2e2f5d;
+    padding: 15px 15px 20px 20px;
+  }
+  .section__form {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .__about {
+    display: none !important;
+  }
+  .__about__motto {
+    font-size: 18px !important;
+    font-weight: 900;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  .recruitment {
+    display: block !important;
+    font-size: 48px;
+    opacity: 0.3;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+  }
+  .svg-4 {
+    display: none !important;
+  }
+  #contactText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .section__box {
+    margin-top: 0px;
+  }
+  .section__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0px;
+  }
+  .col {
+    margin-bottom: 600px;
+  }
+  #company-button {
+    margin-top: 5px;
+    right: 5px;
+  }
 }
 
 .partners {
