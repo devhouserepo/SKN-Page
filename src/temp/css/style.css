@@ -908,10 +908,38 @@ a:hover {
   font-family: "Roboto";
 }
 
-@media (max-width: 590px) {
+@media (min-width: 768px) and (max-width: 999px) {
   .projects {
     position: absolute;
-    margin-top: 270px;
+    top: 350px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 767px) {
+  .projects {
+    position: absolute;
+    top: 160px;
+  }
+}
+
+@media (min-width: 490px) and (max-width: 500px) {
+  .projects {
+    position: relative;
+    top: 160px;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 499px) {
+  .projects {
+    position: relative;
+    top: 670px;
+  }
+}
+
+@media (max-width: 300px) {
+  .projects {
+    position: relative;
+    top: -52px;
   }
 }
 
@@ -1222,7 +1250,15 @@ a:hover {
   top: -26px;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 999px) {
+  #devhouse {
+    position: absolute;
+    right: 31%;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
   #devhouse {
     right: 0px;
     top: 0px;
@@ -1235,7 +1271,15 @@ a:hover {
   right: 3%;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 999px) {
+  #thinkit {
+    position: absolute;
+    top: 230px;
+    right: 24%;
+  }
+}
+
+@media (max-width: 767px) {
   #thinkit {
     top: 0px;
     right: 0px;
@@ -1248,7 +1292,15 @@ a:hover {
   left: 3%;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 999px) {
+  .lead {
+    position: absolute;
+    top: 475px;
+    left: 28%;
+  }
+}
+
+@media (max-width: 767px) {
   .lead {
     bottom: 0px;
     left: 0px;
@@ -1261,7 +1313,15 @@ a:hover {
   top: 60px;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 999px) {
+  #startup {
+    position: absolute;
+    right: 28%;
+    top: 710px;
+  }
+}
+
+@media (max-width: 767px) {
   #startup {
     right: 0px;
     top: 0px;
@@ -1274,7 +1334,15 @@ a:hover {
   top: 100px;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 999px) {
+  #boot-camp {
+    position: absolute;
+    top: 960px;
+    left: 28%;
+  }
+}
+
+@media (max-width: 767px) {
   #boot-camp {
     right: 0px;
     top: 0px;
@@ -1287,7 +1355,15 @@ a:hover {
   left: 5%;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 999px) {
+  .twoj-projekt {
+    position: absolute;
+    top: 1207px;
+    left: 37%;
+  }
+}
+
+@media (max-width: 767px) {
   .twoj-projekt {
     top: 0px;
     left: 0px;
@@ -1341,21 +1417,23 @@ a:hover {
   }
 }
 
-@media (min-width: 591px) and (max-width: 999px) {
+@media (min-width: 768px) and (max-width: 999px) {
   .giant-header-projects {
     font-size: 90px;
     right: -261px;
-    top: -620px;
+    top: -60px;
+    position: absolute;
   }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 768px) {
   .giant-header-projects {
+    position: absolute;
     letter-spacing: 3px;
-    opacity: 0.13;
-    font-size: 51px;
-    right: -292px;
-    top: -1455px;
+    opacity: 0.2;
+    font-size: 42px;
+    left: 24px;
+    top: -1430px;
   }
 }
 
