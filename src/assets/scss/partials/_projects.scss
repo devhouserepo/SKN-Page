@@ -31,46 +31,28 @@ a {
 
 .projects {
   font-family: "Roboto";
-
-  @media (max-width: 300px) { 
-    position: relative;
-    top: -22px;
-  }
-
-  @media (min-width: 301px) and (max-width: 499px) { 
-    position: relative;
-    top: 500px;
-  }
-
-  @media (min-width: 490px) and (max-width: 500px) { 
-    position: relative;
-    top: 160px;
-  }
-
-@media (min-width: 501px) and (max-width: 767px) { 
-    position: absolute;
-    top: 160px;
-  }
-
-  @media (min-width: 768px) and (max-width: 999px) {
-    position: absolute;
-    top: 350px;
-  }
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
 }
 
-.projects_container {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+.projects_boxes_container {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  position: relative;
+  max-width: 1300px;
+}
 
+.projects_column {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
-
 
 
 .project-paragraphs {
@@ -202,15 +184,7 @@ a {
   z-index: 2;
   transition: all 0.7s ease-in-out;
   transition-delay: 0.2s;
-  position: relative;
-
-  @include phone {
-      // max-width: 80%;
-      // max-height: 80%;
-      min-width: 180px;
-      min-height: 180px;
-    }
-    
+  // position: relative;
 }
 
 .projects-shape-1,
@@ -280,7 +254,7 @@ a {
 //---PROJECT BOX-----PROJECT BOX-----PROJECT BOX-----PROJECT BOX------------------
 
 #devhouse {
-  position: absolute;
+  position: relative;
   // top: 0%;
   // right: 0%;
   // left: 0%;
@@ -289,31 +263,31 @@ a {
 
 
 #thinkit {
-  position: absolute;
+  position: relativee;
 
 }
 
 
 .lead {
-  position: absolute;
+  position: relative;
 
 }
 
 
 #startup {
-  position: absolute;
+  position: relative;
 
 }
 
 
 #boot-camp {
-  position: absolute;
+  position: relative;
  
 }
 
 
 .twoj-projekt {
-  position: absolute;
+  position: relative;
   
 }
 
@@ -341,7 +315,7 @@ a {
 
 
 
-// section background
+// section background----------------------------------------------
 .section-projects-background {
   position: absolute;
 }
@@ -352,37 +326,10 @@ a {
   letter-spacing: 7px;
   opacity: 0.07;
   font-size: 119px;
-  position: absolute;
-  right: -89px;
-  bottom: -94px;
+  position: relative;
+  right: 8vw;
+  bottom: 1vh;
   z-index: 1;
-
-
-  @media (min-width: 1300px) and (max-width: 1510px) {
-    right: -130px;
-  }
-
-  @media (min-width: 1000px) and (max-width: 1300px) {
-    font-size: 109px;
-    right: -275px;
-    bottom: -90px;
-  }
-
-  @media (min-width: 768px) and (max-width: 999px) {
-    font-size: 90px;
-    right: -261px;
-    top: -60px;
-    position: absolute;
-  }
-
-  @media (max-width: 768px) {
-    position: absolute;
-    letter-spacing: 3px;
-    opacity: 0.2;
-    font-size: 42px;
-    left: 24px;
-    top: -1430px;
-  }
 }
 
 

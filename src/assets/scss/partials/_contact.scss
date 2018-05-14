@@ -3,11 +3,7 @@
   &__contact {
 
 
-    //display: none !important;
-
-    @include phone {
-      //display: none !important;
-    }
+    display: none !important;
 
 
     width: 100vw;

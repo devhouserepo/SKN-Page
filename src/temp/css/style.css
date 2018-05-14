@@ -913,53 +913,39 @@ a:hover {
 
 .projects {
   font-family: "Roboto";
-}
-
-@media (max-width: 300px) {
-  .projects {
-    position: relative;
-    top: -22px;
-  }
-}
-
-@media (min-width: 301px) and (max-width: 499px) {
-  .projects {
-    position: relative;
-    top: 500px;
-  }
-}
-
-@media (min-width: 490px) and (max-width: 500px) {
-  .projects {
-    position: relative;
-    top: 160px;
-  }
-}
-
-@media (min-width: 501px) and (max-width: 767px) {
-  .projects {
-    position: absolute;
-    top: 160px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 999px) {
-  .projects {
-    position: absolute;
-    top: 350px;
-  }
-}
-
-.projects_container {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 100vw;
+}
+
+.projects_boxes_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  max-width: 1300px;
+}
+
+.projects_column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -968,7 +954,6 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  align-items: center;
 }
 
 .project-paragraphs {
@@ -1132,19 +1117,6 @@ a:hover {
   transition: all 0.7s ease-in-out;
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
-  position: relative;
-}
-
-@media (max-width: 590px) {
-  .projects-shape-1,
-  .projects-shape-2,
-  .projects-shape-3,
-  .projects-shape-4,
-  .projects-shape-5,
-  .projects-shape-6 {
-    min-width: 180px;
-    min-height: 180px;
-  }
 }
 
 .projects-shape-1,
@@ -1203,27 +1175,27 @@ a:hover {
 }
 
 #devhouse {
-  position: absolute;
+  position: relative;
 }
 
 #thinkit {
-  position: absolute;
+  position: relativee;
 }
 
 .lead {
-  position: absolute;
+  position: relative;
 }
 
 #startup {
-  position: absolute;
+  position: relative;
 }
 
 #boot-camp {
-  position: absolute;
+  position: relative;
 }
 
 .twoj-projekt {
-  position: absolute;
+  position: relative;
 }
 
 .projects-shape-6 {
@@ -1253,44 +1225,10 @@ a:hover {
   letter-spacing: 7px;
   opacity: 0.07;
   font-size: 119px;
-  position: absolute;
-  right: -89px;
-  bottom: -94px;
+  position: relative;
+  right: 8vw;
+  bottom: 1vh;
   z-index: 1;
-}
-
-@media (min-width: 1300px) and (max-width: 1510px) {
-  .giant-header-projects {
-    right: -130px;
-  }
-}
-
-@media (min-width: 1000px) and (max-width: 1300px) {
-  .giant-header-projects {
-    font-size: 109px;
-    right: -275px;
-    bottom: -90px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 999px) {
-  .giant-header-projects {
-    font-size: 90px;
-    right: -261px;
-    top: -60px;
-    position: absolute;
-  }
-}
-
-@media (max-width: 768px) {
-  .giant-header-projects {
-    position: absolute;
-    letter-spacing: 3px;
-    opacity: 0.2;
-    font-size: 42px;
-    left: 24px;
-    top: -1430px;
-  }
 }
 
 .svg-1 {
@@ -1359,6 +1297,7 @@ a:hover {
 }
 
 .section__contact {
+  display: none !important;
   width: 100vw;
   height: 100vh;
   color: #ffffff;
@@ -3258,12 +3197,6 @@ a:hover {
   overflow: hidden;
   padding: 13vh 0 0 0;
   display: none !important;
-}
-
-@media (max-width: 590px) {
-  .team-section-container {
-    display: none !important;
-  }
 }
 
 p {
