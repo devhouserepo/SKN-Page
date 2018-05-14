@@ -903,6 +903,30 @@ table {
   }
 }
 
+@-webkit-keyframes showProjectAboutandButton {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showProjectAboutandButton {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -927,61 +951,37 @@ section.projects {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  min-width: 840px;
   width: 100vw;
 }
 
 .projects_boxes_container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: relative;
+  max-width: 1100px;
   z-index: 100;
 }
 
-.projects_column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#first {
-  background-color: rgba(222, 184, 135, 0.274);
-}
-
-#second {
-  background-color: rgba(172, 255, 47, 0.123);
-}
-
-#third {
-  background-color: rgba(255, 250, 240, 0.219);
-}
-
-.project-paragraphs {
+.singular-project-container {
+  height: 200px;
+  width: 200px;
+  margin: 40px;
   position: relative;
-  margin: auto;
-  height: 65px;
-  top: 120px;
-  left: 0;
-  z-index: 4;
-  cursor: pointer;
+  z-index: 5;
 }
 
 .singular-project-container:hover .project_title {
-  font-size: 20px;
-  margin-top: -12%;
+  font-size: 21px;
+  margin-top: -14%;
 }
 
 .singular-project-container:hover #twoj-projekt-title {
@@ -1010,31 +1010,6 @@ section.projects {
   transition: all 0.7s ease-in-out;
 }
 
-.singular-project-container:hover .projects-shape-1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/images/projects_photos/devhouse.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/images/projects_photos/devhouse.png");
-}
-
-.singular-project-container:hover .projects-shape-2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/images/projects_photos/thinkit.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/images/projects_photos/thinkit.png");
-}
-
-.singular-project-container:hover .projects-shape-3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/images/projects_photos/leadinit.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/images/projects_photos/leadinit.png");
-}
-
-.singular-project-container:hover .projects-shape-4 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/images/projects_photos/startup.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/images/projects_photos/startup.png");
-}
-
-.singular-project-container:hover .projects-shape-5 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/images/projects_photos/bootcamp.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/images/projects_photos/bootcamp.png");
-}
-
 .singular-project-container:hover .project-about {
   /* Internet Explorer and Microsoft Edge */
   -webkit-animation: showProjectAboutandButton 2s forwards;
@@ -1053,63 +1028,6 @@ section.projects {
   /* Opera 12+ */
   animation: showProjectAboutandButton 2s forwards;
   /* IE 10+, Fx 29+ */
-}
-
-@-webkit-keyframes showProjectAboutandButton {
-  0% {
-    opacity: 0;
-  }
-  35% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes showProjectAboutandButton {
-  0% {
-    opacity: 0;
-  }
-  35% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.project-about {
-  color: white;
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 14px;
-  font-size: 16px;
-  opacity: 0;
-  display: inline-block;
-}
-
-.button-more-about-project {
-  margin: 17px auto 0 auto;
-  padding-top: 4px;
-  width: 80px;
-  height: 26px;
-  font-size: 16px;
-  border: 1px solid white;
-  border-radius: 1px;
-  text-align: center;
-  color: white;
-  opacity: 0;
-  position: relative;
-  display: block;
-  -webkit-transition: background-color 0.3s linear;
-  transition: background-color 0.3s linear;
-}
-
-.button-more-about-project:hover {
-  text-decoration: none;
-  color: black;
-  background-color: #fff;
 }
 
 .projects-shape-1,
@@ -1171,11 +1089,35 @@ section.projects {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/bootcamp.png");
 }
 
+.projects-shape-6 {
+  background-color: #0f0f4d;
+  background-image: none;
+  height: 180px;
+  width: 180px;
+}
+
+.project-paragraphs {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: 2000;
+}
+
+.project-about {
+  opacity: 0;
+  color: white;
+  line-height: 1.1;
+  margin-top: 14px;
+  font-size: 16px;
+}
+
 .project_title {
-  font-size: 22px;
+  font-size: 24px;
+  letter-spacing: 0.5px;
   color: white;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 21%;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
@@ -1187,21 +1129,27 @@ section.projects {
   font-size: 16px;
 }
 
-.projects-shape-6 {
-  background-color: #0f0f4d;
-  background-image: none;
-  height: 180px;
-  width: 180px;
-  max-width: 390px;
+.button-more-about-project {
+  margin: 17px auto 0 auto;
+  padding-top: 4px;
+  width: 80px;
+  height: 26px;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 1px;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  position: relative;
+  display: block;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
 }
 
-.button {
-  left: 65px;
-  opacity: 0;
-  position: absolute;
-  top: 120px;
-  text-align: center;
-  width: 50px;
+.button-more-about-project:hover {
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
 }
 
 .section-projects-background {
@@ -1213,10 +1161,10 @@ section.projects {
   font-weight: bold;
   letter-spacing: 7px;
   opacity: 0.07;
-  font-size: 119px;
+  font-size: 108px;
   position: relative;
-  right: 8vw;
-  bottom: 1vh;
+  right: 10vw;
+  bottom: -2vh;
   z-index: 1;
 }
 

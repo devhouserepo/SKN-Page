@@ -22,12 +22,26 @@
   animation: $animationName $duration * 1s $animationFillMode; /* IE 10+, Fx 29+ */
 }
 
+// Show and fade in .project-about animation
+@keyframes showProjectAboutandButton {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 a {
   text-decoration: none;
   &:hover {
     text-decoration: none;
   }
 }
+
 
 section.projects {
   font-family: "Roboto";
@@ -36,52 +50,30 @@ section.projects {
   flex-direction: column;
   height: 100vh;
   justify-content: center;
-  position: relative;
-  min-width: 840px;
   width: 100vw;
 }
 
 .projects_boxes_container {
+  justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  position: relative;
+  max-width: 1100px;
   z-index: 100;
 }
 
-.projects_column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#first {
-  background-color: rgba(222, 184, 135, 0.274);
-}
-
-#second {
-  background-color: rgba(172, 255, 47, 0.123);
-}
-
-#third {
-  background-color:rgba(255, 250, 240, 0.219);
-}
-
-
-.project-paragraphs {
-  position: relative;
-  margin: auto;
-  height: 65px;
-  top: 120px;
-  left: 0;
-  z-index: 4;
-  cursor: pointer;
-}
 
 // Project hover transitions and animations triggers
 .singular-project-container {
+  height: 200px;
+  width: 200px;
+  margin: 40px;
+  position: relative;
+  z-index: 5;
+
   &:hover .project_title {
-    font-size: 20px;
-    margin-top: -12%;
+    font-size: 21px;
+    margin-top: -14%;
   }
 
   &:hover #twoj-projekt-title {
@@ -101,31 +93,6 @@ section.projects {
     transition: all 0.7s ease-in-out;
   }
 
-  &:hover .projects-shape-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-      url("../../assets/images/projects_photos/devhouse.png");
-  }
-
-  &:hover .projects-shape-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-      url("../../assets/images/projects_photos/thinkit.png");
-  }
-
-  &:hover .projects-shape-3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-      url("../../assets/images/projects_photos/leadinit.png");
-  }
-
-  &:hover .projects-shape-4 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-      url("../../assets/images/projects_photos/startup.png");
-  }
-
-  &:hover .projects-shape-5 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-      url("../../assets/images/projects_photos/bootcamp.png");
-  }
-
   &:hover .project-about {
     @include animationBasicHover(showProjectAboutandButton, 2, forwards);
   }
@@ -135,50 +102,6 @@ section.projects {
   }
 }
 
-// Show and fade in .project-about animation
-@keyframes showProjectAboutandButton {
-  0% {
-    opacity: 0;
-  }
-  35% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.project-about {
-  color: white;
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 14px;
-  font-size: 16px;
-  opacity: 0;
-  display: inline-block;
-}
-
-.button-more-about-project {
-  margin: 17px auto 0 auto;
-  padding-top: 4px;
-  width: 80px;
-  height: 26px;
-  font-size: 16px;
-  border: 1px solid white;
-  border-radius: 1px;
-  text-align: center;
-  color: white;
-  opacity: 0;
-  position: relative;
-  display: block;
-  transition: background-color 0.3s linear;
-
-  &:hover {
-    text-decoration: none;
-    color: black;
-    background-color: #fff;
-  }
-}
 
 .projects-shape-1,
 .projects-shape-2,
@@ -226,6 +149,7 @@ section.projects {
     0% 30%
   );
 }
+
 .projects-shape-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("../../assets/images/projects_photos/devhouse.png");
@@ -246,11 +170,37 @@ section.projects {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("../../assets/images/projects_photos/bootcamp.png");
 }
+.projects-shape-6 {
+  background-color: #0f0f4d;
+  background-image: none;
+  height: 180px;
+  width: 180px;
+}
+
+
+//------Paragraphs--------------paragraphs-------------------
+.project-paragraphs {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: 2000;
+}
+.project-about {
+  opacity: 0;
+  color: white;
+  line-height: 1.1;
+  // text-align: center;
+  margin-top: 14px;
+  font-size: 16px;
+  // display: inline-block;
+}
 .project_title {
-  font-size: 22px;
+  font-size: 24px;
+  letter-spacing: 0.5px;
   color: white;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 21%;
   transition: all 0.6s ease-in-out;
 }
 .project-about-mini {
@@ -260,76 +210,30 @@ section.projects {
   font-size: 16px;
 }
 
+.button-more-about-project {
+  margin: 17px auto 0 auto;
+  padding-top: 4px;
+  width: 80px;
+  height: 26px;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 1px;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  position: relative;
+  display: block;
+  transition: background-color 0.3s linear;
+
+  &:hover {
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+  }
+}
 
 
-//---PROJECT BOX-----PROJECT BOX-----PROJECT BOX-----PROJECT BOX------------------
-
-// #devhouse {
-//   position: relative;
-//   top: -16vh;
-//   right: 3vw;
-// }
-
-
-// #thinkit {
-//   position: relative;
-//   top: 0vh;
-//   right: 2vw;
-// }
-
-
-// .lead {
-//   position: relative;
-//   top: -13vh;
-//   right: 0vw;
-// }
-
-
-// #startup {
-//   position: relative;
-//   top: 4vh;
-//   right: 2vw;
-// }
-
-
-// #boot-camp {
-//   position: relative;
-//   top: -16vh;
-//   left: 3vw;
-// }
-
-
-// .twoj-projekt {
-//   position: relative;
-//   top: 3vh;
-//   left: 4vw;
-// }
-
-//---PROJECT BOX-----PROJECT BOX-----PROJECT BOX-----PROJECT BOX-------------------
-
-
-
-
-    .projects-shape-6 {
-      background-color: #0f0f4d;
-      background-image: none;
-      height: 180px;
-      width: 180px;
-      max-width: 390px;
-    }
-    .button {
-      left: 65px;
-      opacity: 0;
-      position: absolute;
-      top: 120px;
-      text-align: center;
-      width: 50px;
-    }
-
-
-
-
-// section background----------------------------------------------
+// section background-------------------------section background--------------------------
 .section-projects-background {
   position: absolute;
 }
@@ -339,13 +243,12 @@ section.projects {
   font-weight: bold;
   letter-spacing: 7px;
   opacity: 0.07;
-  font-size: 119px;
+  font-size: 108px;
   position: relative;
-  right: 8vw;
-  bottom: 1vh;
+  right: 10vw;
+  bottom: -2vh;
   z-index: 1;
 }
-
 
 
 .svg-1 {
@@ -355,6 +258,7 @@ section.projects {
   right: -200px;
   display: none;
 }
+
 .path-1 {
   stroke-dasharray: 1600;
   stroke-dashoffset: 1600;
@@ -364,17 +268,21 @@ section.projects {
     display: none;
   }
 }
+
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
   }
 }
+
+
 .svg-2 {
   position: absolute;
   z-index: 1;
   top: -220px;
   display: none;
 }
+
 .path-2 {
   stroke-dasharray: 1700;
   stroke-dashoffset: 1700;
@@ -385,21 +293,9 @@ section.projects {
     display: none;
   }
 }
+
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
   }
 }
-
-
-// @media (max-width: 760px) {
-//   .projects__first-row {
-//     display: block;
-//   }
-//   .row {
-//     display: block;
-//   }
-//   .projects__second-row {
-//     display: block;
-//   }
-// }
