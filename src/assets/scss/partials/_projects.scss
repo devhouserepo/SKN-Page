@@ -32,14 +32,14 @@ a {
 .projects {
   font-family: "Roboto";
 
-  @media (min-width: 768px) and (max-width: 999px) {
-    position: absolute;
-    top: 350px;
+  @media (max-width: 300px) { 
+    position: relative;
+    top: -22px;
   }
 
-  @media (min-width: 501px) and (max-width: 767px) { 
-    position: absolute;
-    top: 160px;
+  @media (min-width: 301px) and (max-width: 499px) { 
+    position: relative;
+    top: 500px;
   }
 
   @media (min-width: 490px) and (max-width: 500px) { 
@@ -47,14 +47,14 @@ a {
     top: 160px;
   }
 
-  @media (min-width: 301px) and (max-width: 499px) { 
-    position: relative;
-    top: 670px;
+@media (min-width: 501px) and (max-width: 767px) { 
+    position: absolute;
+    top: 160px;
   }
 
-  @media (max-width: 300px) { 
-    position: relative;
-    top: -52px;
+  @media (min-width: 768px) and (max-width: 999px) {
+    position: absolute;
+    top: 350px;
   }
 }
 
@@ -65,39 +65,13 @@ a {
   display: flex;
   align-items: center;
 
-  @include phone {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    display: block;
-    align-items: center;
-  }
-}
-
-.container1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @include phone {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
- 
 }
+
+
 
 .project-paragraphs {
   position: absolute;
@@ -303,185 +277,47 @@ a {
 
 
 
+//---PROJECT BOX-----PROJECT BOX-----PROJECT BOX-----PROJECT BOX------------------
 
 #devhouse {
-  position: relative;
-  right: 10%;
-  top: -26px;
-
-  @media (min-width: 768px) and (max-width: 999px) {
-    position: absolute;
-    right: 31%;
-    bottom: 0px;
-  }
-
-  @media (max-width: 767px) {
-    right: 0px;
-    top: 0px;
-  }
-
-  // @include phone {
-  //   right: 0px;
-  //   left: 0px;
-  //   bottom: 0px;
-  // }
-
-  // @include tablet {
-  //   position: absolute;
-  //   left: 20%;
-  //   top: 0%;
-  //   bottom: 0px;
-  // }
-
+  position: absolute;
+  // top: 0%;
+  // right: 0%;
+  // left: 0%;
+  // bottom: 0%;
 }
 
 
 #thinkit {
-  position: relative;
-  top: 10%;
-  right: 3%;
+  position: absolute;
 
-  @media (min-width: 768px) and (max-width: 999px) {
-    position: absolute;
-    top: 230px;
-    right: 24%;
-  }
-
-  @media (max-width: 767px) {
-    top: 0px;
-    right: 0px;
-  }
-
-  // @include phone {
-  //   top: 0px;
-  //   right: 0px;
-  // }
-
-  // @include tablet {
-  //   position: absolute;
-  //   right: 20%;
-  //   top: 0%;
-  // }
 }
 
 
 .lead {
-  position: relative;
-  bottom: 30px;
-  left: 3%;
+  position: absolute;
 
-  @media (min-width: 768px) and (max-width: 999px) {
-    position: absolute;
-    top: 475px;
-    left: 28%;
-  }
-
-  @media (max-width: 767px) {
-    bottom: 0px;
-    left: 0px;
-  }
-
-  // @include phone {
-  //   top: 0px;
-  //   right: 0px;
-  // }
-
-  // @include tablet {
-  //   position: absolute;
-  //   left: 20%;
-  //   top: 300px;
-  // }
 }
 
 
 #startup {
-  position: relative;
-  right: 14%;
-  top: 60px;
+  position: absolute;
 
-  @media (min-width: 768px) and (max-width: 999px) {
-    position: absolute;
-    right: 28%;
-    top: 710px;
-  }
-
-  @media (max-width: 767px) {
-    right: 0px;
-    top: 0px;
-  }
-
-  // @include phone {
-  //   right: 0px;
-  //   top: 0px;
-  // }
-
-  // @include tablet {
-  //     position: absolute;
-  //     top: 300px;
-  //     right: 20%;
-  //   }
 }
 
 
 #boot-camp {
-  position: relative;
-  right: 30px;
-  top: 100px;
-
-  @media (min-width: 768px) and (max-width: 999px) {
-    position: absolute;
-    top: 960px;
-    left: 28%;
-  }
-
-  @media (max-width: 767px) { 
-    right: 0px;
-    top: 0px;
-  }
-
-  // @include phone {
-  //   top: 0px;
-  //   right: 0px;
-  // }
-
-  // @include tablet {
-  //   position: absolute;
-  //   right: 20%;
-  //   top: 570px;
-  // }
+  position: absolute;
+ 
 }
 
 
 .twoj-projekt {
-  position: relative;
-  top: 78px;
-  left: 5%;
-
-  @media (min-width: 768px) and (max-width: 999px) {
-    position: absolute;
-    top: 1207px;
-    left: 37%;
-  }
-
-  @media (max-width: 767px) {
-    top: 0px;
-    left: 0px;
-  }
-
-  // @include phone {
-  //   top: 0px;
-  //   left: 0px;
-  // }
-
-  // @include tablet {
-  //   position: absolute;
-  //   top: 0px;
-  //   left: 20%;
-  //   top: 570px;
-  // }
+  position: absolute;
+  
 }
 
-
+//---PROJECT BOX-----PROJECT BOX-----PROJECT BOX-----PROJECT BOX-------------------
 
 
 
@@ -501,6 +337,8 @@ a {
       text-align: center;
       width: 50px;
     }
+
+
 
 
 // section background

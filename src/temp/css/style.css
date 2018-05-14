@@ -38,6 +38,13 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 ol, ul {
@@ -908,17 +915,17 @@ a:hover {
   font-family: "Roboto";
 }
 
-@media (min-width: 768px) and (max-width: 999px) {
+@media (max-width: 300px) {
   .projects {
-    position: absolute;
-    top: 350px;
+    position: relative;
+    top: -22px;
   }
 }
 
-@media (min-width: 501px) and (max-width: 767px) {
+@media (min-width: 301px) and (max-width: 499px) {
   .projects {
-    position: absolute;
-    top: 160px;
+    position: relative;
+    top: 500px;
   }
 }
 
@@ -929,17 +936,17 @@ a:hover {
   }
 }
 
-@media (min-width: 301px) and (max-width: 499px) {
+@media (min-width: 501px) and (max-width: 767px) {
   .projects {
-    position: relative;
-    top: 670px;
+    position: absolute;
+    top: 160px;
   }
 }
 
-@media (max-width: 300px) {
+@media (min-width: 768px) and (max-width: 999px) {
   .projects {
-    position: relative;
-    top: -52px;
+    position: absolute;
+    top: 350px;
   }
 }
 
@@ -953,30 +960,6 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media (max-width: 590px) {
-  .projects_container {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    display: block;
-    align-items: center;
-  }
-}
-
-.container1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -985,32 +968,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 590px) {
-  .container1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
+  align-items: center;
 }
 
 .project-paragraphs {
@@ -1245,129 +1203,27 @@ a:hover {
 }
 
 #devhouse {
-  position: relative;
-  right: 10%;
-  top: -26px;
-}
-
-@media (min-width: 768px) and (max-width: 999px) {
-  #devhouse {
-    position: absolute;
-    right: 31%;
-    bottom: 0px;
-  }
-}
-
-@media (max-width: 767px) {
-  #devhouse {
-    right: 0px;
-    top: 0px;
-  }
+  position: absolute;
 }
 
 #thinkit {
-  position: relative;
-  top: 10%;
-  right: 3%;
-}
-
-@media (min-width: 768px) and (max-width: 999px) {
-  #thinkit {
-    position: absolute;
-    top: 230px;
-    right: 24%;
-  }
-}
-
-@media (max-width: 767px) {
-  #thinkit {
-    top: 0px;
-    right: 0px;
-  }
+  position: absolute;
 }
 
 .lead {
-  position: relative;
-  bottom: 30px;
-  left: 3%;
-}
-
-@media (min-width: 768px) and (max-width: 999px) {
-  .lead {
-    position: absolute;
-    top: 475px;
-    left: 28%;
-  }
-}
-
-@media (max-width: 767px) {
-  .lead {
-    bottom: 0px;
-    left: 0px;
-  }
+  position: absolute;
 }
 
 #startup {
-  position: relative;
-  right: 14%;
-  top: 60px;
-}
-
-@media (min-width: 768px) and (max-width: 999px) {
-  #startup {
-    position: absolute;
-    right: 28%;
-    top: 710px;
-  }
-}
-
-@media (max-width: 767px) {
-  #startup {
-    right: 0px;
-    top: 0px;
-  }
+  position: absolute;
 }
 
 #boot-camp {
-  position: relative;
-  right: 30px;
-  top: 100px;
-}
-
-@media (min-width: 768px) and (max-width: 999px) {
-  #boot-camp {
-    position: absolute;
-    top: 960px;
-    left: 28%;
-  }
-}
-
-@media (max-width: 767px) {
-  #boot-camp {
-    right: 0px;
-    top: 0px;
-  }
+  position: absolute;
 }
 
 .twoj-projekt {
-  position: relative;
-  top: 78px;
-  left: 5%;
-}
-
-@media (min-width: 768px) and (max-width: 999px) {
-  .twoj-projekt {
-    position: absolute;
-    top: 1207px;
-    left: 37%;
-  }
-}
-
-@media (max-width: 767px) {
-  .twoj-projekt {
-    top: 0px;
-    left: 0px;
-  }
+  position: absolute;
 }
 
 .projects-shape-6 {
