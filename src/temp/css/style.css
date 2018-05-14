@@ -911,7 +911,7 @@ a:hover {
   text-decoration: none;
 }
 
-.projects {
+section.projects {
   font-family: "Roboto";
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -928,6 +928,7 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  min-width: 840px;
   width: 100vw;
 }
 
@@ -940,7 +941,7 @@ a:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
-  max-width: 1300px;
+  z-index: 100;
 }
 
 .projects_column {
@@ -956,11 +957,23 @@ a:hover {
           justify-content: center;
 }
 
+#first {
+  background-color: rgba(222, 184, 135, 0.274);
+}
+
+#second {
+  background-color: rgba(172, 255, 47, 0.123);
+}
+
+#third {
+  background-color: rgba(255, 250, 240, 0.219);
+}
+
 .project-paragraphs {
-  position: absolute;
+  position: relative;
   margin: auto;
   height: 65px;
-  top: 50;
+  top: 120px;
   left: 0;
   z-index: 4;
   cursor: pointer;
@@ -991,7 +1004,7 @@ a:hover {
   -o-animation: scale(1.6, 1.6);
   /* Opera 12+ */
   transform: scale(1.6, 1.6);
-  z-index: 3;
+  z-index: 1000;
   background-size: 300px;
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
@@ -1172,30 +1185,6 @@ a:hover {
   text-align: center;
   margin-top: 14px;
   font-size: 16px;
-}
-
-#devhouse {
-  position: relative;
-}
-
-#thinkit {
-  position: relativee;
-}
-
-.lead {
-  position: relative;
-}
-
-#startup {
-  position: relative;
-}
-
-#boot-camp {
-  position: relative;
-}
-
-.twoj-projekt {
-  position: relative;
 }
 
 .projects-shape-6 {

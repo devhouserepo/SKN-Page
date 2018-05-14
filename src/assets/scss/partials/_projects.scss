@@ -29,15 +29,15 @@ a {
   }
 }
 
-.projects {
+section.projects {
   font-family: "Roboto";
   align-items: center;
   display: flex;
   flex-direction: column;
-  // flex-wrap: wrap;
   height: 100vh;
   justify-content: center;
   position: relative;
+  min-width: 840px;
   width: 100vw;
 }
 
@@ -45,7 +45,7 @@ a {
   display: flex;
   flex-direction: row;
   position: relative;
-  max-width: 1300px;
+  z-index: 100;
 }
 
 .projects_column {
@@ -54,12 +54,24 @@ a {
   justify-content: center;
 }
 
+#first {
+  background-color: rgba(222, 184, 135, 0.274);
+}
+
+#second {
+  background-color: rgba(172, 255, 47, 0.123);
+}
+
+#third {
+  background-color:rgba(255, 250, 240, 0.219);
+}
+
 
 .project-paragraphs {
-  position: absolute;
+  position: relative;
   margin: auto;
   height: 65px;
-  top: 50;
+  top: 120px;
   left: 0;
   z-index: 4;
   cursor: pointer;
@@ -84,7 +96,7 @@ a {
   &:hover .projects-shape-5,
   &:hover .projects-shape-6 {
     @include transform(1.6, 1.6);
-    z-index: 3;
+    z-index: 1000;
     background-size: 300px;
     transition: all 0.7s ease-in-out;
   }
@@ -184,7 +196,6 @@ a {
   z-index: 2;
   transition: all 0.7s ease-in-out;
   transition-delay: 0.2s;
-  // position: relative;
 }
 
 .projects-shape-1,
@@ -253,43 +264,46 @@ a {
 
 //---PROJECT BOX-----PROJECT BOX-----PROJECT BOX-----PROJECT BOX------------------
 
-#devhouse {
-  position: relative;
-  // top: 0%;
-  // right: 0%;
-  // left: 0%;
-  // bottom: 0%;
-}
+// #devhouse {
+//   position: relative;
+//   top: -16vh;
+//   right: 3vw;
+// }
 
 
-#thinkit {
-  position: relativee;
-
-}
-
-
-.lead {
-  position: relative;
-
-}
+// #thinkit {
+//   position: relative;
+//   top: 0vh;
+//   right: 2vw;
+// }
 
 
-#startup {
-  position: relative;
-
-}
-
-
-#boot-camp {
-  position: relative;
- 
-}
+// .lead {
+//   position: relative;
+//   top: -13vh;
+//   right: 0vw;
+// }
 
 
-.twoj-projekt {
-  position: relative;
-  
-}
+// #startup {
+//   position: relative;
+//   top: 4vh;
+//   right: 2vw;
+// }
+
+
+// #boot-camp {
+//   position: relative;
+//   top: -16vh;
+//   left: 3vw;
+// }
+
+
+// .twoj-projekt {
+//   position: relative;
+//   top: 3vh;
+//   left: 4vw;
+// }
 
 //---PROJECT BOX-----PROJECT BOX-----PROJECT BOX-----PROJECT BOX-------------------
 
