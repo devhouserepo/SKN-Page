@@ -51,15 +51,20 @@ section.projects {
   height: 100vh;
   justify-content: center;
   width: 100vw;
+
+  @media (max-width: 575px) {
+    margin-top: 390px;
+  }
 }
 
 .projects_boxes_container {
+  margin: 43px;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   min-width: 650px;
-  max-width: 1100px;
+  max-width: 900px;
 }
 
 
@@ -67,7 +72,7 @@ section.projects {
 .singular-project-container {
   height: 200px;
   width: 200px;
-  margin: 3%;
+  margin: 5%;
   position: relative;
 
     // @media (max-width: 400px) {
@@ -176,8 +181,8 @@ section.projects {
 //------one container------------------------
 #devhouse {
   // flex-basis: 33.3%;
-  left: -2vw;
-  top: -2vh;  
+  // left: -2vw;
+  // top: -2vh;  
   &:hover {
     z-index: 9;
   }
@@ -185,7 +190,7 @@ section.projects {
 
 #thinkit {
   // flex-basis: 33.3%;
-  top: 2vh;
+  // top: 2vh;
   &:hover {
     z-index: 9;
   }
@@ -193,8 +198,8 @@ section.projects {
 
 #lead {
   // flex-basis: 33.3%;
-  right: -2vw;
-  top: -1vh;
+  // right: -2vw;
+  // top: -1vh;
   &:hover {
     z-index: 9;
   }
@@ -202,7 +207,7 @@ section.projects {
 
 #bootcamp {
   // flex-basis: 33.3%;
-  top: 3vh;
+  // top: 3vh;
   &:hover {
     z-index: 11;
   }
@@ -210,7 +215,7 @@ section.projects {
 
 #startup {
   // flex-basis: 33.3%;
-  top: 2vh;
+  // top: 2vh;
   &:hover {
     z-index: 9;
   }
@@ -296,6 +301,30 @@ section.projects {
   right: 10vw;
   bottom: -2vh;
   z-index: -1;
+
+  @media (max-width: 943px) {
+    bottom: 120px;
+    font-size: 78px;
+  }
+
+  @media (max-height: 869px) {
+    bottom: 8vh;
+  }
+  @media (max-height: 687px) {
+    bottom: -2vh;
+  }
+  @media (max-height: 593px) {
+    bottom: -11vh;
+  }
+  @media (max-height: 515px) {
+    bottom: -17vh;
+  }
+  @media (max-height: 454px) {
+    bottom: -29vh;
+  }
+  @media (max-height: 392px) {
+    bottom: -40vh;
+  }
 }
 
 //------------SVG----------SVG--------
