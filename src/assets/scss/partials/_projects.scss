@@ -89,11 +89,7 @@ section.projects {
       }
 
       &:hover .projects-shape-1,
-      &:hover .projects-shape-2,
-      &:hover .projects-shape-3,
-      &:hover .projects-shape-4,
-      &:hover .projects-shape-5,
-      &:hover .projects-shape-6 {
+      &:hover .projects-shape-2 {
         @include transform(1.6, 1.6);
         background-size: 300px;
         transition: all 0.7s ease-in-out;
@@ -113,11 +109,7 @@ section.projects {
 
 
 .projects-shape-1,
-.projects-shape-2,
-.projects-shape-3,
-.projects-shape-4,
-.projects-shape-5,
-.projects-shape-6 {
+.projects-shape-2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 600px;
@@ -129,8 +121,7 @@ section.projects {
   transition-delay: 0.2s;
 }
 
-.projects-shape-1,
-.projects-shape-6 {
+.projects-shape-1 {
   clip-path: polygon(
     30% 0%,
     70% 0%,
@@ -142,10 +133,7 @@ section.projects {
     0 0
   );
 }
-.projects-shape-2,
-.projects-shape-3,
-.projects-shape-4,
-.projects-shape-5 {
+.projects-shape-2 {
   clip-path: polygon(
     30% 0%,
     70% 0%,
@@ -158,35 +146,36 @@ section.projects {
   );
 }
 
-.projects-shape-1 {
+#devhouse-shape {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("../../assets/images/projects_photos/devhouse.png");
 }
-.projects-shape-2 {
+#thinkit-shape {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("../../assets/images/projects_photos/thinkit.png");
 }
-.projects-shape-3 {
+#lead-shape {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("../../assets/images/projects_photos/leadinit.png");
 }
-.projects-shape-4 {
+#startup-shape {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("../../assets/images/projects_photos/startup.png");
 }
-.projects-shape-5 {
+#bootcamp-shape {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("../../assets/images/projects_photos/bootcamp.png");
 }
-.projects-shape-6 {
+#twoj-projekt-shape {
   background-color: #0f0f4d;
-  background-image: none;
+  // background-image: none;
   height: 180px;
   width: 180px;
 }
 
 //------one container------------------------
 #devhouse {
+  // flex-basis: 33.3%;
   left: -2vw;
   top: -2vh;  
   &:hover {
@@ -195,6 +184,7 @@ section.projects {
 }
 
 #thinkit {
+  // flex-basis: 33.3%;
   top: 2vh;
   &:hover {
     z-index: 9;
@@ -202,6 +192,7 @@ section.projects {
 }
 
 #lead {
+  // flex-basis: 33.3%;
   right: -2vw;
   top: -1vh;
   &:hover {
@@ -210,6 +201,7 @@ section.projects {
 }
 
 #bootcamp {
+  // flex-basis: 33.3%;
   top: 3vh;
   &:hover {
     z-index: 11;
@@ -217,6 +209,7 @@ section.projects {
 }
 
 #startup {
+  // flex-basis: 33.3%;
   top: 2vh;
   &:hover {
     z-index: 9;
@@ -224,7 +217,7 @@ section.projects {
 }
 
 // #twoj-projekt {
-    
+//   flex-basis: 33.3%;
 // }
 
 

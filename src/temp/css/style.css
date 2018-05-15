@@ -989,11 +989,7 @@ section.projects {
 }
 
 .singular-project-container:hover .projects-shape-1,
-.singular-project-container:hover .projects-shape-2,
-.singular-project-container:hover .projects-shape-3,
-.singular-project-container:hover .projects-shape-4,
-.singular-project-container:hover .projects-shape-5,
-.singular-project-container:hover .projects-shape-6 {
+.singular-project-container:hover .projects-shape-2 {
   -ms-transform: scale(1.6, 1.6);
   /* Internet Explorer and Microsoft Edge */
   -webkit-transform: scale(1.6, 1.6);
@@ -1031,11 +1027,7 @@ section.projects {
 }
 
 .projects-shape-1,
-.projects-shape-2,
-.projects-shape-3,
-.projects-shape-4,
-.projects-shape-5,
-.projects-shape-6 {
+.projects-shape-2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 600px;
@@ -1049,48 +1041,43 @@ section.projects {
           transition-delay: 0.2s;
 }
 
-.projects-shape-1,
-.projects-shape-6 {
+.projects-shape-1 {
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
           clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
 }
 
-.projects-shape-2,
-.projects-shape-3,
-.projects-shape-4,
-.projects-shape-5 {
+.projects-shape-2 {
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
           clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
 }
 
-.projects-shape-1 {
+#devhouse-shape {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/devhouse.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/devhouse.png");
 }
 
-.projects-shape-2 {
+#thinkit-shape {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/thinkit.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/thinkit.png");
 }
 
-.projects-shape-3 {
+#lead-shape {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/leadinit.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/leadinit.png");
 }
 
-.projects-shape-4 {
+#startup-shape {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/startup.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/startup.png");
 }
 
-.projects-shape-5 {
+#bootcamp-shape {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/bootcamp.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/bootcamp.png");
 }
 
-.projects-shape-6 {
+#twoj-projekt-shape {
   background-color: #0f0f4d;
-  background-image: none;
   height: 180px;
   width: 180px;
 }
