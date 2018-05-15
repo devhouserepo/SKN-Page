@@ -974,7 +974,7 @@ section.projects {
 .singular-project-container {
   height: 200px;
   width: 200px;
-  margin: 40px;
+  margin: 44px;
   position: relative;
   z-index: 5;
 }
@@ -1011,6 +1011,8 @@ section.projects {
 }
 
 .singular-project-container:hover .project-about {
+  margin-left: -40px;
+  width: 270px;
   /* Internet Explorer and Microsoft Edge */
   -webkit-animation: showProjectAboutandButton 2s forwards;
   /* Safari 4+ */
@@ -1096,6 +1098,22 @@ section.projects {
   width: 180px;
 }
 
+#devhouse {
+  left: -2vw;
+}
+
+#thinkit {
+  top: 2vh;
+}
+
+#bootcamp {
+  top: 3vh;
+}
+
+#lead {
+  right: -2vw;
+}
+
 .project-paragraphs {
   height: 100%;
   width: 100%;
@@ -1110,6 +1128,9 @@ section.projects {
   line-height: 1.1;
   margin-top: 14px;
   font-size: 16px;
+  text-align: center;
+  font-size: 16px;
+  display: inline-block;
 }
 
 .project_title {
@@ -1152,6 +1173,11 @@ section.projects {
   background-color: #fff;
 }
 
+#twoj-projekt .project-about {
+  margin-left: -12px;
+  width: 220px;
+}
+
 .section-projects-background {
   position: absolute;
 }
@@ -1183,12 +1209,6 @@ section.projects {
           animation: dash 6s linear forwards;
 }
 
-@media (max-width: 1300px) {
-  .path-1 {
-    display: none;
-  }
-}
-
 @-webkit-keyframes dash {
   to {
     stroke-dashoffset: 0;
@@ -1217,12 +1237,6 @@ section.projects {
           animation-delay: 1.9s;
 }
 
-@media (max-width: 1300px) {
-  .path-2 {
-    display: none;
-  }
-}
-
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
@@ -1234,7 +1248,6 @@ section.projects {
 }
 
 .section__contact {
-  display: none !important;
   width: 100vw;
   height: 100vh;
   color: #ffffff;
@@ -1552,10 +1565,6 @@ section.projects {
   }
 }
 
-.svg-4 {
-  display: none;
-}
-
 @media (max-width: 1200px) {
   .svg-4 {
     display: none !important;
@@ -1634,7 +1643,6 @@ section.projects {
 .partners {
   font-family: "Roboto";
   overflow: hidden;
-  display: none !important;
 }
 
 @media (max-width: 590px) {
@@ -1954,7 +1962,6 @@ section.projects {
 }
 
 .section__reference {
-  display: none !important;
   width: 100vw;
   height: 100vh;
   color: black;
@@ -3133,7 +3140,6 @@ section.projects {
   height: 100vh;
   overflow: hidden;
   padding: 13vh 0 0 0;
-  display: none !important;
 }
 
 p {

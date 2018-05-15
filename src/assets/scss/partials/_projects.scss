@@ -67,7 +67,7 @@ section.projects {
 .singular-project-container {
   height: 200px;
   width: 200px;
-  margin: 40px;
+  margin: 44px;
   position: relative;
   z-index: 5;
 
@@ -94,6 +94,8 @@ section.projects {
   }
 
   &:hover .project-about {
+    margin-left: -40px;
+    width: 270px;
     @include animationBasicHover(showProjectAboutandButton, 2, forwards);
   }
 
@@ -177,6 +179,23 @@ section.projects {
   width: 180px;
 }
 
+//------one container------------------------
+#devhouse {
+  left: -2vw;  
+}
+
+#thinkit {
+  top: 2vh;
+}
+
+#bootcamp {
+  top: 3vh;
+}
+
+#lead {
+  right: -2vw;
+}
+
 
 //------Paragraphs--------------paragraphs-------------------
 .project-paragraphs {
@@ -190,10 +209,11 @@ section.projects {
   opacity: 0;
   color: white;
   line-height: 1.1;
-  // text-align: center;
   margin-top: 14px;
   font-size: 16px;
-  // display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  display: inline-block;
 }
 .project_title {
   font-size: 24px;
@@ -232,6 +252,11 @@ section.projects {
   }
 }
 
+#twoj-projekt .project-about {
+  margin-left: -12px;
+  width: 220px;
+}
+
 
 // section background-------------------------section background--------------------------
 .section-projects-background {
@@ -263,10 +288,6 @@ section.projects {
   stroke-dasharray: 1600;
   stroke-dashoffset: 1600;
   animation: dash 6s linear forwards;
-
-  @media (max-width: 1300px) {
-    display: none;
-  }
 }
 
 @keyframes dash {
@@ -288,10 +309,6 @@ section.projects {
   stroke-dashoffset: 1700;
   animation: dash 9.5s linear forwards;
   animation-delay: 1.9s;
-
-  @media (max-width: 1300px) {
-    display: none;
-  }
 }
 
 @keyframes dash {
