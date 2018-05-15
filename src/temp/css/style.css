@@ -967,16 +967,15 @@ section.projects {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  min-width: 650px;
   max-width: 1100px;
-  z-index: 100;
 }
 
 .singular-project-container {
   height: 200px;
   width: 200px;
-  margin: 44px;
+  margin: 3%;
   position: relative;
-  z-index: 5;
 }
 
 .singular-project-container:hover .project_title {
@@ -1004,7 +1003,6 @@ section.projects {
   -o-animation: scale(1.6, 1.6);
   /* Opera 12+ */
   transform: scale(1.6, 1.6);
-  z-index: 1000;
   background-size: 300px;
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
@@ -1045,7 +1043,6 @@ section.projects {
   height: 200px;
   width: 200px;
   max-width: 400px;
-  z-index: 2;
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
   -webkit-transition-delay: 0.2s;
@@ -1100,18 +1097,44 @@ section.projects {
 
 #devhouse {
   left: -2vw;
+  top: -2vh;
+}
+
+#devhouse:hover {
+  z-index: 9;
 }
 
 #thinkit {
   top: 2vh;
 }
 
-#bootcamp {
-  top: 3vh;
+#thinkit:hover {
+  z-index: 9;
 }
 
 #lead {
   right: -2vw;
+  top: -1vh;
+}
+
+#lead:hover {
+  z-index: 9;
+}
+
+#bootcamp {
+  top: 3vh;
+}
+
+#bootcamp:hover {
+  z-index: 11;
+}
+
+#startup {
+  top: 2vh;
+}
+
+#startup:hover {
+  z-index: 9;
 }
 
 .project-paragraphs {
@@ -1119,7 +1142,7 @@ section.projects {
   width: 100%;
   position: absolute;
   text-align: center;
-  z-index: 2000;
+  z-index: 10;
 }
 
 .project-about {
@@ -1129,7 +1152,6 @@ section.projects {
   margin-top: 14px;
   font-size: 16px;
   text-align: center;
-  font-size: 16px;
   display: inline-block;
 }
 
@@ -1191,12 +1213,11 @@ section.projects {
   position: relative;
   right: 10vw;
   bottom: -2vh;
-  z-index: 1;
+  z-index: -1;
 }
 
 .svg-1 {
   position: absolute;
-  z-index: 1;
   bottom: -300px;
   right: -200px;
   display: none;
@@ -1223,7 +1244,6 @@ section.projects {
 
 .svg-2 {
   position: absolute;
-  z-index: 1;
   top: -220px;
   display: none;
 }
@@ -1248,6 +1268,7 @@ section.projects {
 }
 
 .section__contact {
+  display: none !important;
   width: 100vw;
   height: 100vh;
   color: #ffffff;
@@ -1643,6 +1664,7 @@ section.projects {
 .partners {
   font-family: "Roboto";
   overflow: hidden;
+  display: none !important;
 }
 
 @media (max-width: 590px) {
@@ -1962,6 +1984,7 @@ section.projects {
 }
 
 .section__reference {
+  display: none !important;
   width: 100vw;
   height: 100vh;
   color: black;
@@ -3140,6 +3163,7 @@ section.projects {
   height: 100vh;
   overflow: hidden;
   padding: 13vh 0 0 0;
+  display: none !important;
 }
 
 p {
