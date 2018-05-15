@@ -183,48 +183,49 @@ $(document).ready(function() {
 
 
 
-  // $("#fullpage").fullpage({
-  //   anchors: [
-  //     "start",
-  //     "projekty",
-  //     "partnerzy",
-  //     "zespol",
-  //     "referencje",
-  //     "kontakt"
-  //   ],
-  //   responsiveWidth: 991,
-  //   sectionSelector: ".section",
-  //   slideSelector: ".slide2",
-  //   onLeave: function(index, nextIndex, direction) {
-  //     // console.log(index);
-  //     var leavingSection = $(this);
-  //     //after leaving section 1
-  //     if (index == 1) {
-  //       document.getElementById("navbar").classList.add("scrolled");
-  //     }
-  //     if (index == 2 && direction == "up") {
-  //       document.getElementById("navbar").classList.remove("scrolled");
-  //     }
-  //   },
-  //   afterLoad: function(anchor, index) {
-  //     if (index == 1) {
-  //       document.getElementById("navbar").classList.remove("scrolled");
-  //     } else if (index == 2) {
-  //       $(".svg-1").css("display", "block");
-  //       $(".svg-2").css("display", "block");
-  //     } else if (index == 5) {
-  //       $(".svg-3").css("display", "block");
-  //     } else if (index == 6) {
-  //       $(".svg-4").css("display", "block");
-  //     }
-  //     const anchorsLink = document.querySelectorAll(".navbar-nav li a");
-  //     // console.log(anchor, index, anchorsLink);
-  //     anchorsLink.forEach(elem => {
-  //       elem.classList.remove("active");
-  //     });
-  //     anchorsLink[index - 1].classList.add("active");
-  //   }
-  // });
+
+  $("#fullpage").fullpage({
+    anchors: [
+      "start",
+      "projekty",
+      "partnerzy",
+      "zespol",
+      "referencje",
+      "kontakt"
+    ],
+    responsiveWidth: 991,
+    sectionSelector: ".section",
+    slideSelector: ".slide2",
+    onLeave: function(index, nextIndex, direction) {
+      // console.log(index);
+      var leavingSection = $(this);
+      //after leaving section 1
+      if (index == 1) {
+        document.getElementById("navbar").classList.add("scrolled");
+      }
+      if (index == 2 && direction == "up") {
+        document.getElementById("navbar").classList.remove("scrolled");
+      }
+    },
+    afterLoad: function(anchor, index) {
+      if (index == 1) {
+        document.getElementById("navbar").classList.remove("scrolled");
+      } else if (index == 2) {
+        $(".svg-1").css("display", "block");
+        $(".svg-2").css("display", "block");
+      } else if (index == 5) {
+        $(".svg-3").css("display", "block");
+      } else if (index == 6) {
+        $(".svg-4").css("display", "block");
+      }
+      const anchorsLink = document.querySelectorAll(".navbar-nav li a");
+      // console.log(anchor, index, anchorsLink);
+      anchorsLink.forEach(elem => {
+        elem.classList.remove("active");
+      });
+      anchorsLink[index - 1].classList.add("active");
+    }
+  });
 
   
 });
