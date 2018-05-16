@@ -5,13 +5,9 @@
 
   // display: none !important;
 
-
-  @include phone {
-    display: block;
-    position: absolute;
-    margin-top: 60px;
+  @media (max-width: 1300px) {
+    display: none !important;
   }
-
 }
 
 .navy_bg {
@@ -19,7 +15,7 @@
   border-top: 230px solid #000039;
   //border-right: 2100px solid transparent;
   -webkit-clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 67%, 29% 100%, 0 100%, 0% 70%, 0% 30%);
-clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 67%, 29% 100%, 0 100%, 0% 70%, 0% 30%);
+  clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 67%, 29% 100%, 0 100%, 0% 70%, 0% 30%);
   color: white;
   position: absolute;
   left: 0;

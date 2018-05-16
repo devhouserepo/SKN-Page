@@ -11,6 +11,10 @@
     // justify-content: center;
 
     // display: none !important;
+
+    @media (max-width: 767px) {
+        display: none !important;
+      }
 }
 
 
