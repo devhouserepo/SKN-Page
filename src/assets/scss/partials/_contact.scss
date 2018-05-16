@@ -3,11 +3,7 @@
   &__contact {
 
 
-    //display: none !important;
-
-    @include phone {
-      //display: none !important;
-    }
+    display: none !important;
 
 
     width: 100vw;
@@ -205,9 +201,9 @@
     }
   }
 }
-.svg-4 {
-  display: none;
-}
+// .svg-4 {
+//   display: none;
+// }
 
 @media(max-width: 1200px){
   .svg-4 {
