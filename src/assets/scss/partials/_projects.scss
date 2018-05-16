@@ -66,6 +66,10 @@ section.projects {
   flex-direction: row;
   min-width: 650px;
   max-width: 900px;
+
+  // @media (max-width: 669px) {
+  //   display: inline-flex;
+  // }
 }
 
 
@@ -76,13 +80,9 @@ section.projects {
   margin: 5%;
   position: relative;
 
-    // @media (max-width: 400px) {
-    //   margin: 2px;
-    // }
-
-    // @media (min-width: 401px) and (max-width: 600px) {
-    //   margin: 14px;
-    // }
+  @media (max-width: 669px) {
+    margin: 0;
+  }
 
       &:hover .project_title {
         font-size: 21px;
@@ -174,62 +174,69 @@ section.projects {
 }
 #twoj-projekt-shape {
   background-color: #0f0f4d;
-  // background-image: none;
-  height: 180px;
-  width: 180px;
+  // height: 180px;
+  // width: 180px;
 }
 
 //------one container------------------------
 #devhouse {
-  // flex-basis: 33.3%;
-  // left: -2vw;
-  // top: -2vh;  
+  left: -1vw;
+  top: -2vh;  
   &:hover {
     z-index: 9;
   }
 }
 
 #thinkit {
-  // flex-basis: 33.3%;
-  // top: 2vh;
+  top: 2vh;
   &:hover {
     z-index: 9;
+  }
+
+  @media (max-width: 669px) {
+    flex-basis: 50%;
   }
 }
 
 #lead {
-  // flex-basis: 33.3%;
-  // right: -2vw;
-  // top: -1vh;
+  right: -2vw;
+  top: -1vh;
   &:hover {
     z-index: 9;
   }
 }
 
 #bootcamp {
-  // flex-basis: 33.3%;
-  // top: 3vh;
   &:hover {
     z-index: 11;
   }
 }
 
 #startup {
-  // flex-basis: 33.3%;
-  // top: 2vh;
+  top: 3vh;
   &:hover {
     z-index: 9;
+  }
+
+  @media (max-width: 669px) {
+    flex-basis: 50%;
   }
 }
 
 #twoj-projekt {
+  top: -2vh; 
     .project-about {
     margin-left: -12px;
     width: 220px;
   }
+
+  @media (max-width: 669px) {
+    flex-basis: 50%;
+    top: 4vh; 
+  }
 }
 
-//------Paragraphs--------------paragraphs-------------------
+//------Paragraphs--------------paragraphs--------------------
 .project-paragraphs {
   height: 100%;
   width: 100%;

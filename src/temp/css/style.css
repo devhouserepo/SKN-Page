@@ -67,7 +67,6 @@ table {
 }
 
 .header {
-  display: none !important;
   background: url(../../assets/images/tlo3.png) no-repeat center center;
   background-size: cover;
   max-width: 100vw;
@@ -985,6 +984,12 @@ section.projects {
   position: relative;
 }
 
+@media (max-width: 669px) {
+  .singular-project-container {
+    margin: 0;
+  }
+}
+
 .singular-project-container:hover .project_title {
   font-size: 21px;
   margin-top: -14%;
@@ -1085,16 +1090,35 @@ section.projects {
 
 #twoj-projekt-shape {
   background-color: #0f0f4d;
-  height: 180px;
-  width: 180px;
+}
+
+#devhouse {
+  left: -1vw;
+  top: -2vh;
 }
 
 #devhouse:hover {
   z-index: 9;
 }
 
+#thinkit {
+  top: 2vh;
+}
+
 #thinkit:hover {
   z-index: 9;
+}
+
+@media (max-width: 669px) {
+  #thinkit {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+#lead {
+  right: -2vw;
+  top: -1vh;
 }
 
 #lead:hover {
@@ -1105,13 +1129,36 @@ section.projects {
   z-index: 11;
 }
 
+#startup {
+  top: 3vh;
+}
+
 #startup:hover {
   z-index: 9;
+}
+
+@media (max-width: 669px) {
+  #startup {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+#twoj-projekt {
+  top: -2vh;
 }
 
 #twoj-projekt .project-about {
   margin-left: -12px;
   width: 220px;
+}
+
+@media (max-width: 669px) {
+  #twoj-projekt {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    top: 4vh;
+  }
 }
 
 .project-paragraphs {
