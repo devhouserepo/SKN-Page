@@ -51,7 +51,6 @@ section.projects {
   height: 100vh;
   justify-content: center;
   // width: 100vh overflows when 943px window
-  // width: 100vw;
 
   @media (max-width: 575px) {
     margin-top: 390px;
@@ -71,20 +70,47 @@ section.projects {
     min-width: 440px;
     max-width: 649px;
   }
+  @media (max-width: 470px) {
+    min-width: 390px;
+  }
+  @media (max-width: 403px) {
+    min-width: 324px;
+    max-width: 360px;
+  }
 }
 
-
-// Project hover transitions and animations triggers
-.singular-project-container {
+.singular-project-container,
+.projects-shape-1,
+.projects-shape-2 {
   height: 200px;
   width: 200px;
+
+  // Shrink container at 480px screen width
+  @media (max-width: 480px) {
+    margin: 0;
+    height: 170px;
+    width: 170px;
+  }
+  @media (max-width: 403px) {
+    margin: 0;
+    height: 155px;
+    width: 155px;
+  }
+  @media (max-width: 380px) {
+    margin: 0;
+    height: 140px;
+    width: 140px;
+  }
+}
+
+.singular-project-container {
   margin: 5%;
   position: relative;
 
   @media (max-width: 1200px) {
     margin: 4%;
   }
- @media (max-width: 1100px) {
+  @media (max-width: 1100px) {
     margin: 2%;
   }
   @media (max-width: 669px) {
@@ -107,7 +133,7 @@ section.projects {
         background-size: 300px;
         transition: all 0.7s ease-in-out;
       }
-
+      // Project hover transitions and animations triggers
       &:hover .project-about {
         margin-left: -40px;
         width: 270px;
@@ -120,15 +146,12 @@ section.projects {
       }
 }
 
-
 .projects-shape-1,
 .projects-shape-2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 600px;
   margin: auto;
-  height: 200px;
-  width: 200px;
   max-width: 400px;
   transition: all 0.7s ease-in-out;
   transition-delay: 0.2s;
@@ -181,14 +204,12 @@ section.projects {
 }
 #twoj-projekt-shape {
   background-color: #0f0f4d;
-  // height: 180px;
-  // width: 180px;
 }
 
 //------one container------------------------
 #devhouse {
   left: -1vw;
-  top: -2vh;  
+  top: -1vh;  
   &:hover {
     z-index: 9;
   }
@@ -260,6 +281,12 @@ section.projects {
     flex-basis: 50%;
     top: 4vh; 
   }
+  //hide "Zrealizuj swoj projekt"
+  @media (max-width: 480px) {
+    p:nth-child(2){
+      display: none;
+    }
+  }
 }
 
 //------Paragraphs--------------paragraphs--------------------
@@ -286,12 +313,22 @@ section.projects {
   text-align: center;
   margin-top: 21%;
   transition: all 0.6s ease-in-out;
+
+  @media (max-width: 470px) {
+    font-size: 20px;
+    margin-top: 24%;    
+  }
 }
 .project-about-mini {
   color: white;
   text-align: center;
   margin-top: 14px;
   font-size: 16px;
+
+  @media (max-width: 470px) {
+    margin-top: 11px;
+    font-size: 15px;    
+  }
 }
 
 .button-more-about-project {
@@ -363,7 +400,7 @@ section.projects {
   }
 }
 
-//------------SVG----------SVG--------
+//----------SVG---------SVG--------SVG-----
 .svg-1 {
   position: absolute;
 
