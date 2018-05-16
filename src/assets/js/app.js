@@ -1,4 +1,18 @@
 $(document).ready(function() {
+  //Checking which element overflows the document
+  var docWidth = document.documentElement.offsetWidth;
+
+  [].forEach.call(
+    document.querySelectorAll('*'),
+    function(el) {
+      if (el.offsetWidth > docWidth) {
+        console.log(el);
+      }
+    }
+  );
+
+  
+
   let number = 0;
 
   $("#private-button").click(function() {
@@ -226,5 +240,4 @@ $(document).ready(function() {
   //   }
   // });
 
-  
 });

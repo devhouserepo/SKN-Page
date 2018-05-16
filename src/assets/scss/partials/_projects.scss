@@ -50,7 +50,8 @@ section.projects {
   flex-direction: column;
   height: 100vh;
   justify-content: center;
-  width: 100vw;
+  // width: 100vh overflows when 943px window
+  // width: 100vw;
 
   @media (max-width: 575px) {
     margin-top: 390px;
@@ -221,10 +222,12 @@ section.projects {
   }
 }
 
-// #twoj-projekt {
-//   flex-basis: 33.3%;
-// }
-
+#twoj-projekt {
+    .project-about {
+    margin-left: -12px;
+    width: 220px;
+  }
+}
 
 //------Paragraphs--------------paragraphs-------------------
 .project-paragraphs {
@@ -280,15 +283,14 @@ section.projects {
   }
 }
 
-#twoj-projekt .project-about {
-  margin-left: -12px;
-  width: 220px;
-}
+
 
 
 // section background-------------------------section background--------------------------
 .section-projects-background {
   position: absolute;
+
+  // display: none;
 }
 
 .giant-header-projects {
@@ -302,13 +304,14 @@ section.projects {
   bottom: -2vh;
   z-index: -1;
 
-  @media (max-width: 943px) {
-    bottom: 120px;
-    font-size: 78px;
+  @media (max-width: 920px) {
+    top: -4vh;
+    font-size: 88px;
   }
 
+  
   @media (max-height: 869px) {
-    bottom: 8vh;
+    top: -3vh;
   }
   @media (max-height: 687px) {
     bottom: -2vh;
