@@ -67,9 +67,10 @@ section.projects {
   min-width: 650px;
   max-width: 900px;
 
-  // @media (max-width: 669px) {
-  //   display: inline-flex;
-  // }
+  @media (max-width: 669px) {
+    min-width: 440px;
+    max-width: 649px;
+  }
 }
 
 
@@ -80,8 +81,14 @@ section.projects {
   margin: 5%;
   position: relative;
 
+  @media (max-width: 1200px) {
+    margin: 4%;
+  }
+ @media (max-width: 1100px) {
+    margin: 2%;
+  }
   @media (max-width: 669px) {
-    margin: 0;
+    margin: 1%;
   }
 
       &:hover .project_title {
@@ -185,6 +192,10 @@ section.projects {
   &:hover {
     z-index: 9;
   }
+
+  @media (max-width: 1100px) {
+    top: -1vh; 
+  }
 }
 
 #thinkit {
@@ -193,6 +204,9 @@ section.projects {
     z-index: 9;
   }
 
+  @media (max-width: 1100px) {
+    top: 1vh;
+  }
   @media (max-width: 669px) {
     flex-basis: 50%;
   }
@@ -204,11 +218,11 @@ section.projects {
   &:hover {
     z-index: 9;
   }
-}
-
-#bootcamp {
-  &:hover {
-    z-index: 11;
+  @media (max-width: 1100px) {
+    right: -1vw;
+  }
+  @media (max-width: 669px) {
+    right: 0;
   }
 }
 
@@ -218,8 +232,17 @@ section.projects {
     z-index: 9;
   }
 
+  @media (max-width: 1100px) {
+    top: 2vh;
+  }
   @media (max-width: 669px) {
     flex-basis: 50%;
+  }
+}
+
+#bootcamp {
+  &:hover {
+    z-index: 11;
   }
 }
 
@@ -230,6 +253,9 @@ section.projects {
     width: 220px;
   }
 
+  @media (max-width: 1100px) {
+    top: 3vh; 
+  }
   @media (max-width: 669px) {
     flex-basis: 50%;
     top: 4vh; 
@@ -297,7 +323,7 @@ section.projects {
 .section-projects-background {
   position: absolute;
 
-  // display: none;
+  display: none;
 }
 
 .giant-header-projects {
