@@ -4,23 +4,13 @@
   &__reference {
 
     
-    display: none !important;
-
-    @include phone {
-      display: none !important;
-    }
-
+    // display: none !important;
 
     width: 100vw;
     height: 100vh;
     color: black;
     .mobile {
       display:none !important;
-
-      @include phone {
-        display: none !important;
-      }
-
 
     }
     &__box-left {
