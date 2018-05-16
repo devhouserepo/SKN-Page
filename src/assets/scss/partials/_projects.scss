@@ -47,7 +47,6 @@ section.projects {
   font-family: "Roboto";
   align-items: center;
   display: flex;
-  flex-direction: column;
   height: 100vh;
   justify-content: center;
   // width: 100vh overflows when 943px window
@@ -64,13 +63,13 @@ section.projects {
   flex-wrap: wrap;
   flex-direction: row;
   min-width: 650px;
-  max-width: 900px;
+  max-width: 895px;
 
   @media (max-width: 669px) {
     min-width: 440px;
     max-width: 649px;
   }
-  @media (max-width: 470px) {
+  @media (max-width: 480px) {
     min-width: 390px;
   }
   @media (max-width: 403px) {
@@ -115,6 +114,9 @@ section.projects {
   }
   @media (max-width: 669px) {
     margin: 1%;
+  }
+  @media (min-width: 381px) and (max-width: 403px) {
+    margin-top: 18px;
   }
 
       &:hover .project_title {
@@ -209,7 +211,7 @@ section.projects {
 //------one container------------------------
 #devhouse {
   left: -1vw;
-  top: -1vh;  
+  top: -20px;  
   &:hover {
     z-index: 9;
   }
@@ -229,12 +231,12 @@ section.projects {
     top: 1vh;
   }
   @media (max-width: 669px) {
-    flex-basis: 50%;
+    flex-basis: 1;
   }
 }
 
 #lead {
-  right: -2vw;
+  right: -21px;
   top: -1vh;
   &:hover {
     z-index: 9;
@@ -257,8 +259,9 @@ section.projects {
     top: 2vh;
   }
   @media (max-width: 669px) {
-    flex-basis: 50%;
+    flex-basis: 1;
   }
+
 }
 
 #bootcamp {
@@ -278,7 +281,7 @@ section.projects {
     top: 3vh; 
   }
   @media (max-width: 669px) {
-    flex-basis: 50%;
+    flex-basis: 1;
     top: 4vh; 
   }
   //hide "Zrealizuj swoj projekt"
@@ -311,7 +314,7 @@ section.projects {
   letter-spacing: 0.5px;
   color: white;
   text-align: center;
-  margin-top: 21%;
+  margin-top: 23%;
   transition: all 0.6s ease-in-out;
 
   @media (max-width: 470px) {
@@ -359,44 +362,41 @@ section.projects {
 // section background-------------------------section background--------------------------
 .section-projects-background {
   position: absolute;
-
-  display: none;
 }
 
 .giant-header-projects {
+  // display: none;
+
   color: white;
   font-weight: bold;
   letter-spacing: 7px;
   opacity: 0.07;
   font-size: 108px;
-  position: relative;
-  right: 10vw;
-  bottom: -2vh;
+  position: absolute;
+  right: 41vw;
+  top: 45vh;
   z-index: -1;
 
-  @media (max-width: 920px) {
-    top: -4vh;
-    font-size: 88px;
+  @media (max-width: 1200px) {
+    font-size: 98px;
+    right: 31vw;
+    top: 48vh;
   }
-
-  
-  @media (max-height: 869px) {
-    top: -3vh;
+  @media (max-width: 767px) {
+    font-size: 80px;
+    right: 57px;
+    top: 30px;
   }
-  @media (max-height: 687px) {
-    bottom: -2vh;
+  @media (max-width: 645px) {
+    opacity: 0.2;
+    font-size: 72px;
+    right: 59px;
+    top: 40px;
   }
-  @media (max-height: 593px) {
-    bottom: -11vh;
-  }
-  @media (max-height: 515px) {
-    bottom: -17vh;
-  }
-  @media (max-height: 454px) {
-    bottom: -29vh;
-  }
-  @media (max-height: 392px) {
-    bottom: -40vh;
+  @media (max-width: 575px) {
+    font-size: 48px;
+    right: 3vw;
+    top: 40px;
   }
 }
 
