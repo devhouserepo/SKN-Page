@@ -54,6 +54,14 @@ section.projects {
   @media (max-width: 575px) {
     margin-top: 390px;
   }
+  @media (max-width: 760px) {
+    margin-bottom: 340px;
+  }
+
+  @media (max-height: 820px) {
+    margin-bottom: 200px;
+  }
+  
 }
 
 .projects_boxes_container {
@@ -394,6 +402,7 @@ section.projects {
     top: 40px;
   }
   @media (max-width: 575px) {
+    opacity: 0.4;
     font-size: 48px;
     right: 3vw;
     top: 40px;

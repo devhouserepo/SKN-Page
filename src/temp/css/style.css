@@ -955,6 +955,18 @@ section.projects {
   }
 }
 
+@media (max-width: 760px) {
+  section.projects {
+    margin-bottom: 340px;
+  }
+}
+
+@media (max-height: 820px) {
+  section.projects {
+    margin-bottom: 200px;
+  }
+}
+
 .projects_boxes_container {
   margin: 43px;
   -webkit-box-pack: center;
@@ -1385,6 +1397,7 @@ section.projects {
 
 @media (max-width: 575px) {
   .giant-header-projects {
+    opacity: 0.4;
     font-size: 48px;
     right: 3vw;
     top: 40px;
@@ -1936,11 +1949,9 @@ section.projects {
   overflow: hidden;
 }
 
-@media (max-width: 590px) {
+@media (max-width: 1300px) {
   .partners {
-    display: block;
-    position: absolute;
-    margin-top: 60px;
+    display: none !important;
   }
 }
 
@@ -2256,6 +2267,12 @@ section.projects {
   width: 100vw;
   height: 100vh;
   color: black;
+}
+
+@media (max-width: 800px) {
+  .section__reference {
+    display: none !important;
+  }
 }
 
 .section__reference .mobile {
@@ -3419,6 +3436,12 @@ section.projects {
   height: 100vh;
   overflow: hidden;
   padding: 13vh 0 0 0;
+}
+
+@media (max-width: 767px) {
+  .team-section-container {
+    display: none !important;
+  }
 }
 
 p {

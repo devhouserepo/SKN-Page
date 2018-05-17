@@ -2,9 +2,12 @@
   
   position: relative;
   &__reference {
-
     
     // display: none !important;
+
+    @media (max-width: 800px) {
+      display: none !important;
+    }
 
     width: 100vw;
     height: 100vh;
