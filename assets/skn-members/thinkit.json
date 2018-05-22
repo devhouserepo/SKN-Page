@@ -1,0 +1,130 @@
+[
+     {
+      "id": 1,
+      "first_name": "Kuba",
+      "last_name": "Sajdek",
+      "info": "",
+      "linkedin": "https://www.linkedin.com/in/jakub-sajdek-71715490/",
+      "photo": "./assets/images/members/kuba-sajdek.jpg"
+    },
+    {
+      "id": 2,
+      "first_name": "Agnieszka",
+      "last_name": "Bursztynowska",
+      "info": "Agnieszka jest członkiem zespołów Think IT oraz Lead in IT. Studiuje informatykę na PJATK, do tego pracuje nad rozwinięciem start-up’u implementującego Machine Learning oraz Image Recognition do sektora zarządzania odpadami. Dołączyła do Koła ponieważ uważa, że poza studiami niesamowicie ważną rolę odgrywa rozwój osobisty w wielu dziedzinach. Miłośniczka zwierzaków i brytyjskiego akcentu.",
+      "linkedin": "https://www.linkedin.com/in/agnieszka-bursztynowska/",
+      "photo": "./assets/images/members/agnieszka-bursztynowska.jpg"
+    },
+    {
+      "id": 3,
+      "first_name": "Czarek",
+      "last_name": "Zajkowski",
+      "info": "",
+      "linkedin": "https://www.linkedin.com/in/cezaryzajkowski/",
+      "photo": "./assets/images/members/czarek-zajkowski.jpg"
+    },
+    {
+      "id": 4,
+      "first_name": "Dawid",
+      "last_name": "Skoczeń",
+      "info": "",
+      "linkedin": "https://www.linkedin.com/in/dawidskocze%C5%84/",
+      "photo": "./assets/images/members/dawid-skoczen.jpg"
+    },
+    {
+    "id": 5,
+    "first_name": "Mateusz",
+    "last_name": "Wasiak",
+    "info": "Mateusz studiuje mechatronikę na PW. Pomaga w projekcie Think IT, pełniąc funkcje operacyjne. Uważa że działalność w kole pomaga mu nabyć nowe zdolności i rozwijać mocne strony, takie jak dobra organizacja pracy.",
+    "linkedin": "",
+    "photo": "./assets/images/members/mateusz-wasiak.jpg"
+  },
+    {
+      "id": 6,
+      "first_name": "Ilona",
+      "last_name": "Pietras",
+      "info": "Ilona studiuje w Szkole Głównej Handlowej na kierunku Metody ilościowe w ekonomii i systemy informacyjne. Oprócz działalności w SKN Konsultingu IT jest również członkiem SKN Zarządzania Projektami SGH, gdzie bierze udział w organizacji  największej studenckiej konferencji o tematyce zarządzania projektami w Polsce. Działalność w kołach naukowych pozawala jej zarówno poszerzać wiedzę, jak i doskonalić kompetencje miękkie. ",
+      "linkedin": "https://www.linkedin.com/in/ilona-pietras-99709b11a/ ",
+      "photo": "./assets/images/members/ilona-pietras.jpg"
+    },
+    {
+      "id": 7,
+      "first_name": "Kamila",
+      "last_name": "Bocińska",
+      "info": "Kamila studiuje Zarządzanie i Inżynierię Produkcji. Dołączyła do koła, bo ma ambicje i ciągle chce się rozwijać. Interesuje się marketingiem i tym zajmuje się w kole. W wolnym czasie biega albo podróżuje.",
+      "linkedin": "https://www.linkedin.com/in/kamila-boci%C5%84ska-570528163/",
+      "photo": "./assets/images/members/kamila-bocinska.jpg"
+    },
+    {
+      "id": 8,
+      "first_name": "Karol",
+      "last_name": "Trześniewski",
+      "info": "Karol jest studentem Szkoły Głównej Handlowej, ale z zainteresowania uczy się podstaw IT. Lubi nawiązywać nowe znajomości i czuje się dobrze w kontaktach z innymi. Uważa, że młody człowiek łączący umiejętności miękkie z technicznymi jest niczym „James Bond” w akcji jaką jest rynek pracy. Jest też miłośnikiem wędkarstwa i siatkówki.",
+      "linkedin": "https://www.linkedin.com/in/karol-trześniewski-b82420161/",
+      "photo": "./assets/images/members/karol-trzesniewski.jpg"
+    },
+    {
+      "id": 9,
+      "first_name": "Natalia",
+      "last_name": "Boćkowska",
+      "info": "Studentka Zarządzania i Inżynierii Produkcji, w kole działa w projekcie ThinkIT oraz w marketingu. Ambitna, pracowita, zawsze dążąca do postawionego celu. W wolnym czasie uwielbia chodzic do teatru a jej największa pasją jest jazda na nartach.",
+      "linkedin": "https://www.linkedin.com/in/natalia-bo%C4%87kowska-945a4615b/",
+      "photo": "./assets/images/members/natalia-bockowska.jpg"
+    },
+    {
+      "id": 10,
+      "first_name": "Łukasz",
+      "last_name": "Monecki",
+      "info": "",
+      "linkedin": "https://www.linkedin.com/in/%C5%82ukasz-monecki-4a417b58/",
+      "photo": "./assets/images/members/lukasz-monecki.jpg"
+    },
+    {
+      "id": 11,
+      "first_name": "Anna",
+      "last_name": "Rękowska",
+      "info": "Ania działa w zespole ds. marketingu w Konferencji THINK IT. Studiuje na kierunku Metody Ilościowe w Ekonomii i Systemy Informacyjne w Szkole Głównej Handlowej. Działa aktywnie w organizacjach studenckich, bo uwielbia stawiać przed sobą nowe wyzwania.",
+      "linkedin": "https://www.linkedin.com/in/anna-r%C4%99kowska-1bb927159/",
+      "photo": "./assets/images/members/ania-rekowska.jpg"
+    },
+    {
+      "id": 12,
+      "first_name": "Dominika",
+      "last_name": "Stepnowska",
+      "info": "Dominika jest specjalistą ds. social media. Studiuje Metody Ilościowe w Ekonomii i Systemy Informacyjne w Szkole Głównej Handlowej w Warszawie. W przyszłości chciałaby pracować jako analityk.",
+      "linkedin": "https://www.linkedin.com/in/dominika-stepnowska-a81774140/",
+      "photo": "./assets/images/members/dominika-stepnowska.jpg"
+    },
+    {
+      "id": 13,
+      "first_name": "Jakub",
+      "last_name": "Bartosiewicz",
+      "info": "Ambiwertyk od urodzenia, racjonalny pesymista z wykształcenia. Zawodowo łączy biznesowo-analityczną wiedzę z SGH i digitalowo-programistyczne kompetencje nabyte po godzinach. Aktualnie wdraża w życie maksymę S. Covey'a: 'seek first to understand then to be understood'. Po godzinach skacze do kosza, skacze na desce i skacze do basenu.",
+      "linkedin": "https://www.linkedin.com/in/bartosiewicz-jakub/",
+      "photo": "./assets/images/members/jakub-bartosiewicz.jpg"
+    },
+    {
+      "id": 14,
+      "first_name": "Marcel",
+      "last_name": "Łoziński",
+      "info": "Marcel studiuje Metody ilościowe w ekonomii i systemy informacyjne w SGH. Pracuje w dziale kontrolingu w dużej firmie motoryzacyjnej. Wierzy, że działalność w kole pomoże mu poszerzyć sieć kontatktów zawodowych",
+      "linkedin": "https://www.facebook.com/marcel.lozinski",
+      "photo": "./assets/images/members/marcel-lozinski.jpg"
+    },
+    {
+      "id": 15,
+      "first_name": "Paulina",
+      "last_name": "Potacka",
+      "info": "Paulina, członek projektu ThinkIT. Studentka Wydziału Administracji i Nauk Społecznych Politechniki Warszawskiej. Pracuje jako support działu sprzedaży, pilnie starając się zdobyć jak największą wiedzę na temat rynków kapitałowych oraz sprzedaży papierów wartościowych. Chciałaby maksymalnie wykorzystać okres studiów",
+      "linkedin": "",
+      "photo": "./assets/images/members/paulina-potacka.jpg"
+    },
+    {
+      "id": 16,
+      "first_name": "Bartosz",
+      "last_name": "de Boulangé",
+      "info": "",
+      "linkedin": "https://www.linkedin.com/in/bartosz-de-boulang%C3%A9-101a50138/",
+      "photo": "./assets/images/members/bartosz-de-boulange.jpg"
+    }
+  ]

@@ -1,0 +1,58 @@
+[
+     {
+      "id": 1,
+      "first_name": "Marta",
+      "last_name": "Krysa",
+      "info": "Studentka Telekomunikacji, pracuje jako IT Project Manager. W wolnej chwili organizatorka wydarzeń i konferencji. Zainteresowania: rozwiązania chmurowe, historia kina, psychologia i medycyna.",
+      "linkedin": "https://www.linkedin.com/in/marta-krysa/",
+      "photo": "./assets/images/members/marta-krysa.jpg"
+    },
+    {
+      "id": 2,
+      "first_name": "Agnieszka",
+      "last_name": "Bursztynowska",
+      "info": "Agnieszka jest członkiem zespołów Think IT oraz Lead in IT. Studiuje informatykę na PJATK, do tego pracuje nad rozwinięciem start-up’u implementującego Machine Learning oraz Image Recognition do sektora zarządzania odpadami. Dołączyła do Koła ponieważ uważa, że poza studiami niesamowicie ważną rolę odgrywa rozwój osobisty w wielu dziedzinach. Miłośniczka zwierzaków i brytyjskiego akcentu.",
+      "linkedin": "https://www.linkedin.com/in/agnieszka-bursztynowska/",
+      "photo": "./assets/images/members/agnieszka-bursztynowska.jpg"
+    },
+    {
+      "id": 3,
+      "first_name": "Klaudia",
+      "last_name": "Jarębska",
+      "info": "Klaudia obecnie studiuje Inżynierię Zarządzania w IT na Politechnice Warszawskiej. W kole należy do działu analitycznego projektów. Na co dzień interesuje się innowacjami technologicznymi, rozwiązaniami biznesowymi oraz chmurami danych. Uważa, że to właśnie kreatywność ludzi jest motoryką rozwoju świata.",
+      "linkedin": "https://www.linkedin.com/in/klaudia-jar%C4%99bska-6a68b1128/",
+      "photo": "./assets/images/members/klaudia-jarebska.jpg"
+    },
+    {
+      "id": 4,
+      "first_name": "Jan",
+      "last_name": "Dubiński",
+      "info": "Janek zajmuje się 2. edycją programu LEAD. Podczas studiów inżynierskich zainteresował się tematyką Machine Learningu i Data Science, co skłoniło go do studiowania informatyki. Koło traktuje jako świetną okazję do poznania nowych ludzi oraz poszerzenia swojej wiedzy.",
+      "linkedin": "",
+      "photo": "./assets/images/members/jan-dubinski.png"
+    },
+    {
+    "id": 5,
+    "first_name": "Kuba",
+    "last_name": "Ajchel",
+    "info": "Kuba jest studentem elektroniki na EiTI, pracującym jako programista baz danych. W SKN Konsultingu IT działa od poczatku istnienia koła.Współtworzył takie wydarzenia jak konferencja ThinkIT, gdzie był odpowiedzialny za koordynowanie Partnerstwa- działu odpowiedzialnego za pozyskiwanie firm współtworzących wydarzenie. Pełnił też funkcję koordynatora ścieżki Data Science, którą realizowaliśmy wspólnie z PwC Polska w ramch programu Lead in It. Jak sam przyznaje, dzięki działalności w kole nawiązał wiele wartościowych znajomości, współpracował z największymi firmami w Polsce oraz rozwinął swoje umiejętności miękkie, które na pewno przydadzą mu się w karierze ",
+    "linkedin": "https://www.linkedin.com/in/jakubajchel/",
+    "photo": "./assets/images/members/jakub-ajchel.jpg"
+  },
+    {
+      "id": 6,
+      "first_name": "Cyryl",
+      "last_name": "Kocięcki",
+      "info": "Cyryl jest współzałożycielem SKN-u, absolwentem specjalizacji International Management na Akademii Leona Koźmińskiego, a  obecnie kończy specjalizację Corporate Finance. W przeszłości pracował jako project manager i UI designer. Od dwóch lat pracuje w Microsoft Polska, obecnie w roli analityka biznesowego/citizen data scientist odpowiadającego za stronę merytoryczną i efektywność kampanii marketingowych w obszarze trzech chmur (Microsoft 365, Azure, Dynamics 365) w dziale Marketing and Operations. W SKN odpowiada głównie za organizację i rozwój flagowego programu LEAD in IT.",
+      "linkedin": "https://www.linkedin.com/in/cyryl-koci%C4%99cki-98325386/",
+      "photo": "./assets/images/members/cyryl-kociecki.jpg"
+    },
+    {
+      "id": 7,
+      "first_name": "Piotr",
+      "last_name": "Filarski",
+      "info": "Piotr pracuje nad 2 edycją Programu LEAD. Studiuje informatykę rozwijając swoje zainteresowanie nowymi technologiami. Jego zdaniem Koło jest najlepszym miejscem na zawarcie nowych znajomości.",
+      "linkedin": "https://www.linkedin.com/in/piotrfilarski/",
+      "photo": "./assets/images/members/piotr-filarski.jpg"
+    }
+  ]
