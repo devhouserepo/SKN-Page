@@ -22,7 +22,7 @@
   animation: $animationName $duration * 1s $animationFillMode; /* IE 10+, Fx 29+ */
 }
 
-// Show and fade in .project-about animation
+// Show and fade in .single-container__project-paragraphs__project-about animation
 @keyframes showProjectAboutandButton {
   0% {
     opacity: 0;
@@ -144,7 +144,7 @@ section.projects {
         transition: all 0.7s ease-in-out;
       }
       // Project hover transitions and animations triggers
-      &:hover .project-about {
+      &:hover .single-container__project-paragraphs__project-about {
         margin-left: -40px;
         width: 270px;
         @include animationBasicHover(showProjectAboutandButton, 2, forwards);
@@ -280,7 +280,7 @@ section.projects {
 
 #twoj-projekt {
   top: -2vh; 
-    .project-about {
+    .single-container__project-paragraphs__project-about {
     margin-left: -12px;
     width: 220px;
   }
@@ -308,7 +308,7 @@ section.projects {
   text-align: center;
   z-index: 10;
 }
-.project-about {
+.single-container__project-paragraphs__project-about {
   opacity: 0;
   color: white;
   line-height: 1.1;

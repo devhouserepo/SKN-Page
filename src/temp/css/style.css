@@ -1097,7 +1097,7 @@ section.projects {
   transition: all 0.7s ease-in-out;
 }
 
-.single-container:hover .project-about {
+.single-container:hover .single-container__project-paragraphs__project-about {
   margin-left: -40px;
   width: 270px;
   /* Internet Explorer and Microsoft Edge */
@@ -1257,7 +1257,7 @@ section.projects {
   top: -2vh;
 }
 
-#twoj-projekt .project-about {
+#twoj-projekt .single-container__project-paragraphs__project-about {
   margin-left: -12px;
   width: 220px;
 }
@@ -1290,7 +1290,7 @@ section.projects {
   z-index: 10;
 }
 
-.project-about {
+.single-container__project-paragraphs__project-about {
   opacity: 0;
   color: white;
   line-height: 1.1;
