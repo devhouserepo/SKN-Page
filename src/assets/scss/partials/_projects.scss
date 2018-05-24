@@ -87,8 +87,8 @@ section.projects {
 }
 
 .single-container,
-.projects-shape-1,
-.projects-shape-2 {
+.single-container__shape-1,
+.single-container__shape-2 {
   height: 200px;
   width: 200px;
 
@@ -137,8 +137,8 @@ section.projects {
         margin-top: -12%;
       }
 
-      &:hover .projects-shape-1,
-      &:hover .projects-shape-2 {
+      &:hover .single-container__shape-1,
+      &:hover .single-container__shape-2 {
         @include transform(1.6, 1.6);
         background-size: 300px;
         transition: all 0.7s ease-in-out;
@@ -156,8 +156,8 @@ section.projects {
       }
 }
 
-.projects-shape-1,
-.projects-shape-2 {
+.single-container__shape-1,
+.single-container__shape-2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 600px;
@@ -167,7 +167,7 @@ section.projects {
   transition-delay: 0.2s;
 }
 
-.projects-shape-1 {
+.single-container__shape-1 {
   clip-path: polygon(
     30% 0%,
     70% 0%,
@@ -179,7 +179,7 @@ section.projects {
     0 0
   );
 }
-.projects-shape-2 {
+.single-container__shape-2 {
   clip-path: polygon(
     30% 0%,
     70% 0%,
