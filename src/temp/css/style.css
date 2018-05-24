@@ -1071,7 +1071,7 @@ section.projects {
   }
 }
 
-.single-container:hover .project_title {
+.single-container:hover .single-container__project-paragraphs__project_title {
   font-size: 21px;
   margin-top: -14%;
 }
@@ -1300,7 +1300,7 @@ section.projects {
   display: inline-block;
 }
 
-.project_title {
+.single-container__project-paragraphs__project_title {
   font-size: 24px;
   letter-spacing: 0.5px;
   color: white;
@@ -1311,7 +1311,7 @@ section.projects {
 }
 
 @media (max-width: 470px) {
-  .project_title {
+  .single-container__project-paragraphs__project_title {
     font-size: 20px;
     margin-top: 24%;
   }
