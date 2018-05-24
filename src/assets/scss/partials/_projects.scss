@@ -143,7 +143,7 @@ section.projects {
     width: 270px;
     @include animationBasicHover(showProjectAboutandButton, 2, forwards);
   }
-  &:hover .button-more-about-project {
+  &:hover .single-container__project-paragraphs__btn-more-about {
     @include animationBasicHover(showProjectAboutandButton, 2, forwards);
   }
 
@@ -153,44 +153,102 @@ section.projects {
     position: absolute;
     text-align: center;
     z-index: 10;
+
+    &__project-title {
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      color: white;
+      text-align: center;
+      margin-top: 23%;
+      transition: all 0.6s ease-in-out;
+    
+      @media (max-width: 470px) {
+        font-size: 20px;
+        margin-top: 24%;    
+      }
+    }
+
+    &__project-minititle {
+      color: white;
+      text-align: center;
+      margin-top: 14px;
+      font-size: 16px;
+    
+      @media (max-width: 470px) {
+        margin-top: 11px;
+        font-size: 15px;    
+      }
+    }
+
+    &__project-about {
+      opacity: 0;
+      color: white;
+      line-height: 1.1;
+      margin-top: 14px;
+      font-size: 16px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    &__btn-more-about {
+      margin: 17px auto 0 auto;
+      padding-top: 4px;
+      width: 80px;
+      height: 26px;
+      font-size: 16px;
+      border: 1px solid white;
+      border-radius: 1px;
+      text-align: center;
+      color: white;
+      opacity: 0;
+      position: relative;
+      display: block;
+      transition: background-color 0.3s linear;
+    
+      &:hover {
+        text-decoration: none;
+        color: black;
+        background-color: #fff;
+      }
+    }
+  }
+  
+  &__shape-1,
+  &__shape-2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 600px;
+    margin: auto;
+    max-width: 400px;
+    transition: all 0.7s ease-in-out;
+    transition-delay: 0.2s;
+  }
+  &__shape-1 {
+    clip-path: polygon(
+      30% 0%,
+      70% 0%,
+      100% 30%,
+      100% 100%,
+      70% 100%,
+      30% 100%,
+      0% 70%,
+      0 0
+    );
+  }
+  &__shape-2 {
+    clip-path: polygon(
+      30% 0%,
+      70% 0%,
+      100% 0,
+      100% 70%,
+      70% 100%,
+      30% 100%,
+      0 100%,
+      0% 30%
+    );
   }
 }
 
-.single-container__shape-1,
-.single-container__shape-2 {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 600px;
-  margin: auto;
-  max-width: 400px;
-  transition: all 0.7s ease-in-out;
-  transition-delay: 0.2s;
-}
-
-.single-container__shape-1 {
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 30%,
-    100% 100%,
-    70% 100%,
-    30% 100%,
-    0% 70%,
-    0 0
-  );
-}
-.single-container__shape-2 {
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 0,
-    100% 70%,
-    70% 100%,
-    30% 100%,
-    0 100%,
-    0% 30%
-  );
-}
 
 #devhouse-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
@@ -216,7 +274,8 @@ section.projects {
   background-color: #0f0f4d;
 }
 
-//------one container------------------------
+
+//------one container--id------------------
 #devhouse {
   left: -1vw;
   top: -20px;  
@@ -300,71 +359,11 @@ section.projects {
   }
 }
 
-//------Paragraphs--------------paragraphs--------------------
-
-.single-container__project-paragraphs__project-about {
-  opacity: 0;
-  color: white;
-  line-height: 1.1;
-  margin-top: 14px;
-  font-size: 16px;
-  text-align: center;
-  display: inline-block;
-}
-.single-container__project-paragraphs__project-title {
-  font-size: 24px;
-  letter-spacing: 0.5px;
-  color: white;
-  text-align: center;
-  margin-top: 23%;
-  transition: all 0.6s ease-in-out;
-
-  @media (max-width: 470px) {
-    font-size: 20px;
-    margin-top: 24%;    
-  }
-}
-.single-container__project-paragraphs__project-minititle {
-  color: white;
-  text-align: center;
-  margin-top: 14px;
-  font-size: 16px;
-
-  @media (max-width: 470px) {
-    margin-top: 11px;
-    font-size: 15px;    
-  }
-}
-
-.button-more-about-project {
-  margin: 17px auto 0 auto;
-  padding-top: 4px;
-  width: 80px;
-  height: 26px;
-  font-size: 16px;
-  border: 1px solid white;
-  border-radius: 1px;
-  text-align: center;
-  color: white;
-  opacity: 0;
-  position: relative;
-  display: block;
-  transition: background-color 0.3s linear;
-
-  &:hover {
-    text-decoration: none;
-    color: black;
-    background-color: #fff;
-  }
-}
 
 
 
 
 // section background-------------------------section background--------------------------
-.projects-background {
-  position: absolute;
-}
 
 .giant-header-projects {
   // display: none;
@@ -403,44 +402,34 @@ section.projects {
   }
 }
 
-//----------SVG---------SVG--------SVG-----
-.projects-background__svg-1 {
+.projects-background {
   position: absolute;
 
-  bottom: -300px;
-  right: -200px;
-  display: none;
-}
-
-.path-1 {
-  stroke-dasharray: 1600;
-  stroke-dashoffset: 1600;
-  animation: dash 6s linear forwards;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
+  &__svg-1 {
+    position: absolute;
+    bottom: -300px;
+    right: -200px;
+  
+    display: none;
+  
+    &__path-1 {
+      stroke-dasharray: 1600;
+      stroke-dashoffset: 1600;
+      animation: dash 6s linear forwards;
+    }
   }
-}
-
-
-.projects-background__svg-2 {
-  position: absolute;
-
-  top: -220px;
-  display: none;
-}
-
-.path-2 {
-  stroke-dasharray: 1700;
-  stroke-dashoffset: 1700;
-  animation: dash 9.5s linear forwards;
-  animation-delay: 1.9s;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
+  
+  &__svg-2 {
+    position: absolute;
+    top: -220px;
+  
+    display: none;
+  
+    &__path-2 {
+      stroke-dasharray: 1700;
+      stroke-dashoffset: 1700;
+      animation: dash 9.5s linear forwards;
+      animation-delay: 1.9s;
+    }
   }
 }
