@@ -67,7 +67,6 @@ table {
 }
 
 .header {
-  display: none !important;
   background: url(../../assets/images/tlo3.png) no-repeat center center;
   background-size: cover;
   max-width: 100vw;
@@ -937,13 +936,13 @@ a:hover {
 }
 
 section.projects {
-  font-family: "Roboto";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Roboto";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -985,7 +984,7 @@ section.projects {
 @media (min-width: 750px) {
   .projects-container {
     padding-top: 92px;
-    width: 600px;
+    width: 580px;
   }
 }
 
@@ -1292,6 +1291,7 @@ section.projects {
   .giant-header-projects {
     font-size: 88px;
     letter-spacing: 3px;
+    opacity: 0.1;
   }
 }
 
@@ -1353,7 +1353,6 @@ section.projects {
 }
 
 .section__contact {
-  display: none !important;
   width: 100vw;
   height: 100vh;
   color: #ffffff;
@@ -1851,7 +1850,6 @@ section.projects {
 .partners {
   font-family: "Roboto";
   overflow: hidden;
-  display: none !important;
 }
 
 @media (max-width: 1300px) {
@@ -2169,7 +2167,6 @@ section.projects {
 }
 
 .section__reference {
-  display: none !important;
   width: 100vw;
   height: 100vh;
   color: black;
@@ -3342,7 +3339,6 @@ section.projects {
   height: 100vh;
   overflow: hidden;
   padding: 13vh 0 0 0;
-  display: none !important;
 }
 
 @media (max-width: 767px) {

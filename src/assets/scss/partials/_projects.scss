@@ -44,10 +44,9 @@ a {
 
 
 section.projects {
-  font-family: "Roboto";
   align-items: center;
   display: flex;
-  // height: 100vh;
+  font-family: "Roboto";
   justify-content: center;
 
   @media (min-height: 660px) {
@@ -77,7 +76,7 @@ section.projects {
   }
   @media (min-width: 750px) {
     padding-top: 92px;
-    width: 600px;
+    width: 580px;
   }
   @media (min-width: 970px) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -356,6 +355,7 @@ section.projects {
   @media (min-width: 750px) {
     font-size: 88px;
     letter-spacing: 3px;
+    opacity: 0.1;
   }
   @media (min-width: 1300px) {
     font-size: 108px;
