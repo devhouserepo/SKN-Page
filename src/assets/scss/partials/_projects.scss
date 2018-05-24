@@ -22,7 +22,7 @@
   animation: $animationName $duration * 1s $animationFillMode; /* IE 10+, Fx 29+ */
 }
 
-// Show and fade in .project-about animation
+// Show and fade in .single-container__project-paragraphs__project-about animation
 @keyframes showProjectAboutandButton {
   0% {
     opacity: 0;
@@ -44,253 +44,284 @@ a {
 
 
 section.projects {
-  font-family: "Roboto";
   align-items: center;
   display: flex;
-  height: 100vh;
+  font-family: "Roboto";
   justify-content: center;
-  // width: 100vh overflows when 943px window
 
-  @media (max-width: 575px) {
-    margin-top: 390px;
+  @media (min-height: 660px) {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
   }
-  @media (max-width: 760px) {
-    margin-bottom: 340px;
-  }
-
-  @media (max-height: 820px) {
-    margin-bottom: 200px;
-  }
-  
 }
 
-.projects_boxes_container {
+.projects-container {
+  align-items: center;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+        "devhouse thinkit"
+        "lead startup"
+        "bootcamp twoj-projekt";
+  justify-items: center;
   margin: 43px;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  min-width: 650px;
-  max-width: 895px;
+  padding-top: 62px;
+  position: relative;
+  width: 300px;
 
-  @media (max-width: 669px) {
-    min-width: 440px;
-    max-width: 649px;
+  @media (min-width: 500px) {
+    width: 440px;
   }
-  @media (max-width: 480px) {
-    min-width: 390px;
+  @media (min-width: 750px) {
+    padding-top: 92px;
+    width: 580px;
   }
-  @media (max-width: 403px) {
-    min-width: 324px;
-    max-width: 360px;
+  @media (min-width: 970px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "devhouse thinkit lead"
+        "startup bootcamp twoj-projekt";
+    width: 700px;
+  }
+  @media (min-width: 1300px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "devhouse thinkit lead"
+        "startup bootcamp twoj-projekt";
+    height: 495px;
+    padding-top: 0;
+    width: 760px;
+  }
+  @media (min-width: 1500px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "devhouse thinkit lead"
+        "startup bootcamp twoj-projekt";
+    height: 626px;
+    width: 830px;
   }
 }
 
-.singular-project-container,
-.projects-shape-1,
-.projects-shape-2 {
-  height: 200px;
-  width: 200px;
+.single-container,
+.single-container__shape-1,
+.single-container__shape-2 {
+  height: 130px;
+  width: 130px;
 
-  // Shrink container at 480px screen width
-  @media (max-width: 480px) {
-    margin: 0;
-    height: 170px;
-    width: 170px;
+  @media (min-width: 500px) {
+    height: 180px;
+    width: 180px;
   }
-  @media (max-width: 403px) {
-    margin: 0;
-    height: 155px;
-    width: 155px;
-  }
-  @media (max-width: 380px) {
-    margin: 0;
-    height: 140px;
-    width: 140px;
+  @media (min-width: 1500px) {
+    height: 195px;
+    width: 195px;
   }
 }
 
-.singular-project-container {
+
+.single-container {
+  transition: all 0.7s ease-in-out;
   margin: 5%;
   position: relative;
 
-  @media (max-width: 1200px) {
-    margin: 4%;
+  &:hover .single-container__project-paragraphs__project-title {
+    font-size: 21px;
+    margin-top: -14%;
   }
-  @media (max-width: 1100px) {
-    margin: 2%;
+  &:hover .single-container__shape-1,
+  &:hover .single-container__shape-2 {
+    @include transform(1.6, 1.6);
+    background-size: 300px;
+    transition: all 0.7s ease-in-out;
   }
-  @media (max-width: 669px) {
-    margin: 1%;
+  // Project hover transitions and animations triggers
+  &:hover .single-container__project-paragraphs__project-about {
+    margin-left: -40px;
+    width: 270px;
+    @include animationBasicHover(showProjectAboutandButton, 2, forwards);
   }
-  @media (min-width: 381px) and (max-width: 403px) {
-    margin-top: 18px;
+  &:hover .single-container__project-paragraphs__btn-more-about {
+    @include animationBasicHover(showProjectAboutandButton, 2, forwards);
   }
 
-      &:hover .project_title {
-        font-size: 21px;
-        margin-top: -14%;
-      }
+  &__project-paragraphs {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    z-index: 10;
 
-      &:hover #twoj-projekt-title {
+    &__project-title {
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      color: white;
+      text-align: center;
+      margin-top: 23%;
+      transition: all 0.6s ease-in-out;
+    
+      @media (max-width: 470px) {
         font-size: 20px;
-        margin-top: -12%;
+        margin-top: 24%;    
       }
+    }
 
-      &:hover .projects-shape-1,
-      &:hover .projects-shape-2 {
-        @include transform(1.6, 1.6);
-        background-size: 300px;
-        transition: all 0.7s ease-in-out;
+    &__project-minititle {
+      color: white;
+      text-align: center;
+      margin-top: 14px;
+      font-size: 16px;
+    
+      @media (max-width: 470px) {
+        margin-top: 11px;
+        font-size: 15px;    
       }
-      // Project hover transitions and animations triggers
-      &:hover .project-about {
-        margin-left: -40px;
-        width: 270px;
-        @include animationBasicHover(showProjectAboutandButton, 2, forwards);
+    }
 
-      }
+    &__project-about {
+      opacity: 0;
+      color: white;
+      line-height: 1.1;
+      margin-top: 14px;
+      font-size: 16px;
+      text-align: center;
+      display: inline-block;
+    }
 
-      &:hover .button-more-about-project {
-        @include animationBasicHover(showProjectAboutandButton, 2, forwards);
+    &__btn-more-about {
+      margin: 17px auto 0 auto;
+      padding-top: 4px;
+      width: 80px;
+      height: 26px;
+      font-size: 16px;
+      border: 1px solid white;
+      border-radius: 1px;
+      text-align: center;
+      color: white;
+      opacity: 0;
+      position: relative;
+      display: block;
+      transition: background-color 0.3s linear;
+    
+      &:hover {
+        text-decoration: none;
+        color: black;
+        background-color: #fff;
       }
+    }
+  }
+  
+  &__shape-1,
+  &__shape-2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 600px;
+    margin: auto;
+    max-width: 400px;
+    transition: all 0.7s ease-in-out;
+    transition-delay: 0.12s;
+  }
+  &__shape-1 {
+    clip-path: polygon(
+      30% 0%,
+      70% 0%,
+      100% 30%,
+      100% 100%,
+      70% 100%,
+      30% 100%,
+      0% 70%,
+      0 0
+    );
+  }
+  &__shape-2 {
+    clip-path: polygon(
+      30% 0%,
+      70% 0%,
+      100% 0,
+      100% 70%,
+      70% 100%,
+      30% 100%,
+      0 100%,
+      0% 30%
+    );
+  }
 }
 
-.projects-shape-1,
-.projects-shape-2 {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 600px;
-  margin: auto;
-  max-width: 400px;
-  transition: all 0.7s ease-in-out;
-  transition-delay: 0.2s;
-}
 
-.projects-shape-1 {
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 30%,
-    100% 100%,
-    70% 100%,
-    30% 100%,
-    0% 70%,
-    0 0
-  );
-}
-.projects-shape-2 {
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 0,
-    100% 70%,
-    70% 100%,
-    30% 100%,
-    0 100%,
-    0% 30%
-  );
-}
-
-#devhouse-shape {
+#devhouse-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("../../assets/images/projects_photos/devhouse.png");
 }
-#thinkit-shape {
+#thinkit-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("../../assets/images/projects_photos/thinkit.png");
 }
-#lead-shape {
+#lead-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("../../assets/images/projects_photos/leadinit.png");
 }
-#startup-shape {
+#startup-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("../../assets/images/projects_photos/startup.png");
 }
-#bootcamp-shape {
+#bootcamp-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("../../assets/images/projects_photos/bootcamp.png");
 }
-#twoj-projekt-shape {
+#twoj-projekt-background {
   background-color: #0f0f4d;
 }
 
-//------one container------------------------
+
+//------one container--id------------------
 #devhouse {
-  left: -1vw;
-  top: -20px;  
+  grid-area: devhouse;
+  // left: -1vw;
+  // top: -20px;  
   &:hover {
     z-index: 9;
-  }
-
-  @media (max-width: 1100px) {
-    top: -1vh; 
   }
 }
 
 #thinkit {
-  top: 2vh;
+  grid-area: thinkit;
+  // top: 2vh;
   &:hover {
     z-index: 9;
-  }
-
-  @media (max-width: 1100px) {
-    top: 1vh;
-  }
-  @media (max-width: 669px) {
-    flex-basis: 1;
   }
 }
 
 #lead {
-  right: -21px;
-  top: -1vh;
+  grid-area: lead;
+  // right: -21px;
+  // top: -1vh;
   &:hover {
     z-index: 9;
-  }
-  @media (max-width: 1100px) {
-    right: -1vw;
-  }
-  @media (max-width: 669px) {
-    right: 0;
   }
 }
 
 #startup {
-  top: 3vh;
+  grid-area: startup;
+  // top: 3vh;
   &:hover {
     z-index: 9;
   }
-
-  @media (max-width: 1100px) {
-    top: 2vh;
-  }
-  @media (max-width: 669px) {
-    flex-basis: 1;
-  }
-
 }
 
 #bootcamp {
+  grid-area: bootcamp;
   &:hover {
     z-index: 11;
   }
 }
 
 #twoj-projekt {
-  top: -2vh; 
-    .project-about {
+  grid-area: twoj-projekt;
+  // top: -2vh; 
+    .single-container__project-paragraphs__project-about {
     margin-left: -12px;
     width: 220px;
-  }
-
-  @media (max-width: 1100px) {
-    top: 3vh; 
-  }
-  @media (max-width: 669px) {
-    flex-basis: 1;
-    top: 4vh; 
   }
   //hide "Zrealizuj swoj projekt"
   @media (max-width: 480px) {
@@ -300,153 +331,74 @@ section.projects {
   }
 }
 
-//------Paragraphs--------------paragraphs--------------------
-.project-paragraphs {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  z-index: 10;
-}
-.project-about {
-  opacity: 0;
-  color: white;
-  line-height: 1.1;
-  margin-top: 14px;
-  font-size: 16px;
-  text-align: center;
-  display: inline-block;
-}
-.project_title {
-  font-size: 24px;
-  letter-spacing: 0.5px;
-  color: white;
-  text-align: center;
-  margin-top: 23%;
-  transition: all 0.6s ease-in-out;
-
-  @media (max-width: 470px) {
-    font-size: 20px;
-    margin-top: 24%;    
-  }
-}
-.project-about-mini {
-  color: white;
-  text-align: center;
-  margin-top: 14px;
-  font-size: 16px;
-
-  @media (max-width: 470px) {
-    margin-top: 11px;
-    font-size: 15px;    
-  }
-}
-
-.button-more-about-project {
-  margin: 17px auto 0 auto;
-  padding-top: 4px;
-  width: 80px;
-  height: 26px;
-  font-size: 16px;
-  border: 1px solid white;
-  border-radius: 1px;
-  text-align: center;
-  color: white;
-  opacity: 0;
-  position: relative;
-  display: block;
-  transition: background-color 0.3s linear;
-
-  &:hover {
-    text-decoration: none;
-    color: black;
-    background-color: #fff;
-  }
-}
 
 
 
 
 // section background-------------------------section background--------------------------
-.section-projects-background {
-  position: absolute;
-}
 
 .giant-header-projects {
   // display: none;
-
   color: white;
   font-weight: bold;
-  letter-spacing: 7px;
-  opacity: 0.07;
-  font-size: 108px;
+  letter-spacing: 2px;
+  opacity: 0.2;
+  font-size: 48px;
   position: absolute;
-  right: 41vw;
-  top: 45vh;
+  left: 8%;
+  top: 0;
   z-index: -1;
-
-  @media (max-width: 1200px) {
-    font-size: 98px;
-    right: 31vw;
-    top: 48vh;
+  @media (min-width: 500px) {
+    font-size: 60px;
+    letter-spacing: 3px;
   }
-  @media (max-width: 767px) {
-    font-size: 80px;
-    right: 57px;
-    top: 30px;
+  @media (min-width: 750px) {
+    font-size: 88px;
+    letter-spacing: 3px;
+    opacity: 0.1;
   }
-  @media (max-width: 645px) {
-    opacity: 0.2;
-    font-size: 72px;
-    right: 59px;
-    top: 40px;
+  @media (min-width: 1300px) {
+    font-size: 108px;
+    letter-spacing: 5px;
+    opacity: 0.08;
+    left: -6%;
+    top: 33%;
   }
-  @media (max-width: 575px) {
-    opacity: 0.4;
-    font-size: 48px;
-    right: 3vw;
-    top: 40px;
+  @media (min-width: 1500px) {
+    font-size: 115px;
+    letter-spacing: 6px;
+    opacity: 0.08;
+    left: -8%;
+    top: 48%;
   }
 }
 
-//----------SVG---------SVG--------SVG-----
-.svg-1 {
+.projects-background {
   position: absolute;
-
-  bottom: -300px;
-  right: -200px;
-  display: none;
-}
-
-.path-1 {
-  stroke-dasharray: 1600;
-  stroke-dashoffset: 1600;
-  animation: dash 6s linear forwards;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
+  &__svg-1 {
+    position: absolute;
+    bottom: -300px;
+    right: -200px;
+  
+    display: none;
+  
+    &__path-1 {
+      stroke-dasharray: 1600;
+      stroke-dashoffset: 1600;
+      animation: dash 6s linear forwards;
+    }
   }
-}
-
-
-.svg-2 {
-  position: absolute;
-
-  top: -220px;
-  display: none;
-}
-
-.path-2 {
-  stroke-dasharray: 1700;
-  stroke-dashoffset: 1700;
-  animation: dash 9.5s linear forwards;
-  animation-delay: 1.9s;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
+  &__svg-2 {
+    position: absolute;
+    top: -220px;
+  
+    display: none;
+  
+    &__path-2 {
+      stroke-dasharray: 1700;
+      stroke-dashoffset: 1700;
+      animation: dash 9.5s linear forwards;
+      animation-delay: 1.9s;
+    }
   }
 }

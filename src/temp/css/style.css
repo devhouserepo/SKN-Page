@@ -936,153 +936,124 @@ a:hover {
 }
 
 section.projects {
-  font-family: "Roboto";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  font-family: "Roboto";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-@media (max-width: 575px) {
+@media (min-height: 660px) {
   section.projects {
-    margin-top: 390px;
+    height: 100vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-@media (max-width: 760px) {
-  section.projects {
-    margin-bottom: 340px;
-  }
-}
-
-@media (max-height: 820px) {
-  section.projects {
-    margin-bottom: 200px;
-  }
-}
-
-.projects_boxes_container {
+.projects-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "devhouse thinkit" "lead startup" "bootcamp twoj-projekt";
+  justify-items: center;
   margin: 43px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  min-width: 650px;
-  max-width: 895px;
+  padding-top: 62px;
+  position: relative;
+  width: 300px;
 }
 
-@media (max-width: 669px) {
-  .projects_boxes_container {
-    min-width: 440px;
-    max-width: 649px;
+@media (min-width: 500px) {
+  .projects-container {
+    width: 440px;
   }
 }
 
-@media (max-width: 480px) {
-  .projects_boxes_container {
-    min-width: 390px;
+@media (min-width: 750px) {
+  .projects-container {
+    padding-top: 92px;
+    width: 580px;
   }
 }
 
-@media (max-width: 403px) {
-  .projects_boxes_container {
-    min-width: 324px;
-    max-width: 360px;
+@media (min-width: 970px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
+    width: 700px;
   }
 }
 
-.singular-project-container,
-.projects-shape-1,
-.projects-shape-2 {
-  height: 200px;
-  width: 200px;
-}
-
-@media (max-width: 480px) {
-  .singular-project-container,
-  .projects-shape-1,
-  .projects-shape-2 {
-    margin: 0;
-    height: 170px;
-    width: 170px;
+@media (min-width: 1300px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
+    height: 495px;
+    padding-top: 0;
+    width: 760px;
   }
 }
 
-@media (max-width: 403px) {
-  .singular-project-container,
-  .projects-shape-1,
-  .projects-shape-2 {
-    margin: 0;
-    height: 155px;
-    width: 155px;
+@media (min-width: 1500px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
+    height: 626px;
+    width: 830px;
   }
 }
 
-@media (max-width: 380px) {
-  .singular-project-container,
-  .projects-shape-1,
-  .projects-shape-2 {
-    margin: 0;
-    height: 140px;
-    width: 140px;
+.single-container,
+.single-container__shape-1,
+.single-container__shape-2 {
+  height: 130px;
+  width: 130px;
+}
+
+@media (min-width: 500px) {
+  .single-container,
+  .single-container__shape-1,
+  .single-container__shape-2 {
+    height: 180px;
+    width: 180px;
   }
 }
 
-.singular-project-container {
+@media (min-width: 1500px) {
+  .single-container,
+  .single-container__shape-1,
+  .single-container__shape-2 {
+    height: 195px;
+    width: 195px;
+  }
+}
+
+.single-container {
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
   margin: 5%;
   position: relative;
 }
 
-@media (max-width: 1200px) {
-  .singular-project-container {
-    margin: 4%;
-  }
-}
-
-@media (max-width: 1100px) {
-  .singular-project-container {
-    margin: 2%;
-  }
-}
-
-@media (max-width: 669px) {
-  .singular-project-container {
-    margin: 1%;
-  }
-}
-
-@media (min-width: 381px) and (max-width: 403px) {
-  .singular-project-container {
-    margin-top: 18px;
-  }
-}
-
-.singular-project-container:hover .project_title {
+.single-container:hover .single-container__project-paragraphs__project-title {
   font-size: 21px;
   margin-top: -14%;
 }
 
-.singular-project-container:hover #twoj-projekt-title {
-  font-size: 20px;
-  margin-top: -12%;
-}
-
-.singular-project-container:hover .projects-shape-1,
-.singular-project-container:hover .projects-shape-2 {
+.single-container:hover .single-container__shape-1,
+.single-container:hover .single-container__shape-2 {
   -ms-transform: scale(1.6, 1.6);
   /* Internet Explorer and Microsoft Edge */
   -webkit-transform: scale(1.6, 1.6);
@@ -1097,7 +1068,7 @@ section.projects {
   transition: all 0.7s ease-in-out;
 }
 
-.singular-project-container:hover .project-about {
+.single-container:hover .single-container__project-paragraphs__project-about {
   margin-left: -40px;
   width: 270px;
   /* Internet Explorer and Microsoft Edge */
@@ -1109,7 +1080,7 @@ section.projects {
   /* IE 10+, Fx 29+ */
 }
 
-.singular-project-container:hover .button-more-about-project {
+.single-container:hover .single-container__project-paragraphs__btn-more-about {
   /* Internet Explorer and Microsoft Edge */
   -webkit-animation: showProjectAboutandButton 2s forwards;
   /* Safari 4+ */
@@ -1119,170 +1090,7 @@ section.projects {
   /* IE 10+, Fx 29+ */
 }
 
-.projects-shape-1,
-.projects-shape-2 {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 600px;
-  margin: auto;
-  max-width: 400px;
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-}
-
-.projects-shape-1 {
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
-          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
-}
-
-.projects-shape-2 {
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
-          clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
-}
-
-#devhouse-shape {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/devhouse.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/devhouse.png");
-}
-
-#thinkit-shape {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/thinkit.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/thinkit.png");
-}
-
-#lead-shape {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/leadinit.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/leadinit.png");
-}
-
-#startup-shape {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/startup.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/startup.png");
-}
-
-#bootcamp-shape {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/bootcamp.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/bootcamp.png");
-}
-
-#twoj-projekt-shape {
-  background-color: #0f0f4d;
-}
-
-#devhouse {
-  left: -1vw;
-  top: -20px;
-}
-
-#devhouse:hover {
-  z-index: 9;
-}
-
-@media (max-width: 1100px) {
-  #devhouse {
-    top: -1vh;
-  }
-}
-
-#thinkit {
-  top: 2vh;
-}
-
-#thinkit:hover {
-  z-index: 9;
-}
-
-@media (max-width: 1100px) {
-  #thinkit {
-    top: 1vh;
-  }
-}
-
-@media (max-width: 669px) {
-  #thinkit {
-    -ms-flex-preferred-size: 1;
-        flex-basis: 1;
-  }
-}
-
-#lead {
-  right: -21px;
-  top: -1vh;
-}
-
-#lead:hover {
-  z-index: 9;
-}
-
-@media (max-width: 1100px) {
-  #lead {
-    right: -1vw;
-  }
-}
-
-@media (max-width: 669px) {
-  #lead {
-    right: 0;
-  }
-}
-
-#startup {
-  top: 3vh;
-}
-
-#startup:hover {
-  z-index: 9;
-}
-
-@media (max-width: 1100px) {
-  #startup {
-    top: 2vh;
-  }
-}
-
-@media (max-width: 669px) {
-  #startup {
-    -ms-flex-preferred-size: 1;
-        flex-basis: 1;
-  }
-}
-
-#bootcamp:hover {
-  z-index: 11;
-}
-
-#twoj-projekt {
-  top: -2vh;
-}
-
-#twoj-projekt .project-about {
-  margin-left: -12px;
-  width: 220px;
-}
-
-@media (max-width: 1100px) {
-  #twoj-projekt {
-    top: 3vh;
-  }
-}
-
-@media (max-width: 669px) {
-  #twoj-projekt {
-    -ms-flex-preferred-size: 1;
-        flex-basis: 1;
-    top: 4vh;
-  }
-}
-
-@media (max-width: 480px) {
-  #twoj-projekt p:nth-child(2) {
-    display: none;
-  }
-}
-
-.project-paragraphs {
+.single-container__project-paragraphs {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -1290,17 +1098,7 @@ section.projects {
   z-index: 10;
 }
 
-.project-about {
-  opacity: 0;
-  color: white;
-  line-height: 1.1;
-  margin-top: 14px;
-  font-size: 16px;
-  text-align: center;
-  display: inline-block;
-}
-
-.project_title {
+.single-container__project-paragraphs__project-title {
   font-size: 24px;
   letter-spacing: 0.5px;
   color: white;
@@ -1311,13 +1109,13 @@ section.projects {
 }
 
 @media (max-width: 470px) {
-  .project_title {
+  .single-container__project-paragraphs__project-title {
     font-size: 20px;
     margin-top: 24%;
   }
 }
 
-.project-about-mini {
+.single-container__project-paragraphs__project-minititle {
   color: white;
   text-align: center;
   margin-top: 14px;
@@ -1325,13 +1123,23 @@ section.projects {
 }
 
 @media (max-width: 470px) {
-  .project-about-mini {
+  .single-container__project-paragraphs__project-minititle {
     margin-top: 11px;
     font-size: 15px;
   }
 }
 
-.button-more-about-project {
+.single-container__project-paragraphs__project-about {
+  opacity: 0;
+  color: white;
+  line-height: 1.1;
+  margin-top: 14px;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+}
+
+.single-container__project-paragraphs__btn-more-about {
   margin: 17px auto 0 auto;
   padding-top: 4px;
   width: 80px;
@@ -1348,107 +1156,196 @@ section.projects {
   transition: background-color 0.3s linear;
 }
 
-.button-more-about-project:hover {
+.single-container__project-paragraphs__btn-more-about:hover {
   text-decoration: none;
   color: black;
   background-color: #fff;
 }
 
-.section-projects-background {
-  position: absolute;
+.single-container__shape-1, .single-container__shape-2 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px;
+  margin: auto;
+  max-width: 400px;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  -webkit-transition-delay: 0.12s;
+          transition-delay: 0.12s;
+}
+
+.single-container__shape-1 {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
+}
+
+.single-container__shape-2 {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
+}
+
+#devhouse-background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/devhouse.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/devhouse.png");
+}
+
+#thinkit-background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/thinkit.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/thinkit.png");
+}
+
+#lead-background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/leadinit.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/leadinit.png");
+}
+
+#startup-background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/startup.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/startup.png");
+}
+
+#bootcamp-background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/bootcamp.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/bootcamp.png");
+}
+
+#twoj-projekt-background {
+  background-color: #0f0f4d;
+}
+
+#devhouse {
+  grid-area: devhouse;
+}
+
+#devhouse:hover {
+  z-index: 9;
+}
+
+#thinkit {
+  grid-area: thinkit;
+}
+
+#thinkit:hover {
+  z-index: 9;
+}
+
+#lead {
+  grid-area: lead;
+}
+
+#lead:hover {
+  z-index: 9;
+}
+
+#startup {
+  grid-area: startup;
+}
+
+#startup:hover {
+  z-index: 9;
+}
+
+#bootcamp {
+  grid-area: bootcamp;
+}
+
+#bootcamp:hover {
+  z-index: 11;
+}
+
+#twoj-projekt {
+  grid-area: twoj-projekt;
+}
+
+#twoj-projekt .single-container__project-paragraphs__project-about {
+  margin-left: -12px;
+  width: 220px;
+}
+
+@media (max-width: 480px) {
+  #twoj-projekt p:nth-child(2) {
+    display: none;
+  }
 }
 
 .giant-header-projects {
   color: white;
   font-weight: bold;
-  letter-spacing: 7px;
-  opacity: 0.07;
-  font-size: 108px;
+  letter-spacing: 2px;
+  opacity: 0.2;
+  font-size: 48px;
   position: absolute;
-  right: 41vw;
-  top: 45vh;
+  left: 8%;
+  top: 0;
   z-index: -1;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 500px) {
   .giant-header-projects {
-    font-size: 98px;
-    right: 31vw;
-    top: 48vh;
+    font-size: 60px;
+    letter-spacing: 3px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 750px) {
   .giant-header-projects {
-    font-size: 80px;
-    right: 57px;
-    top: 30px;
+    font-size: 88px;
+    letter-spacing: 3px;
+    opacity: 0.1;
   }
 }
 
-@media (max-width: 645px) {
+@media (min-width: 1300px) {
   .giant-header-projects {
-    opacity: 0.2;
-    font-size: 72px;
-    right: 59px;
-    top: 40px;
+    font-size: 108px;
+    letter-spacing: 5px;
+    opacity: 0.08;
+    left: -6%;
+    top: 33%;
   }
 }
 
-@media (max-width: 575px) {
+@media (min-width: 1500px) {
   .giant-header-projects {
-    opacity: 0.4;
-    font-size: 48px;
-    right: 3vw;
-    top: 40px;
+    font-size: 115px;
+    letter-spacing: 6px;
+    opacity: 0.08;
+    left: -8%;
+    top: 48%;
   }
 }
 
-.svg-1 {
+.projects-background {
+  position: absolute;
+}
+
+.projects-background__svg-1 {
   position: absolute;
   bottom: -300px;
   right: -200px;
   display: none;
 }
 
-.path-1 {
+.projects-background__svg-1__path-1 {
   stroke-dasharray: 1600;
   stroke-dashoffset: 1600;
   -webkit-animation: dash 6s linear forwards;
           animation: dash 6s linear forwards;
 }
 
-@-webkit-keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.svg-2 {
+.projects-background__svg-2 {
   position: absolute;
   top: -220px;
   display: none;
 }
 
-.path-2 {
+.projects-background__svg-2__path-2 {
   stroke-dasharray: 1700;
   stroke-dashoffset: 1700;
   -webkit-animation: dash 9.5s linear forwards;
           animation: dash 9.5s linear forwards;
   -webkit-animation-delay: 1.9s;
           animation-delay: 1.9s;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
 }
 
 .section {
@@ -1521,6 +1418,12 @@ section.projects {
   stroke-dashoffset: 1200;
   -webkit-animation: dash 2.5s linear forwards;
           animation: dash 2.5s linear forwards;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes dash {
@@ -3663,7 +3566,6 @@ p {
 }
 
 .navigation {
-  display: none !important;
   width: 100vw;
   position: fixed;
   left: 0;
