@@ -67,6 +67,7 @@ table {
 }
 
 .header {
+  display: none !important;
   background: url(../../assets/images/tlo3.png) no-repeat center center;
   background-size: cover;
   max-width: 100vw;
@@ -949,24 +950,6 @@ section.projects {
           justify-content: center;
 }
 
-@media (max-width: 575px) {
-  section.projects {
-    margin-top: 390px;
-  }
-}
-
-@media (max-width: 760px) {
-  section.projects {
-    margin-bottom: 340px;
-  }
-}
-
-@media (max-height: 820px) {
-  section.projects {
-    margin-bottom: 200px;
-  }
-}
-
 .projects-container {
   margin: 43px;
   -webkit-box-pack: center;
@@ -983,26 +966,6 @@ section.projects {
           flex-direction: row;
   min-width: 650px;
   max-width: 895px;
-}
-
-@media (max-width: 669px) {
-  .projects-container {
-    min-width: 440px;
-    max-width: 649px;
-  }
-}
-
-@media (max-width: 480px) {
-  .projects-container {
-    min-width: 390px;
-  }
-}
-
-@media (max-width: 403px) {
-  .projects-container {
-    min-width: 324px;
-    max-width: 360px;
-  }
 }
 
 .single-container,
@@ -1047,30 +1010,6 @@ section.projects {
   transition: all 0.7s ease-in-out;
   margin: 5%;
   position: relative;
-}
-
-@media (max-width: 1200px) {
-  .single-container {
-    margin: 4%;
-  }
-}
-
-@media (max-width: 1100px) {
-  .single-container {
-    margin: 2%;
-  }
-}
-
-@media (max-width: 669px) {
-  .single-container {
-    margin: 1%;
-  }
-}
-
-@media (min-width: 381px) and (max-width: 403px) {
-  .single-container {
-    margin-top: 18px;
-  }
 }
 
 .single-container:hover .single-container__project-paragraphs__project-title {
@@ -1248,31 +1187,12 @@ section.projects {
   z-index: 9;
 }
 
-@media (max-width: 1100px) {
-  #devhouse {
-    top: -1vh;
-  }
-}
-
 #thinkit {
   top: 2vh;
 }
 
 #thinkit:hover {
   z-index: 9;
-}
-
-@media (max-width: 1100px) {
-  #thinkit {
-    top: 1vh;
-  }
-}
-
-@media (max-width: 669px) {
-  #thinkit {
-    -ms-flex-preferred-size: 1;
-        flex-basis: 1;
-  }
 }
 
 #lead {
@@ -1284,37 +1204,12 @@ section.projects {
   z-index: 9;
 }
 
-@media (max-width: 1100px) {
-  #lead {
-    right: -1vw;
-  }
-}
-
-@media (max-width: 669px) {
-  #lead {
-    right: 0;
-  }
-}
-
 #startup {
   top: 3vh;
 }
 
 #startup:hover {
   z-index: 9;
-}
-
-@media (max-width: 1100px) {
-  #startup {
-    top: 2vh;
-  }
-}
-
-@media (max-width: 669px) {
-  #startup {
-    -ms-flex-preferred-size: 1;
-        flex-basis: 1;
-  }
 }
 
 #bootcamp:hover {
@@ -1328,20 +1223,6 @@ section.projects {
 #twoj-projekt .single-container__project-paragraphs__project-about {
   margin-left: -12px;
   width: 220px;
-}
-
-@media (max-width: 1100px) {
-  #twoj-projekt {
-    top: 3vh;
-  }
-}
-
-@media (max-width: 669px) {
-  #twoj-projekt {
-    -ms-flex-preferred-size: 1;
-        flex-basis: 1;
-    top: 4vh;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1360,40 +1241,6 @@ section.projects {
   right: 41vw;
   top: 45vh;
   z-index: -1;
-}
-
-@media (max-width: 1200px) {
-  .giant-header-projects {
-    font-size: 98px;
-    right: 31vw;
-    top: 48vh;
-  }
-}
-
-@media (max-width: 767px) {
-  .giant-header-projects {
-    font-size: 80px;
-    right: 57px;
-    top: 30px;
-  }
-}
-
-@media (max-width: 645px) {
-  .giant-header-projects {
-    opacity: 0.2;
-    font-size: 72px;
-    right: 59px;
-    top: 40px;
-  }
-}
-
-@media (max-width: 575px) {
-  .giant-header-projects {
-    opacity: 0.4;
-    font-size: 48px;
-    right: 3vw;
-    top: 40px;
-  }
 }
 
 .projects-background {
@@ -1434,6 +1281,7 @@ section.projects {
 }
 
 .section__contact {
+  display: none !important;
   width: 100vw;
   height: 100vh;
   color: #ffffff;
@@ -1931,6 +1779,7 @@ section.projects {
 .partners {
   font-family: "Roboto";
   overflow: hidden;
+  display: none !important;
 }
 
 @media (max-width: 1300px) {
@@ -2248,6 +2097,7 @@ section.projects {
 }
 
 .section__reference {
+  display: none !important;
   width: 100vw;
   height: 100vh;
   color: black;
@@ -3420,6 +3270,7 @@ section.projects {
   height: 100vh;
   overflow: hidden;
   padding: 13vh 0 0 0;
+  display: none !important;
 }
 
 @media (max-width: 767px) {
@@ -3647,7 +3498,6 @@ p {
 }
 
 .navigation {
-  display: none !important;
   width: 100vw;
   position: fixed;
   left: 0;
