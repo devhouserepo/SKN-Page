@@ -1,4 +1,4 @@
-@mixin transform($x, $y) {
+@mixin transformScale($x, $y) {
   -ms-transform: scale($x, $y); /* Internet Explorer and Microsoft Edge */
   -webkit-transform: scale($x, $y); /* Safari */
   -moz-transform: scale($x, $y); /* Firefox */
@@ -111,6 +111,7 @@ section.projects {
 }
 
 .singular-project-container {
+  background-size: 600px;
   margin: 5%;
   position: relative;
 
@@ -126,46 +127,8 @@ section.projects {
   @media (min-width: 381px) and (max-width: 403px) {
     margin-top: 18px;
   }
-
-      &:hover .project_title {
-        font-size: 21px;
-        margin-top: -14%;
-      }
-
-      &:hover #twoj-projekt-title {
-        font-size: 20px;
-        margin-top: -12%;
-      }
-
-      &:hover .projects-shape-1,
-      &:hover .projects-shape-2 {
-        @include transform(1.6, 1.6);
-        background-size: 300px;
-        transition: all 0.7s ease-in-out;
-      }
-      // Project hover transitions and animations triggers
-      &:hover .project-about {
-        margin-left: -40px;
-        width: 270px;
-        @include animationBasicHover(showProjectAboutandButton, 2, forwards);
-
-      }
-
-      &:hover .button-more-about-project {
-        @include animationBasicHover(showProjectAboutandButton, 2, forwards);
-      }
 }
 
-.projects-shape-1,
-.projects-shape-2 {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 600px;
-  margin: auto;
-  max-width: 400px;
-  transition: all 0.7s ease-in-out;
-  transition-delay: 0.2s;
-}
 
 .projects-shape-1 {
   clip-path: polygon(
@@ -192,49 +155,62 @@ section.projects {
   );
 }
 
-#devhouse-shape {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url("../../assets/images/projects_photos/devhouse.png");
+#devhouse, #thinkit, #lead, #startup, #bootcamp, #twoj-projekt {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px;
+  background-size: 600px;
+  max-width: 400px;
+  transition: all 0.7s ease-in-out;
+  transition-delay: 0.2s;
+  &:hover {
+    @include transformScale(1.6, 1.6);
+    background-size: 300px;
+    transition: all 0.7s ease-in-out;
+    z-index: 11;
+  }
+  &:hover .project_title {
+    font-size: 15px;
+    margin-top: 7%;
+  }
+  &:hover .project-about-mini {
+    // margin-top: 7%;
+    font-size: 12px;
+  }
+
+  &:hover #twoj-projekt-title {
+    font-size: 15px;
+    // margin-top: -12%;
+  }
+
+  &:hover .project-about {
+    font-size: 12px;
+    margin-left: -10px;
+    width: 170px;
+    @include animationBasicHover(showProjectAboutandButton, 2, forwards);
+  }
+
+  &:hover .button-more-about-project {
+    @include animationBasicHover(showProjectAboutandButton, 2, forwards);
+  }
 }
-#thinkit-shape {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url("../../assets/images/projects_photos/thinkit.png");
-}
-#lead-shape {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url("../../assets/images/projects_photos/leadinit.png");
-}
-#startup-shape {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url("../../assets/images/projects_photos/startup.png");
-}
-#bootcamp-shape {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url("../../assets/images/projects_photos/bootcamp.png");
-}
-#twoj-projekt-shape {
-  background-color: #0f0f4d;
-}
+
 
 //------one container------------------------
 #devhouse {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url("../../assets/images/projects_photos/devhouse.png");
   left: -1vw;
   top: -20px;  
-  &:hover {
-    z-index: 9;
-  }
-
   @media (max-width: 1100px) {
     top: -1vh; 
   }
 }
 
 #thinkit {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url("../../assets/images/projects_photos/thinkit.png");
   top: 2vh;
-  &:hover {
-    z-index: 9;
-  }
-
   @media (max-width: 1100px) {
     top: 1vh;
   }
@@ -244,11 +220,10 @@ section.projects {
 }
 
 #lead {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url("../../assets/images/projects_photos/leadinit.png");
   right: -21px;
   top: -1vh;
-  &:hover {
-    z-index: 9;
-  }
   @media (max-width: 1100px) {
     right: -1vw;
   }
@@ -258,11 +233,9 @@ section.projects {
 }
 
 #startup {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url("../../assets/images/projects_photos/startup.png");
   top: 3vh;
-  &:hover {
-    z-index: 9;
-  }
-
   @media (max-width: 1100px) {
     top: 2vh;
   }
@@ -273,18 +246,17 @@ section.projects {
 }
 
 #bootcamp {
-  &:hover {
-    z-index: 11;
-  }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+  url("../../assets/images/projects_photos/startup.png");
 }
 
 #twoj-projekt {
+  background-color: #0f0f4d;
   top: -2vh; 
-    .project-about {
+  .project-about {
     margin-left: -12px;
     width: 220px;
   }
-
   @media (max-width: 1100px) {
     top: 3vh; 
   }
@@ -300,7 +272,7 @@ section.projects {
   }
 }
 
-//------Paragraphs--------------paragraphs--------------------
+//------Paragraphs--------------paragraphs----------------------
 .project-paragraphs {
   height: 100%;
   width: 100%;
