@@ -1076,11 +1076,6 @@ section.projects {
   margin-top: -14%;
 }
 
-.single-container:hover #twoj-projekt-title {
-  font-size: 20px;
-  margin-top: -12%;
-}
-
 .single-container:hover .single-container__shape-1,
 .single-container:hover .single-container__shape-2 {
   -ms-transform: scale(1.6, 1.6);
@@ -1117,6 +1112,14 @@ section.projects {
   /* Opera 12+ */
   animation: showProjectAboutandButton 2s forwards;
   /* IE 10+, Fx 29+ */
+}
+
+.single-container__project-paragraphs {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: 10;
 }
 
 .single-container__shape-1,
@@ -1280,14 +1283,6 @@ section.projects {
   #twoj-projekt p:nth-child(2) {
     display: none;
   }
-}
-
-.single-container__project-paragraphs {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  z-index: 10;
 }
 
 .single-container__project-paragraphs__project-about {

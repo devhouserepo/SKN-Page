@@ -110,6 +110,7 @@ section.projects {
   }
 }
 
+
 .single-container {
   margin: 5%;
   position: relative;
@@ -126,34 +127,33 @@ section.projects {
   @media (min-width: 381px) and (max-width: 403px) {
     margin-top: 18px;
   }
+  &:hover .single-container__project-paragraphs__project-title {
+    font-size: 21px;
+    margin-top: -14%;
+  }
+  &:hover .single-container__shape-1,
+  &:hover .single-container__shape-2 {
+    @include transform(1.6, 1.6);
+    background-size: 300px;
+    transition: all 0.7s ease-in-out;
+  }
+  // Project hover transitions and animations triggers
+  &:hover .single-container__project-paragraphs__project-about {
+    margin-left: -40px;
+    width: 270px;
+    @include animationBasicHover(showProjectAboutandButton, 2, forwards);
+  }
+  &:hover .button-more-about-project {
+    @include animationBasicHover(showProjectAboutandButton, 2, forwards);
+  }
 
-      &:hover .single-container__project-paragraphs__project-title {
-        font-size: 21px;
-        margin-top: -14%;
-      }
-
-      &:hover #twoj-projekt-title {
-        font-size: 20px;
-        margin-top: -12%;
-      }
-
-      &:hover .single-container__shape-1,
-      &:hover .single-container__shape-2 {
-        @include transform(1.6, 1.6);
-        background-size: 300px;
-        transition: all 0.7s ease-in-out;
-      }
-      // Project hover transitions and animations triggers
-      &:hover .single-container__project-paragraphs__project-about {
-        margin-left: -40px;
-        width: 270px;
-        @include animationBasicHover(showProjectAboutandButton, 2, forwards);
-
-      }
-
-      &:hover .button-more-about-project {
-        @include animationBasicHover(showProjectAboutandButton, 2, forwards);
-      }
+  &__project-paragraphs {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+  }
 }
 
 .single-container__shape-1,
@@ -301,13 +301,7 @@ section.projects {
 }
 
 //------Paragraphs--------------paragraphs--------------------
-.single-container__project-paragraphs {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  z-index: 10;
-}
+
 .single-container__project-paragraphs__project-about {
   opacity: 0;
   color: white;
