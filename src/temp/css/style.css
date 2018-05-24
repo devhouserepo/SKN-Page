@@ -1354,7 +1354,7 @@ section.projects {
   background-color: #fff;
 }
 
-.section-projects-background {
+.projects-background {
   position: absolute;
 }
 
@@ -1404,7 +1404,7 @@ section.projects {
   }
 }
 
-.svg-1 {
+.projects-background__svg-1 {
   position: absolute;
   bottom: -300px;
   right: -200px;
@@ -1430,7 +1430,7 @@ section.projects {
   }
 }
 
-.svg-2 {
+.projects-background__svg-2 {
   position: absolute;
   top: -220px;
   display: none;
