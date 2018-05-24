@@ -1282,7 +1282,7 @@ section.projects {
   }
 }
 
-.project-paragraphs {
+.single-container__project-paragraphs {
   height: 100%;
   width: 100%;
   position: absolute;
