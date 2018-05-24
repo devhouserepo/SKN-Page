@@ -47,18 +47,14 @@ section.projects {
   font-family: "Roboto";
   align-items: center;
   display: flex;
-  height: 100vh;
+  // height: 100vh;
   justify-content: center;
-  // width: 100vh overflows when 943px window
-  // @media (max-width: 575px) {
-  //   margin-top: 390px;
-  // }
-  // @media (max-width: 760px) {
-  //   margin-bottom: 340px;
-  // }
-  // @media (max-height: 820px) {
-  //   margin-bottom: 200px;
-  // }
+
+  @media (min-height: 660px) {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .projects-container {
@@ -328,7 +324,6 @@ section.projects {
 
 .giant-header-projects {
   // display: none;
-
   color: white;
   font-weight: bold;
   letter-spacing: 7px;
@@ -338,29 +333,6 @@ section.projects {
   right: 41vw;
   top: 45vh;
   z-index: -1;
-
-  // @media (max-width: 1200px) {
-  //   font-size: 98px;
-  //   right: 31vw;
-  //   top: 48vh;
-  // }
-  // @media (max-width: 767px) {
-  //   font-size: 80px;
-  //   right: 57px;
-  //   top: 30px;
-  // }
-  // @media (max-width: 645px) {
-  //   opacity: 0.2;
-  //   font-size: 72px;
-  //   right: 59px;
-  //   top: 40px;
-  // }
-  // @media (max-width: 575px) {
-  //   opacity: 0.4;
-  //   font-size: 48px;
-  //   right: 3vw;
-  //   top: 40px;
-  // }
 }
 
 .projects-background {
