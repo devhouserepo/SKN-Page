@@ -1043,6 +1043,8 @@ section.projects {
 }
 
 .single-container {
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
   margin: 5%;
   position: relative;
 }
@@ -1194,8 +1196,8 @@ section.projects {
   max-width: 400px;
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  -webkit-transition-delay: 0.12s;
+          transition-delay: 0.12s;
 }
 
 .single-container__shape-1 {

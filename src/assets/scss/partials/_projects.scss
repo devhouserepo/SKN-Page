@@ -112,6 +112,7 @@ section.projects {
 
 
 .single-container {
+  transition: all 0.7s ease-in-out;
   margin: 5%;
   position: relative;
 
@@ -221,7 +222,7 @@ section.projects {
     margin: auto;
     max-width: 400px;
     transition: all 0.7s ease-in-out;
-    transition-delay: 0.2s;
+    transition-delay: 0.12s;
   }
   &__shape-1 {
     clip-path: polygon(
