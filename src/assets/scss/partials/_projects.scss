@@ -62,36 +62,50 @@ section.projects {
 }
 
 .projects-container {
+  align-items: center;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+        "devhouse thinkit"
+        "lead startup"
+        "bootcamp twoj-projekt";
+  justify-items: center;
   margin: 43px;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  min-width: 650px;
-  max-width: 895px;
+  width: 300px;
+
+  @media (min-width: 500px) {
+    width: 440px;
+  }
+  @media (min-width: 750px) {
+    width: 600px;
+  }
+  @media (min-width: 970px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "devhouse thinkit lead"
+        "startup bootcamp twoj-projekt";
+    width: 700px;
+  }
+  @media (min-width: 1300px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "devhouse thinkit lead"
+        "startup bootcamp twoj-projekt";
+        height: 495px;
+        width: 760px;
+  }
 }
 
 .single-container,
 .single-container__shape-1,
 .single-container__shape-2 {
-  height: 200px;
-  width: 200px;
+  height: 130px;
+  width: 130px;
 
-  // Shrink single-container at 480px screen width
-  @media (max-width: 480px) {
-    margin: 0;
-    height: 170px;
-    width: 170px;
-  }
-  @media (max-width: 403px) {
-    margin: 0;
-    height: 155px;
-    width: 155px;
-  }
-  @media (max-width: 380px) {
-    margin: 0;
-    height: 140px;
-    width: 140px;
+  @media (min-width: 500px) {
+    height: 180px;
+    width: 180px;
   }
 }
 
@@ -251,43 +265,49 @@ section.projects {
 
 //------one container--id------------------
 #devhouse {
-  left: -1vw;
-  top: -20px;  
+  grid-area: devhouse;
+  // left: -1vw;
+  // top: -20px;  
   &:hover {
     z-index: 9;
   }
 }
 
 #thinkit {
-  top: 2vh;
+  grid-area: thinkit;
+  // top: 2vh;
   &:hover {
     z-index: 9;
   }
 }
 
 #lead {
-  right: -21px;
-  top: -1vh;
+  grid-area: lead;
+  // right: -21px;
+  // top: -1vh;
   &:hover {
     z-index: 9;
   }
 }
 
 #startup {
-  top: 3vh;
+  grid-area: startup;
+  // top: 3vh;
   &:hover {
     z-index: 9;
   }
 }
 
 #bootcamp {
+  grid-area: bootcamp;
   &:hover {
     z-index: 11;
   }
 }
 
 #twoj-projekt {
-  top: -2vh; 
+  grid-area: twoj-projekt;
+  // top: -2vh; 
     .single-container__project-paragraphs__project-about {
     margin-left: -12px;
     width: 220px;
