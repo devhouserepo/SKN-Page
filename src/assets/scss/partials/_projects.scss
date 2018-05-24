@@ -127,7 +127,7 @@ section.projects {
     margin-top: 18px;
   }
 
-      &:hover .single-container__project-paragraphs__project_title {
+      &:hover .single-container__project-paragraphs__project-title {
         font-size: 21px;
         margin-top: -14%;
       }
@@ -317,7 +317,7 @@ section.projects {
   text-align: center;
   display: inline-block;
 }
-.single-container__project-paragraphs__project_title {
+.single-container__project-paragraphs__project-title {
   font-size: 24px;
   letter-spacing: 0.5px;
   color: white;
@@ -330,7 +330,7 @@ section.projects {
     margin-top: 24%;    
   }
 }
-.project-about-mini {
+.single-container__project-paragraphs__project-minititle {
   color: white;
   text-align: center;
   margin-top: 14px;
