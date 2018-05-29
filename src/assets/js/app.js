@@ -11,7 +11,7 @@ $(document).ready(function() {
     }
   );
 
-  
+
 
   let number = 0;
 
@@ -70,12 +70,18 @@ $(document).ready(function() {
   let teamThinkIT = "#team-thinkit";
   let teamBootcamp = "#team-bootcamp";
 
+
   function highlighSelectedProject(elementId) {
     $(elementId).addClass("selected-project");
   }
 
+
   function getDevhouseJSON() {
     $.getJSON("../../skn-members/devhouse.json", function(data) {
+      const props = [...data]
+        randomNumber = Math.floor(Math.random() * data.length)
+        rndPerson(props);
+      //
       $.each(data, function(index, item) {
         $(".members-thumbnails-container").append(
           `<div class="flex-column align-items-center one-thumbnail-container">
@@ -193,6 +199,35 @@ $(document).ready(function() {
       });
     });
   });
+
+const rndPerson = (props) => {
+    //
+    $(".max-member-paragraphs").empty();
+    $(".wybierz-osobe").remove();
+    $(".max-photo").css(
+      "background-image",
+      "url(" + props[randomNumber].photo + ")"
+    );
+    $(".max-member-paragraphs").append(
+      `<p class="max-name-surname">` +
+        props[randomNumber].first_name +
+        ` ` +
+        props[randomNumber].last_name +
+        `</p>
+                    <p class="max-member-info-details">` +
+        props[randomNumber].info +
+        `</p>`
+    );
+    if (props[randomNumber].linkedin != "") {
+      $(".max-member-paragraphs").append(
+        `<a class="linkedin-btn" href="` +
+          props[randomNumber].linkedin +
+          `" target="_blank"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
+      );
+    }
+
+  }
+
   // TEAM section END
 
 

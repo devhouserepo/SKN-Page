@@ -3254,7 +3254,6 @@ section.projects {
 }
 
 .team-section-container {
-  display: none !important;
   font-family: "Roboto", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
