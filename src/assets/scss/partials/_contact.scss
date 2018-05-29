@@ -2,12 +2,13 @@
   position: relative;
   &__contact {
 
-
+  @media(max-width: 1200px){
+    padding-top: 100px;
+  }
     // display: none !important;
 
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     color: $text-color-1;
     &__text {
       span {
@@ -198,33 +199,67 @@
           }
         }
       }
+      @media(max-width: 600px){
+        width: 100%;
+        height: auto;
+      }
+      @media(max-width: 1200px){
+        width: 100%;
+        height: auto;
+      }
     }
   }
+}
+.recruitment-container{
+  margin-bottom: 100px;
+}
+.recruitment-container--2{
+  overflow: hidden!important;
+  display: block;
 }
 // .svg-4 {
 //   display: none;
 // }
 
 @media(max-width: 1200px){
+  .recruitment-container{
+    text-align: center;
+  }
   .svg-4 {
     display: none !important;
   }
 }
 
-@media (max-width: 900px) and (min-width: 768px){
+@media (max-width: 1200px) and (min-width: 768px){
   .section__box {
-    left:100px;
+    margin: auto;
   }
 }
-
-@media (max-width: 900px) {
+#click3{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media (max-width: 1200px) {
+  #click3{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .recruitment__title{
+    text-align: center;
+    padding-bottom: 20px;
+    @media(max-width:390px ){
+      font-size: 40px!important;
+    }
+  }
   .section__contact {
     flex-direction: column;
+    display: block!important;
   }
 
   .section__contact__text {
-    margin-bottom: 150px;
-
+    margin-bottom: 10px;
     button {
       background-color: #2e2f5d;
       padding: 15px 15px 20px 20px;
@@ -261,6 +296,9 @@
 
 #contactText {
   text-align: center;
+  @media(max-width:390px ){
+    font-size: 40px!important;
+  }
 }
 
 #form-object {
@@ -277,13 +315,14 @@ left: 0px;
 
 @media (max-width:550px){
   .section__box {
+    margin-left: auto!important;
+    margin-right: auto!important;
     background-color: $bg-color-1;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 120px;
     margin-top: -60px;
-    left: 200px;
     width: 0px;
     text-align: center;
   } &::after {
@@ -293,14 +332,16 @@ left: 0px;
   }
   #formMessage {
     width: 230px;
+    @media(max-width: 550px){
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
 @media (max-width:500px){
   .section__box {
     margin-top: -60px;
-    left: 200px;
-
   }
 
   .section__form {
@@ -308,9 +349,7 @@ left: 0px;
   margin: 0px;
   }
 
-  .col {
-    margin-bottom: 600px;
-  }
+
 
   #company-button {
     margin-top: 5px;
@@ -322,17 +361,37 @@ left: 0px;
     flex-direction: column;
     align-items: center;
     left: -60px;
+    @media(max-width: 500px){
+      left: 0;
+      margin-bottom: 50px;
+      width: 100%;
+    }
   }
 
   #formMessage {
-    width: 280px
+    width: 280px;
+    @media(max-width: 500px){
+      width: 100%;
+    }
+  }
+  #form-contact{
+    @media(max-width: 500px){
+      width: 100%;
+    }
+  }
+  #form-content{
+    @media(max-width: 500px){
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
 @media (max-width:480px){
-  .section__box {
-    left: 170px;
-   }
+  // .section__box {
+  //   left: 170px;
+  //  }
 }
 
 @media (max-width:420px){
@@ -342,17 +401,12 @@ left: 0px;
 
   .section__box {
     margin-top: -60px;
-    left: 150px;
   }
 }
 
 @media (max-width:380px){
   #form-object {
     left: -90px;
-  }
-
-  .section__box {
-    left: 130px;
   }
 }
 
@@ -365,9 +419,5 @@ left: 0px;
 @media (max-width:330px){
   #form-object {
     left: -120px;
-  }
-
-  .section__box {
-    left: 110px;
   }
 }

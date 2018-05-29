@@ -2,13 +2,13 @@
 
   // display: none !important;
 
-  width: 100vw;
+  width: 100%;
 
   position: fixed;
   left: 0;
   right: 0;
   text-align: right;
-  z-index: 200;
+  z-index: 999999!important;
   transition: background-color 0.4s linear;
   height: 60px;
   display: flex;
@@ -25,24 +25,26 @@
     display: none;
     @media (max-width: 575px) {
       border-top: 2px solid white;
-      display: block;
+      display: block!important;
       position: absolute;
       right: 3%;
-      z-index: 20;
+      z-index: 9999!important;
       max-width: 35px;
       top: 20px;
     }
     ::after {
+      display: block!important;
       content: "";
-      position: absolute;
+      position: absolute!important;
       left: 0;
       right: 0;
       border-bottom: 2px solid white;
       width: 100%;
     }
     ::before {
+      display: block!important;
       content: "";
-      position: absolute;
+      position: absolute!important;
       left: 0;
       right: 0;
       border-top: 2px solid white;
@@ -54,7 +56,7 @@
     background-color: rgba(33, 29, 29, 0.6);
     transition: background-color 0.3s linear;
     @media (max-width: 575px) {
-      background-color: transparent;
+      // background-color: transparent;
     }
   }
   &__navbar {
@@ -108,17 +110,7 @@
         transform: none;
       }
     }
-    &--first {
-      @media (max-width: 575px) {
-        margin-left: 0;
-      }
-    }
-    &--first.active {
-    }
-    &--first.active::after {
-      text-decoration: none;
-      display: none;
-    }
+
     & .active {
       position: relative;
       transition: all 0.2s linear;

@@ -44,13 +44,14 @@ a {
 
 
 section.projects {
+  // display: none!important;
   align-items: center;
   display: flex;
   font-family: "Roboto";
   justify-content: center;
 
   @media (min-height: 660px) {
-    height: 100vh;
+    // height: 100vh;
     align-items: center;
     justify-content: center;
   }
@@ -61,7 +62,7 @@ section.projects {
   display: grid;
   grid-auto-columns: auto;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
+  grid-template-areas:
         "devhouse thinkit"
         "lead startup"
         "bootcamp twoj-projekt";
@@ -80,14 +81,14 @@ section.projects {
   }
   @media (min-width: 970px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "devhouse thinkit lead"
         "startup bootcamp twoj-projekt";
     width: 700px;
   }
   @media (min-width: 1300px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "devhouse thinkit lead"
         "startup bootcamp twoj-projekt";
     height: 495px;
@@ -96,7 +97,7 @@ section.projects {
   }
   @media (min-width: 1500px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "devhouse thinkit lead"
         "startup bootcamp twoj-projekt";
     height: 626px;
@@ -160,10 +161,10 @@ section.projects {
       text-align: center;
       margin-top: 23%;
       transition: all 0.6s ease-in-out;
-    
+
       @media (max-width: 470px) {
         font-size: 20px;
-        margin-top: 24%;    
+        margin-top: 24%;
       }
     }
 
@@ -172,10 +173,10 @@ section.projects {
       text-align: center;
       margin-top: 14px;
       font-size: 16px;
-    
+
       @media (max-width: 470px) {
         margin-top: 11px;
-        font-size: 15px;    
+        font-size: 15px;
       }
     }
 
@@ -203,7 +204,7 @@ section.projects {
       position: relative;
       display: block;
       transition: background-color 0.3s linear;
-    
+
       &:hover {
         text-decoration: none;
         color: black;
@@ -211,7 +212,7 @@ section.projects {
       }
     }
   }
-  
+
   &__shape-1,
   &__shape-2 {
     background-repeat: no-repeat;
@@ -278,7 +279,7 @@ section.projects {
 #devhouse {
   grid-area: devhouse;
   // left: -1vw;
-  // top: -20px;  
+  // top: -20px;
   &:hover {
     z-index: 9;
   }
@@ -318,7 +319,7 @@ section.projects {
 
 #twoj-projekt {
   grid-area: twoj-projekt;
-  // top: -2vh; 
+  // top: -2vh;
     .single-container__project-paragraphs__project-about {
     margin-left: -12px;
     width: 220px;
@@ -379,9 +380,9 @@ section.projects {
     position: absolute;
     bottom: -300px;
     right: -200px;
-  
+
     display: none;
-  
+
     &__path-1 {
       stroke-dasharray: 1600;
       stroke-dashoffset: 1600;
@@ -391,9 +392,9 @@ section.projects {
   &__svg-2 {
     position: absolute;
     top: -220px;
-  
+
     display: none;
-  
+
     &__path-2 {
       stroke-dasharray: 1700;
       stroke-dashoffset: 1700;

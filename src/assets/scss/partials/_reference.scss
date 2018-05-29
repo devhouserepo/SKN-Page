@@ -1,9 +1,9 @@
 .section {
-  
+
   position: relative;
   &__reference {
-    
-    // display: none !important;
+
+    display: none !important;
 
     @media (max-width: 800px) {
       display: none !important;
@@ -191,7 +191,7 @@
       height: 650px;
       position: relative;
       top: 100px;
-      
+
       &::after {
         content: "";
         position: absolute;

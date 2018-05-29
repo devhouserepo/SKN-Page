@@ -1,4 +1,5 @@
 .team-section-container {
+  display: none!important;
     // background-color: rgb(233, 80, 10);
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -226,10 +227,10 @@ p {
     cursor: pointer;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    
+
     &:hover {
         background: #4f5178;
-    } 
+    }
     &:focus {
         outline: none;
     }
