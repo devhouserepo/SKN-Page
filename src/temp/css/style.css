@@ -153,6 +153,7 @@ table {
     background-repeat: no-repeat;
     background-size: 100vw 100%;
     max-width: 100vw;
+    margin-bottom: 350px;
   }
   .header__content {
     font-family: "Roboto", sans-serif;
@@ -243,6 +244,7 @@ table {
     background-repeat: no-repeat;
     background-size: 100vw 100%;
     max-width: 100vw;
+    margin-bottom: 390px;
   }
   .header__content {
     font-family: "Roboto", sans-serif;
@@ -333,6 +335,7 @@ table {
     background-repeat: no-repeat;
     background-size: 100vw 100%;
     max-width: 100vw;
+    margin-bottom: 450px;
   }
   .header__content {
     font-family: "Roboto", sans-serif;
@@ -423,6 +426,7 @@ table {
     background-repeat: no-repeat;
     background-size: 100vw 100%;
     max-width: 100vw;
+    margin-bottom: 450px;
   }
   .header__content {
     font-family: "Roboto", sans-serif;
@@ -511,8 +515,9 @@ table {
   .header {
     background: url(../../assets/images/main.png);
     background-repeat: no-repeat;
-    background-size: 100vw 100%;
+    background-size: 100vw 680px;
     max-width: 100vw;
+    margin-bottom: 450px;
   }
   .header__content {
     font-family: "Roboto", sans-serif;
@@ -631,7 +636,7 @@ table {
     font-size: 0.7rem;
     line-height: 21px;
     margin: 70px 0 0 208px;
-    width: 360px;
+    width: 330px;
     position: relative;
     z-index: 999;
   }
@@ -936,6 +941,7 @@ a:hover {
 }
 
 section.projects {
+  display: none !important;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
