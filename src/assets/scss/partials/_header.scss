@@ -83,6 +83,8 @@
     background-repeat: no-repeat;
     background-size: 100vw 100%;
     max-width: 100vw;
+   // min-height: 100px;
+    margin-bottom: 350px;
     &__content {
       font-family: $text-font-1;
       position: absolute;
@@ -173,6 +175,8 @@
     background-repeat: no-repeat;
     background-size: 100vw 100%;
     max-width: 100vw;
+    //min-height: 100px;
+    margin-bottom: 390px;
     &__content {
       font-family: $text-font-1;
       position: absolute;
@@ -263,6 +267,8 @@
     background-repeat: no-repeat;
     background-size: 100vw 100%;
     max-width: 100vw;
+   // min-height: 100px;
+    margin-bottom: 450px;
     &__content {
       font-family: $text-font-1;
       position: absolute;
@@ -353,6 +359,8 @@
     background-repeat: no-repeat;
     background-size: 100vw 100%;
     max-width: 100vw;
+    //min-height: 100px;
+    margin-bottom: 450px;
     &__content {
       font-family: $text-font-1;
       position: absolute;
@@ -441,8 +449,10 @@
   .header {
     background: url(../../assets/images/main.png) ;
     background-repeat: no-repeat;
-    background-size: 100vw 100%;
+    background-size: 100vw 680px;
     max-width: 100vw;
+   // min-height: 100px;
+    margin-bottom: 450px;
     &__content {
       font-family: $text-font-1;
       position: absolute;
@@ -563,7 +573,7 @@
         font-size: 0.7rem;
         line-height: 21px;
         margin: 70px 0 0 208px;
-        width: 360px;
+        width: 330px;
         position: relative;
         z-index: 999;
       }
