@@ -107,6 +107,29 @@ section.projects {
   }
 }
 
+//START--START--------Mobile--modal---on----click-----------Mobile--modal---on----click-
+.mobile__shape {
+  background-image: none !important;
+  background-color: white !important;
+  width: 220px !important;
+  height: 200px !important;
+  clip-path: none !important;
+}
+
+.mobile__project-paragraphs {
+  color: black !important;
+}
+
+.mobile__project-about {
+  width: 200px !important;
+}
+
+.mobile__single-container {
+  z-index: 50;
+}
+
+//END--END--------Mobile--modal---on----click-----------Mobile--modal---on----click-
+
 
 .single-container {
   transition: all 0.7s ease-in-out;
@@ -134,6 +157,7 @@ section.projects {
   }
 
   &__project-paragraphs {
+    color: white;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -141,9 +165,9 @@ section.projects {
     z-index: 10;
 
     &__project-title {
+      color: inherit;
       font-size: 24px;
       letter-spacing: 0.5px;
-      color: white;
       text-align: center;
       margin-top: 23%;
       transition: all 0.6s ease-in-out;
@@ -155,7 +179,7 @@ section.projects {
     }
 
     &__project-minititle {
-      color: white;
+      color: inherit;
       text-align: center;
       margin-top: 14px;
       font-size: 16px;
@@ -167,8 +191,8 @@ section.projects {
     }
 
     &__project-about {
+      color: inherit;
       opacity: 0;
-      color: white;
       line-height: 1.1;
       margin-top: 14px;
       font-size: 16px;
@@ -185,7 +209,6 @@ section.projects {
       border: 1px solid white;
       border-radius: 1px;
       text-align: center;
-      color: white;
       opacity: 0;
       position: relative;
       display: block;

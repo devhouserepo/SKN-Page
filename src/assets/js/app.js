@@ -57,12 +57,21 @@ $(document).ready(function() {
       .hide();
   });
 
-  // TEAM section START
 
-  // function showInfoAboutMember(data, index) {
-  //     console.log(data[index])
-  //     $('.max-photo').css('background-image', 'url(' + data[index].photo + ')')
-  // }
+  //PROJECTS section START
+
+  $('.single-container').on('touchstart', function(e) {
+    $(this).addClass('mobile__single-container')
+    $(this).find('.single-container__shape-2').addClass('mobile__shape')
+    $(this).find('.single-container__shape-1').addClass('mobile__shape')
+    $(this).find('.single-container__project-paragraphs__project-about').addClass('mobile__project-about')
+    $(this).find('.single-container__project-paragraphs').addClass('mobile__project-paragraphs')
+  })
+
+
+  mobile-click__shape
+
+  // TEAM section START
 
   let teamDevhouse = "#team-devhouse";
   let teamStartUp = "#team-startup";
@@ -81,7 +90,7 @@ $(document).ready(function() {
       const props = [...data]
         randomNumber = Math.floor(Math.random() * data.length)
         rndPerson(props);
-      //
+      
       $.each(data, function(index, item) {
         $(".members-thumbnails-container").append(
           `<div class="flex-column align-items-center one-thumbnail-container">
