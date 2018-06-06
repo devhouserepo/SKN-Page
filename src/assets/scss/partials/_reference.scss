@@ -1,12 +1,12 @@
 .section {
-  
+
   position: relative;
   &__reference {
-    
-    // display: none !important;
+
+    //display: none !important;
 
     @media (max-width: 800px) {
-      display: none !important;
+      //display: none !important;
     }
 
     width: 100vw;
@@ -180,18 +180,20 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .section {
-    .container
     &__reference {
       .mobile {
       display: initial !important;
-      background: white;
-      width: 320px;
+      background: #ffffff;
+      max-width: 700px;
       height: 650px;
       position: relative;
-      top: 100px;
-      
+      top: 54px;
+      left: -154px;
+      .col-7 {
+        position: relative;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -199,11 +201,11 @@
         z-index: 1;
         width: 0;
         height: 0;
-        border-top: 190px solid transparent;
-        border-bottom: 190px solid transparent;
-        border-left: 190px solid $bg-color-1;
-        top: -125px;
-        left: -100px;
+       // border-top: 120px solid transparent;
+       // border-bottom: 120px solid transparent;
+      //  border-left: 120px solid $bg-color-1;
+        top: 10px;
+        left: 90px;
       }
       &::before {
         content: "";
@@ -212,11 +214,11 @@
         z-index: 1;
         width: 0;
         height: 0;
-        border-top: 150px solid transparent;
-        border-bottom: 150px solid transparent;
-        border-left: 150px solid $bg-color-1;
-        right: -65px;
-        top: 470px;
+       // border-top: 70px solid transparent;
+       // border-bottom: 70px solid transparent;
+       // border-left: 70px solid $bg-color-1;
+        right: -623px;
+        top: 450px;
       }
       .carousel {
         position: absolute;
@@ -239,608 +241,13 @@
       }
       .carousel-item {
         width: 320px;
-        min-height: 430px;
+        min-height: 530px;
         background: white;
         text-align: center;
         font-size: 0.8em;
         font-family: $text-font-1;
         letter-spacing: 0.4px;
-        img:nth-child(1) {
-          width: 100px;
-          border-radius: 100px;
-        }
-        span {
-          color: $bg-color-1;
-          display: block;
-          margin: 3px 0 0 0;
-        }
-        p:nth-child(2) {
-        }
-        p {
-          margin: 25px 0 0 0;
-        }
-        img:nth-child(4) {
-          margin: 40px 0 0 0;
-
-          height: 20px;
-        }
-      }
-      }
-      &__box-left {
-        display:none !important;
-        .carousel {
-          &::after {
-          }
-          .carousel-indicators {
-            li,
-            .active {
-            }
-            .active {
-            }
-          }
-        }
-        .carousel-item {
-          img:nth-child(1) {
-          }
-          span {
-          }
-          p:nth-child(2) {
-          }
-          p {
-          }
-          img:nth-child(4) {
-          }
-        }
-      }
-      &__box-right {
-        display:none !important;
-        svg {
-        }
-        .path {
-          stroke-dasharray: 1550;
-          stroke-dashoffset: 1550;
-          animation: dash 4s linear forwards;
-        }
-        @keyframes dash {
-          to {
-            stroke-dashoffset: 0;
-          }
-        }
-        .carousel {
-          &::after {
-          }
-          .carousel-indicators {
-            li,
-            .active {
-            }
-            .active {
-            }
-          }
-        }
-        .carousel-item {
-          img {
-          }
-          span {
-          }
-          p {
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 375px) and (max-width: 414px) {
-  .section {
-    &__reference {
-      .mobile {
-      display: initial !important;
-      background: #ffffff;
-      max-width: 700px;
-      height: 650px;
-      position: relative;
-      top: 84px;
-      right: -620px;
-      &::after {
-        content: "";
-        position: absolute;
-        transform: rotateZ(225deg);
-        z-index: 1;
-        width: 0;
-        height: 0;
-        border-top: 190px solid transparent;
-        border-bottom: 190px solid transparent;
-        border-left: 190px solid $bg-color-1;
-        top: -125px;
-        left: -100px;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        transform: rotateZ(45deg);
-        z-index: 1;
-        width: 0;
-        height: 0;
-        border-top: 150px solid transparent;
-        border-bottom: 150px solid transparent;
-        border-left: 150px solid $bg-color-1;
-        right: -65px;
-        top: 470px;
-      }
-      .carousel {
-        position: absolute;
-        top: 110px;
-        left: 140px;
-        .carousel-indicators {
-          li,
-          .active {
-            width: 13px;
-            height: 13px;
-            border-radius: 50px;
-            border: 1px solid #838383;
-            background-color: #fff;
-            cursor: pointer;
-          }
-          .active {
-            background-color: #ababab;
-          }
-        }
-      }
-      .carousel-item {
-        width: 450px;
-        min-height: 430px;
-        background: white;
-        text-align: center;
-        font-size: 0.8em;
-        font-family: $text-font-1;
-        letter-spacing: 0.4px;
-        img:nth-child(1) {
-          width: 100px;
-          border-radius: 100px;
-        }
-        span {
-          color: $bg-color-1;
-          display: block;
-          margin: 3px 0 0 0;
-        }
-        p:nth-child(2) {
-        }
-        p {
-          margin: 25px 0 0 0;
-        }
-        img:nth-child(4) {
-          margin: 40px 0 0 0;
-
-          height: 20px;
-        }
-      }
-      }
-      &__box-left {
-        display:none !important;
-        .carousel {
-          &::after {
-          }
-          .carousel-indicators {
-            li,
-            .active {
-            }
-            .active {
-            }
-          }
-        }
-        .carousel-item {
-          img:nth-child(1) {
-          }
-          span {
-          }
-          p:nth-child(2) {
-          }
-          p {
-          }
-          img:nth-child(4) {
-          }
-        }
-      }
-      &__box-right {
-        display:none !important;
-        svg {
-        }
-        .path {
-          stroke-dasharray: 1550;
-          stroke-dashoffset: 1550;
-          animation: dash 4s linear forwards;
-        }
-        @keyframes dash {
-          to {
-            stroke-dashoffset: 0;
-          }
-        }
-        .carousel {
-          &::after {
-          }
-          .carousel-indicators {
-            li,
-            .active {
-            }
-            .active {
-            }
-          }
-        }
-        .carousel-item {
-          img {
-          }
-          span {
-          }
-          p {
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 375px) and (max-width: 414px) and (min-height: 731px) and (max-height: 812px){
-  .section {
-    &__reference {
-      .mobile {
-      display: initial !important;
-      background: #ffffff;
-      max-width: 700px;
-      height: 650px;
-      position: relative;
-      top: 84px;
-      right: -620px;
-      &::after {
-        content: "";
-        position: absolute;
-        transform: rotateZ(225deg);
-        z-index: 1;
-        width: 0;
-        height: 0;
-        border-top: 190px solid transparent;
-        border-bottom: 190px solid transparent;
-        border-left: 190px solid $bg-color-1;
-        top: -125px;
-        left: -100px;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        transform: rotateZ(45deg);
-        z-index: 1;
-        width: 0;
-        height: 0;
-        border-top: 150px solid transparent;
-        border-bottom: 150px solid transparent;
-        border-left: 150px solid $bg-color-1;
-        right: -65px;
-        top: 470px;
-      }
-      .carousel {
-        position: absolute;
-        top: 110px;
-        left: 140px;
-        .carousel-indicators {
-          li,
-          .active {
-            width: 13px;
-            height: 13px;
-            border-radius: 50px;
-            border: 1px solid #838383;
-            background-color: #fff;
-            cursor: pointer;
-          }
-          .active {
-            background-color: #ababab;
-          }
-        }
-      }
-      .carousel-item {
-        width: 450px;
-        min-height: 430px;
-        background: white;
-        text-align: center;
-        font-size: 0.8em;
-        font-family: $text-font-1;
-        letter-spacing: 0.4px;
-        img:nth-child(1) {
-          width: 100px;
-          border-radius: 100px;
-        }
-        span {
-          color: $bg-color-1;
-          display: block;
-          margin: 3px 0 0 0;
-        }
-        p:nth-child(2) {
-        }
-        p {
-          margin: 25px 0 0 0;
-        }
-        img:nth-child(4) {
-          margin: 40px 0 0 0;
-
-          height: 20px;
-        }
-      }
-      }
-      &__box-left {
-        display:none !important;
-        .carousel {
-          &::after {
-          }
-          .carousel-indicators {
-            li,
-            .active {
-            }
-            .active {
-            }
-          }
-        }
-        .carousel-item {
-          img:nth-child(1) {
-          }
-          span {
-          }
-          p:nth-child(2) {
-          }
-          p {
-          }
-          img:nth-child(4) {
-          }
-        }
-      }
-      &__box-right {
-        display:none !important;
-        svg {
-        }
-        .path {
-          stroke-dasharray: 1550;
-          stroke-dashoffset: 1550;
-          animation: dash 4s linear forwards;
-        }
-        @keyframes dash {
-          to {
-            stroke-dashoffset: 0;
-          }
-        }
-        .carousel {
-          &::after {
-          }
-          .carousel-indicators {
-            li,
-            .active {
-            }
-            .active {
-            }
-          }
-        }
-        .carousel-item {
-          img {
-          }
-          span {
-          }
-          p {
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 375px) and (max-width: 414px) and (min-height: 812px){
-  .section {
-    &__reference {
-      .mobile {
-      display: initial !important;
-      background: #ffffff;
-      max-width: 700px;
-      height: 650px;
-      position: relative;
-      top: 84px;
-      right: -620px;
-      &::after {
-        content: "";
-        position: absolute;
-        transform: rotateZ(225deg);
-        z-index: 1;
-        width: 0;
-        height: 0;
-        border-top: 190px solid transparent;
-        border-bottom: 190px solid transparent;
-        border-left: 190px solid $bg-color-1;
-        top: -125px;
-        left: -100px;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        transform: rotateZ(45deg);
-        z-index: 1;
-        width: 0;
-        height: 0;
-        border-top: 150px solid transparent;
-        border-bottom: 150px solid transparent;
-        border-left: 150px solid $bg-color-1;
-        right: -65px;
-        top: 470px;
-      }
-      .carousel {
-        position: absolute;
-        top: 110px;
-        left: 140px;
-        .carousel-indicators {
-          li,
-          .active {
-            width: 13px;
-            height: 13px;
-            border-radius: 50px;
-            border: 1px solid #838383;
-            background-color: #fff;
-            cursor: pointer;
-          }
-          .active {
-            background-color: #ababab;
-          }
-        }
-      }
-      .carousel-item {
-        width: 450px;
-        min-height: 430px;
-        background: white;
-        text-align: center;
-        font-size: 0.8em;
-        font-family: $text-font-1;
-        letter-spacing: 0.4px;
-        img:nth-child(1) {
-          width: 100px;
-          border-radius: 100px;
-        }
-        span {
-          color: $bg-color-1;
-          display: block;
-          margin: 3px 0 0 0;
-        }
-        p:nth-child(2) {
-        }
-        p {
-          margin: 25px 0 0 0;
-        }
-        img:nth-child(4) {
-          margin: 40px 0 0 0;
-
-          height: 20px;
-        }
-      }
-      }
-      &__box-left {
-        display:none !important;
-        .carousel {
-          &::after {
-          }
-          .carousel-indicators {
-            li,
-            .active {
-            }
-            .active {
-            }
-          }
-        }
-        .carousel-item {
-          img:nth-child(1) {
-          }
-          span {
-          }
-          p:nth-child(2) {
-          }
-          p {
-          }
-          img:nth-child(4) {
-          }
-        }
-      }
-      &__box-right {
-        display:none !important;
-        svg {
-        }
-        .path {
-          stroke-dasharray: 1550;
-          stroke-dashoffset: 1550;
-          animation: dash 4s linear forwards;
-        }
-        @keyframes dash {
-          to {
-            stroke-dashoffset: 0;
-          }
-        }
-        .carousel {
-          &::after {
-          }
-          .carousel-indicators {
-            li,
-            .active {
-            }
-            .active {
-            }
-          }
-        }
-        .carousel-item {
-          img {
-          }
-          span {
-          }
-          p {
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 414px) and (max-width: 576px) {
-  .section {
-    &__reference {
-      .mobile {
-      display: initial !important;
-      background: #ffffff;
-      max-width: 700px;
-      height: 650px;
-      position: relative;
-      top: 84px;
-      right: -620px;
-      &::after {
-        content: "";
-        position: absolute;
-        transform: rotateZ(225deg);
-        z-index: 1;
-        width: 0;
-        height: 0;
-        border-top: 190px solid transparent;
-        border-bottom: 190px solid transparent;
-        border-left: 190px solid $bg-color-1;
-        top: -125px;
-        left: -100px;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        transform: rotateZ(45deg);
-        z-index: 1;
-        width: 0;
-        height: 0;
-        border-top: 150px solid transparent;
-        border-bottom: 150px solid transparent;
-        border-left: 150px solid $bg-color-1;
-        right: -65px;
-        top: 470px;
-      }
-      .carousel {
-        position: absolute;
-        top: 110px;
-        left: 140px;
-        .carousel-indicators {
-          li,
-          .active {
-            width: 13px;
-            height: 13px;
-            border-radius: 50px;
-            border: 1px solid #838383;
-            background-color: #fff;
-            cursor: pointer;
-          }
-          .active {
-            background-color: #ababab;
-          }
-        }
-      }
-      .carousel-item {
-        width: 450px;
-        min-height: 430px;
-        background: white;
-        text-align: center;
-        font-size: 0.8em;
-        font-family: $text-font-1;
-        letter-spacing: 0.4px;
+        padding: 20px 15px 0 15px;
         img:nth-child(1) {
           width: 100px;
           border-radius: 100px;
@@ -935,8 +342,11 @@
       max-width: 700px;
       height: 650px;
       position: relative;
-      top: 84px;
-      right: -620px;
+      top: 54px;
+      left: -120px;
+      .col-7 {
+        position: relative;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -944,11 +354,11 @@
         z-index: 1;
         width: 0;
         height: 0;
-        border-top: 190px solid transparent;
-        border-bottom: 190px solid transparent;
-        border-left: 190px solid $bg-color-1;
-        top: -125px;
-        left: -100px;
+        border-top: 120px solid transparent;
+        border-bottom: 120px solid transparent;
+        border-left: 120px solid $bg-color-1;
+        top: 10px;
+        left: 90px;
       }
       &::before {
         content: "";
@@ -957,11 +367,11 @@
         z-index: 1;
         width: 0;
         height: 0;
-        border-top: 150px solid transparent;
-        border-bottom: 150px solid transparent;
-        border-left: 150px solid $bg-color-1;
-        right: -65px;
-        top: 470px;
+        border-top: 70px solid transparent;
+        border-bottom: 70px solid transparent;
+        border-left: 70px solid $bg-color-1;
+        right: -623px;
+        top: 450px;
       }
       .carousel {
         position: absolute;
@@ -983,13 +393,14 @@
         }
       }
       .carousel-item {
-        width: 450px;
+        width: 470px;
         min-height: 430px;
         background: white;
         text-align: center;
         font-size: 0.8em;
         font-family: $text-font-1;
         letter-spacing: 0.4px;
+        padding: 20px 0 0 0;
         img:nth-child(1) {
           width: 100px;
           border-radius: 100px;
@@ -1077,7 +488,6 @@
 
 @media (min-width: 768px) and (max-width: 992px) {
   .section {
-
     &__reference {
       .mobile {
       display: initial !important;
@@ -1085,8 +495,11 @@
       max-width: 700px;
       height: 650px;
       position: relative;
-      top: 84px;
-      right: -420px;
+      top: 54px;
+      left: -10px;
+      .col-7 {
+        position: relative;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -1094,11 +507,11 @@
         z-index: 1;
         width: 0;
         height: 0;
-        border-top: 190px solid transparent;
-        border-bottom: 190px solid transparent;
-        border-left: 190px solid $bg-color-1;
-        top: -125px;
-        left: -100px;
+        border-top: 120px solid transparent;
+        border-bottom: 120px solid transparent;
+        border-left: 120px solid $bg-color-1;
+        top: 10px;
+        left: 90px;
       }
       &::before {
         content: "";
@@ -1107,11 +520,11 @@
         z-index: 1;
         width: 0;
         height: 0;
-        border-top: 150px solid transparent;
-        border-bottom: 150px solid transparent;
-        border-left: 150px solid $bg-color-1;
-        right: -65px;
-        top: 470px;
+        border-top: 120px solid transparent;
+        border-bottom: 120px solid transparent;
+        border-left: 120px solid $bg-color-1;
+        right: -660px;
+        top: 400px;
       }
       .carousel {
         position: absolute;
@@ -1133,13 +546,14 @@
         }
       }
       .carousel-item {
-        width: 450px;
+        width: 470px;
         min-height: 430px;
         background: white;
         text-align: center;
         font-size: 0.8em;
         font-family: $text-font-1;
         letter-spacing: 0.4px;
+        padding: 20px 0 0 0;
         img:nth-child(1) {
           width: 100px;
           border-radius: 100px;
@@ -1234,8 +648,11 @@
       max-width: 700px;
       height: 650px;
       position: relative;
-      top: 84px;
-      right: -620px;
+      top: 54px;
+      left: 110px;
+      .col-7 {
+        position: relative;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -1243,11 +660,11 @@
         z-index: 1;
         width: 0;
         height: 0;
-        border-top: 190px solid transparent;
-        border-bottom: 190px solid transparent;
-        border-left: 190px solid $bg-color-1;
-        top: -125px;
-        left: -100px;
+        border-top: 120px solid transparent;
+        border-bottom: 120px solid transparent;
+        border-left: 120px solid $bg-color-1;
+        top: 10px;
+        left: 90px;
       }
       &::before {
         content: "";
@@ -1259,8 +676,8 @@
         border-top: 150px solid transparent;
         border-bottom: 150px solid transparent;
         border-left: 150px solid $bg-color-1;
-        right: -65px;
-        top: 470px;
+        right: -710px;
+        top: 370px;
       }
       .carousel {
         position: absolute;
@@ -1282,13 +699,14 @@
         }
       }
       .carousel-item {
-        width: 450px;
+        width: 470px;
         min-height: 430px;
         background: white;
         text-align: center;
         font-size: 0.8em;
         font-family: $text-font-1;
         letter-spacing: 0.4px;
+        padding: 20px 0 0 0;
         img:nth-child(1) {
           width: 100px;
           border-radius: 100px;
@@ -1384,7 +802,7 @@
       height: 650px;
       position: relative;
       top: 54px;
-      right: -700px;
+      left: 200px;
       .col-7 {
         position: relative;
       }
@@ -1395,11 +813,11 @@
         z-index: 1;
         width: 0;
         height: 0;
-        border-top: 190px solid transparent;
-        border-bottom: 190px solid transparent;
-        border-left: 190px solid $bg-color-1;
-        top: -125px;
-        left: -100px;
+        border-top: 120px solid transparent;
+        border-bottom: 120px solid transparent;
+        border-left: 120px solid $bg-color-1;
+        top: 10px;
+        left: 90px;
       }
       &::before {
         content: "";
@@ -1411,8 +829,8 @@
         border-top: 150px solid transparent;
         border-bottom: 150px solid transparent;
         border-left: 150px solid $bg-color-1;
-        right: -65px;
-        top: 470px;
+        right: -710px;
+        top: 370px;
       }
       .carousel {
         position: absolute;
@@ -1434,13 +852,14 @@
         }
       }
       .carousel-item {
-        width: 450px;
+        width: 470px;
         min-height: 430px;
         background: white;
         text-align: center;
         font-size: 0.8em;
         font-family: $text-font-1;
         letter-spacing: 0.4px;
+        padding: 20px 0 0 0;
         img:nth-child(1) {
           width: 100px;
           border-radius: 100px;
@@ -1562,5 +981,5 @@
   }
 }
 .svg-3 {
-  display: none;
+//  display: none;
 }
