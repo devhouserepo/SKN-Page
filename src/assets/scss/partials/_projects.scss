@@ -108,12 +108,50 @@ section.projects {
 }
 
 //START--START--------Mobile--modal---on----click-----------Mobile--modal---on----click-
-.mobile__shape {
+
+// .mobile__shape-1 {
+//   clip-path: polygon(
+//     30% 0%,
+//     70% 0%,
+//     100% 30%,
+//     100% 100%,
+//     70% 100%,
+//     30% 100%,
+//     0% 70%,
+//     0 0
+//   );
+// }
+// .mobile__shape-2 {
+//   clip-path: polygon(
+//     30% 0%,
+//     70% 0%,
+//     100% 0,
+//     100% 70%,
+//     70% 100%,
+//     30% 100%,
+//     0 100%,
+//     0% 30%
+//   );
+// }
+
+.close_svg_use {
+  opacity: 0;
+}
+
+.line-svg {
+  stroke: rgb(3, 2, 2); stroke-width:2; stroke-linecap: round;
+}
+
+.mobile__shape-1, .mobile__shape-2  {
   background-image: none !important;
   background-color: white !important;
-  width: 220px !important;
-  height: 200px !important;
+  width: 258px !important;
+  height: 300px !important;
   clip-path: none !important;
+  @media (min-width: 500px) {
+    width: 300px !important;
+    height: 300px !important;
+  }
 }
 
 .mobile__project-paragraphs {
@@ -121,6 +159,7 @@ section.projects {
 }
 
 .mobile__project-about {
+  @include animationBasicHover(showProjectAboutandButton, 2, forwards);
   width: 200px !important;
 }
 
@@ -137,23 +176,30 @@ section.projects {
   position: relative;
 
   &:hover .single-container__project-paragraphs__project-title {
-    font-size: 21px;
-    margin-top: -14%;
+    @media (min-width: 750px) {
+      font-size: 21px;
+      margin-top: -14%;
+    }
   }
   &:hover .single-container__shape-1,
   &:hover .single-container__shape-2 {
-    @include transform(1.6, 1.6);
-    background-size: 300px;
-    transition: all 0.7s ease-in-out;
+    @media (min-width: 750px) {
+      @include transform(1.6, 1.6);
+      background-size: 300px;
+      transition: all 0.7s ease-in-out;
+    }
   }
-  // Project hover transitions and animations triggers
   &:hover .single-container__project-paragraphs__project-about {
-    margin-left: -40px;
-    width: 270px;
-    @include animationBasicHover(showProjectAboutandButton, 2, forwards);
+    @media (min-width: 750px) {
+      margin-left: -40px;
+      width: 270px;
+      @include animationBasicHover(showProjectAboutandButton, 2, forwards);
+    }
   }
   &:hover .single-container__project-paragraphs__btn-more-about {
-    @include animationBasicHover(showProjectAboutandButton, 2, forwards);
+    @media (min-width: 750px) {
+      @include animationBasicHover(showProjectAboutandButton, 2, forwards);
+    }
   }
 
   &__project-paragraphs {
