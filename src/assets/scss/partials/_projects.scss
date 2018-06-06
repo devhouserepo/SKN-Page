@@ -31,14 +31,13 @@ a {
 
 
 section.projects {
-   display: none!important;
+  //  display: none!important;
   align-items: center;
   display: flex;
   font-family: "Roboto";
   justify-content: center;
 
   @media (min-height: 660px) {
-    // height: 100vh;
     align-items: center;
     justify-content: center;
   }
@@ -53,7 +52,7 @@ section.projects {
         "devhouse thinkit"
         "lead startup"
         "bootcamp twoj-projekt";
-  justify-items: center;
+  justify-content: center;
   margin: 43px;
   padding-top: 62px;
   position: relative;
@@ -263,10 +262,26 @@ section.projects {
 
 
 //------one container--id------------------
+@media (min-width: 970px) {
+  #devhouse {
+    top: -22px;
+  }
+  #lead {
+    top: -20px;
+    right: -16px;
+  }
+  #startup {
+    left: 12px;
+  }
+  #twoj-projekt {
+    right: -13px;
+    top: 9px;
+  }
+}
+
 #devhouse {
   grid-area: devhouse;
-  // left: -1vw;
-  // top: -20px;
+  top: -30px;
   &:hover {
     z-index: 9;
   }
@@ -274,7 +289,6 @@ section.projects {
 
 #thinkit {
   grid-area: thinkit;
-  // top: 2vh;
   &:hover {
     z-index: 9;
   }
@@ -282,8 +296,7 @@ section.projects {
 
 #lead {
   grid-area: lead;
-  // right: -21px;
-  // top: -1vh;
+  top: -20px;
   &:hover {
     z-index: 9;
   }
@@ -291,7 +304,7 @@ section.projects {
 
 #startup {
   grid-area: startup;
-  // top: 3vh;
+  top: 7px;
   &:hover {
     z-index: 9;
   }
@@ -299,6 +312,7 @@ section.projects {
 
 #bootcamp {
   grid-area: bootcamp;
+  top: -30px;
   &:hover {
     z-index: 11;
   }
@@ -306,7 +320,7 @@ section.projects {
 
 #twoj-projekt {
   grid-area: twoj-projekt;
-  // top: -2vh;
+  top: 15px;
     .single-container__project-paragraphs__project-about {
     margin-left: -12px;
     width: 220px;
@@ -334,7 +348,7 @@ section.projects {
   font-size: 48px;
   position: absolute;
   left: 8%;
-  top: 0;
+  top: 5px;
   z-index: -1;
   @media (min-width: 500px) {
     font-size: 60px;

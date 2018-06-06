@@ -1,11 +1,12 @@
 .section {
+  
   position: relative;
   &__contact {
 
   @media(max-width: 1200px){
     padding-top: 100px;
   }
-    // display: none !important;
+    display: none !important;
 
 
     width: 100%;
