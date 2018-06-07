@@ -3,42 +3,42 @@
         "id": 1,
         "title": "DevHouse",
         "kind": "Programowanie",
-        "discrition": "Celem projektu DevHouse jest współpraca członków SKN-u z firmami i organizacjami przy budowie prostych stron internetowych i aplikacji.",
+        "description": "Celem projektu DevHouse jest współpraca członków SKN-u z firmami i organizacjami przy budowie prostych stron internetowych i aplikacji.",
         "photo": "./"
     },
     {
         "id": 2,
         "title": "ThinkIT",
         "kind": "IT i biznes",
-        "discrition": "ThinkIT to konferencja dla studentów, którzy interesują się nowymi technologiami oraz biznesem i chcieliby rozwijać się w tych dziedzinach.",
+        "description": "ThinkIT to konferencja dla studentów, którzy interesują się nowymi technologiami oraz biznesem i chcieliby rozwijać się w tych dziedzinach.",
         "photo": "./"
     },
     {
         "id": 3,
         "title": "LEAD",
         "kind": "Program menagerski",
-        "discrition": "Celem projektu kształcenie kompetencji technicznych oraz organizacyjnych niezbędnych liderom technologii XXI wieku. Projekt łączy wiedzę teoretyczną z praktyczną poprzez realizowane wspólnie z firmami warsztaty oraz projekty IT.",
+        "description": "Celem projektu kształcenie kompetencji technicznych oraz organizacyjnych niezbędnych liderom technologii XXI wieku. Projekt łączy wiedzę teoretyczną z praktyczną poprzez realizowane wspólnie z firmami warsztaty oraz projekty IT.",
         "photo": "./"
     },
     {
         "id": 4,
         "title": "StartUp game",
         "kind": "edukacyjna gra mobilna",
-        "discrition": "Start-up Game to projekt, w którym członkowie SKN-u tworzą aplikację webową będącą symulatorem prowadzenia startupu.",
+        "description": "Start-up Game to projekt, w którym członkowie SKN-u tworzą aplikację webową będącą symulatorem prowadzenia startupu.",
         "photo": "./"
     },
     {
         "id": 5,
         "title": "Boot Camp",
         "kind": "Programowanie",
-        "discrition": " Niedługo odbędzie się BootCamp. Podczas niego uczestnicy będą doskonalić umiejetności programowania pod okiem doświadczonych deweloperów.",
+        "description": " Niedługo odbędzie się BootCamp. Podczas niego uczestnicy będą doskonalić umiejetności programowania pod okiem doświadczonych deweloperów.",
         "photo": "./"
       },
       {
         "id": 6,
         "title": "Twój projekt",
         "kind": "Zrealizuj Swój pomysł",
-        "discrition": "Tutaj jest miejsce na Twój pomysł - na pewno docenimy Twoją kreatywność Wiele z naszych wcześniejszych projektów narodziło się dzięki ludziom takim jak Ty.",
+        "description": "Tutaj jest miejsce na Twój pomysł - na pewno docenimy Twoją kreatywność Wiele z naszych wcześniejszych projektów narodziło się dzięki ludziom takim jak Ty.",
         "photo": "./"
       }
 ]

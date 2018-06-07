@@ -1074,7 +1074,7 @@ section.projects {
 }
 
 @media (min-width: 750px) {
-  .single-container:hover .single-container__project-paragraphs__project-title {
+  .single-container:hover .single-container__project-paragraphs__title {
     font-size: 21px;
     margin-top: -14%;
   }
@@ -1094,7 +1094,7 @@ section.projects {
 }
 
 @media (min-width: 750px) {
-  .single-container:hover .single-container__project-paragraphs__project-about {
+  .single-container:hover .single-container__project-paragraphs__description {
     margin-left: -40px;
     width: 270px;
     -webkit-animation: showProjectAboutandButton 2s forwards;
@@ -1122,7 +1122,7 @@ section.projects {
   z-index: 10;
 }
 
-.single-container__project-paragraphs__project-title {
+.single-container__project-paragraphs__title {
   color: inherit;
   font-size: 24px;
   letter-spacing: 0.5px;
@@ -1133,13 +1133,13 @@ section.projects {
 }
 
 @media (max-width: 470px) {
-  .single-container__project-paragraphs__project-title {
+  .single-container__project-paragraphs__title {
     font-size: 20px;
     margin-top: 24%;
   }
 }
 
-.single-container__project-paragraphs__project-minititle {
+.single-container__project-paragraphs__kind {
   color: inherit;
   text-align: center;
   margin-top: 14px;
@@ -1147,13 +1147,13 @@ section.projects {
 }
 
 @media (max-width: 470px) {
-  .single-container__project-paragraphs__project-minititle {
+  .single-container__project-paragraphs__kind {
     margin-top: 11px;
     font-size: 15px;
   }
 }
 
-.single-container__project-paragraphs__project-about {
+.single-container__project-paragraphs__description {
   color: inherit;
   opacity: 0;
   line-height: 1.1;
@@ -1302,7 +1302,7 @@ section.projects {
   top: 15px;
 }
 
-#twoj-projekt .single-container__project-paragraphs__project-about {
+#twoj-projekt .single-container__project-paragraphs__description {
   margin-left: -12px;
   width: 220px;
 }

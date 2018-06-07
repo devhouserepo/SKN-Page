@@ -9,7 +9,7 @@
   animation: $animationName $duration * 1s $animationFillMode; /* IE 10+, Fx 29+ */
 }
 
-// Show and fade in .single-container__project-paragraphs__project-about animation
+// Show and fade in .single-container__project-paragraphs__description animation
 @keyframes showProjectAboutandButton {
   0% {
     opacity: 0;
@@ -137,7 +137,7 @@ section.projects {
   margin: 5%;
   position: relative;
 
-  &:hover .single-container__project-paragraphs__project-title {
+  &:hover .single-container__project-paragraphs__title {
     @media (min-width: 750px) {
       font-size: 21px;
       margin-top: -14%;
@@ -151,7 +151,7 @@ section.projects {
       transition: all 0.7s ease-in-out;
     }
   }
-  &:hover .single-container__project-paragraphs__project-about {
+  &:hover .single-container__project-paragraphs__description {
     @media (min-width: 750px) {
       margin-left: -40px;
       width: 270px;
@@ -172,7 +172,7 @@ section.projects {
     text-align: center;
     z-index: 10;
 
-    &__project-title {
+    &__title {
       color: inherit;
       font-size: 24px;
       letter-spacing: 0.5px;
@@ -186,7 +186,7 @@ section.projects {
       }
     }
 
-    &__project-minititle {
+    &__kind {
       color: inherit;
       text-align: center;
       margin-top: 14px;
@@ -198,7 +198,7 @@ section.projects {
       }
     }
 
-    &__project-about {
+    &__description {
       color: inherit;
       opacity: 0;
       line-height: 1.1;
@@ -352,7 +352,7 @@ section.projects {
 #twoj-projekt {
   grid-area: twoj-projekt;
   top: 15px;
-    .single-container__project-paragraphs__project-about {
+    .single-container__project-paragraphs__description {
     margin-left: -12px;
     width: 220px;
   }

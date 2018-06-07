@@ -61,12 +61,16 @@ $(document).ready(function () {
   //PROJECTS section START
 
 
-
   function displayProjectInfoFromJSON() {
     $.getJSON("../../projects-info/projects-info.json", function (data) {
-      $('.single-container__project-paragraphs__project-title').each(function (index) {
+      $('.single-container__project-paragraphs__title').each(function (index) {
         $(this).text(`${data[index].title}`)
-        // console.log(`$this: ${this}, title: ${data[index].title}`)
+      })
+      $('.single-container__project-paragraphs__kind').each(function (index) {
+        $(this).text(`${data[index].kind}`)
+      })
+      $('.single-container__project-paragraphs__description').each(function (index) {
+        $(this).text(`${data[index].description}`)
       })
     })
   }
@@ -74,8 +78,7 @@ $(document).ready(function () {
   displayProjectInfoFromJSON()
 
 
-
-
+  
   $('.single-container').on('touchstart', function () {
         $('.mobile-project-modal').css({
           'opacity': '1',
