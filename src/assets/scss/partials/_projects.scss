@@ -109,71 +109,17 @@ section.projects {
 
 //START--START--------Mobile--modal---on----click-----------Mobile--modal---on----click-
 
-// .mobile__shape-1 {
-//   clip-path: polygon(
-//     30% 0%,
-//     70% 0%,
-//     100% 30%,
-//     100% 100%,
-//     70% 100%,
-//     30% 100%,
-//     0% 70%,
-//     0 0
-//   );
-// }
-// .mobile__shape-2 {
-//   clip-path: polygon(
-//     30% 0%,
-//     70% 0%,
-//     100% 0,
-//     100% 70%,
-//     70% 100%,
-//     30% 100%,
-//     0 100%,
-//     0% 30%
-//   );
-// }
-
-.mobile__single-container {
-  transition: all 0.7s ease-in-out ;
-  position: absolute !important;
-}
-
-.close-icon_svg_use {
-  opacity: 0;
-  position: absolute;
-  z-index: 20;
-}
 
 .close-icon__line-svg {
   stroke: rgb(3, 2, 2); stroke-width:2; stroke-linecap: round;
 }
 
-.mobile__shape-1, .mobile__shape-2  {
-  background-image: none !important;
-  background-color: white !important;
-  width: 258px !important;
-  height: 300px !important;
-  clip-path: none !important;
-  @media (min-width: 500px) {
-    width: 300px !important;
-    height: 300px !important;
-  }
+.mobile-project-modal {
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  position: absolute;
 }
-
-.mobile__project-paragraphs {
-  color: black !important;
-}
-
-.mobile__project-about {
-  @include animationBasicHover(showProjectAboutandButton, 2, forwards);
-  width: 200px !important;
-}
-
-.mobile__single-container {
-  z-index: 50;
-}
-
 //END--END--------Mobile--modal---on----click-----------Mobile--modal---on----click-
 
 

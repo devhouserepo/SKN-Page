@@ -60,21 +60,10 @@ $(document).ready(function() {
 
   //PROJECTS section START
 
+  
   $('.single-container').on('touchstart', function() {
-    $(this).addClass('mobile__single-container')
-    $(this).find('.single-container__shape-2').addClass('mobile__shape-2')
-    $(this).find('.single-container__shape-1').addClass('mobile__shape-1')
-    $(this).find('.single-container__project-paragraphs__project-about').addClass('mobile__project-about')
-    $(this).find('.single-container__project-paragraphs').addClass('mobile__project-paragraphs')
     $(this).find('.close-icon_svg_use').css("opacity", "1")
   })
-
-  // $('.close-icon_svg_use').on('touchstart', function() {
-  //   console.log($(this).closest('.single-container'))
-  // })
-
-    console.log($('.close-icon_svg_use').closest('.single-container').toArray())
-
 
 
   // TEAM section START
