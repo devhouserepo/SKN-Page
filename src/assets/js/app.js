@@ -60,9 +60,14 @@ $(document).ready(function() {
 
   //PROJECTS section START
 
-  
+
   $('.single-container').on('touchstart', function() {
-    $(this).find('.close-icon_svg_use').css("opacity", "1")
+    $('.mobile-project-modal').css('opacity', '1')
+    $('.mobile-project-modal').css('z-index', '10')
+  })
+
+  $('.close-icon-svg').on('touchstart', function() {
+    $('.mobile-project-modal').css('opacity', '0')
   })
 
 
