@@ -62,8 +62,9 @@ $(document).ready(function() {
 
 
   $('.single-container').on('touchstart', function() {
-    $('.mobile-project-modal').css('opacity', '1')
-    $('.mobile-project-modal').css('z-index', '10')
+    $('.mobile-project-modal').css({
+      'opacity': '1',
+      'z-index': '10'})
   })
 
   $('.close-icon-svg').on('touchstart', function() {
