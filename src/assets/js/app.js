@@ -66,12 +66,14 @@ $(document).ready(function() {
     $(this).find('.single-container__shape-1').addClass('mobile__shape-1')
     $(this).find('.single-container__project-paragraphs__project-about').addClass('mobile__project-about')
     $(this).find('.single-container__project-paragraphs').addClass('mobile__project-paragraphs')
-    $(this).find('.close_svg_use').css("opacity", "1")
+    $(this).find('.close-icon_svg_use').css("opacity", "1")
   })
 
-  $('.close_svg_use').on('touchstart', function() {
-    $(this). closest('.single-container').removeClass('mobile__single-container')
-  })
+  // $('.close-icon_svg_use').on('touchstart', function() {
+  //   console.log($(this).closest('.single-container'))
+  // })
+
+    console.log($('.close-icon_svg_use').closest('.single-container').toArray())
 
 
 

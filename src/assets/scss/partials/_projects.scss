@@ -134,11 +134,18 @@ section.projects {
 //   );
 // }
 
-.close_svg_use {
-  opacity: 0;
+.mobile__single-container {
+  transition: all 0.7s ease-in-out ;
+  position: absolute !important;
 }
 
-.line-svg {
+.close-icon_svg_use {
+  opacity: 0;
+  position: absolute;
+  z-index: 20;
+}
+
+.close-icon__line-svg {
   stroke: rgb(3, 2, 2); stroke-width:2; stroke-linecap: round;
 }
 
