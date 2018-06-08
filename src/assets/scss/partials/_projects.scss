@@ -109,22 +109,38 @@ section.projects {
 
 //START--START--------Mobile--modal---on----click-----------Mobile--modal---on--click-
 
-.mobile-project-modal {
+.mobile-project {
   opacity: 0;
   width: 100%;
   height: 400px;
   background-color: white;
   position: absolute;
-}
 
-.close-icon-svg {
-  float: right;
-  margin: 12px 5px 5px 5px; 
+  &__close-icon {
+    float: right;
+    margin: 12px 5px 5px 5px; 
 
-  &__line { 
-    stroke: $bg-color-1; 
-    stroke-width: 3;
-    stroke-linecap: round;
+    &__line { 
+      stroke: $bg-color-1; 
+      stroke-width: 3;
+      stroke-linecap: round;
+    }
+  }
+
+  &__title {
+
+  }
+
+  &__kind {
+
+  }
+
+  &__description {
+
+  }
+
+  &__mobile-project__btn-more-about {
+    opacity: 0;
   }
 }
 
@@ -209,6 +225,7 @@ section.projects {
     }
 
     &__btn-more-about {
+      color: white;
       margin: 17px auto 0 auto;
       padding-top: 4px;
       width: 80px;

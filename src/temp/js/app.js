@@ -60,40 +60,66 @@ $(document).ready(function () {
 
   //PROJECTS section START
 
+  // function displayProjectInfo(projectsData) {
+  //   $('.single-container__project-paragraphs__title').each(function (index) {
+  //     $(this).text(`${projectsData[index].title}`)
+  //   })
+  //   $('.single-container__project-paragraphs__kind').each(function (index) {
+  //     $(this).text(`${projectsData[index].kind}`)
+  //   })
+  //   $('.single-container__project-paragraphs__description').each(function (index) {
+  //     $(this).text(`${projectsData[index].description}`)
+  //   })
+  //   if ($(".single-container__project-paragraphs__btn-more-about") && projectsData[index].website != "") {
+  //     $(".single-container__project-paragraphs__btn-more-about").attr('href', `${projectsData[index].website}`)
+  //   }
+  // }
 
-  function displayProjectInfoFromJSON() {
-    $.getJSON("../../projects-info/projects-info.json", function (data) {
-      $('.single-container__project-paragraphs__title').each(function (index) {
-        $(this).text(`${data[index].title}`)
-      })
-      $('.single-container__project-paragraphs__kind').each(function (index) {
-        $(this).text(`${data[index].kind}`)
-      })
-      $('.single-container__project-paragraphs__description').each(function (index) {
-        $(this).text(`${data[index].description}`)
-      })
+  function displayProjectInfo(projectsData) {
+    $('.single-container').each(function (index) {
+      $(this).find($('.single-container__project-paragraphs__title')).text(`${projectsData[index].title}`)
+      $(this).find($('.single-container__project-paragraphs__kind')).text(`${projectsData[index].kind}`)
+      $(this).find($('.single-container__project-paragraphs__description')).text(`${projectsData[index].description}`)
+      if ($(this).find($('.single-container__project-paragraphs__btn-more-about')) && projectsData[index].website != "") {
+        $('.single-container__project-paragraphs__btn-more-about').attr('href', `${projectsData[index].website}`)
+      }
     })
   }
 
-  displayProjectInfoFromJSON()
+    let projects
 
-
-  
-  $('.single-container').on('touchstart', function () {
-        $('.mobile-project-modal').css({
-          'opacity': '1',
-          'z-index': '10'
-        })
+    function downloadThanDisplayProjectInfo() {
+      $.getJSON("../../projects-info/projects-info.json", function (data) {
+        projects = data
+        displayProjectInfo(projects)
       })
+    }
 
-  $('.close-icon-svg').on('touchstart', function () {
-        $('.mobile-project-modal').css('opacity', '0')
+    downloadThanDisplayProjectInfo()
+
+
+
+    $('.single-container').on('touchstart', function () {
+      // $('.mobile-project').
+      $('.mobile-project').css({
+        'opacity': '1',
+        'z-index': '10'
       })
+    })
 
+    $('.mobile-project__close-icon').on('touchstart', function () {
+      $('.mobile-project').css('opacity', '0')
+    })
 
-  // TEAM section START
+    //check if a project has a website. If yes, set href to website.
+    // if (projects[index].website != "") {
+    //   $(".mobile-project__btn-more-about").attr('href','${projects[index].website}')
+    //   $(".mobile-project__btn-more-about").css('opacity','1')
+    // }
 
-  let teamDevhouse = "#team-devhouse";
+    // TEAM section START
+
+    let teamDevhouse = "#team-devhouse";
     let teamStartUp = "#team-startup";
     let teamLEAD = "#team-lead";
     let teamThinkIT = "#team-thinkit";

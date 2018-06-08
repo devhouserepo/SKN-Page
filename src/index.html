@@ -109,14 +109,18 @@
 
           <div class="giant-header-projects">PROJEKTY</div>
 
-          <div class="mobile-project-modal">
-            <svg class="close-icon-svg" width="45" height="45">
-                <line class="close-icon-svg__line" x1="8" y1="8" x2="24" y2="24" />
-                <line class="close-icon-svg__line" x1="24" y1="8" x2="8" y2="24" />
+          <div class="mobile-project">
+            <svg class="mobile-project__close-icon" width="45" height="45">
+              <line class="mobile-project__close-icon__line" x1="8" y1="8" x2="24" y2="24" />
+              <line class="mobile-project__close-icon__line" x1="24" y1="8" x2="8" y2="24" />
             </svg>
+            <p class="mobile-project__title"></p>
+            <p class="mobile-project__kind"></p>
+            <p class="mobile-project__description"></p>
+            <a href="" class="mobile-project__btn-more-about"></a>
           </div>
 
-          <div id="devhouse" class="single-container">
+          <div id="devhouse" class="single-container" data-title="DevHouse">
             <div class="single-container__project-paragraphs">
               <p class="single-container__project-paragraphs__title"></p>
               <p class="single-container__project-paragraphs__kind"></p>
@@ -125,7 +129,7 @@
             <div id="devhouse-background" class="single-container__shape-1">
             </div>
           </div>
-          <div id="thinkit" class="single-container">
+          <div id="thinkit" class="single-container" data-title="ThinkIT">
             <div class="single-container__project-paragraphs">
               <p class="single-container__project-paragraphs__title"></p>
               <p class="single-container__project-paragraphs__kind"></p>
@@ -134,7 +138,7 @@
             <div id="thinkit-background" class="single-container__shape-2">
             </div>
           </div>
-          <div id="lead" class="single-container">
+          <div id="lead" class="single-container" data-title="LEAD">
             <div class="single-container__project-paragraphs">
               <p class="single-container__project-paragraphs__title"></p>
               <p class="single-container__project-paragraphs__kind"></p>
@@ -143,7 +147,7 @@
             <div id="lead-background" class="single-container__shape-2">
             </div>
           </div>
-          <div id="startup" class="single-container">
+          <div id="startup" class="single-container" data-title="StartUp game">
             <div class="single-container__project-paragraphs">
               <p class="single-container__project-paragraphs__title"></p>
               <p class="single-container__project-paragraphs__kind"></p>
@@ -152,7 +156,7 @@
             <div id="startup-background" class="single-container__shape-2">
             </div>
           </div>
-          <div id="boot-camp" class="single-container">
+          <div id="boot-camp" class="single-container" data-title="Boot Camp">
             <div class="single-container__project-paragraphs">
               <p class="single-container__project-paragraphs__title"></p>
               <p class="single-container__project-paragraphs__kind"></p>
@@ -161,16 +165,14 @@
             <div id="bootcamp-background" class="single-container__shape-2">
             </div>
           </div>
-          <div id="twoj-projekt" class="single-container">
+          <div id="twoj-projekt" class="single-container" data-title="Twój projekt">
             <div class="single-container__project-paragraphs">
               <p id="twoj-projekt-title" class="single-container__project-paragraphs__title"></p>
               <p class="single-container__project-paragraphs__kind"></p>
               <p class="single-container__project-paragraphs__description">
               </p>
-              <a href="#kontakt">
-                <div class="single-container__project-paragraphs__btn-more-about">
+              <a href="" class="single-container__project-paragraphs__btn-more-about">
                   więcej
-                </div>
               </a>
             </div>
             <div id="twoj-projekt-background" class="single-container__shape-1">
