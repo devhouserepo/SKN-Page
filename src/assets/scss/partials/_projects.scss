@@ -131,34 +131,52 @@ section.projects {
   &__title {
     color: $bg-color-1;
     font-size: 24px;
-    letter-spacing: 0.5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 62px auto 20px auto;
     text-align: center;
-    margin-top: 23%;
     transition: all 0.6s ease-in-out;
     z-index: 40;
   }
 
   &__kind {
     color: $bg-color-1;
+    font-size: 17px;
     text-align: center;
-    margin-top: 14px;
-    font-size: 16px;
+    margin-top: 7px;
     z-index: 40;
   }
 
   &__description {
     color: $bg-color-1;
-    line-height: 1.1;
-    margin-top: 14px;
+    display: block;
     font-size: 16px;
+    line-height: 1.1;
+    margin: 19px 18px;
     text-align: center;
-    display: inline-block;
     z-index: 40;
   }
 
-  &__mobile-project__btn-more-about {
-    opacity: 0;
+  &__btn-more-about {
+    background-color: black;
+    color: $bg-color-1;
+    margin: 17px auto 0 auto;
+    padding-top: 4px;
+    width: 80px;
+    height: 26px;
+    font-size: 16px;
+    border: 1px solid $bg-color-1;;
+    border-radius: 1px;
+    text-align: center;
+    transition: background-color 0.3s linear;
     z-index: 40;
+    position: relative;
+    display: block;
+    &:hover {
+      text-decoration: none;
+      color: white;
+      background-color: $bg-color-1;;
+    }
   }
 }
 
