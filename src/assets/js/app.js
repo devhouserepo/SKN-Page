@@ -60,21 +60,6 @@ $(document).ready(function () {
 
   //PROJECTS section START
 
-  // function displayProjectInfo(projectsData) {
-  //   $('.single-container__project-paragraphs__title').each(function (index) {
-  //     $(this).text(`${projectsData[index].title}`)
-  //   })
-  //   $('.single-container__project-paragraphs__kind').each(function (index) {
-  //     $(this).text(`${projectsData[index].kind}`)
-  //   })
-  //   $('.single-container__project-paragraphs__description').each(function (index) {
-  //     $(this).text(`${projectsData[index].description}`)
-  //   })
-  //   if ($(".single-container__project-paragraphs__btn-more-about") && projectsData[index].website != "") {
-  //     $(".single-container__project-paragraphs__btn-more-about").attr('href', `${projectsData[index].website}`)
-  //   }
-  // }
-
   function displayProjectInfo(projectsData) {
     $('.single-container').each(function (index) {
       $(this).find($('.single-container__project-paragraphs__title')).text(`${projectsData[index].title}`)
@@ -98,14 +83,17 @@ $(document).ready(function () {
     downloadThanDisplayProjectInfo()
 
 
-
-    $('.single-container').on('touchstart', function () {
-      // $('.mobile-project').
-      $('.mobile-project').css({
-        'opacity': '1',
-        'z-index': '10'
+    $('.single-container').each(function(index) {
+      $(this).on('touchstart', function () {
+        let projectId = $(this).attr("data-id")
+        console.log(projectId)
+        $('.mobile-project').css({
+          'opacity': '1',
+          'z-index': '10'
+        })
       })
     })
+
 
     $('.mobile-project__close-icon').on('touchstart', function () {
       $('.mobile-project').css('opacity', '0')
@@ -116,6 +104,7 @@ $(document).ready(function () {
     //   $(".mobile-project__btn-more-about").attr('href','${projects[index].website}')
     //   $(".mobile-project__btn-more-about").css('opacity','1')
     // }
+
 
     // TEAM section START
 

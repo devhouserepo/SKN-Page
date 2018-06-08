@@ -111,9 +111,10 @@ section.projects {
 
 .mobile-project {
   opacity: 0;
-  width: 100%;
+  width: 105%;
   height: 400px;
   background-color: white;
+  top: 60px;
   position: absolute;
 
   &__close-icon {
@@ -369,10 +370,6 @@ section.projects {
 #twoj-projekt {
   grid-area: twoj-projekt;
   top: 15px;
-    .single-container__project-paragraphs__description {
-    margin-left: -12px;
-    width: 220px;
-  }
   //hide "Zrealizuj swoj projekt"
   @media (max-width: 480px) {
     p:nth-child(2){
