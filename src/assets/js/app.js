@@ -71,33 +71,40 @@ $(document).ready(function () {
     })
   }
 
-    let projects
+  let projects
 
-    function downloadThanDisplayProjectInfo() {
-      $.getJSON("../../projects-info/projects-info.json", function (data) {
-        projects = data
-        displayProjectInfo(projects)
-      })
-    }
+  function downloadThanDisplayProjectInfo() {
+    $.getJSON("../../projects-info/projects-info.json", function (data) {
+      projects = data
+      displayProjectInfo(projects)
+    })
+  }
 
-    downloadThanDisplayProjectInfo()
+  downloadThanDisplayProjectInfo()
 
 
-    $('.single-container').each(function(index) {
-      $(this).on('touchstart', function () {
-        let projectId = $(this).attr("data-id")
-        console.log(projectId)
-        $('.mobile-project').css({
-          'opacity': '1',
-          'z-index': '10'
-        })
+  $('.single-container').each(function (index) {
+    $(this).on('touchstart', function () {
+      let projectId = $(this).attr("data-id")
+      projects[index] = projectId
+      console.log(projects[index])
+      $('.mobile-project__title').text(`${projects[index].title}`)
+      $('.mobile-project__kind').text(`${projects[index].kind}`)
+      $('.mobile-project__description').text(`${projects[index].description}`)
+      $('.mobile-project').css({
+        'opacity': '1',
+        'z-index': '20'
       })
     })
+  })
 
 
-    $('.mobile-project__close-icon').on('touchstart', function () {
-      $('.mobile-project').css('opacity', '0')
+  $('.mobile-project__close-icon').on('touchstart', function () {
+    $('.mobile-project').css({
+      'opacity': '0',
+      'z-index': '0'
     })
+  })
 
     //check if a project has a website. If yes, set href to website.
     // if (projects[index].website != "") {
