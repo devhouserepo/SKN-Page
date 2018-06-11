@@ -128,16 +128,7 @@ section.projects {
 //START--START--------Mobile--modal---on----click-----------Mobile--modal---on--click-
 
 .mobile-project {
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 0,
-    100% 70%,
-    70% 100%,
-    30% 100%,
-    0 100%,
-    0% 30%
-  );
+  clip-path: polygon(20% 0, 100% 0, 100% 76%, 70% 100%, 0 100%, 0 14%);
   display: none;
   width: 105%;
   height: 400px;

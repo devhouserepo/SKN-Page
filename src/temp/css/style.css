@@ -1061,8 +1061,8 @@ section.projects {
 }
 
 .mobile-project {
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
-          clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
+  -webkit-clip-path: polygon(20% 0, 100% 0, 100% 76%, 70% 100%, 0 100%, 0 14%);
+          clip-path: polygon(20% 0, 100% 0, 100% 76%, 70% 100%, 0 100%, 0 14%);
   display: none;
   width: 105%;
   height: 400px;
@@ -2927,6 +2927,7 @@ section.projects {
 }
 
 .team-section-container {
+  background-color: #e9500a;
   font-family: "Roboto", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2947,6 +2948,7 @@ p {
 }
 
 .members {
+  background-color: #8b2086;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2957,6 +2959,7 @@ p {
 }
 
 .max-member-container {
+  background-color: rgba(11, 105, 66, 0.164);
   -webkit-box-flex: 2;
       -ms-flex: 2 2 50%;
           flex: 2 2 50%;
@@ -2967,6 +2970,7 @@ p {
 }
 
 .members-bg-line-container {
+  background-color: rgba(19, 180, 92, 0.116);
   position: absolute;
   z-index: 1;
   width: 1400px;
@@ -2994,6 +2998,7 @@ p {
 }
 
 .max-member-paragraphs {
+  background-color: rgba(255, 105, 180, 0.466);
   display: block;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
@@ -3008,6 +3013,7 @@ p {
 }
 
 .max-member-info-details {
+  background-color: #40395f;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
@@ -3033,6 +3039,7 @@ p {
 }
 
 .thumbnails-projects-container {
+  background-color: #b7e021;
   -webkit-box-flex: 2;
       -ms-flex: 2 2 50%;
           flex: 2 2 50%;
@@ -3041,6 +3048,7 @@ p {
 }
 
 .members-thumbnails-container {
+  background-color: rgba(144, 170, 226, 0.308);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3097,6 +3105,7 @@ p {
 }
 
 .projects-buttons {
+  background-color: #df6f25;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3114,6 +3123,7 @@ p {
   padding: 6px;
   border: 1px solid rgba(255, 255, 255, 0.089);
   background: transparent;
+  background: rgba(46, 47, 93, 0.459);
   opacity: 0.7;
   font-size: 0.8em;
   font-weight: bold;
