@@ -80,7 +80,7 @@ $(document).ready(function () {
     })
   }
 
-  
+
 
   function displayWhiteModalAboutProject() {
     let projectId = $(this).attr("data-id")
@@ -102,7 +102,7 @@ $(document).ready(function () {
   }
 
 
-  function addRemoveClickAccordingToWindowWidth() {
+  function changesAccordingToWindowResolution() {
     if (window.innerWidth < 750) {
       $('.single-container').each(function (index) {
         $('.single-container__project-paragraphs__description').css('display', 'none')
@@ -114,9 +114,14 @@ $(document).ready(function () {
         $(this).off('click')
       })
     }
+    if (window.innerHeight < 565) {
+      $('section.projects').css('padding-top', '11rem')
+    } else {
+      $('section.projects').css('padding-top', '1.3rem')
+    }
   }
 
-  
+
 
   function closeWhiteModalOnXClick() {
     $('.mobile-project__close-icon').on('click', function () {
@@ -127,15 +132,15 @@ $(document).ready(function () {
 
   downloadThanDisplayProjectInfo()
 
-  addRemoveClickAccordingToWindowWidth()
+  changesAccordingToWindowResolution()
 
-  $(window).on('resize', addRemoveClickAccordingToWindowWidth)
+  $(window).on('resize', changesAccordingToWindowResolution)
 
   closeWhiteModalOnXClick()
 
 
   // PROJECTS SECTION END
-  
+
   // TEAM section START
 
   let teamDevhouse = "#team-devhouse";

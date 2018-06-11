@@ -982,6 +982,7 @@ section.projects {
           align-items: center;
   display: grid;
   grid-auto-columns: auto;
+  grid-row-gap: none;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "devhouse thinkit" "lead startup" "bootcamp twoj-projekt";
   -webkit-box-pack: center;
@@ -995,40 +996,45 @@ section.projects {
 
 @media (min-width: 500px) {
   .projects-container {
+    grid-row-gap: none;
     width: 440px;
   }
 }
 
 @media (min-width: 750px) {
   .projects-container {
+    grid-row-gap: 30px;
     padding-top: 92px;
-    width: 580px;
+    width: 530px;
   }
 }
 
 @media (min-width: 970px) {
   .projects-container {
+    grid-row-gap: 35px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
-    width: 700px;
+    width: 745px;
   }
 }
 
 @media (min-width: 1300px) {
   .projects-container {
+    grid-row-gap: none;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
     height: 495px;
     padding-top: 0;
-    width: 760px;
+    width: 770px;
   }
 }
 
 @media (min-width: 1500px) {
   .projects-container {
+    grid-row-gap: none;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
-    height: 626px;
+    height: 550px;
     width: 830px;
   }
 }
@@ -1181,6 +1187,7 @@ section.projects {
   letter-spacing: 0.5px;
   text-align: center;
   margin-top: 23%;
+  padding: 0 12px 0 12px;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
@@ -1395,7 +1402,7 @@ section.projects {
     letter-spacing: 6px;
     opacity: 0.08;
     left: -8%;
-    top: 48%;
+    top: 46%;
   }
 }
 
@@ -2933,7 +2940,6 @@ section.projects {
   height: 100vh;
   overflow: hidden;
   padding: 13vh 0 0 0;
-  display: none !important;
 }
 
 @media (max-width: 767px) {
