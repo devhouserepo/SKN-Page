@@ -1,5 +1,4 @@
-.team-section-container {
-
+section.team {
     background-color: rgb(233, 80, 10);
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -7,249 +6,219 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    padding: 13vh 0 0 0;
-    // align-items: center;
+    padding: 13vh 0 0 0; // align-items: center;
     // justify-content: center;
-
     // display: none !important;
-
-    @media (max-width: 767px) {
-        // display: none !important;
-      }
-}
-
-
-p {
-    color: white;
-}
-
-
-#poznaj-lepiej {
-    font-size: 1.3em;
-}
-
-.members {
-    background-color: rgb(139, 32, 134);
-    display: flex;
-    width: 100%;
-    z-index: 5;
-    top: -60px;
-    position: relative;
-}
-
-
-.max-member-container {
-    background-color: rgba(11, 105, 66, 0.164);
-    flex: 2 2 50%;
-    margin-left: 0;
-    top: 35vh;
-    position: relative;
-    display: block;
-}
-
-.members-bg-line-container {
-    background-color: rgba(19, 180, 92, 0.116);
-    position: absolute;
-    z-index: 1;
-    width: 1400px;
-    height: 125%;
-    top: 18px;
-    right: -253px;
-  }
-
-
-//   .members-bg-line {
-//     // stroke-dasharray: 1200;
-//     // stroke-dashoffset: 1200;
-//     animation: dash 3s linear forwards;
-//   }
-//   @keyframes dash {
-//     to {
-//         stroke-dashoffset: 0;
-//     }
-//   }
-
-
-.max-photo {
-    // background-image: url("/assets/images/members/chlopak.jpg");
-    background-position: center;
-    background-size: 220px auto;
-    background-color: #414479;
-    position: relative;
-    z-index: 10;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-.wybierz-osobe {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 44%;
-}
-
-.max-member-paragraphs {
-    background-color: rgba(255, 105, 180, 0.466);
-    display: block;
-    flex: 1 1 100%;
-    margin-top: 9%;
-}
-
-.max-name-surname {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 14px;
-}
-
-.max-member-info-details {
-    background-color: rgb(64, 57, 95);
-    flex: 1 1 100%;
-    padding-left: 6%;
-    padding-right: 9%;
-}
-
-.linkedin-btn {
-    display: inline-block;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
-    padding: 0 7px 0 7px;
-    border: 1px solid rgba(255, 255, 255, 0.089);
-    z-index: 100;
-    cursor: pointer;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    position: relative;
-
-    &:hover {
-        background-color: rgba(123, 124, 194, 0.315);
+    .team-container {
+        background-color: rgb(139, 32, 134);
+        display: flex;
+        flex-direction: row !important;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        top: -60px;
+        width: 100%;
+        z-index: 5;
+        @media (min-width: 576px) {
+            max-width: 540px;
+        }
+        @media (min-width: 768px) {
+            max-width: 720px;
+        }
+        @media (min-width: 992px) {
+            max-width: 960px;
+        }
+        p {
+            color: white;
+        }
+        #poznaj-lepiej {
+            font-size: 1.3em;
+        }
+        .max-info {
+            background-color: rgba(11, 105, 66, 0.164);
+            flex: 2 2 50%;
+            margin-left: 0;
+            position: relative;
+            display: block;
+            top: 35vh;
+            width: 100%;
+            @media (min-width: 576px) {
+                max-width: 540px;
+            }
+            @media (min-width: 768px) {
+                max-width: 720px;
+            }
+            @media (min-width: 992px) {
+                max-width: 960px;
+            }
+            &__giant-header-members {
+                color: white;
+                font-weight: bold;
+                letter-spacing: 9px;
+                opacity: 0.07;
+                font-size: 99px;
+                position: absolute;
+                top: -12vh;
+                right: 0px;
+            }
+            &__big-photo {
+                // background-image: url("/assets/images/members/chlopak.jpg");
+                background-position: center;
+                background-size: 220px auto;
+                background-color: #414479;
+                position: relative;
+                z-index: 10;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                &__wybierz {
+                    width: 100%;
+                    text-align: center;
+                    position: absolute;
+                    top: 44%;
+                }
+            }
+            &__paragraphs {
+                background-color: rgba(255, 105, 180, 0.466);
+                display: block;
+                flex: 1 1 100%;
+                flex-direction: column !important;
+                margin-top: 9%;
+            }
+            &__svg {
+                background-color: rgba(19, 180, 92, 0.116);
+                position: absolute;
+                z-index: 1;
+                width: 1400px;
+                height: 125%;
+                top: 18px;
+                right: -253px;
+                &__line {
+                    stroke-dasharray: 1200;
+                    stroke-dashoffset: 1200;
+                    animation: dash 3s linear forwards;
+                }
+            }
+        }
+        .max-name-surname {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 14px;
+        }
+        .max-member-info-details {
+            background-color: rgb(64, 57, 95);
+            flex: 1 1 100%;
+            padding-left: 6%;
+            padding-right: 9%;
+        }
+        .linkedin-btn {
+            display: inline-block;
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+            padding: 0 7px 0 7px;
+            border: 1px solid rgba(255, 255, 255, 0.089);
+            z-index: 100;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+            position: relative;
+            &:hover {
+                background-color: rgba(123, 124, 194, 0.315);
+            }
+        }
+        .thumbnails-section {
+            background-color: rgb(183, 224, 33);
+            flex: 2 2 50%;
+            position: relative;
+            z-index: 11;
+        }
+        .members-thumbnails-container {
+            background-color: rgba(144, 170, 226, 0.308);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            max-height: 50vh; // max-height: 590px;
+            overflow-y: auto;
+        }
+        .one-thumbnail-container {
+            // background-color: rgba(230, 215, 84, 0.397);
+            display: flex;
+            margin: 5px;
+            width: 97px;
+            height: 82px;
+            text-align: center;
+            line-height: 13px;
+        }
+        .thumb-img {
+            border-radius: 50% !important;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        .thumb-name-surname {
+            margin: 9px 0 0 0;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        .teams-container {
+            position: relative;
+        }
+        .teams-container__header {
+            color: white;
+            font-weight: bold;
+            letter-spacing: 3px;
+            opacity: 0.09;
+            font-size: 1.3em;
+            margin-top: 14%;
+        }
+        .projects-buttons {
+            background-color: rgb(223, 111, 37);
+            display: flex;
+            top: 106%;
+            left: 4%;
+            margin: 4% 0 8% 0;
+        }
+        .project-btn {
+            // grid-column: auto;
+            // grid-row: auto;
+            flex: 1 1;
+            flex-wrap: wrap;
+            padding: 6px; // border-radius: 5px;
+            // border: none;
+            border: 1px solid rgba(255, 255, 255, 0.089);
+            background: transparent;
+            background: rgba(46, 47, 93, 0.459);
+            opacity: 0.7;
+            font-size: 0.8em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #ffffff;
+            cursor: pointer;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            &:hover {
+                background: #4f5178;
+            }
+            &:focus {
+                outline: none;
+            }
+            &:active {
+                background: rgba(46, 47, 93, 0.918);
+            }
+        }
+        .selected-project {
+            background: #4f5178;
+        }
+        .section-team-background {
+            background-color: rgb(83, 112, 74);
+            z-index: 1;
+        }
     }
-}
-
-
-.thumbnails-projects-container {
-    background-color: rgb(183, 224, 33);
-    flex: 2 2 50%;
-    position: relative;
-    z-index: 11;
-}
-
-
-.members-thumbnails-container {
-    background-color: rgba(144, 170, 226, 0.308);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    max-height: 50vh;
-    // max-height: 590px;
-    overflow-y: auto;
-}
-
-.one-thumbnail-container {
-    // background-color: rgba(230, 215, 84, 0.397);
-    display: flex;
-    margin: 5px;
-    width: 97px;
-    height: 82px;
-    text-align: center;
-    line-height: 13px;
-}
-
-.thumb-img {
-    border-radius: 50% !important;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-
-    &:hover {
-        opacity: 0.7;
-    }
-}
-
-
-.thumb-name-surname {
-    margin: 9px 0 0 0;
-    font-size: 12px;
-    line-height: 14px;
-}
-
-
-
-#projekty-btns-container {
-    position: relative;
-}
-
-#team-section-projekty-header {
-    color: white;
-    font-weight: bold;
-    letter-spacing: 3px;
-    opacity: 0.09;
-    font-size: 1.3em;
-    margin-top: 14%;
-}
-
-
-.projects-buttons {
-    background-color: rgb(223, 111, 37);
-    display: flex;
-    top: 106%;
-    left: 4%;
-    margin: 4% 0 8% 0;
-}
-
-.project-btn {
-    // grid-column: auto;
-    // grid-row: auto;
-
-    flex: 1 1;
-    flex-wrap: wrap;
-    padding: 6px;
-    // border-radius: 5px;
-    // border: none;
-    border: 1px solid rgba(255, 255, 255, 0.089);
-    background: transparent;
-    background: rgba(46, 47, 93, 0.459);
-    opacity: 0.7;
-    font-size: 0.8em;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #ffffff;
-    cursor: pointer;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-
-    &:hover {
-        background: #4f5178;
-    }
-    &:focus {
-        outline: none;
-    }
-    &:active {
-        background: rgba(46, 47, 93, 0.918);
-    }
-}
-
-.selected-project {
-    background: #4f5178;
-}
-
-
-
-
-
-.section-team-background {
-    background-color: rgb(83, 112, 74);
-    z-index: 1;
-}
-.giant-header-members {
-    color: white;
-    font-weight: bold;
-    letter-spacing: 9px;
-    opacity: 0.07;
-    font-size: 99px;
-    position: absolute;
-    top: -12vh;
-    right: 0px;
 }

@@ -179,13 +179,13 @@ $(document).ready(function () {
             src: data[index].photo
           })
           .click(function () {
-            $(".max-member-paragraphs").empty();
-            $(".wybierz-osobe").remove();
-            $(".max-photo").css(
+            $(".max-info__paragraphs").empty();
+            $(".max-info__big-photo__wybierz").remove();
+            $(".max-info__big-photo").css(
               "background-image",
               "url(" + data[index].photo + ")"
             );
-            $(".max-member-paragraphs").append(
+            $(".max-info__paragraphs").append(
               `<p class="max-name-surname">` +
               data[index].first_name +
               ` ` +
@@ -196,7 +196,7 @@ $(document).ready(function () {
               `</p>`
             );
             if (data[index].linkedin != "") {
-              $(".max-member-paragraphs").append(
+              $(".max-info__paragraphs").append(
                 `<a class="linkedin-btn" target="_blank" href="` +
                 data[index].linkedin +
                 `"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
@@ -246,13 +246,13 @@ $(document).ready(function () {
             src: data[index].photo
           })
           .click(function () {
-            $(".max-member-paragraphs").empty();
-            $(".wybierz-osobe").remove();
-            $(".max-photo").css(
+            $(".max-info__paragraphs").empty();
+            $(".max-info__big-photo__wybierz").remove();
+            $(".max-info__big-photo").css(
               "background-image",
               "url(" + data[index].photo + ")"
             );
-            $(".max-member-paragraphs").append(
+            $(".max-info__paragraphs").append(
               `<p class="max-name-surname">` +
               data[index].first_name +
               ` ` +
@@ -263,7 +263,7 @@ $(document).ready(function () {
               `</p>`
             );
             if (data[index].linkedin != "") {
-              $(".max-member-paragraphs").append(
+              $(".max-info__paragraphs").append(
                 `<a class="linkedin-btn" href="` +
                 data[index].linkedin +
                 `"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
@@ -276,13 +276,13 @@ $(document).ready(function () {
 
   const rndPerson = (props) => {
     //
-    $(".max-member-paragraphs").empty();
-    $(".wybierz-osobe").remove();
-    $(".max-photo").css(
+    $(".max-info__paragraphs").empty();
+    $(".max-info__big-photo__wybierz").remove();
+    $(".max-info__big-photo").css(
       "background-image",
       "url(" + props[randomNumber].photo + ")"
     );
-    $(".max-member-paragraphs").append(
+    $(".max-info__paragraphs").append(
       `<p class="max-name-surname">` +
       props[randomNumber].first_name +
       ` ` +
@@ -293,7 +293,7 @@ $(document).ready(function () {
       `</p>`
     );
     if (props[randomNumber].linkedin != "") {
-      $(".max-member-paragraphs").append(
+      $(".max-info__paragraphs").append(
         `<a class="linkedin-btn" href="` +
         props[randomNumber].linkedin +
         `" target="_blank"><img src="../assets/images/linkedin_white.png" width="80px"></a>`

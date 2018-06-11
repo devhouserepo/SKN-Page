@@ -2926,7 +2926,7 @@ section.projects {
   }
 }
 
-.team-section-container {
+section.team {
   background-color: #e9500a;
   font-family: "Roboto", sans-serif;
   display: -webkit-box;
@@ -2939,47 +2939,93 @@ section.projects {
   padding: 13vh 0 0 0;
 }
 
-p {
-  color: white;
-}
-
-#poznaj-lepiej {
-  font-size: 1.3em;
-}
-
-.members {
+section.team .team-container {
   background-color: #8b2086;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  top: -60px;
   width: 100%;
   z-index: 5;
-  top: -60px;
-  position: relative;
 }
 
-.max-member-container {
+@media (min-width: 576px) {
+  section.team .team-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  section.team .team-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  section.team .team-container {
+    max-width: 960px;
+  }
+}
+
+section.team .team-container p {
+  color: white;
+}
+
+section.team .team-container #poznaj-lepiej {
+  font-size: 1.3em;
+}
+
+section.team .team-container .max-info {
   background-color: rgba(11, 105, 66, 0.164);
   -webkit-box-flex: 2;
       -ms-flex: 2 2 50%;
           flex: 2 2 50%;
   margin-left: 0;
-  top: 35vh;
   position: relative;
   display: block;
+  top: 35vh;
+  width: 100%;
 }
 
-.members-bg-line-container {
-  background-color: rgba(19, 180, 92, 0.116);
+@media (min-width: 576px) {
+  section.team .team-container .max-info {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  section.team .team-container .max-info {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  section.team .team-container .max-info {
+    max-width: 960px;
+  }
+}
+
+section.team .team-container .max-info__giant-header-members {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 9px;
+  opacity: 0.07;
+  font-size: 99px;
   position: absolute;
-  z-index: 1;
-  width: 1400px;
-  height: 125%;
-  top: 18px;
-  right: -253px;
+  top: -12vh;
+  right: 0px;
 }
 
-.max-photo {
+section.team .team-container .max-info__big-photo {
   background-position: center;
   background-size: 220px auto;
   background-color: #414479;
@@ -2990,29 +3036,50 @@ p {
   border-radius: 50%;
 }
 
-.wybierz-osobe {
+section.team .team-container .max-info__big-photo__wybierz {
   width: 100%;
   text-align: center;
   position: absolute;
   top: 44%;
 }
 
-.max-member-paragraphs {
+section.team .team-container .max-info__paragraphs {
   background-color: rgba(255, 105, 180, 0.466);
   display: block;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
   margin-top: 9%;
 }
 
-.max-name-surname {
+section.team .team-container .max-info__svg {
+  background-color: rgba(19, 180, 92, 0.116);
+  position: absolute;
+  z-index: 1;
+  width: 1400px;
+  height: 125%;
+  top: 18px;
+  right: -253px;
+}
+
+section.team .team-container .max-info__svg__line {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  -webkit-animation: dash 3s linear forwards;
+          animation: dash 3s linear forwards;
+}
+
+section.team .team-container .max-name-surname {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 14px;
 }
 
-.max-member-info-details {
+section.team .team-container .max-member-info-details {
   background-color: #40395f;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
@@ -3021,7 +3088,7 @@ p {
   padding-right: 9%;
 }
 
-.linkedin-btn {
+section.team .team-container .linkedin-btn {
   display: inline-block;
   margin-top: 4vh;
   margin-bottom: 4vh;
@@ -3034,11 +3101,11 @@ p {
   position: relative;
 }
 
-.linkedin-btn:hover {
+section.team .team-container .linkedin-btn:hover {
   background-color: rgba(123, 124, 194, 0.315);
 }
 
-.thumbnails-projects-container {
+section.team .team-container .thumbnails-section {
   background-color: #b7e021;
   -webkit-box-flex: 2;
       -ms-flex: 2 2 50%;
@@ -3047,7 +3114,7 @@ p {
   z-index: 11;
 }
 
-.members-thumbnails-container {
+section.team .team-container .members-thumbnails-container {
   background-color: rgba(144, 170, 226, 0.308);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3061,7 +3128,7 @@ p {
   overflow-y: auto;
 }
 
-.one-thumbnail-container {
+section.team .team-container .one-thumbnail-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3072,7 +3139,7 @@ p {
   line-height: 13px;
 }
 
-.thumb-img {
+section.team .team-container .thumb-img {
   border-radius: 50% !important;
   width: 45px;
   height: 45px;
@@ -3081,21 +3148,21 @@ p {
   transition: 0.2s;
 }
 
-.thumb-img:hover {
+section.team .team-container .thumb-img:hover {
   opacity: 0.7;
 }
 
-.thumb-name-surname {
+section.team .team-container .thumb-name-surname {
   margin: 9px 0 0 0;
   font-size: 12px;
   line-height: 14px;
 }
 
-#projekty-btns-container {
+section.team .team-container .teams-container {
   position: relative;
 }
 
-#team-section-projekty-header {
+section.team .team-container .teams-container__header {
   color: white;
   font-weight: bold;
   letter-spacing: 3px;
@@ -3104,7 +3171,7 @@ p {
   margin-top: 14%;
 }
 
-.projects-buttons {
+section.team .team-container .projects-buttons {
   background-color: #df6f25;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3114,7 +3181,7 @@ p {
   margin: 4% 0 8% 0;
 }
 
-.project-btn {
+section.team .team-container .project-btn {
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
@@ -3134,36 +3201,25 @@ p {
   transition: 0.3s;
 }
 
-.project-btn:hover {
+section.team .team-container .project-btn:hover {
   background: #4f5178;
 }
 
-.project-btn:focus {
+section.team .team-container .project-btn:focus {
   outline: none;
 }
 
-.project-btn:active {
+section.team .team-container .project-btn:active {
   background: rgba(46, 47, 93, 0.918);
 }
 
-.selected-project {
+section.team .team-container .selected-project {
   background: #4f5178;
 }
 
-.section-team-background {
+section.team .team-container .section-team-background {
   background-color: #53704a;
   z-index: 1;
-}
-
-.giant-header-members {
-  color: white;
-  font-weight: bold;
-  letter-spacing: 9px;
-  opacity: 0.07;
-  font-size: 99px;
-  position: absolute;
-  top: -12vh;
-  right: 0px;
 }
 
 .navigation {
