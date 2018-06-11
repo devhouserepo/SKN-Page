@@ -1059,6 +1059,8 @@ section.projects {
 }
 
 .mobile-project {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
   opacity: 0;
   width: 105%;
   height: 400px;
@@ -1112,20 +1114,9 @@ section.projects {
   opacity: 0;
   background-color: transparent;
   border: 1px solid #000039;
-  border-radius: 1px;
   color: #000039;
-  display: block;
-  font-size: 16px;
-  height: 26px;
-  margin: 17px auto 0 auto;
-  padding-top: 4px;
-  position: relative;
-  text-align: center;
   text-decoration: none;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  z-index: 40;
-  width: 80px;
+  z-index: 50;
 }
 
 .single-container {

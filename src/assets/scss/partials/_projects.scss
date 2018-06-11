@@ -122,6 +122,16 @@ section.projects {
 //START--START--------Mobile--modal---on----click-----------Mobile--modal---on--click-
 
 .mobile-project {
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 0,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0 100%,
+    0% 30%
+  );
   opacity: 0;
   width: 105%;
   height: 400px;
@@ -174,19 +184,9 @@ section.projects {
 
     background-color: transparent;
     border: 1px solid $bg-color-1;
-    border-radius: 1px;
     color: $bg-color-1;
-    display: block;
-    font-size: 16px;
-    height: 26px;
-    margin: 17px auto 0 auto;
-    padding-top: 4px;
-    position: relative;
-    text-align: center;
     text-decoration: none;
-    transition: all 0.3s linear;
-    z-index: 40;
-    width: 80px;
+    z-index: 50;
   }
 }
 

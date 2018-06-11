@@ -84,27 +84,33 @@ $(document).ready(function () {
 
 
   $('.single-container').each(function (index) {
-    $(this).on('touchstart', function () {
-      let projectId = $(this).attr("data-id")
-      for (i = 0; i < projects.length; i++) {
-        if (projects[index].id == projectId) {
-          $('.mobile-project__title').text(`${projects[index].title}`)
-          $('.mobile-project__kind').text(`${projects[index].kind}`)
-          $('.mobile-project__description').text(`${projects[index].description}`)
-          if (projects[index].website != "") {
-            $(".mobile-project__btn-more").attr('href', `${projects[index].website}`).css('opacity', '1')
+    if (window.screen.width <= 750) {
+      $(this).on('click', function () {
+        let projectId = $(this).attr("data-id")
+        let project
+        for (i = 0; i < projects.length; i++) {
+          if (projects[index].id == projectId) {
+            project = projects[index]
           }
-          $('.mobile-project').css({
-            'opacity': '1',
-            'z-index': '20'
-          })
         }
-      }
-    })
+        $('.mobile-project__title').text(`${project.title}`)
+        $('.mobile-project__kind').text(`${project.kind}`)
+        $('.mobile-project__description').text(`${project.description}`)
+        if (!!project.website) {
+          $(".mobile-project__btn-more").attr('href', `${project.website}`).css('opacity', '1')
+        } else {
+          $(".mobile-project__btn-more").css('opacity', '0')
+        }
+        $('.mobile-project').css({
+          'opacity': '1',
+          'z-index': '20'
+        })
+      })
+    }
   })
 
 
-  $('.mobile-project__close-icon').on('touchstart', function () {
+  $('.mobile-project__close-icon').on('click', function () {
     $('.mobile-project').css({
       'opacity': '0',
       'z-index': '0'
@@ -112,6 +118,7 @@ $(document).ready(function () {
   })
 
 
+  // PROJECTS SECTION END
   // TEAM section START
 
   let teamDevhouse = "#team-devhouse";
