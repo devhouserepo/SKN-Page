@@ -65,8 +65,8 @@ $(document).ready(function () {
       $(this).find($('.single-container__project-paragraphs__title')).text(`${projectsData[index].title}`)
       $(this).find($('.single-container__project-paragraphs__kind')).text(`${projectsData[index].kind}`)
       $(this).find($('.single-container__project-paragraphs__description')).text(`${projectsData[index].description}`)
-      if ($(this).find($('.single-container__project-paragraphs__btn-more-about')) && projectsData[index].website != "") {
-        $('.single-container__project-paragraphs__btn-more-about').attr('href', `${projectsData[index].website}`)
+      if ($(this).find($('.single-container__project-paragraphs__btn-more')) && projectsData[index].website != "") {
+        $('.single-container__project-paragraphs__btn-more').attr('href', `${projectsData[index].website}`)
       }
     })
   }
@@ -92,7 +92,7 @@ $(document).ready(function () {
           $('.mobile-project__kind').text(`${projects[index].kind}`)
           $('.mobile-project__description').text(`${projects[index].description}`)
           if (projects[index].website != "") {
-            $(".mobile__btn-more").attr('href', `${projects[index].website}`)
+            $(".mobile-project__btn-more").attr('href', `${projects[index].website}`).css('opacity', '1')
           }
           $('.mobile-project').css({
             'opacity': '1',

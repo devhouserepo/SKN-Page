@@ -67,7 +67,6 @@ table {
 }
 
 .header {
-  display: none !important;
   background: url(../../assets/images/tlo3.png) no-repeat center center;
   background-size: cover;
   max-width: 100vw;
@@ -965,6 +964,18 @@ section.projects {
   }
 }
 
+.btn-more {
+  border-radius: 1px;
+  display: block;
+  font-size: 16px;
+  height: 26px;
+  margin: 17px auto 0 auto;
+  padding-top: 4px;
+  position: relative;
+  text-align: center;
+  width: 80px;
+}
+
 .projects-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1097,28 +1108,24 @@ section.projects {
   z-index: 40;
 }
 
-.mobile-project__btn-more-about {
-  background-color: black;
-  color: #000039;
-  margin: 17px auto 0 auto;
-  padding-top: 4px;
-  width: 80px;
-  height: 26px;
-  font-size: 16px;
+.mobile-project__btn-more {
+  opacity: 0;
+  background-color: transparent;
   border: 1px solid #000039;
   border-radius: 1px;
-  text-align: center;
-  -webkit-transition: background-color 0.3s linear;
-  transition: background-color 0.3s linear;
-  z-index: 40;
-  position: relative;
+  color: #000039;
   display: block;
-}
-
-.mobile-project__btn-more-about:hover {
+  font-size: 16px;
+  height: 26px;
+  margin: 17px auto 0 auto;
+  padding-top: 4px;
+  position: relative;
+  text-align: center;
   text-decoration: none;
-  color: white;
-  background-color: #000039;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  z-index: 40;
+  width: 80px;
 }
 
 .single-container {
@@ -1151,7 +1158,7 @@ section.projects {
 @media (min-width: 750px) {
   .single-container:hover .single-container__project-paragraphs__description {
     margin-left: -40px;
-    width: 270px;
+    width: 264px;
     -webkit-animation: showProjectAboutandButton 2s forwards;
     /* Safari 4+ */
     animation: showProjectAboutandButton 2s forwards;
@@ -1160,7 +1167,7 @@ section.projects {
 }
 
 @media (min-width: 750px) {
-  .single-container:hover .single-container__project-paragraphs__btn-more-about {
+  .single-container:hover .single-container__project-paragraphs__btn-more {
     -webkit-animation: showProjectAboutandButton 2s forwards;
     /* Safari 4+ */
     animation: showProjectAboutandButton 2s forwards;
@@ -1218,24 +1225,15 @@ section.projects {
   display: inline-block;
 }
 
-.single-container__project-paragraphs__btn-more-about {
+.single-container__project-paragraphs__btn-more {
   color: white;
-  margin: 17px auto 0 auto;
-  padding-top: 4px;
-  width: 80px;
-  height: 26px;
-  font-size: 16px;
   border: 1px solid white;
-  border-radius: 1px;
-  text-align: center;
   opacity: 0;
-  position: relative;
-  display: block;
   -webkit-transition: background-color 0.3s linear;
   transition: background-color 0.3s linear;
 }
 
-.single-container__project-paragraphs__btn-more-about:hover {
+.single-container__project-paragraphs__btn-more:hover {
   text-decoration: none;
   color: black;
   background-color: #fff;
@@ -1449,7 +1447,6 @@ section.projects {
 }
 
 .section__contact {
-  display: none !important;
   width: 100%;
   color: #ffffff;
 }
@@ -2033,7 +2030,6 @@ section.projects {
 }
 
 .partners {
-  display: none !important;
   background-color: white;
   padding-bottom: 100px;
 }
@@ -2189,7 +2185,6 @@ section.projects {
 }
 
 .section__reference {
-  display: none !important;
   width: 100vw;
   height: 100vh;
   color: black;
@@ -2948,6 +2943,7 @@ section.projects {
   height: 100vh;
   overflow: hidden;
   padding: 13vh 0 0 0;
+  display: none !important;
 }
 
 @media (max-width: 767px) {
@@ -3175,7 +3171,6 @@ p {
 }
 
 .navigation {
-  display: none !important;
   width: 100%;
   position: fixed;
   left: 0;
