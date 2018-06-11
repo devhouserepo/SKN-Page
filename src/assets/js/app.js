@@ -114,11 +114,6 @@ $(document).ready(function () {
         $(this).off('click')
       })
     }
-    if (window.innerHeight < 565) {
-      $('section.projects').css('padding-top', '11rem')
-    } else {
-      $('section.projects').css('padding-top', '1.3rem')
-    }
   }
 
 

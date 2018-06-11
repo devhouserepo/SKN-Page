@@ -951,16 +951,12 @@ section.projects {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 1.3rem;
 }
 
-@media (min-height: 660px) {
+@media (max-height: 567px) {
   section.projects {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding-top: 12rem;
   }
 }
 
@@ -1003,9 +999,9 @@ section.projects {
 
 @media (min-width: 750px) {
   .projects-container {
-    grid-row-gap: 30px;
+    grid-row-gap: 34px;
     padding-top: 92px;
-    width: 530px;
+    width: 508px;
   }
 }
 
@@ -2940,12 +2936,6 @@ section.projects {
   height: 100vh;
   overflow: hidden;
   padding: 13vh 0 0 0;
-}
-
-@media (max-width: 767px) {
-  .team-section-container {
-    display: none !important;
-  }
 }
 
 p {

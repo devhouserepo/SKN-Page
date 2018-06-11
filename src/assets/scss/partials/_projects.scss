@@ -36,10 +36,10 @@ section.projects {
   display: flex;
   font-family: "Roboto";
   justify-content: center;
+  padding-top: 1.3rem;
 
-  @media (min-height: 660px) {
-    align-items: center;
-    justify-content: center;
+  @media (max-height: 567px) {
+    padding-top: 12rem;
   }
 }
 
@@ -76,9 +76,9 @@ section.projects {
     width: 440px;
   }
   @media (min-width: 750px) {
-    grid-row-gap: 30px;
+    grid-row-gap: 34px;
     padding-top: 92px;
-    width: 530px;
+    width: 508px;
   }
   @media (min-width: 970px) {
     grid-row-gap: 35px;
