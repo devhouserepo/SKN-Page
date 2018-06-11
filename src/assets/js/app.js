@@ -157,17 +157,17 @@ $(document).ready(function () {
       rndPerson(props);
 
       $.each(data, function (index, item) {
-        $(".members-thumbnails-container").append(
-          `<div class="flex-column align-items-center one-thumbnail-container">
-                    <img class="thumb-img"></img>
-                    <p class="thumb-name-surname">` +
+        $(".thumbnails").append(
+          `<div class="flex-column align-items-center thumbnails__person">
+                    <img class="thumbnails__person__photo"></img>
+                    <p class="thumbnails__person__name">` +
           data[index].first_name +
           ` ` +
           data[index].last_name +
           `</p>
                     </div>`
         );
-        $(".thumb-img")
+        $(".thumbnails__person__photo")
           .eq(index)
           .attr({
             id: data[index].first_name + data[index].last_name,
@@ -186,18 +186,18 @@ $(document).ready(function () {
               "url(" + data[index].photo + ")"
             );
             $(".max-info__paragraphs").append(
-              `<p class="max-name-surname">` +
+              `<p class="max-info__paragraphs__name">` +
               data[index].first_name +
               ` ` +
               data[index].last_name +
               `</p>
-                        <p class="max-member-info-details">` +
+                        <p class="max-info__paragraphs__about">` +
               data[index].info +
               `</p>`
             );
             if (data[index].linkedin != "") {
               $(".max-info__paragraphs").append(
-                `<a class="linkedin-btn" target="_blank" href="` +
+                `<a class="max-info__paragraphs__linkedin-btn" target="_blank" href="` +
                 data[index].linkedin +
                 `"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
               );
@@ -212,29 +212,29 @@ $(document).ready(function () {
   highlighSelectedProject(teamDevhouse);
 
   $("#team-devhouse").click(function () {
-    $(".members-thumbnails-container").empty();
+    $(".thumbnails").empty();
     $(".selected-project").toggleClass("selected-project");
     highlighSelectedProject(teamDevhouse);
     getDevhouseJSON();
   });
 
   $("#team-startup").click(function () {
-    $(".members-thumbnails-container").empty();
+    $(".thumbnails").empty();
     $(".selected-project").toggleClass("selected-project");
     highlighSelectedProject(teamStartUp);
     $.getJSON("../../skn-members/startup.json", function (data) {
       $.each(data, function (index, item) {
-        $(".members-thumbnails-container").append(
-          `<div class="flex-column align-items-center one-thumbnail-container">
-                        <img class="thumb-img"></img>
-                        <p class="thumb-name-surname">` +
+        $(".thumbnails").append(
+          `<div class="flex-column align-items-center thumbnails__person">
+                        <img class="thumbnails__person__photo"></img>
+                        <p class="thumbnails__person__name">` +
           data[index].first_name +
           ` ` +
           data[index].last_name +
           `</p>
                         </div>`
         );
-        $(".thumb-img")
+        $(".thumbnails__person__photo")
           .eq(index)
           .attr({
             id: data[index].first_name + data[index].last_name,
@@ -253,18 +253,18 @@ $(document).ready(function () {
               "url(" + data[index].photo + ")"
             );
             $(".max-info__paragraphs").append(
-              `<p class="max-name-surname">` +
+              `<p class="max-info__paragraphs__name">` +
               data[index].first_name +
               ` ` +
               data[index].last_name +
               `</p>
-                            <p class="max-member-info-details">` +
+                            <p class="max-info__paragraphs__about">` +
               data[index].info +
               `</p>`
             );
             if (data[index].linkedin != "") {
               $(".max-info__paragraphs").append(
-                `<a class="linkedin-btn" href="` +
+                `<a class="max-info__paragraphs__linkedin-btn" href="` +
                 data[index].linkedin +
                 `"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
               );
@@ -283,18 +283,18 @@ $(document).ready(function () {
       "url(" + props[randomNumber].photo + ")"
     );
     $(".max-info__paragraphs").append(
-      `<p class="max-name-surname">` +
+      `<p class="max-info__paragraphs__name">` +
       props[randomNumber].first_name +
       ` ` +
       props[randomNumber].last_name +
       `</p>
-                    <p class="max-member-info-details">` +
+                    <p class="max-info__paragraphs__about">` +
       props[randomNumber].info +
       `</p>`
     );
     if (props[randomNumber].linkedin != "") {
       $(".max-info__paragraphs").append(
-        `<a class="linkedin-btn" href="` +
+        `<a class="max-info__paragraphs__linkedin-btn" href="` +
         props[randomNumber].linkedin +
         `" target="_blank"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
       );
