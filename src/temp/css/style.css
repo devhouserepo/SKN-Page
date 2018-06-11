@@ -1061,11 +1061,11 @@ section.projects {
 .mobile-project {
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
           clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
-  opacity: 0;
+  display: none;
   width: 105%;
   height: 400px;
   background-color: white;
-  top: 60px;
+  top: 62px;
   position: absolute;
 }
 
@@ -1111,7 +1111,7 @@ section.projects {
 }
 
 .mobile-project__btn-more {
-  opacity: 0;
+  display: none;
   background-color: transparent;
   border: 1px solid #000039;
   color: #000039;
@@ -1213,7 +1213,6 @@ section.projects {
   margin-top: 14px;
   font-size: 16px;
   text-align: center;
-  display: inline-block;
 }
 
 .single-container__project-paragraphs__btn-more {

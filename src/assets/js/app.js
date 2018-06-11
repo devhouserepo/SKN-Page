@@ -94,24 +94,23 @@ $(document).ready(function () {
     $('.mobile-project__kind').text(`${project.kind}`)
     $('.mobile-project__description').text(`${project.description}`)
     if (!!project.website) {
-      $(".mobile-project__btn-more").attr('href', `${project.website}`).css('opacity', '1')
+      $(".mobile-project__btn-more").attr('href', `${project.website}`).show()
     } else {
-      $(".mobile-project__btn-more").css('opacity', '0')
+      $(".mobile-project__btn-more").hide()
     }
-    $('.mobile-project').css({
-      'opacity': '1',
-      'z-index': '20'
-    })
+    $('.mobile-project').css('z-index', '20').fadeIn('slow')
   }
 
 
   function addRemoveClickAccordingToWindowWidth() {
     if (window.innerWidth < 750) {
       $('.single-container').each(function (index) {
+        $('.single-container__project-paragraphs__description').css('display', 'none')
         $(this).on('click', displayWhiteModalAboutProject)
       })
     } else {
       $('.single-container').each(function (index) {
+        $('.single-container__project-paragraphs__description').css('display', 'inline-block')
         $(this).off('click')
       })
     }
@@ -121,10 +120,7 @@ $(document).ready(function () {
 
   function closeWhiteModalOnXClick() {
     $('.mobile-project__close-icon').on('click', function () {
-      $('.mobile-project').css({
-        'opacity': '0',
-        'z-index': '0'
-      })
+      $('.mobile-project').css('z-index', '20').fadeOut('slow')
     })
   }
 

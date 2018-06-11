@@ -132,11 +132,11 @@ section.projects {
     0 100%,
     0% 30%
   );
-  opacity: 0;
+  display: none;
   width: 105%;
   height: 400px;
   background-color: white;
-  top: 60px;
+  top: 62px;
   position: absolute;
 
   &__close-icon {
@@ -180,8 +180,7 @@ section.projects {
   }
 
   &__btn-more {
-    opacity: 0;
-
+    display: none;
     background-color: transparent;
     border: 1px solid $bg-color-1;
     color: $bg-color-1;
@@ -268,7 +267,7 @@ section.projects {
       margin-top: 14px;
       font-size: 16px;
       text-align: center;
-      display: inline-block;
+      // display: inline-block;
     }
 
     &__btn-more {
