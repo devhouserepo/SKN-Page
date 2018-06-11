@@ -82,32 +82,43 @@ $(document).ready(function () {
 
   downloadThanDisplayProjectInfo()
 
+  
 
-  $('.single-container').each(function (index) {
-    if (window.screen.width <= 750) {
-      $(this).on('click', function () {
-        let projectId = $(this).attr("data-id")
-        let project
-        for (i = 0; i < projects.length; i++) {
-          if (projects[index].id == projectId) {
-            project = projects[index]
+  function openProjectOnClickBelow750pxWindowWidth() {
+    if (window.innerWidth < 750) {
+      $('.single-container').each(function (index) {
+        $(this).on('click', function () {
+          let projectId = $(this).attr("data-id")
+          let project
+          for (i = 0; i < projects.length; i++) {
+            if (projects[index].id == projectId) {
+              project = projects[index]
+            }
           }
-        }
-        $('.mobile-project__title').text(`${project.title}`)
-        $('.mobile-project__kind').text(`${project.kind}`)
-        $('.mobile-project__description').text(`${project.description}`)
-        if (!!project.website) {
-          $(".mobile-project__btn-more").attr('href', `${project.website}`).css('opacity', '1')
-        } else {
-          $(".mobile-project__btn-more").css('opacity', '0')
-        }
-        $('.mobile-project').css({
-          'opacity': '1',
-          'z-index': '20'
+          $('.mobile-project__title').text(`${project.title}`)
+          $('.mobile-project__kind').text(`${project.kind}`)
+          $('.mobile-project__description').text(`${project.description}`)
+          if (!!project.website) {
+            $(".mobile-project__btn-more").attr('href', `${project.website}`).css('opacity', '1')
+          } else {
+            $(".mobile-project__btn-more").css('opacity', '0')
+          }
+          $('.mobile-project').css({
+            'opacity': '1',
+            'z-index': '20'
+          })
         })
       })
+    } else {
+      $('.single-container').each(function (index) {
+        $(this).off('click')
+      })
     }
-  })
+  }
+
+  openProjectOnClickBelow750pxWindowWidth()
+
+  $(window).on('resize', openProjectOnClickBelow750pxWindowWidth)
 
 
   $('.mobile-project__close-icon').on('click', function () {
