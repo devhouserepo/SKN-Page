@@ -12,16 +12,17 @@ section.team {
         // background-color: rgb(32, 109, 139);
         display: grid;
         grid-auto-columns: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 4fr;
+        grid-gap: 38px;
         grid-template-areas:
-                "giant-header-members"
-                "thumbnails-section"
-                "max-info";
+        "giant-header-members"
+        "thumbnails-section"
+        "max-info";
+        grid-template-columns: 96%;
+        grid-template-rows: "1fr" 
+                            "auto" 
+                            "auto";
         margin-right: auto;
         margin-left: auto;
-        padding-left: 15px;
-        padding-right: 15px;
         width: 80%;
         z-index: 5;
         @media (min-width: 870px) {
@@ -49,9 +50,9 @@ section.team {
             color: white;
             font-weight: bold;
             grid-area: giant-header-members;
-            letter-spacing: 9px;
-            opacity: 0.07;
-            font-size: 120px;
+            letter-spacing: 4px;
+            opacity: 0.2;
+            font-size: 50px;
             position: relative;
             left: 16%;
             top: 98%;
@@ -63,21 +64,26 @@ section.team {
             font-size: 1.3em;
         }
         .max-info {
-            background-color: rgba(226, 42, 25, 0.116);
+            // background-color: rgba(226, 42, 25, 0.116);
             grid-area: max-info;
-            margin-left: 0;
+            margin: 20px 16px 0 6px;
+            // margin: 7% auto auto auto;
             position: relative;
             
             &__big-photo {
                 // background-image: url("/assets/images/members/chlopak.jpg");
-                background-color: #414479;
+                // background-color: #414479;
                 background-position: center;
                 background-size: 220px auto;
                 position: relative;
                 z-index: 10;
-                width: 200px;
-                height: 200px;
+                width: 170px;
+                height: 170px;
                 border-radius: 50%;
+                @media (min-width: 870px) {
+                    width: 200px;
+                    height: 200px;
+                }
                 &__wybierz {
                     width: 100%;
                     text-align: center;
@@ -90,11 +96,11 @@ section.team {
                 display: block;
                 flex: 1 1 100%;
                 flex-direction: column !important;
-                margin-top: 9%;
+                margin: 30px auto auto auto;
                 &__name {
                     font-size: 20px;
                     font-weight: bold;
-                    margin-bottom: 14px;
+                    margin: 4px auto 14px auto;
                 }
                 &__about {
                     // background-color: rgb(64, 57, 95);
@@ -135,42 +141,39 @@ section.team {
             }
         }
         .thumbnails-section {
-            background-color: rgba(183, 224, 33, 0.11);
+            background-color: #000039;
             grid-area: thumbnails-section;
-            // position: relative;
+            width: 84%;
             z-index: 11;
             .teams-container {
-                position: relative;
-                &__header {
+                // position: relative;
+                &__header-projekty {
                     color: white;
                     font-weight: bold;
                     letter-spacing: 3px;
-                    opacity: 0.09;
+                    opacity: 0.2;
                     font-size: 1.3em;
                     margin-top: 14%;
                 }
                 &__btns-list {
                     // background-color: rgb(223, 111, 37);
-                    display: flex;
-                    top: 106%;
-                    left: 4%;
-                    margin: 4% 0 8% 0;
+                    display: grid;
+                    grid-gap: 11px;
+                    grid-template-columns: 1fr 1fr;
+                    margin: 8% 0 11% 0;
+                    
                     &__team-btn {
-                        // grid-column: auto;
-                        // grid-row: auto;
-                        flex: 1 1;
-                        flex-wrap: wrap;
-                        padding: 6px; // border-radius: 5px;
-                        // border: none;
-                        border: 1px solid rgba(255, 255, 255, 0.089);
-                        background: transparent;
                         background: rgba(46, 47, 93, 0.459);
-                        opacity: 0.7;
-                        font-size: 0.8em;
-                        font-weight: bold;
-                        letter-spacing: 2px;
+                        border: 1px solid rgba(255, 255, 255, 0.089);
                         color: #ffffff;
                         cursor: pointer;
+                        flex: 1 1;
+                        font-size: 0.8em;
+                        font-weight: bold;
+                        flex-wrap: wrap;
+                        letter-spacing: 2px;
+                        opacity: 0.7;
+                        padding: 6px; 
                         -webkit-transition: 0.3s;
                         transition: 0.3s;
                         &:hover {
@@ -186,12 +189,14 @@ section.team {
                 }
             }
             .thumbnails {
-                // background-color: rgba(144, 170, 226, 0.308);
+                align-items: center;
+                border: 1px solid rgba(255, 255, 255, 0.089);
+                // background-color: #0e0f419a;
                 display: flex;
                 flex-wrap: wrap;
-                align-items: center;
-                max-height: 50vh; // max-height: 590px;
+                max-height: 3545px;
                 overflow-y: auto;
+                padding: 9px 4px 8px 9px;
                 &__person {
                     // background-color: rgba(230, 215, 84, 0.397);
                     display: flex;
