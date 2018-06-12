@@ -2934,18 +2934,26 @@ section.team {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 13vh 0 0 0;
+  padding: 150px 0 0 0;
+}
+
+@media (min-width: 1250px) {
+  section.team {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    padding: 5vh 0 0 0;
+  }
 }
 
 section.team .team-container {
   display: grid;
-  grid-auto-columns: auto;
   grid-gap: 10px;
-  grid-template-areas: "giant-header-members" "thumbnails-section" "max-info";
+  grid-template-areas: "." "thumbnails-section" "max-info";
   grid-template-columns: 96%;
-  grid-template-rows: "1fr"  "auto"  "auto";
-  margin-right: auto;
-  margin-left: auto;
+  grid-template-rows: 40px auto auto;
+  margin: 7% auto auto auto;
   width: 80%;
   z-index: 5;
 }
@@ -2953,8 +2961,14 @@ section.team .team-container {
 @media (min-width: 870px) {
   section.team .team-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "giant-header-members thumbnails-section" "max-info thumbnails-section" "max-info thumbnails-section" "max-info thumbnails-section";
+    grid-template-rows: 100px 100px auto auto;
+    grid-template-areas: ". thumbnails-section" ". thumbnails-section" "max-info thumbnails-section" "max-info thumbnails-section";
+  }
+}
+
+@media (min-width: 1250px) {
+  section.team .team-container {
+    width: 1010px;
   }
 }
 
@@ -2965,9 +2979,9 @@ section.team .team-container .giant-header-members {
   grid-area: giant-header-members;
   left: 18%;
   letter-spacing: 4px;
-  margin: 50px 0 0 0;
   opacity: 0.2;
-  position: relative;
+  position: absolute;
+  top: 100px;
   z-index: 50;
 }
 
@@ -2983,24 +2997,6 @@ section.team .team-container .giant-header-members {
   section.team .team-container .giant-header-members {
     font-size: 90px;
     letter-spacing: 8px;
-  }
-}
-
-@media (min-width: 870px) {
-  section.team .team-container .giant-header-members {
-    font-size: 68px;
-    letter-spacing: 8px;
-    left: 3%;
-    margin: 39% 0 0 0;
-  }
-}
-
-@media (min-width: 950px) {
-  section.team .team-container .giant-header-members {
-    font-size: 75px;
-    letter-spacing: 8px;
-    left: 3%;
-    margin: 33% 0 0 0;
   }
 }
 
