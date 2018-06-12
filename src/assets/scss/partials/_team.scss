@@ -1,34 +1,60 @@
 section.team {
-    background-color: rgb(233, 80, 10);
+    // background-color: rgb(233, 80, 10);
     font-family: "Roboto", sans-serif;
     display: flex;
     position: relative;
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     overflow: hidden;
     padding: 13vh 0 0 0; // align-items: center;
-    // justify-content: center;
-    // display: none !important;
+
     .team-container {
-        background-color: rgb(139, 32, 134);
-        display: flex;
-        flex-direction: row !important;
+        // background-color: rgb(32, 109, 139);
+        display: grid;
+        grid-auto-columns: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 4fr;
+        grid-template-areas:
+                "giant-header-members"
+                "thumbnails-section"
+                "max-info";
         margin-right: auto;
         margin-left: auto;
         padding-left: 15px;
         padding-right: 15px;
-        position: relative;
-        top: -60px;
-        width: 100%;
+        width: 80%;
         z-index: 5;
-        @media (min-width: 576px) {
-            max-width: 540px;
+        @media (min-width: 870px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "giant-header-members thumbnails-section"
+                "giant-header-members thumbnails-section"
+                "max-info thumbnails-section"
+                "max-info thumbnails-section"
+                "max-info .";
         }
-        @media (min-width: 768px) {
-            max-width: 720px;
-        }
-        @media (min-width: 992px) {
-            max-width: 960px;
+
+        
+        // @media (min-width: 576px) {
+        //     max-width: 540px;
+        // }
+        // @media (min-width: 768px) {
+        //     max-width: 720px;
+        // }
+        // @media (min-width: 992px) {
+        //     max-width: 960px;
+        // }
+        .giant-header-members {
+            color: white;
+            font-weight: bold;
+            grid-area: giant-header-members;
+            letter-spacing: 9px;
+            opacity: 0.07;
+            font-size: 120px;
+            position: relative;
+            left: 16%;
+            top: 98%;
         }
         p {
             color: white;
@@ -37,37 +63,16 @@ section.team {
             font-size: 1.3em;
         }
         .max-info {
-            background-color: rgba(11, 105, 66, 0.164);
-            flex: 2 2 50%;
+            background-color: rgba(226, 42, 25, 0.116);
+            grid-area: max-info;
             margin-left: 0;
             position: relative;
-            display: block;
-            top: 35vh;
-            width: 100%;
-            @media (min-width: 576px) {
-                max-width: 540px;
-            }
-            @media (min-width: 768px) {
-                max-width: 720px;
-            }
-            @media (min-width: 992px) {
-                max-width: 960px;
-            }
-            &__giant-header-members {
-                color: white;
-                font-weight: bold;
-                letter-spacing: 9px;
-                opacity: 0.07;
-                font-size: 99px;
-                position: absolute;
-                top: -12vh;
-                right: 0px;
-            }
+            
             &__big-photo {
                 // background-image: url("/assets/images/members/chlopak.jpg");
+                background-color: #414479;
                 background-position: center;
                 background-size: 220px auto;
-                background-color: #414479;
                 position: relative;
                 z-index: 10;
                 width: 200px;
@@ -81,7 +86,7 @@ section.team {
                 }
             }
             &__paragraphs {
-                background-color: rgba(255, 105, 180, 0.466);
+                // background-color: rgba(255, 105, 180, 0.466);
                 display: block;
                 flex: 1 1 100%;
                 flex-direction: column !important;
@@ -92,7 +97,7 @@ section.team {
                     margin-bottom: 14px;
                 }
                 &__about {
-                    background-color: rgb(64, 57, 95);
+                    // background-color: rgb(64, 57, 95);
                     flex: 1 1 100%;
                     padding-left: 6%;
                     padding-right: 9%;
@@ -114,7 +119,8 @@ section.team {
                 }
             }
             &__svg {
-                background-color: rgba(19, 180, 92, 0.116);
+                display: none;
+                // background-color: rgba(19, 180, 92, 0.116);
                 position: absolute;
                 z-index: 1;
                 width: 1400px;
@@ -122,16 +128,16 @@ section.team {
                 top: 18px;
                 right: -253px;
                 &__line {
-                    stroke-dasharray: 1200;
-                    stroke-dashoffset: 1200;
+                    stroke-dasharray: 1500;
+                    stroke-dashoffset: 1500;
                     animation: dash 3s linear forwards;
                 }
             }
         }
         .thumbnails-section {
-            background-color: rgb(183, 224, 33);
-            flex: 2 2 50%;
-            position: relative;
+            background-color: rgba(183, 224, 33, 0.11);
+            grid-area: thumbnails-section;
+            // position: relative;
             z-index: 11;
             .teams-container {
                 position: relative;
@@ -144,7 +150,7 @@ section.team {
                     margin-top: 14%;
                 }
                 &__btns-list {
-                    background-color: rgb(223, 111, 37);
+                    // background-color: rgb(223, 111, 37);
                     display: flex;
                     top: 106%;
                     left: 4%;
@@ -180,7 +186,7 @@ section.team {
                 }
             }
             .thumbnails {
-                background-color: rgba(144, 170, 226, 0.308);
+                // background-color: rgba(144, 170, 226, 0.308);
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
