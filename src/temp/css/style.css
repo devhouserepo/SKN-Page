@@ -960,6 +960,15 @@ section.projects {
   }
 }
 
+@media (min-width: 1250px) {
+  section.projects {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
 .btn-more {
   border-radius: 1px;
   display: block;
@@ -980,7 +989,7 @@ section.projects {
   grid-auto-columns: auto;
   grid-row-gap: none;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "devhouse thinkit" "lead startup" "bootcamp twoj-projekt";
+  grid-template-areas: "devhouse thinkit" "lead startup" "bootcamp twoj-projekt";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1009,7 +1018,7 @@ section.projects {
   .projects-container {
     grid-row-gap: 35px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
+    grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
     width: 745px;
   }
 }
@@ -1018,7 +1027,7 @@ section.projects {
   .projects-container {
     grid-row-gap: none;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
+    grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
     height: 495px;
     padding-top: 0;
     width: 770px;
@@ -1029,7 +1038,7 @@ section.projects {
   .projects-container {
     grid-row-gap: none;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
+    grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
     height: 550px;
     width: 830px;
   }
@@ -3150,7 +3159,6 @@ section.team .team-container .max-info__svg__line {
 }
 
 section.team .team-container .thumbnails-section {
-  background-color: #000039;
   grid-area: thumbnails-section;
   width: 84%;
   z-index: 13;
@@ -3241,12 +3249,13 @@ section.team .team-container .thumbnails-section .thumbnails {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.089);
-  background-color: transparent;
+  background-color: #000039;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  min-height: 200px;
   max-height: 400px;
   overflow-y: auto;
   padding: 15px 3px 15px 6px;
