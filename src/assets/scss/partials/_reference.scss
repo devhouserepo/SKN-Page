@@ -180,9 +180,11 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 320px) {
   .section {
+
     &__reference {
+      width: 100%;
       .mobile {
       display: initial !important;
       background: #ffffff;
@@ -193,8 +195,10 @@
       left: -154px;
       .col-7 {
         position: relative;
+        
       }
       &::after {
+        display: none;
         content: "";
         position: absolute;
         transform: rotateZ(225deg);
@@ -208,6 +212,7 @@
         left: 90px;
       }
       &::before {
+        display: none;
         content: "";
         position: absolute;
         transform: rotateZ(45deg);
@@ -223,7 +228,793 @@
       .carousel {
         position: absolute;
         top: 110px;
-        left: 140px;
+        left: 122px;
+        .carousel-indicators {
+          li,
+          .active {
+            width: 13px;
+            height: 13px;
+            border-radius: 50px;
+            border: 1px solid #838383;
+            background-color: #fff;
+            cursor: pointer;
+          }
+          .active {
+            background-color: #ababab;
+          }
+        }
+      }
+      .carousel-item {
+        width: 320px;
+        min-height: 530px;
+        background: white;
+        text-align: center;
+        font-size: 0.8em;
+        font-family: $text-font-1;
+        letter-spacing: 0.4px;
+        padding: 20px 15px 0 15px;
+        img:nth-child(1) {
+          width: 100px;
+          border-radius: 100px;
+        }
+        span {
+          color: $bg-color-1;
+          display: block;
+          margin: 3px 0 0 0;
+        }
+        p:nth-child(2) {
+        }
+        p {
+          margin: 25px 0 0 0;
+        }
+        img:nth-child(4) {
+          margin: 40px 0 0 0;
+
+          height: 20px;
+        }
+      }
+      }
+      &__box-left {
+        display:none !important;
+        .carousel {
+          &::after {
+          }
+          .carousel-indicators {
+            li,
+            .active {
+            }
+            .active {
+            }
+          }
+        }
+        .carousel-item {
+          img:nth-child(1) {
+          }
+          span {
+          }
+          p:nth-child(2) {
+          }
+          p {
+          }
+          img:nth-child(4) {
+          }
+        }
+      }
+      &__box-right {
+        display:none !important;
+        svg {
+        }
+        .path {
+          stroke-dasharray: 1550;
+          stroke-dashoffset: 1550;
+          animation: dash 4s linear forwards;
+        }
+        @keyframes dash {
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+        .carousel {
+          &::after {
+          }
+          .carousel-indicators {
+            li,
+            .active {
+            }
+            .active {
+            }
+          }
+        }
+        .carousel-item {
+          img {
+          }
+          span {
+          }
+          p {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 321px) and (max-width: 380px) {
+  .section {
+
+    &__reference {
+      width: 100%;
+      .mobile {
+      display: initial !important;
+      background: #ffffff;
+      max-width: 700px;
+      height: 650px;
+      position: relative;
+      top: 54px;
+      left: -154px;
+      .col-7 {
+        position: relative;
+        
+      }
+      &::after {
+        display: none;
+        content: "";
+        position: absolute;
+        transform: rotateZ(225deg);
+        z-index: 1;
+        width: 0;
+        height: 0;
+       // border-top: 120px solid transparent;
+       // border-bottom: 120px solid transparent;
+      //  border-left: 120px solid $bg-color-1;
+        top: 10px;
+        left: 90px;
+      }
+      &::before {
+        display: none;
+        content: "";
+        position: absolute;
+        transform: rotateZ(45deg);
+        z-index: 1;
+        width: 0;
+        height: 0;
+       // border-top: 70px solid transparent;
+       // border-bottom: 70px solid transparent;
+       // border-left: 70px solid $bg-color-1;
+        right: -623px;
+        top: 450px;
+      }
+      .carousel {
+        position: absolute;
+        top: 110px;
+        left: 160px;
+        .carousel-indicators {
+          li,
+          .active {
+            width: 13px;
+            height: 13px;
+            border-radius: 50px;
+            border: 1px solid #838383;
+            background-color: #fff;
+            cursor: pointer;
+          }
+          .active {
+            background-color: #ababab;
+          }
+        }
+      }
+      .carousel-item {
+        width: 320px;
+        min-height: 530px;
+        background: white;
+        text-align: center;
+        font-size: 0.8em;
+        font-family: $text-font-1;
+        letter-spacing: 0.4px;
+        padding: 20px 15px 0 15px;
+        img:nth-child(1) {
+          width: 100px;
+          border-radius: 100px;
+        }
+        span {
+          color: $bg-color-1;
+          display: block;
+          margin: 3px 0 0 0;
+        }
+        p:nth-child(2) {
+        }
+        p {
+          margin: 25px 0 0 0;
+        }
+        img:nth-child(4) {
+          margin: 40px 0 0 0;
+
+          height: 20px;
+        }
+      }
+      }
+      &__box-left {
+        display:none !important;
+        .carousel {
+          &::after {
+          }
+          .carousel-indicators {
+            li,
+            .active {
+            }
+            .active {
+            }
+          }
+        }
+        .carousel-item {
+          img:nth-child(1) {
+          }
+          span {
+          }
+          p:nth-child(2) {
+          }
+          p {
+          }
+          img:nth-child(4) {
+          }
+        }
+      }
+      &__box-right {
+        display:none !important;
+        svg {
+        }
+        .path {
+          stroke-dasharray: 1550;
+          stroke-dashoffset: 1550;
+          animation: dash 4s linear forwards;
+        }
+        @keyframes dash {
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+        .carousel {
+          &::after {
+          }
+          .carousel-indicators {
+            li,
+            .active {
+            }
+            .active {
+            }
+          }
+        }
+        .carousel-item {
+          img {
+          }
+          span {
+          }
+          p {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 380px) and (max-width: 420px) {
+  .section {
+
+    &__reference {
+      width: 100%;
+      .mobile {
+      display: initial !important;
+      background: #ffffff;
+      max-width: 700px;
+      height: 650px;
+      position: relative;
+      top: 54px;
+      left: -154px;
+      .col-7 {
+        position: relative;
+      }
+      &::after {
+        display: none;
+        content: "";
+        position: absolute;
+        transform: rotateZ(225deg);
+        z-index: 1;
+        width: 0;
+        height: 0;
+       // border-top: 120px solid transparent;
+       // border-bottom: 120px solid transparent;
+      //  border-left: 120px solid $bg-color-1;
+        top: 10px;
+        left: 90px;
+      }
+      &::before {
+        display: none;
+        content: "";
+        position: absolute;
+        transform: rotateZ(45deg);
+        z-index: 1;
+        width: 0;
+        height: 0;
+       // border-top: 70px solid transparent;
+       // border-bottom: 70px solid transparent;
+       // border-left: 70px solid $bg-color-1;
+        right: -623px;
+        top: 450px;
+      }
+      .carousel {
+        position: absolute;
+        top: 110px;
+        left: 175px;
+        .carousel-indicators {
+          li,
+          .active {
+            width: 13px;
+            height: 13px;
+            border-radius: 50px;
+            border: 1px solid #838383;
+            background-color: #fff;
+            cursor: pointer;
+          }
+          .active {
+            background-color: #ababab;
+          }
+        }
+      }
+      .carousel-item {
+        width: 320px;
+        min-height: 530px;
+        background: white;
+        text-align: center;
+        font-size: 0.8em;
+        font-family: $text-font-1;
+        letter-spacing: 0.4px;
+        padding: 20px 15px 0 15px;
+        img:nth-child(1) {
+          width: 100px;
+          border-radius: 100px;
+        }
+        span {
+          color: $bg-color-1;
+          display: block;
+          margin: 3px 0 0 0;
+        }
+        p:nth-child(2) {
+        }
+        p {
+          margin: 25px 0 0 0;
+        }
+        img:nth-child(4) {
+          margin: 40px 0 0 0;
+
+          height: 20px;
+        }
+      }
+      }
+      &__box-left {
+        display:none !important;
+        .carousel {
+          &::after {
+          }
+          .carousel-indicators {
+            li,
+            .active {
+            }
+            .active {
+            }
+          }
+        }
+        .carousel-item {
+          img:nth-child(1) {
+          }
+          span {
+          }
+          p:nth-child(2) {
+          }
+          p {
+          }
+          img:nth-child(4) {
+          }
+        }
+      }
+      &__box-right {
+        display:none !important;
+        svg {
+        }
+        .path {
+          stroke-dasharray: 1550;
+          stroke-dashoffset: 1550;
+          animation: dash 4s linear forwards;
+        }
+        @keyframes dash {
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+        .carousel {
+          &::after {
+          }
+          .carousel-indicators {
+            li,
+            .active {
+            }
+            .active {
+            }
+          }
+        }
+        .carousel-item {
+          img {
+          }
+          span {
+          }
+          p {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 420px) and (max-width: 480px) {
+  .section {
+
+    &__reference {
+      width: 100%;
+      .mobile {
+      display: initial !important;
+      background: #ffffff;
+      max-width: 700px;
+      height: 650px;
+      position: relative;
+      top: 54px;
+      left: -154px;
+      .col-7 {
+        position: relative;
+      }
+      &::after {
+        display: none;
+        content: "";
+        position: absolute;
+        transform: rotateZ(225deg);
+        z-index: 1;
+        width: 0;
+        height: 0;
+       // border-top: 120px solid transparent;
+       // border-bottom: 120px solid transparent;
+      //  border-left: 120px solid $bg-color-1;
+        top: 10px;
+        left: 90px;
+      }
+      &::before {
+        display: none;
+        content: "";
+        position: absolute;
+        transform: rotateZ(45deg);
+        z-index: 1;
+        width: 0;
+        height: 0;
+       // border-top: 70px solid transparent;
+       // border-bottom: 70px solid transparent;
+       // border-left: 70px solid $bg-color-1;
+        right: -623px;
+        top: 450px;
+      }
+      .carousel {
+        position: absolute;
+        top: 110px;
+        left: 210px;
+        .carousel-indicators {
+          li,
+          .active {
+            width: 13px;
+            height: 13px;
+            border-radius: 50px;
+            border: 1px solid #838383;
+            background-color: #fff;
+            cursor: pointer;
+          }
+          .active {
+            background-color: #ababab;
+          }
+        }
+      }
+      .carousel-item {
+        width: 320px;
+        min-height: 530px;
+        background: white;
+        text-align: center;
+        font-size: 0.8em;
+        font-family: $text-font-1;
+        letter-spacing: 0.4px;
+        padding: 20px 15px 0 15px;
+        img:nth-child(1) {
+          width: 100px;
+          border-radius: 100px;
+        }
+        span {
+          color: $bg-color-1;
+          display: block;
+          margin: 3px 0 0 0;
+        }
+        p:nth-child(2) {
+        }
+        p {
+          margin: 25px 0 0 0;
+        }
+        img:nth-child(4) {
+          margin: 40px 0 0 0;
+
+          height: 20px;
+        }
+      }
+      }
+      &__box-left {
+        display:none !important;
+        .carousel {
+          &::after {
+          }
+          .carousel-indicators {
+            li,
+            .active {
+            }
+            .active {
+            }
+          }
+        }
+        .carousel-item {
+          img:nth-child(1) {
+          }
+          span {
+          }
+          p:nth-child(2) {
+          }
+          p {
+          }
+          img:nth-child(4) {
+          }
+        }
+      }
+      &__box-right {
+        display:none !important;
+        svg {
+        }
+        .path {
+          stroke-dasharray: 1550;
+          stroke-dashoffset: 1550;
+          animation: dash 4s linear forwards;
+        }
+        @keyframes dash {
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+        .carousel {
+          &::after {
+          }
+          .carousel-indicators {
+            li,
+            .active {
+            }
+            .active {
+            }
+          }
+        }
+        .carousel-item {
+          img {
+          }
+          span {
+          }
+          p {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 530px) {
+  .section {
+
+    &__reference {
+      width: 100%;
+      .mobile {
+      display: initial !important;
+      background: #ffffff;
+      max-width: 700px;
+      height: 650px;
+      position: relative;
+      top: 54px;
+      left: -154px;
+      .col-7 {
+        position: relative;
+      }
+      &::after {
+        display: none;
+        content: "";
+        position: absolute;
+        transform: rotateZ(225deg);
+        z-index: 1;
+        width: 0;
+        height: 0;
+       // border-top: 120px solid transparent;
+       // border-bottom: 120px solid transparent;
+      //  border-left: 120px solid $bg-color-1;
+        top: 10px;
+        left: 90px;
+      }
+      &::before {
+        display: none;
+        content: "";
+        position: absolute;
+        transform: rotateZ(45deg);
+        z-index: 1;
+        width: 0;
+        height: 0;
+       // border-top: 70px solid transparent;
+       // border-bottom: 70px solid transparent;
+       // border-left: 70px solid $bg-color-1;
+        right: -623px;
+        top: 450px;
+      }
+      .carousel {
+        position: absolute;
+        top: 110px;
+        left: 235px;
+        .carousel-indicators {
+          li,
+          .active {
+            width: 13px;
+            height: 13px;
+            border-radius: 50px;
+            border: 1px solid #838383;
+            background-color: #fff;
+            cursor: pointer;
+          }
+          .active {
+            background-color: #ababab;
+          }
+        }
+      }
+      .carousel-item {
+        width: 320px;
+        min-height: 530px;
+        background: white;
+        text-align: center;
+        font-size: 0.8em;
+        font-family: $text-font-1;
+        letter-spacing: 0.4px;
+        padding: 20px 15px 0 15px;
+        img:nth-child(1) {
+          width: 100px;
+          border-radius: 100px;
+        }
+        span {
+          color: $bg-color-1;
+          display: block;
+          margin: 3px 0 0 0;
+        }
+        p:nth-child(2) {
+        }
+        p {
+          margin: 25px 0 0 0;
+        }
+        img:nth-child(4) {
+          margin: 40px 0 0 0;
+
+          height: 20px;
+        }
+      }
+      }
+      &__box-left {
+        display:none !important;
+        .carousel {
+          &::after {
+          }
+          .carousel-indicators {
+            li,
+            .active {
+            }
+            .active {
+            }
+          }
+        }
+        .carousel-item {
+          img:nth-child(1) {
+          }
+          span {
+          }
+          p:nth-child(2) {
+          }
+          p {
+          }
+          img:nth-child(4) {
+          }
+        }
+      }
+      &__box-right {
+        display:none !important;
+        svg {
+        }
+        .path {
+          stroke-dasharray: 1550;
+          stroke-dashoffset: 1550;
+          animation: dash 4s linear forwards;
+        }
+        @keyframes dash {
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+        .carousel {
+          &::after {
+          }
+          .carousel-indicators {
+            li,
+            .active {
+            }
+            .active {
+            }
+          }
+        }
+        .carousel-item {
+          img {
+          }
+          span {
+          }
+          p {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 530px) and (max-width: 576px) {
+  .section {
+
+    &__reference {
+      width: 100%;
+      .mobile {
+      display: initial !important;
+      background: #ffffff;
+      max-width: 700px;
+      height: 650px;
+      position: relative;
+      top: 54px;
+      left: -154px;
+      .col-7 {
+        position: relative;
+      }
+      &::after {
+        display: none;
+        content: "";
+        position: absolute;
+        transform: rotateZ(225deg);
+        z-index: 1;
+        width: 0;
+        height: 0;
+       // border-top: 120px solid transparent;
+       // border-bottom: 120px solid transparent;
+      //  border-left: 120px solid $bg-color-1;
+        top: 10px;
+        left: 90px;
+      }
+      &::before {
+        display: none;
+        content: "";
+        position: absolute;
+        transform: rotateZ(45deg);
+        z-index: 1;
+        width: 0;
+        height: 0;
+       // border-top: 70px solid transparent;
+       // border-bottom: 70px solid transparent;
+       // border-left: 70px solid $bg-color-1;
+        right: -623px;
+        top: 450px;
+      }
+      .carousel {
+        position: absolute;
+        top: 110px;
+        left: 265px;
         .carousel-indicators {
           li,
           .active {
@@ -335,6 +1126,9 @@
 
 @media (min-width: 576px) and (max-width: 768px) {
   .section {
+    .container {
+      max-width: 555px;
+    }
     &__reference {
       .mobile {
       display: initial !important;
