@@ -1,10 +1,10 @@
-$(document).ready(function() {
+$(document).ready(function () {
   //Checking which element overflows the document
   var docWidth = document.documentElement.offsetWidth;
 
   [].forEach.call(
     document.querySelectorAll('*'),
-    function(el) {
+    function (el) {
       if (el.offsetWidth > docWidth) {
         console.log(el);
       }
@@ -15,9 +15,9 @@ $(document).ready(function() {
 
   let number = 0;
 
-  $("#private-button").click(function() {
+  $("#private-button").click(function () {
     if (number === 2) {
-      setTimeout(function() {
+      setTimeout(function () {
         document.getElementsByName("formSchool")[0].placeholder = "Uczelnia";
         document.getElementsByName("formDepartment")[0].placeholder = "Wydział";
       }, 0600);
@@ -28,9 +28,9 @@ $(document).ready(function() {
     $("#form-contact, #form-content").slideToggle(600);
   });
 
-  $("#company-button").click(function() {
+  $("#company-button").click(function () {
     if (number === 1) {
-      setTimeout(function() {
+      setTimeout(function () {
         document.getElementsByName("formSchool")[0].placeholder = "Firma";
         document.getElementsByName("formDepartment")[0].placeholder = "Dział";
       }, 0600);
@@ -44,11 +44,11 @@ $(document).ready(function() {
     $("#form-contact, #form-content").slideToggle(600);
   });
 
-  $("#myModal").on("shown.bs.modal", function() {
+  $("#myModal").on("shown.bs.modal", function () {
     $("#myInput").trigger("focus");
   });
 
-  $("div").on("click", function() {
+  $("div").on("click", function () {
     var target = $(this).attr("rel");
 
     $("#" + target)
@@ -57,12 +57,86 @@ $(document).ready(function() {
       .hide();
   });
 
-  // TEAM section START
 
-  // function showInfoAboutMember(data, index) {
-  //     console.log(data[index])
-  //     $('.max-photo').css('background-image', 'url(' + data[index].photo + ')')
-  // }
+  //PROJECTS section START
+
+  function displayProjectInfo(projectsData) {
+    $('.single-container').each(function (index) {
+      $(this).find($('.single-container__project-paragraphs__title')).text(`${projectsData[index].title}`)
+      $(this).find($('.single-container__project-paragraphs__kind')).text(`${projectsData[index].kind}`)
+      $(this).find($('.single-container__project-paragraphs__description')).text(`${projectsData[index].description}`)
+      if ($(this).find($('.single-container__project-paragraphs__btn-more')) && projectsData[index].website != "") {
+        $('.single-container__project-paragraphs__btn-more').attr('href', `${projectsData[index].website}`)
+      }
+    })
+  }
+
+  let projects
+
+  function downloadThanDisplayProjectInfo() {
+    $.getJSON("../../projects-info/projects-info.json", function (data) {
+      projects = data
+      displayProjectInfo(projects)
+    })
+  }
+
+
+
+  function displayWhiteModalAboutProject() {
+    let projectId = $(this).attr("data-id")
+    let project
+    for (i = 0; i < projects.length; i++) {
+      if (projects[i].id == projectId) {
+        project = projects[i]
+      }
+    }
+    $('.mobile-project__title').text(`${project.title}`)
+    $('.mobile-project__kind').text(`${project.kind}`)
+    $('.mobile-project__description').text(`${project.description}`)
+    if (!!project.website) {
+      $(".mobile-project__btn-more").attr('href', `${project.website}`).show()
+    } else {
+      $(".mobile-project__btn-more").hide()
+    }
+    $('.mobile-project').css('z-index', '20').fadeIn('slow')
+  }
+
+
+  function changesAccordingToWindowResolution() {
+    if (window.innerWidth < 750) {
+      $('.single-container').each(function (index) {
+        $('.single-container__project-paragraphs__description').css('display', 'none')
+        $(this).on('click', displayWhiteModalAboutProject)
+      })
+    } else {
+      $('.single-container').each(function (index) {
+        $('.single-container__project-paragraphs__description').css('display', 'inline-block')
+        $(this).off('click')
+      })
+    }
+  }
+
+
+
+  function closeWhiteModalOnXClick() {
+    $('.mobile-project__close-icon').on('click', function () {
+      $('.mobile-project').css('z-index', '20').fadeOut('slow')
+    })
+  }
+
+
+  downloadThanDisplayProjectInfo()
+
+  changesAccordingToWindowResolution()
+
+  $(window).on('resize', changesAccordingToWindowResolution)
+
+  closeWhiteModalOnXClick()
+
+
+  // PROJECTS SECTION END
+
+  // TEAM section START
 
   let teamDevhouse = "#team-devhouse";
   let teamStartUp = "#team-startup";
@@ -77,23 +151,23 @@ $(document).ready(function() {
 
 
   function getDevhouseJSON() {
-    $.getJSON("../../skn-members/devhouse.json", function(data) {
+    $.getJSON("../../skn-members/devhouse.json", function (data) {
       const props = [...data]
-        randomNumber = Math.floor(Math.random() * data.length)
-        rndPerson(props);
-      //
-      $.each(data, function(index, item) {
-        $(".members-thumbnails-container").append(
-          `<div class="flex-column align-items-center one-thumbnail-container">
-                    <img class="thumb-img"></img>
-                    <p class="thumb-name-surname">` +
-            data[index].first_name +
-            ` ` +
-            data[index].last_name +
-            `</p>
+      randomNumber = Math.floor(Math.random() * data.length)
+      rndPerson(props);
+
+      $.each(data, function (index, item) {
+        $(".thumbnails").append(
+          `<div class="flex-column align-items-center thumbnails__person">
+                    <img class="thumbnails__person__photo"></img>
+                    <p class="thumbnails__person__name">` +
+          data[index].first_name +
+          ` ` +
+          data[index].last_name +
+          `</p>
                     </div>`
         );
-        $(".thumb-img")
+        $(".thumbnails__person__photo")
           .eq(index)
           .attr({
             id: data[index].first_name + data[index].last_name,
@@ -104,28 +178,28 @@ $(document).ready(function() {
               ". Zdjęcie.",
             src: data[index].photo
           })
-          .click(function() {
-            $(".max-member-paragraphs").empty();
-            $(".wybierz-osobe").remove();
-            $(".max-photo").css(
+          .click(function () {
+            $(".max-info__paragraphs").empty();
+            $(".max-info__big-photo__wybierz").remove();
+            $(".max-info__big-photo").css(
               "background-image",
               "url(" + data[index].photo + ")"
             );
-            $(".max-member-paragraphs").append(
-              `<p class="max-name-surname">` +
-                data[index].first_name +
-                ` ` +
-                data[index].last_name +
-                `</p>
-                        <p class="max-member-info-details">` +
-                data[index].info +
-                `</p>`
+            $(".max-info__paragraphs").append(
+              `<p class="max-info__paragraphs__name">` +
+              data[index].first_name +
+              ` ` +
+              data[index].last_name +
+              `</p>
+                        <p class="max-info__paragraphs__about">` +
+              data[index].info +
+              `</p>`
             );
             if (data[index].linkedin != "") {
-              $(".max-member-paragraphs").append(
-                `<a class="linkedin-btn" target="_blank" href="` +
-                  data[index].linkedin +
-                  `"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
+              $(".max-info__paragraphs").append(
+                `<a class="max-info__paragraphs__linkedin-btn" target="_blank" href="` +
+                data[index].linkedin +
+                `"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
               );
             }
           });
@@ -137,30 +211,30 @@ $(document).ready(function() {
 
   highlighSelectedProject(teamDevhouse);
 
-  $("#team-devhouse").click(function() {
-    $(".members-thumbnails-container").empty();
+  $("#team-devhouse").click(function () {
+    $(".thumbnails").empty();
     $(".selected-project").toggleClass("selected-project");
     highlighSelectedProject(teamDevhouse);
     getDevhouseJSON();
   });
 
-  $("#team-startup").click(function() {
-    $(".members-thumbnails-container").empty();
+  $("#team-startup").click(function () {
+    $(".thumbnails").empty();
     $(".selected-project").toggleClass("selected-project");
     highlighSelectedProject(teamStartUp);
-    $.getJSON("../../skn-members/startup.json", function(data) {
-      $.each(data, function(index, item) {
-        $(".members-thumbnails-container").append(
-          `<div class="flex-column align-items-center one-thumbnail-container">
-                        <img class="thumb-img"></img>
-                        <p class="thumb-name-surname">` +
-            data[index].first_name +
-            ` ` +
-            data[index].last_name +
-            `</p>
+    $.getJSON("../../skn-members/startup.json", function (data) {
+      $.each(data, function (index, item) {
+        $(".thumbnails").append(
+          `<div class="flex-column align-items-center thumbnails__person">
+                        <img class="thumbnails__person__photo"></img>
+                        <p class="thumbnails__person__name">` +
+          data[index].first_name +
+          ` ` +
+          data[index].last_name +
+          `</p>
                         </div>`
         );
-        $(".thumb-img")
+        $(".thumbnails__person__photo")
           .eq(index)
           .attr({
             id: data[index].first_name + data[index].last_name,
@@ -171,28 +245,28 @@ $(document).ready(function() {
               ". Zdjęcie.",
             src: data[index].photo
           })
-          .click(function() {
-            $(".max-member-paragraphs").empty();
-            $(".wybierz-osobe").remove();
-            $(".max-photo").css(
+          .click(function () {
+            $(".max-info__paragraphs").empty();
+            $(".max-info__big-photo__wybierz").remove();
+            $(".max-info__big-photo").css(
               "background-image",
               "url(" + data[index].photo + ")"
             );
-            $(".max-member-paragraphs").append(
-              `<p class="max-name-surname">` +
-                data[index].first_name +
-                ` ` +
-                data[index].last_name +
-                `</p>
-                            <p class="max-member-info-details">` +
-                data[index].info +
-                `</p>`
+            $(".max-info__paragraphs").append(
+              `<p class="max-info__paragraphs__name">` +
+              data[index].first_name +
+              ` ` +
+              data[index].last_name +
+              `</p>
+                            <p class="max-info__paragraphs__about">` +
+              data[index].info +
+              `</p>`
             );
             if (data[index].linkedin != "") {
-              $(".max-member-paragraphs").append(
-                `<a class="linkedin-btn" href="` +
-                  data[index].linkedin +
-                  `"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
+              $(".max-info__paragraphs").append(
+                `<a class="max-info__paragraphs__linkedin-btn" href="` +
+                data[index].linkedin +
+                `"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
               );
             }
           });
@@ -200,32 +274,30 @@ $(document).ready(function() {
     });
   });
 
-const rndPerson = (props) => {
-    //
-    $(".max-member-paragraphs").empty();
-    $(".wybierz-osobe").remove();
-    $(".max-photo").css(
+  const rndPerson = (props) => {
+    $(".max-info__paragraphs").empty();
+    $(".max-info__big-photo__wybierz").remove();
+    $(".max-info__big-photo").css(
       "background-image",
       "url(" + props[randomNumber].photo + ")"
     );
-    $(".max-member-paragraphs").append(
-      `<p class="max-name-surname">` +
-        props[randomNumber].first_name +
-        ` ` +
-        props[randomNumber].last_name +
-        `</p>
-                    <p class="max-member-info-details">` +
-        props[randomNumber].info +
-        `</p>`
+    $(".max-info__paragraphs").append(
+      `<p class="max-info__paragraphs__name">` +
+      props[randomNumber].first_name +
+      ` ` +
+      props[randomNumber].last_name +
+      `</p>
+                    <p class="max-info__paragraphs__about">` +
+      props[randomNumber].info +
+      `</p>`
     );
     if (props[randomNumber].linkedin != "") {
-      $(".max-member-paragraphs").append(
-        `<a class="linkedin-btn" href="` +
-          props[randomNumber].linkedin +
-          `" target="_blank"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
+      $(".max-info__paragraphs").append(
+        `<a class="max-info__paragraphs__linkedin-btn" href="` +
+        props[randomNumber].linkedin +
+        `" target="_blank"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
       );
     }
-
   }
 
   // TEAM section END

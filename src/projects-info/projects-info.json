@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "DevHouse",
+        "kind": "Programowanie",
+        "description": "Celem projektu DevHouse jest współpraca członków SKN-u z firmami i organizacjami przy budowie prostych stron internetowych i aplikacji.",
+        "website": "",
+        "photo": "./"
+    },
+    {
+        "id": 2,
+        "title": "ThinkIT",
+        "kind": "IT i biznes",
+        "description": "ThinkIT to konferencja dla studentów, którzy interesują się nowymi technologiami oraz biznesem i chcieliby rozwijać się w tych dziedzinach.",
+        "website": "",
+        "photo": "./"
+    },
+    {
+        "id": 3,
+        "title": "LEAD",
+        "kind": "Program menagerski",
+        "description": "Celem projektu kształcenie kompetencji technicznych oraz organizacyjnych niezbędnych liderom technologii XXI wieku. Projekt łączy wiedzę teoretyczną z praktyczną poprzez realizowane wspólnie z firmami warsztaty oraz projekty IT.",
+        "website": "",
+        "photo": "./"
+    },
+    {
+        "id": 4,
+        "title": "StartUp game",
+        "kind": "Edukacyjna gra mobilna",
+        "description": "Start-up Game to projekt, w którym członkowie SKN-u tworzą aplikację webową będącą symulatorem prowadzenia startupu.",
+        "website": "",
+        "photo": "./"
+    },
+    {
+        "id": 5,
+        "title": "Boot Camp",
+        "kind": "Programowanie",
+        "description": " Niedługo odbędzie się BootCamp. Podczas niego uczestnicy będą doskonalić umiejetności programowania pod okiem doświadczonych deweloperów.",
+        "website": "",
+        "photo": "./"
+      },
+      {
+        "id": 6,
+        "title": "Twój projekt",
+        "kind": "Zrealizuj Swój pomysł",
+        "description": "Tutaj jest miejsce na Twój pomysł - na pewno docenimy Twoją kreatywność Wiele z naszych wcześniejszych projektów narodziło się dzięki ludziom takim jak Ty.",
+        "website": "#kontakt",
+        "photo": "./"
+      }
+]
