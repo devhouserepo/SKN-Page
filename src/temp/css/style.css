@@ -3841,7 +3841,7 @@ section.team .team-container .thumbnails-section .thumbnails__person__name {
 }
 
 section.team .team-container .selected-project {
-  background: #4f5178;
+  background: #4f5178 !important;
 }
 
 .navigation {

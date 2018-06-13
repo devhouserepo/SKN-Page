@@ -144,135 +144,56 @@ $(document).ready(function () {
   let teamThinkIT = "#team-thinkit";
   let teamBootcamp = "#team-bootcamp";
 
-
-  function highlighSelectedProject(elementId) {
-    $(elementId).addClass("selected-project");
-  }
-
-
-  function getDevhouseJSON() {
-    $.getJSON("../../skn-members/devhouse.json", function (data) {
-      const props = [...data]
-      randomNumber = Math.floor(Math.random() * data.length)
-      rndPerson(props);
-
-      $.each(data, function (index, item) {
-        $(".thumbnails").append(
-          `<div class="flex-column align-items-center thumbnails__person">
-                    <img class="thumbnails__person__photo"></img>
-                    <p class="thumbnails__person__name">` +
-          data[index].first_name +
-          ` ` +
-          data[index].last_name +
-          `</p>
-                    </div>`
-        );
-        $(".thumbnails__person__photo")
-          .eq(index)
-          .attr({
-            id: data[index].first_name + data[index].last_name,
-            alt:
-              data[index].first_name +
-              " " +
-              data[index].last_name +
-              ". Zdjęcie.",
-            src: data[index].photo
-          })
-          .click(function () {
-            $(".max-info__paragraphs").empty();
-            $(".max-info__big-photo__wybierz").remove();
-            $(".max-info__big-photo").css(
-              "background-image",
-              "url(" + data[index].photo + ")"
-            );
+  function renderThumbnails(data) {
+    $.each(data, function (index, item) {
+      $(".thumbnails").append(
+        `<div class="flex-column align-items-center thumbnails__person">
+                  <img class="thumbnails__person__photo"></img>
+                  <p class="thumbnails__person__name">` +
+        data[index].first_name +
+        ` ` +
+        data[index].last_name +
+        `</p>
+                  </div>`
+      )
+      $(".thumbnails__person__photo")
+        .eq(index)
+        .attr({
+          id: data[index].first_name + data[index].last_name,
+          alt:
+            data[index].first_name +
+            " " +
+            data[index].last_name +
+            ". Zdjęcie.",
+          src: data[index].photo
+        })
+        .click(function () {
+          $(".max-info__paragraphs").empty();
+          $(".max-info__big-photo__wybierz").remove();
+          $(".max-info__big-photo").css(
+            "background-image",
+            "url(" + data[index].photo + ")"
+          );
+          $(".max-info__paragraphs").append(
+            `<p class="max-info__paragraphs__name">` +
+            data[index].first_name +
+            ` ` +
+            data[index].last_name +
+            `</p>
+                      <p class="max-info__paragraphs__about">` +
+            data[index].info +
+            `</p>`
+          )
+          if (data[index].linkedin != "") {
             $(".max-info__paragraphs").append(
-              `<p class="max-info__paragraphs__name">` +
-              data[index].first_name +
-              ` ` +
-              data[index].last_name +
-              `</p>
-                        <p class="max-info__paragraphs__about">` +
-              data[index].info +
-              `</p>`
-            );
-            if (data[index].linkedin != "") {
-              $(".max-info__paragraphs").append(
-                `<a class="max-info__paragraphs__linkedin-btn" target="_blank" href="` +
-                data[index].linkedin +
-                `"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
-              );
-            }
-          });
-      });
-    });
+              `<a class="max-info__paragraphs__linkedin-btn" target="_blank" href="` +
+              data[index].linkedin +
+              `"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
+            )
+          }
+        })
+    })
   }
-
-  getDevhouseJSON();
-
-  highlighSelectedProject(teamDevhouse);
-
-  $("#team-devhouse").click(function () {
-    $(".thumbnails").empty();
-    $(".selected-project").toggleClass("selected-project");
-    highlighSelectedProject(teamDevhouse);
-    getDevhouseJSON();
-  });
-
-  $("#team-startup").click(function () {
-    $(".thumbnails").empty();
-    $(".selected-project").toggleClass("selected-project");
-    highlighSelectedProject(teamStartUp);
-    $.getJSON("../../skn-members/startup.json", function (data) {
-      $.each(data, function (index, item) {
-        $(".thumbnails").append(
-          `<div class="flex-column align-items-center thumbnails__person">
-                        <img class="thumbnails__person__photo"></img>
-                        <p class="thumbnails__person__name">` +
-          data[index].first_name +
-          ` ` +
-          data[index].last_name +
-          `</p>
-                        </div>`
-        );
-        $(".thumbnails__person__photo")
-          .eq(index)
-          .attr({
-            id: data[index].first_name + data[index].last_name,
-            alt:
-              data[index].first_name +
-              " " +
-              data[index].last_name +
-              ". Zdjęcie.",
-            src: data[index].photo
-          })
-          .click(function () {
-            $(".max-info__paragraphs").empty();
-            $(".max-info__big-photo__wybierz").remove();
-            $(".max-info__big-photo").css(
-              "background-image",
-              "url(" + data[index].photo + ")"
-            );
-            $(".max-info__paragraphs").append(
-              `<p class="max-info__paragraphs__name">` +
-              data[index].first_name +
-              ` ` +
-              data[index].last_name +
-              `</p>
-                            <p class="max-info__paragraphs__about">` +
-              data[index].info +
-              `</p>`
-            );
-            if (data[index].linkedin != "") {
-              $(".max-info__paragraphs").append(
-                `<a class="max-info__paragraphs__linkedin-btn" href="` +
-                data[index].linkedin +
-                `"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
-              );
-            }
-          });
-      });
-    });
-  });
 
   const rndPerson = (props) => {
     $(".max-info__paragraphs").empty();
@@ -290,7 +211,7 @@ $(document).ready(function () {
                     <p class="max-info__paragraphs__about">` +
       props[randomNumber].info +
       `</p>`
-    );
+    )
     if (props[randomNumber].linkedin != "") {
       $(".max-info__paragraphs").append(
         `<a class="max-info__paragraphs__linkedin-btn" href="` +
@@ -299,6 +220,44 @@ $(document).ready(function () {
       );
     }
   }
+
+  function highlighSelectedProject(elementId) {
+    $(elementId).addClass("selected-project");
+  }
+
+
+  function getDevhouseJSON() {
+    $.getJSON("../../skn-members/devhouse.json", function (data) {
+      const props = [...data]
+      randomNumber = Math.floor(Math.random() * data.length)
+      rndPerson(props);
+      renderThumbnails(data)
+    });
+  }
+
+  getDevhouseJSON();
+
+  highlighSelectedProject(teamDevhouse);
+
+
+  $("#team-devhouse").click(function () {
+    $(".thumbnails").empty();
+    $(".selected-project").toggleClass("selected-project");
+    highlighSelectedProject(teamDevhouse);
+    getDevhouseJSON();
+  });
+
+  $("#team-startup").click(function () {
+    $(".thumbnails").empty();
+    $(".selected-project").toggleClass("selected-project");
+    highlighSelectedProject(teamStartUp);
+    $.getJSON("../../skn-members/startup.json", function (data) {
+      renderThumbnails(data)
+    });
+  });
+
+
+
 
   // TEAM section END
 
