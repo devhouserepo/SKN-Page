@@ -275,7 +275,6 @@ $(document).ready(function () {
   });
 
   const rndPerson = (props) => {
-    //
     $(".max-info__paragraphs").empty();
     $(".max-info__big-photo__wybierz").remove();
     $(".max-info__big-photo").css(
@@ -299,7 +298,6 @@ $(document).ready(function () {
         `" target="_blank"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
       );
     }
-
   }
 
   // TEAM section END

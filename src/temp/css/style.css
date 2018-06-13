@@ -3792,7 +3792,6 @@ section.team .team-container .thumbnails-section .thumbnails {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.089);
-  background-color: #000039;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
