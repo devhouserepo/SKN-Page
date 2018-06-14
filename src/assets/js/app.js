@@ -231,7 +231,7 @@ $(document).ready(function () {
     });
   }
 
-  function doOnTeamButtonClick(elementId, JSONname) {
+  function renderTeamThumbnailsOnBtnClick(elementId, JSONname) {
     $(elementId).click(function() {
       $(".thumbnails").empty()
       $(".selected-project").toggleClass("selected-project")
@@ -253,14 +253,14 @@ $(document).ready(function () {
   let thinkitJSON = "thinkit.json"
 
 
-  // getDevhouseJSON();
+  getDevhouseJSON();
 
   highlighSelectedProject(teamDevhouse);
 
-  doOnTeamButtonClick(teamDevhouse, devHouseJSON)
-  doOnTeamButtonClick(teamStartUp, startUpJSON)
-  doOnTeamButtonClick(teamDevhouse, leadJSON)
-  doOnTeamButtonClick(teamStartUp, thinkitJSON)
+  renderTeamThumbnailsOnBtnClick(teamDevhouse, devHouseJSON)
+  renderTeamThumbnailsOnBtnClick(teamStartUp, startUpJSON)
+  renderTeamThumbnailsOnBtnClick(teamLEAD, leadJSON)
+  renderTeamThumbnailsOnBtnClick(teamThinkIT, thinkitJSON)
 
 
   // TEAM section END
