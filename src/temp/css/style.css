@@ -1030,7 +1030,7 @@ section.projects .projects-container {
     grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
     height: 495px;
     padding-top: 0;
-    width: 770px;
+    width: 780px;
   }
 }
 
@@ -1040,7 +1040,7 @@ section.projects .projects-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
     height: 550px;
-    width: 830px;
+    width: 870px;
   }
 }
 
@@ -1051,7 +1051,7 @@ section.projects .projects-container .lines-wrapper {
   left: 0;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 970px) {
   section.projects .projects-container .lines-wrapper {
     display: block;
   }
@@ -1072,32 +1072,54 @@ section.projects .projects-container .lines-wrapper .lines__svg-1 {
   height: 400px;
   position: absolute;
   width: 482px;
-}
-
-@media (min-width: 1250px) {
-  section.projects .projects-container .lines-wrapper .lines__svg-1 {
-    top: 90px;
-    left: 20px;
-  }
+  top: 110px;
+  left: 20px;
 }
 
 @media (min-width: 1300px) {
   section.projects .projects-container .lines-wrapper .lines__svg-1 {
+    top: -30px;
     left: 40px;
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transform: scaleY(1.25);
+            transform: scaleY(1.25);
   }
 }
 
-section.projects .projects-container .lines-wrapper .lines__svg-1__path-1 {
-  stroke-dasharray: 1600;
-  stroke-dashoffset: 1600;
-  -webkit-animation: dash 6s linear forwards;
-          animation: dash 6s linear forwards;
+@media (min-width: 1500px) {
+  section.projects .projects-container .lines-wrapper .lines__svg-1 {
+    top: -35px;
+    left: 70px;
+  }
 }
 
 section.projects .projects-container .lines-wrapper .lines__svg-2 {
-  height: 190px;
+  height: 191px;
   position: absolute;
-  width: 260px;
+  width: 220px;
+  top: 140px;
+  left: 390px;
+}
+
+@media (min-width: 1300px) {
+  section.projects .projects-container .lines-wrapper .lines__svg-2 {
+    top: 70px;
+    left: 390px;
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transform: scaleY(0.9);
+            transform: scaleY(0.9);
+  }
+}
+
+@media (min-width: 1500px) {
+  section.projects .projects-container .lines-wrapper .lines__svg-2 {
+    top: 90px;
+    left: 420px;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 section.projects .single-container,
@@ -1348,23 +1370,6 @@ section.projects #twoj-projekt-background {
   background-color: #0f0f4d;
 }
 
-@media (min-width: 970px) {
-  section.projects #devhouse {
-    top: -22px;
-  }
-  section.projects #lead {
-    top: -20px;
-    right: -16px;
-  }
-  section.projects #startup {
-    left: 12px;
-  }
-  section.projects #twoj-projekt {
-    right: -13px;
-    top: 9px;
-  }
-}
-
 section.projects #devhouse {
   grid-area: devhouse;
   top: -30px;
@@ -1400,13 +1405,14 @@ section.projects #startup:hover {
   z-index: 9;
 }
 
-section.projects #bootcamp {
+section.projects #boot-camp {
   grid-area: bootcamp;
-  top: -30px;
+  right: 0;
+  top: -13px;
 }
 
-section.projects #bootcamp:hover {
-  z-index: 11;
+section.projects #boot-camp:hover {
+  z-index: 9;
 }
 
 section.projects #twoj-projekt {
@@ -1417,6 +1423,29 @@ section.projects #twoj-projekt {
 @media (max-width: 480px) {
   section.projects #twoj-projekt p:nth-child(2) {
     display: none;
+  }
+}
+
+@media (min-width: 970px) {
+  section.projects #devhouse {
+    top: -22px;
+  }
+  section.projects #thinkit {
+    top: 15px;
+  }
+  section.projects #lead {
+    right: -16px;
+    top: -20px;
+  }
+  section.projects #startup {
+    left: 12px;
+  }
+  section.projects #boot-camp {
+    top: 53px;
+  }
+  section.projects #twoj-projekt {
+    right: -13px;
+    top: 9px;
   }
 }
 
