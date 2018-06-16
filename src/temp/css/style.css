@@ -969,7 +969,7 @@ section.projects {
   }
 }
 
-.btn-more {
+section.projects .btn-more {
   border-radius: 1px;
   display: block;
   font-size: 16px;
@@ -981,7 +981,7 @@ section.projects {
   width: 80px;
 }
 
-.projects-container {
+section.projects .projects-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1000,14 +1000,14 @@ section.projects {
 }
 
 @media (min-width: 500px) {
-  .projects-container {
+  section.projects .projects-container {
     grid-row-gap: none;
     width: 440px;
   }
 }
 
 @media (min-width: 750px) {
-  .projects-container {
+  section.projects .projects-container {
     grid-row-gap: 34px;
     padding-top: 92px;
     width: 508px;
@@ -1015,7 +1015,7 @@ section.projects {
 }
 
 @media (min-width: 970px) {
-  .projects-container {
+  section.projects .projects-container {
     grid-row-gap: 35px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
@@ -1024,7 +1024,7 @@ section.projects {
 }
 
 @media (min-width: 1300px) {
-  .projects-container {
+  section.projects .projects-container {
     grid-row-gap: none;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
@@ -1035,7 +1035,7 @@ section.projects {
 }
 
 @media (min-width: 1500px) {
-  .projects-container {
+  section.projects .projects-container {
     grid-row-gap: none;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "devhouse thinkit lead" "startup bootcamp twoj-projekt";
@@ -1044,32 +1044,88 @@ section.projects {
   }
 }
 
-.single-container,
-.single-container__shape-1,
-.single-container__shape-2 {
+section.projects .projects-container .lines-wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 1250px) {
+  section.projects .projects-container .lines-wrapper {
+    display: block;
+  }
+}
+
+section.projects .projects-container .lines-wrapper .lines {
+  position: relative;
+  top: 0;
+  left: 0;
+  stroke-width: 2px;
+  stroke: white;
+  fill: none;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+section.projects .projects-container .lines-wrapper .lines__svg-1 {
+  height: 400px;
+  position: absolute;
+  width: 482px;
+}
+
+@media (min-width: 1250px) {
+  section.projects .projects-container .lines-wrapper .lines__svg-1 {
+    top: 90px;
+    left: 20px;
+  }
+}
+
+@media (min-width: 1300px) {
+  section.projects .projects-container .lines-wrapper .lines__svg-1 {
+    left: 40px;
+  }
+}
+
+section.projects .projects-container .lines-wrapper .lines__svg-1__path-1 {
+  stroke-dasharray: 1600;
+  stroke-dashoffset: 1600;
+  -webkit-animation: dash 6s linear forwards;
+          animation: dash 6s linear forwards;
+}
+
+section.projects .projects-container .lines-wrapper .lines__svg-2 {
+  height: 190px;
+  position: absolute;
+  width: 260px;
+}
+
+section.projects .single-container,
+section.projects .single-container__shape-1,
+section.projects .single-container__shape-2 {
   height: 130px;
   width: 130px;
 }
 
 @media (min-width: 500px) {
-  .single-container,
-  .single-container__shape-1,
-  .single-container__shape-2 {
+  section.projects .single-container,
+  section.projects .single-container__shape-1,
+  section.projects .single-container__shape-2 {
     height: 180px;
     width: 180px;
   }
 }
 
 @media (min-width: 1500px) {
-  .single-container,
-  .single-container__shape-1,
-  .single-container__shape-2 {
+  section.projects .single-container,
+  section.projects .single-container__shape-1,
+  section.projects .single-container__shape-2 {
     height: 195px;
     width: 195px;
   }
 }
 
-.mobile-project {
+section.projects .mobile-project {
   -webkit-clip-path: polygon(20% 0, 100% 0, 100% 76%, 70% 100%, 0 100%, 0 14%);
           clip-path: polygon(20% 0, 100% 0, 100% 76%, 70% 100%, 0 100%, 0 14%);
   display: none;
@@ -1080,18 +1136,18 @@ section.projects {
   position: absolute;
 }
 
-.mobile-project__close-icon {
+section.projects .mobile-project__close-icon {
   float: right;
   margin: 12px 5px 5px 5px;
 }
 
-.mobile-project__close-icon__line {
+section.projects .mobile-project__close-icon__line {
   stroke: #000039;
   stroke-width: 3;
   stroke-linecap: round;
 }
 
-.mobile-project__title {
+section.projects .mobile-project__title {
   color: #000039;
   font-size: 24px;
   font-weight: bold;
@@ -1103,7 +1159,7 @@ section.projects {
   z-index: 40;
 }
 
-.mobile-project__kind {
+section.projects .mobile-project__kind {
   color: #000039;
   font-size: 17px;
   text-align: center;
@@ -1111,7 +1167,7 @@ section.projects {
   z-index: 40;
 }
 
-.mobile-project__description {
+section.projects .mobile-project__description {
   color: #000039;
   display: block;
   font-size: 16px;
@@ -1121,7 +1177,7 @@ section.projects {
   z-index: 40;
 }
 
-.mobile-project__btn-more {
+section.projects .mobile-project__btn-more {
   display: none;
   background-color: transparent;
   border: 1px solid #000039;
@@ -1130,7 +1186,7 @@ section.projects {
   z-index: 50;
 }
 
-.single-container {
+section.projects .single-container {
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
   margin: 5%;
@@ -1138,15 +1194,15 @@ section.projects {
 }
 
 @media (min-width: 750px) {
-  .single-container:hover .single-container__project-paragraphs__title {
+  section.projects .single-container:hover .single-container__project-paragraphs__title {
     font-size: 21px;
     margin-top: -14%;
   }
 }
 
 @media (min-width: 750px) {
-  .single-container:hover .single-container__shape-1,
-  .single-container:hover .single-container__shape-2 {
+  section.projects .single-container:hover .single-container__shape-1,
+  section.projects .single-container:hover .single-container__shape-2 {
     /* Internet Explorer and Microsoft Edge */
     -webkit-transform: scale(1.6, 1.6);
     /* Safari */
@@ -1158,7 +1214,7 @@ section.projects {
 }
 
 @media (min-width: 750px) {
-  .single-container:hover .single-container__project-paragraphs__description {
+  section.projects .single-container:hover .single-container__project-paragraphs__description {
     margin-left: -40px;
     width: 264px;
     -webkit-animation: showProjectAboutandButton 2s forwards;
@@ -1169,7 +1225,7 @@ section.projects {
 }
 
 @media (min-width: 750px) {
-  .single-container:hover .single-container__project-paragraphs__btn-more {
+  section.projects .single-container:hover .single-container__project-paragraphs__btn-more {
     -webkit-animation: showProjectAboutandButton 2s forwards;
     /* Safari 4+ */
     animation: showProjectAboutandButton 2s forwards;
@@ -1177,7 +1233,7 @@ section.projects {
   }
 }
 
-.single-container__project-paragraphs {
+section.projects .single-container__project-paragraphs {
   color: white;
   height: 100%;
   width: 100%;
@@ -1186,7 +1242,7 @@ section.projects {
   z-index: 10;
 }
 
-.single-container__project-paragraphs__title {
+section.projects .single-container__project-paragraphs__title {
   color: inherit;
   font-size: 24px;
   letter-spacing: 0.5px;
@@ -1198,13 +1254,13 @@ section.projects {
 }
 
 @media (max-width: 470px) {
-  .single-container__project-paragraphs__title {
+  section.projects .single-container__project-paragraphs__title {
     font-size: 20px;
     margin-top: 24%;
   }
 }
 
-.single-container__project-paragraphs__kind {
+section.projects .single-container__project-paragraphs__kind {
   color: inherit;
   text-align: center;
   margin-top: 14px;
@@ -1212,13 +1268,13 @@ section.projects {
 }
 
 @media (max-width: 470px) {
-  .single-container__project-paragraphs__kind {
+  section.projects .single-container__project-paragraphs__kind {
     margin-top: 11px;
     font-size: 15px;
   }
 }
 
-.single-container__project-paragraphs__description {
+section.projects .single-container__project-paragraphs__description {
   color: inherit;
   opacity: 0;
   line-height: 1.1;
@@ -1227,7 +1283,7 @@ section.projects {
   text-align: center;
 }
 
-.single-container__project-paragraphs__btn-more {
+section.projects .single-container__project-paragraphs__btn-more {
   color: white;
   border: 1px solid white;
   opacity: 0;
@@ -1235,13 +1291,13 @@ section.projects {
   transition: background-color 0.3s linear;
 }
 
-.single-container__project-paragraphs__btn-more:hover {
+section.projects .single-container__project-paragraphs__btn-more:hover {
   text-decoration: none;
   color: black;
   background-color: #fff;
 }
 
-.single-container__shape-1, .single-container__shape-2 {
+section.projects .single-container__shape-1, section.projects .single-container__shape-2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 600px;
@@ -1253,118 +1309,118 @@ section.projects {
           transition-delay: 0.12s;
 }
 
-.single-container__shape-1 {
+section.projects .single-container__shape-1 {
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
           clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0% 70%, 0 0);
 }
 
-.single-container__shape-2 {
+section.projects .single-container__shape-2 {
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
           clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
 }
 
-#devhouse-background {
+section.projects #devhouse-background {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/devhouse.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/devhouse.png");
 }
 
-#thinkit-background {
+section.projects #thinkit-background {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/thinkit.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/thinkit.png");
 }
 
-#lead-background {
+section.projects #lead-background {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/leadinit.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/leadinit.png");
 }
 
-#startup-background {
+section.projects #startup-background {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/startup.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/startup.png");
 }
 
-#bootcamp-background {
+section.projects #bootcamp-background {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/bootcamp.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/bootcamp.png");
 }
 
-#twoj-projekt-background {
+section.projects #twoj-projekt-background {
   background-color: #0f0f4d;
 }
 
 @media (min-width: 970px) {
-  #devhouse {
+  section.projects #devhouse {
     top: -22px;
   }
-  #lead {
+  section.projects #lead {
     top: -20px;
     right: -16px;
   }
-  #startup {
+  section.projects #startup {
     left: 12px;
   }
-  #twoj-projekt {
+  section.projects #twoj-projekt {
     right: -13px;
     top: 9px;
   }
 }
 
-#devhouse {
+section.projects #devhouse {
   grid-area: devhouse;
   top: -30px;
 }
 
-#devhouse:hover {
+section.projects #devhouse:hover {
   z-index: 9;
 }
 
-#thinkit {
+section.projects #thinkit {
   grid-area: thinkit;
 }
 
-#thinkit:hover {
+section.projects #thinkit:hover {
   z-index: 9;
 }
 
-#lead {
+section.projects #lead {
   grid-area: lead;
   top: -20px;
 }
 
-#lead:hover {
+section.projects #lead:hover {
   z-index: 9;
 }
 
-#startup {
+section.projects #startup {
   grid-area: startup;
   top: 7px;
 }
 
-#startup:hover {
+section.projects #startup:hover {
   z-index: 9;
 }
 
-#bootcamp {
+section.projects #bootcamp {
   grid-area: bootcamp;
   top: -30px;
 }
 
-#bootcamp:hover {
+section.projects #bootcamp:hover {
   z-index: 11;
 }
 
-#twoj-projekt {
+section.projects #twoj-projekt {
   grid-area: twoj-projekt;
   top: 15px;
 }
 
 @media (max-width: 480px) {
-  #twoj-projekt p:nth-child(2) {
+  section.projects #twoj-projekt p:nth-child(2) {
     display: none;
   }
 }
 
-.giant-header-projects {
+section.projects .giant-header-projects {
   color: white;
   font-weight: bold;
   letter-spacing: 2px;
@@ -1377,14 +1433,14 @@ section.projects {
 }
 
 @media (min-width: 500px) {
-  .giant-header-projects {
+  section.projects .giant-header-projects {
     font-size: 60px;
     letter-spacing: 3px;
   }
 }
 
 @media (min-width: 750px) {
-  .giant-header-projects {
+  section.projects .giant-header-projects {
     font-size: 88px;
     letter-spacing: 3px;
     opacity: 0.1;
@@ -1392,56 +1448,22 @@ section.projects {
 }
 
 @media (min-width: 1300px) {
-  .giant-header-projects {
+  section.projects .giant-header-projects {
     font-size: 108px;
     letter-spacing: 5px;
-    opacity: 0.08;
+    opacity: 0.06;
     left: -6%;
     top: 33%;
   }
 }
 
 @media (min-width: 1500px) {
-  .giant-header-projects {
+  section.projects .giant-header-projects {
     font-size: 115px;
     letter-spacing: 6px;
-    opacity: 0.08;
     left: -8%;
     top: 46%;
   }
-}
-
-.projects-svg-lines {
-  position: absolute;
-}
-
-.projects-svg-lines__svg-1 {
-  position: absolute;
-  bottom: -300px;
-  right: -200px;
-  display: none;
-}
-
-.projects-svg-lines__svg-1__path-1 {
-  stroke-dasharray: 1600;
-  stroke-dashoffset: 1600;
-  -webkit-animation: dash 6s linear forwards;
-          animation: dash 6s linear forwards;
-}
-
-.projects-svg-lines__svg-2 {
-  position: absolute;
-  top: -220px;
-  display: none;
-}
-
-.projects-svg-lines__svg-2__path-2 {
-  stroke-dasharray: 1700;
-  stroke-dashoffset: 1700;
-  -webkit-animation: dash 9.5s linear forwards;
-          animation: dash 9.5s linear forwards;
-  -webkit-animation-delay: 1.9s;
-          animation-delay: 1.9s;
 }
 
 .section {
