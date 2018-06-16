@@ -18,7 +18,7 @@
     0% {
         opacity: 0;
     }
-    35% {
+    30% {
         opacity: 0;
     }
     100% {
@@ -255,6 +255,15 @@ section.projects {
                 transition: all 0.7s ease-in-out;
             }
         }
+        &:hover .single-container__blur {
+            border-radius: 29%;
+            top: -5px;
+            left: -45px;
+            width: 270px;
+            height: 215px;
+            background-color: rgba(8, 4, 14, 0.75);
+            filter: blur(36px);
+          }
         &:hover .single-container__project-paragraphs__description {
             @media (min-width: 750px) {
                 margin-left: -40px;
@@ -279,7 +288,7 @@ section.projects {
                 font-size: 24px;
                 letter-spacing: 0.5px;
                 text-align: center;
-                margin-top: 23%;
+                margin-top: 28%;
                 padding: 0 12px 0 12px;
                 transition: all 0.6s ease-in-out;
                 @media (max-width: 470px) {
@@ -300,7 +309,7 @@ section.projects {
             &__description {
                 color: inherit;
                 opacity: 0;
-                line-height: 1.1;
+                line-height: 1.15;
                 margin-top: 14px;
                 font-size: 16px;
                 text-align: center; // display: inline-block;
@@ -333,6 +342,19 @@ section.projects {
         &__shape-2 {
             clip-path: polygon( 30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
         }
+        &__blur {
+            position: absolute;
+            border-radius: 30px;
+            top: 18%;
+            left: 6%;
+            margin: auto;
+            width: 87%;
+            height: 45%;
+            background-color: rgba(12, 6, 24, 0.52);
+            filter: blur(23px);
+            z-index: 4;
+            transition: all .8s ease-in-out;
+          }
     }
     #devhouse-background {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/devhouse.png");

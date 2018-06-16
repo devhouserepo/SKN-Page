@@ -912,7 +912,7 @@ table {
   0% {
     opacity: 0;
   }
-  35% {
+  30% {
     opacity: 0;
   }
   100% {
@@ -924,7 +924,7 @@ table {
   0% {
     opacity: 0;
   }
-  35% {
+  30% {
     opacity: 0;
   }
   100% {
@@ -1235,6 +1235,17 @@ section.projects .single-container {
   }
 }
 
+section.projects .single-container:hover .single-container__blur {
+  border-radius: 29%;
+  top: -5px;
+  left: -45px;
+  width: 270px;
+  height: 215px;
+  background-color: rgba(8, 4, 14, 0.75);
+  -webkit-filter: blur(36px);
+          filter: blur(36px);
+}
+
 @media (min-width: 750px) {
   section.projects .single-container:hover .single-container__project-paragraphs__description {
     margin-left: -40px;
@@ -1269,7 +1280,7 @@ section.projects .single-container__project-paragraphs__title {
   font-size: 24px;
   letter-spacing: 0.5px;
   text-align: center;
-  margin-top: 23%;
+  margin-top: 28%;
   padding: 0 12px 0 12px;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
@@ -1299,7 +1310,7 @@ section.projects .single-container__project-paragraphs__kind {
 section.projects .single-container__project-paragraphs__description {
   color: inherit;
   opacity: 0;
-  line-height: 1.1;
+  line-height: 1.15;
   margin-top: 14px;
   font-size: 16px;
   text-align: center;
@@ -1339,6 +1350,22 @@ section.projects .single-container__shape-1 {
 section.projects .single-container__shape-2 {
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
           clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 30% 100%, 0 100%, 0% 30%);
+}
+
+section.projects .single-container__blur {
+  position: absolute;
+  border-radius: 30px;
+  top: 18%;
+  left: 6%;
+  margin: auto;
+  width: 87%;
+  height: 45%;
+  background-color: rgba(12, 6, 24, 0.52);
+  -webkit-filter: blur(23px);
+          filter: blur(23px);
+  z-index: 4;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
 }
 
 section.projects #devhouse-background {
