@@ -1369,28 +1369,28 @@ section.projects .single-container__blur {
 }
 
 section.projects #devhouse-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/devhouse.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/devhouse.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/devhouse.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/devhouse.png");
 }
 
 section.projects #thinkit-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/thinkit.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/thinkit.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/thinkit.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/thinkit.png");
 }
 
 section.projects #lead-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/leadinit.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/leadinit.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/leadinit.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/leadinit.png");
 }
 
 section.projects #startup-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/startup.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/startup.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/startup.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/startup.png");
 }
 
 section.projects #bootcamp-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/bootcamp.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/bootcamp.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/bootcamp.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/bootcamp.png");
 }
 
 section.projects #twoj-projekt-background {
@@ -2460,16 +2460,12 @@ section.projects .giant-header-projects {
     width: 100%;
   }
   .section__reference .mobile {
-    display: initial !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     background: #ffffff;
     max-width: 700px;
     height: 650px;
-    position: relative;
-    top: 54px;
-    left: -154px;
-  }
-  .section__reference .mobile .col-7 {
-    position: relative;
   }
   .section__reference .mobile::after {
     display: none;
@@ -2495,11 +2491,6 @@ section.projects .giant-header-projects {
     right: -623px;
     top: 450px;
   }
-  .section__reference .mobile .carousel {
-    position: absolute;
-    top: 110px;
-    left: 122px;
-  }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
     width: 13px;
@@ -2513,7 +2504,6 @@ section.projects .giant-header-projects {
     background-color: #ababab;
   }
   .section__reference .mobile .carousel-item {
-    width: 320px;
     min-height: 530px;
     background: white;
     text-align: center;
@@ -2559,6 +2549,12 @@ section.projects .giant-header-projects {
     to {
       stroke-dashoffset: 0;
     }
+  }
+  .col-5 {
+    display: none;
+  }
+  .col-7 {
+    display: none;
   }
 }
 
@@ -2567,16 +2563,14 @@ section.projects .giant-header-projects {
     width: 100%;
   }
   .section__reference .mobile {
-    display: initial !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     background: #ffffff;
     max-width: 700px;
     height: 650px;
     position: relative;
     top: 54px;
-    left: -154px;
-  }
-  .section__reference .mobile .col-7 {
-    position: relative;
   }
   .section__reference .mobile::after {
     display: none;
@@ -2602,11 +2596,6 @@ section.projects .giant-header-projects {
     right: -623px;
     top: 450px;
   }
-  .section__reference .mobile .carousel {
-    position: absolute;
-    top: 110px;
-    left: 160px;
-  }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
     width: 13px;
@@ -2620,7 +2609,6 @@ section.projects .giant-header-projects {
     background-color: #ababab;
   }
   .section__reference .mobile .carousel-item {
-    width: 320px;
     min-height: 530px;
     background: white;
     text-align: center;
@@ -2666,6 +2654,12 @@ section.projects .giant-header-projects {
     to {
       stroke-dashoffset: 0;
     }
+  }
+  .col-5 {
+    display: none;
+  }
+  .col-7 {
+    display: none;
   }
 }
 
@@ -2674,16 +2668,12 @@ section.projects .giant-header-projects {
     width: 100%;
   }
   .section__reference .mobile {
-    display: initial !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     background: #ffffff;
     max-width: 700px;
     height: 650px;
-    position: relative;
-    top: 54px;
-    left: -154px;
-  }
-  .section__reference .mobile .col-7 {
-    position: relative;
   }
   .section__reference .mobile::after {
     display: none;
@@ -2709,11 +2699,6 @@ section.projects .giant-header-projects {
     right: -623px;
     top: 450px;
   }
-  .section__reference .mobile .carousel {
-    position: absolute;
-    top: 110px;
-    left: 175px;
-  }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
     width: 13px;
@@ -2727,7 +2712,6 @@ section.projects .giant-header-projects {
     background-color: #ababab;
   }
   .section__reference .mobile .carousel-item {
-    width: 320px;
     min-height: 530px;
     background: white;
     text-align: center;
@@ -2774,23 +2758,25 @@ section.projects .giant-header-projects {
       stroke-dashoffset: 0;
     }
   }
+  .col-5 {
+    display: none;
+  }
+  .col-7 {
+    display: none;
+  }
 }
 
-@media (min-width: 420px) and (max-width: 480px) {
+@media (min-width: 421px) and (max-width: 480px) {
   .section__reference {
     width: 100%;
   }
   .section__reference .mobile {
-    display: initial !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     background: #ffffff;
     max-width: 700px;
     height: 650px;
-    position: relative;
-    top: 54px;
-    left: -154px;
-  }
-  .section__reference .mobile .col-7 {
-    position: relative;
   }
   .section__reference .mobile::after {
     display: none;
@@ -2815,11 +2801,6 @@ section.projects .giant-header-projects {
     height: 0;
     right: -623px;
     top: 450px;
-  }
-  .section__reference .mobile .carousel {
-    position: absolute;
-    top: 110px;
-    left: 210px;
   }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
@@ -2880,6 +2861,12 @@ section.projects .giant-header-projects {
     to {
       stroke-dashoffset: 0;
     }
+  }
+  .col-5 {
+    display: none;
+  }
+  .col-7 {
+    display: none;
   }
 }
 
@@ -2892,9 +2879,6 @@ section.projects .giant-header-projects {
     background: #ffffff;
     max-width: 700px;
     height: 650px;
-    position: relative;
-    top: 54px;
-    left: -154px;
   }
   .section__reference .mobile .col-7 {
     position: relative;
@@ -2922,11 +2906,6 @@ section.projects .giant-header-projects {
     height: 0;
     right: -623px;
     top: 450px;
-  }
-  .section__reference .mobile .carousel {
-    position: absolute;
-    top: 110px;
-    left: 235px;
   }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
@@ -2987,6 +2966,12 @@ section.projects .giant-header-projects {
     to {
       stroke-dashoffset: 0;
     }
+  }
+  .col-5 {
+    display: none;
+  }
+  .col-7 {
+    display: none;
   }
 }
 
@@ -2995,13 +2980,12 @@ section.projects .giant-header-projects {
     width: 100%;
   }
   .section__reference .mobile {
-    display: initial !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     background: #ffffff;
     max-width: 700px;
     height: 650px;
-    position: relative;
-    top: 54px;
-    left: -154px;
   }
   .section__reference .mobile .col-7 {
     position: relative;
@@ -3029,11 +3013,6 @@ section.projects .giant-header-projects {
     height: 0;
     right: -623px;
     top: 450px;
-  }
-  .section__reference .mobile .carousel {
-    position: absolute;
-    top: 110px;
-    left: 265px;
   }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
@@ -3094,6 +3073,12 @@ section.projects .giant-header-projects {
     to {
       stroke-dashoffset: 0;
     }
+  }
+  .col-5 {
+    display: none;
+  }
+  .col-7 {
+    display: none;
   }
 }
 
@@ -3108,7 +3093,7 @@ section.projects .giant-header-projects {
     height: 650px;
     position: relative;
     top: 54px;
-    left: -120px;
+    left: -125px;
   }
   .section__reference .mobile .col-7 {
     position: relative;
@@ -4171,8 +4156,10 @@ section.team .team-container .selected-project {
 }
 
 .modal-first .modal-body .form-recruitment .form-item input[type="text"], .modal-first .modal-body .form-recruitment .form-item textarea[type="text"],
-.modal-first .modal-body .form-recruitment .form-item input[type="email"], .modal-first .modal-body .form-recruitment .form-item textarea[type="email"],
-.modal-first .modal-body .form-recruitment .form-item input[type="number"], .modal-first .modal-body .form-recruitment .form-item textarea[type="number"],
+.modal-first .modal-body .form-recruitment .form-item input[type="email"],
+.modal-first .modal-body .form-recruitment .form-item textarea[type="email"],
+.modal-first .modal-body .form-recruitment .form-item input[type="number"],
+.modal-first .modal-body .form-recruitment .form-item textarea[type="number"],
 .modal-first .modal-body .form-recruitment .form-item textarea {
   width: 100%;
   padding: 12px 17px;
@@ -4185,8 +4172,10 @@ section.team .team-container .selected-project {
 }
 
 .modal-first .modal-body .form-recruitment .form-item input[type="text"]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type="text"]:focus,
-.modal-first .modal-body .form-recruitment .form-item input[type="email"]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type="email"]:focus,
-.modal-first .modal-body .form-recruitment .form-item input[type="number"]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type="number"]:focus,
+.modal-first .modal-body .form-recruitment .form-item input[type="email"]:focus,
+.modal-first .modal-body .form-recruitment .form-item textarea[type="email"]:focus,
+.modal-first .modal-body .form-recruitment .form-item input[type="number"]:focus,
+.modal-first .modal-body .form-recruitment .form-item textarea[type="number"]:focus,
 .modal-first .modal-body .form-recruitment .form-item textarea:focus {
   border: 2px solid #555;
 }
