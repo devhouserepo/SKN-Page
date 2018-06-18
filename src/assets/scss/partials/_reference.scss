@@ -186,17 +186,14 @@
     &__reference {
       width: 100%;
       .mobile {
-      display: initial !important;
+      display: flex !important;
       background: #ffffff;
       max-width: 700px;
       height: 650px;
-      position: relative;
-      top: 54px;
-      left: -154px;
-      .col-7 {
-        position: relative;
-        
-      }
+      //position: relative;
+      //top: 54px;
+      //left: -154px;
+
       &::after {
         display: none;
         content: "";
@@ -226,9 +223,9 @@
         top: 450px;
       }
       .carousel {
-        position: absolute;
-        top: 110px;
-        left: 122px;
+       // position: absolute;
+       //top: 110px;
+       // left: 122px;
         .carousel-indicators {
           li,
           .active {
@@ -245,7 +242,7 @@
         }
       }
       .carousel-item {
-        width: 320px;
+        //width: 320px;
         min-height: 530px;
         background: white;
         text-align: center;
@@ -336,6 +333,12 @@
       }
     }
   }
+   .col-5 {
+    display: none;
+     }
+   .col-7 {
+    display: none;       
+     }
 }
 
 @media (min-width: 321px) and (max-width: 380px) {
@@ -344,17 +347,14 @@
     &__reference {
       width: 100%;
       .mobile {
-      display: initial !important;
+      display: flex !important;
       background: #ffffff;
       max-width: 700px;
       height: 650px;
       position: relative;
       top: 54px;
-      left: -154px;
-      .col-7 {
-        position: relative;
-        
-      }
+      //left: -154px;
+
       &::after {
         display: none;
         content: "";
@@ -384,9 +384,9 @@
         top: 450px;
       }
       .carousel {
-        position: absolute;
-        top: 110px;
-        left: 160px;
+        //position: absolute;
+        //top: 110px;
+        //left: 160px;
         .carousel-indicators {
           li,
           .active {
@@ -403,7 +403,7 @@
         }
       }
       .carousel-item {
-        width: 320px;
+        //width: 320px;
         min-height: 530px;
         background: white;
         text-align: center;
@@ -493,7 +493,14 @@
         }
       }
     }
-  }
+  }      
+      .col-5 {
+       display: none;
+     }
+      .col-7 {
+       display: none;       
+      }
+
 }
 
 @media (min-width: 380px) and (max-width: 420px) {
@@ -502,16 +509,13 @@
     &__reference {
       width: 100%;
       .mobile {
-      display: initial !important;
+      display: flex !important;
       background: #ffffff;
       max-width: 700px;
       height: 650px;
-      position: relative;
-      top: 54px;
-      left: -154px;
-      .col-7 {
-        position: relative;
-      }
+      //position: relative;
+      //top: 54px;
+      //left: -154px;
       &::after {
         display: none;
         content: "";
@@ -541,9 +545,9 @@
         top: 450px;
       }
       .carousel {
-        position: absolute;
-        top: 110px;
-        left: 175px;
+        //position: absolute;
+        //top: 110px;
+        //left: 175px;
         .carousel-indicators {
           li,
           .active {
@@ -560,7 +564,7 @@
         }
       }
       .carousel-item {
-        width: 320px;
+        //width: 320px;
         min-height: 530px;
         background: white;
         text-align: center;
@@ -651,24 +655,28 @@
       }
     }
   }
+ .col-5 {
+display: none;
+     }
+ .col-7 {
+ display: none;       
+    }
 }
 
-@media (min-width: 420px) and (max-width: 480px) {
+@media (min-width: 421px) and (max-width: 480px) {
   .section {
 
     &__reference {
       width: 100%;
       .mobile {
-      display: initial !important;
+      display: flex !important;
       background: #ffffff;
       max-width: 700px;
       height: 650px;
-      position: relative;
-      top: 54px;
-      left: -154px;
-      .col-7 {
-        position: relative;
-      }
+      //position: relative;
+      //top: 54px;
+      //left: -154px;
+
       &::after {
         display: none;
         content: "";
@@ -698,9 +706,9 @@
         top: 450px;
       }
       .carousel {
-        position: absolute;
-        top: 110px;
-        left: 210px;
+        //position: absolute;
+        //top: 110px;
+        //left: 210px;
         .carousel-indicators {
           li,
           .active {
@@ -808,6 +816,12 @@
       }
     }
   }
+ .col-5 {
+display: none;
+     }
+ .col-7 {
+ display: none;       
+    }
 }
 
 @media (min-width: 480px) and (max-width: 530px) {
@@ -820,9 +834,9 @@
       background: #ffffff;
       max-width: 700px;
       height: 650px;
-      position: relative;
-      top: 54px;
-      left: -154px;
+      //position: relative;
+      //top: 54px;
+      //left: -154px;
       .col-7 {
         position: relative;
       }
@@ -855,9 +869,9 @@
         top: 450px;
       }
       .carousel {
-        position: absolute;
-        top: 110px;
-        left: 235px;
+        //position: absolute;
+        //top: 110px;
+        //left: 235px;
         .carousel-indicators {
           li,
           .active {
@@ -965,6 +979,12 @@
       }
     }
   }
+ .col-5 {
+display: none;
+     }
+ .col-7 {
+ display: none;       
+    }
 }
 
 @media (min-width: 530px) and (max-width: 576px) {
@@ -973,13 +993,13 @@
     &__reference {
       width: 100%;
       .mobile {
-      display: initial !important;
+      display: flex !important;
       background: #ffffff;
       max-width: 700px;
       height: 650px;
-      position: relative;
-      top: 54px;
-      left: -154px;
+      //position: relative;
+      //top: 54px;
+      //left: -154px;
       .col-7 {
         position: relative;
       }
@@ -1012,9 +1032,9 @@
         top: 450px;
       }
       .carousel {
-        position: absolute;
-        top: 110px;
-        left: 265px;
+        //position: absolute;
+        //top: 110px;
+        //left: 265px;
         .carousel-indicators {
           li,
           .active {
@@ -1122,6 +1142,12 @@
       }
     }
   }
+ .col-5 {
+display: none;
+     }
+ .col-7 {
+ display: none;       
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -1137,7 +1163,7 @@
       height: 650px;
       position: relative;
       top: 54px;
-      left: -120px;
+      left: -125px;
       .col-7 {
         position: relative;
       }

@@ -1521,17 +1521,17 @@ section.projects .projects-container #twoj-projekt {
 @media (min-width: 970px) {
   section.projects .projects-container #devhouse {
     top: -22px;
-    -webkit-animation: float1 7s ease-in-out infinite;
-            animation: float1 7s ease-in-out infinite;
+    -webkit-animation: float1 6s ease-in-out infinite;
+            animation: float1 6s ease-in-out infinite;
   }
   section.projects .projects-container #thinkit {
     top: 15px;
-    -webkit-animation: float2 9s ease-in-out infinite;
-            animation: float2 9s ease-in-out infinite;
+    -webkit-animation: float2 8s ease-in-out infinite;
+            animation: float2 8s ease-in-out infinite;
   }
   section.projects .projects-container #lead {
-    -webkit-animation: float1 8s ease-in-out infinite;
-            animation: float1 8s ease-in-out infinite;
+    -webkit-animation: float1 7s ease-in-out infinite;
+            animation: float1 7s ease-in-out infinite;
     right: -16px;
     top: -20px;
   }
@@ -1546,8 +1546,8 @@ section.projects .projects-container #twoj-projekt {
     top: 53px;
   }
   section.projects .projects-container #twoj-projekt {
-    -webkit-animation: float2 9s ease-in-out infinite;
-            animation: float2 9s ease-in-out infinite;
+    -webkit-animation: float2 8s ease-in-out infinite;
+            animation: float2 8s ease-in-out infinite;
     right: -13px;
     top: 9px;
   }
@@ -2569,16 +2569,12 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     width: 100%;
   }
   .section__reference .mobile {
-    display: initial !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     background: #ffffff;
     max-width: 700px;
     height: 650px;
-    position: relative;
-    top: 54px;
-    left: -154px;
-  }
-  .section__reference .mobile .col-7 {
-    position: relative;
   }
   .section__reference .mobile::after {
     display: none;
@@ -2604,11 +2600,6 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     right: -623px;
     top: 450px;
   }
-  .section__reference .mobile .carousel {
-    position: absolute;
-    top: 110px;
-    left: 122px;
-  }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
     width: 13px;
@@ -2622,7 +2613,6 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     background-color: #ababab;
   }
   .section__reference .mobile .carousel-item {
-    width: 320px;
     min-height: 530px;
     background: white;
     text-align: center;
@@ -2668,6 +2658,12 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     to {
       stroke-dashoffset: 0;
     }
+  }
+  .col-5 {
+    display: none;
+  }
+  .col-7 {
+    display: none;
   }
 }
 
@@ -2676,16 +2672,14 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     width: 100%;
   }
   .section__reference .mobile {
-    display: initial !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     background: #ffffff;
     max-width: 700px;
     height: 650px;
     position: relative;
     top: 54px;
-    left: -154px;
-  }
-  .section__reference .mobile .col-7 {
-    position: relative;
   }
   .section__reference .mobile::after {
     display: none;
@@ -2711,11 +2705,6 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     right: -623px;
     top: 450px;
   }
-  .section__reference .mobile .carousel {
-    position: absolute;
-    top: 110px;
-    left: 160px;
-  }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
     width: 13px;
@@ -2729,7 +2718,6 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     background-color: #ababab;
   }
   .section__reference .mobile .carousel-item {
-    width: 320px;
     min-height: 530px;
     background: white;
     text-align: center;
@@ -2775,6 +2763,12 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     to {
       stroke-dashoffset: 0;
     }
+  }
+  .col-5 {
+    display: none;
+  }
+  .col-7 {
+    display: none;
   }
 }
 
@@ -2783,16 +2777,12 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     width: 100%;
   }
   .section__reference .mobile {
-    display: initial !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     background: #ffffff;
     max-width: 700px;
     height: 650px;
-    position: relative;
-    top: 54px;
-    left: -154px;
-  }
-  .section__reference .mobile .col-7 {
-    position: relative;
   }
   .section__reference .mobile::after {
     display: none;
@@ -2818,11 +2808,6 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     right: -623px;
     top: 450px;
   }
-  .section__reference .mobile .carousel {
-    position: absolute;
-    top: 110px;
-    left: 175px;
-  }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
     width: 13px;
@@ -2836,7 +2821,6 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     background-color: #ababab;
   }
   .section__reference .mobile .carousel-item {
-    width: 320px;
     min-height: 530px;
     background: white;
     text-align: center;
@@ -2883,23 +2867,25 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
       stroke-dashoffset: 0;
     }
   }
+  .col-5 {
+    display: none;
+  }
+  .col-7 {
+    display: none;
+  }
 }
 
-@media (min-width: 420px) and (max-width: 480px) {
+@media (min-width: 421px) and (max-width: 480px) {
   .section__reference {
     width: 100%;
   }
   .section__reference .mobile {
-    display: initial !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     background: #ffffff;
     max-width: 700px;
     height: 650px;
-    position: relative;
-    top: 54px;
-    left: -154px;
-  }
-  .section__reference .mobile .col-7 {
-    position: relative;
   }
   .section__reference .mobile::after {
     display: none;
@@ -2924,11 +2910,6 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     height: 0;
     right: -623px;
     top: 450px;
-  }
-  .section__reference .mobile .carousel {
-    position: absolute;
-    top: 110px;
-    left: 210px;
   }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
@@ -2989,6 +2970,12 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     to {
       stroke-dashoffset: 0;
     }
+  }
+  .col-5 {
+    display: none;
+  }
+  .col-7 {
+    display: none;
   }
 }
 
@@ -3001,9 +2988,6 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     background: #ffffff;
     max-width: 700px;
     height: 650px;
-    position: relative;
-    top: 54px;
-    left: -154px;
   }
   .section__reference .mobile .col-7 {
     position: relative;
@@ -3031,11 +3015,6 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     height: 0;
     right: -623px;
     top: 450px;
-  }
-  .section__reference .mobile .carousel {
-    position: absolute;
-    top: 110px;
-    left: 235px;
   }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
@@ -3096,6 +3075,12 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     to {
       stroke-dashoffset: 0;
     }
+  }
+  .col-5 {
+    display: none;
+  }
+  .col-7 {
+    display: none;
   }
 }
 
@@ -3104,13 +3089,12 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     width: 100%;
   }
   .section__reference .mobile {
-    display: initial !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     background: #ffffff;
     max-width: 700px;
     height: 650px;
-    position: relative;
-    top: 54px;
-    left: -154px;
   }
   .section__reference .mobile .col-7 {
     position: relative;
@@ -3138,11 +3122,6 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     height: 0;
     right: -623px;
     top: 450px;
-  }
-  .section__reference .mobile .carousel {
-    position: absolute;
-    top: 110px;
-    left: 265px;
   }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
@@ -3203,6 +3182,12 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     to {
       stroke-dashoffset: 0;
     }
+  }
+  .col-5 {
+    display: none;
+  }
+  .col-7 {
+    display: none;
   }
 }
 
@@ -3217,7 +3202,7 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     height: 650px;
     position: relative;
     top: 54px;
-    left: -120px;
+    left: -125px;
   }
   .section__reference .mobile .col-7 {
     position: relative;
