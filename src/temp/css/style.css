@@ -223,6 +223,7 @@ table {
     z-index: 999;
     letter-spacing: 0.8px;
     color: #ffffff;
+    top: 60px;
   }
   .header__content p:nth-child(5) span, .header__content p:nth-child(6) span {
     display: block;
@@ -354,13 +355,13 @@ table {
   }
   .header__content img {
     margin: 540px 0 0 80px;
-    width: 270px;
+    width: 250px;
     z-index: 2;
     position: relative;
   }
   .header__content h1:nth-child(3) {
     margin: 110px 0 0 15px;
-    font-size: 3.2em;
+    font-size: 3.0em;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -816,7 +817,7 @@ table {
     font-size: 0.7rem;
     line-height: 21px;
     margin: 40px 0 0 655px;
-    width: 500px;
+    width: 490px;
     z-index: 999;
     position: relative;
   }
@@ -1434,28 +1435,28 @@ section.projects .projects-container .single-container__blur {
 }
 
 section.projects .projects-container #devhouse-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/devhouse.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/devhouse.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/devhouse.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/devhouse.png");
 }
 
 section.projects .projects-container #thinkit-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/thinkit.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/thinkit.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/thinkit.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/thinkit.png");
 }
 
 section.projects .projects-container #lead-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/leadinit.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/leadinit.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/leadinit.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/leadinit.png");
 }
 
 section.projects .projects-container #startup-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/startup.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/startup.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/startup.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/startup.png");
 }
 
 section.projects .projects-container #bootcamp-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/bootcamp.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/bootcamp.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/bootcamp.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/bootcamp.png");
 }
 
 section.projects .projects-container #twoj-projekt-background {
@@ -3084,7 +3085,7 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
   }
 }
 
-@media (min-width: 530px) and (max-width: 576px) {
+@media (min-width: 530px) and (max-width: 575px) {
   .section__reference {
     width: 100%;
   }
@@ -3191,7 +3192,7 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 575px) and (max-width: 768px) {
   .section .container {
     max-width: 555px;
   }
@@ -4265,8 +4266,10 @@ section.team .team-container .selected-project {
 }
 
 .modal-first .modal-body .form-recruitment .form-item input[type="text"], .modal-first .modal-body .form-recruitment .form-item textarea[type="text"],
-.modal-first .modal-body .form-recruitment .form-item input[type="email"], .modal-first .modal-body .form-recruitment .form-item textarea[type="email"],
-.modal-first .modal-body .form-recruitment .form-item input[type="number"], .modal-first .modal-body .form-recruitment .form-item textarea[type="number"],
+.modal-first .modal-body .form-recruitment .form-item input[type="email"],
+.modal-first .modal-body .form-recruitment .form-item textarea[type="email"],
+.modal-first .modal-body .form-recruitment .form-item input[type="number"],
+.modal-first .modal-body .form-recruitment .form-item textarea[type="number"],
 .modal-first .modal-body .form-recruitment .form-item textarea {
   width: 100%;
   padding: 12px 17px;
@@ -4279,8 +4282,10 @@ section.team .team-container .selected-project {
 }
 
 .modal-first .modal-body .form-recruitment .form-item input[type="text"]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type="text"]:focus,
-.modal-first .modal-body .form-recruitment .form-item input[type="email"]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type="email"]:focus,
-.modal-first .modal-body .form-recruitment .form-item input[type="number"]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type="number"]:focus,
+.modal-first .modal-body .form-recruitment .form-item input[type="email"]:focus,
+.modal-first .modal-body .form-recruitment .form-item textarea[type="email"]:focus,
+.modal-first .modal-body .form-recruitment .form-item input[type="number"]:focus,
+.modal-first .modal-body .form-recruitment .form-item textarea[type="number"]:focus,
 .modal-first .modal-body .form-recruitment .form-item textarea:focus {
   border: 2px solid #555;
 }
