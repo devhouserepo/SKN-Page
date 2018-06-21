@@ -3683,16 +3683,18 @@ section.team .team-container {
   grid-template-areas: "." "thumbnails-section" "max-info";
   grid-template-columns: 96%;
   grid-template-rows: 40px auto auto;
-  margin: 7% auto auto auto;
-  width: 80%;
+  margin: 7% 2%;
+  width: 85%;
   z-index: 5;
 }
 
 @media (min-width: 870px) {
   section.team .team-container {
+    margin: 7% auto auto auto;
     grid-template-columns: 1fr 50%;
     grid-template-rows: 100px 100px auto auto;
     grid-template-areas: ". thumbnails-section" ". thumbnails-section" "max-info thumbnails-section" "max-info thumbnails-section";
+    width: 80%;
   }
 }
 
@@ -3900,7 +3902,7 @@ section.team .team-container .max-info__svg {
 
 section.team .team-container .thumbnails-section {
   grid-area: thumbnails-section;
-  width: 84%;
+  width: 97%;
   z-index: 13;
 }
 
@@ -3995,16 +3997,10 @@ section.team .team-container .thumbnails-section .thumbnails {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   min-height: 200px;
-  max-height: 400px;
-  overflow-y: auto;
+  max-height: 1100px;
   padding: 15px 3px 15px 6px;
   z-index: 13;
-}
-
-@media (min-width: 870px) {
-  section.team .team-container .thumbnails-section .thumbnails {
-    border: none;
-  }
+  border: none;
 }
 
 section.team .team-container .thumbnails-section .thumbnails__person {
@@ -4012,10 +4008,16 @@ section.team .team-container .thumbnails-section .thumbnails__person {
   display: -ms-flexbox;
   display: flex;
   margin: 5px;
-  width: 97px;
+  width: 80px;
   height: 82px;
   text-align: center;
   line-height: 13px;
+}
+
+@media (min-width: 490px) {
+  section.team .team-container .thumbnails-section .thumbnails__person {
+    width: 97px;
+  }
 }
 
 section.team .team-container .thumbnails-section .thumbnails__person__photo {
