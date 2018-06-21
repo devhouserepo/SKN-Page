@@ -25,10 +25,11 @@ section.team {
                             "max-info";
         grid-template-columns: 96%;
         grid-template-rows: 40px auto auto;
-        margin: 7% auto auto auto;
-        width: 80%;
+        margin: 7% 2%;
+        width: 85%;
         z-index: 5;
         @media (min-width: 870px) {
+            margin: 7% auto auto auto;
             grid-template-columns: 1fr 50%;
             grid-template-rows: 100px 100px auto auto;
             grid-template-areas:
@@ -36,6 +37,7 @@ section.team {
                 ". thumbnails-section"
                 "max-info thumbnails-section"
                 "max-info thumbnails-section";
+            width: 80%;
         }
         @media (min-width: 1250px) {
             width: 1010px;
@@ -199,14 +201,13 @@ section.team {
         .thumbnails-section {
             // background-color: #000039;
             grid-area: thumbnails-section;
-            width: 84%;
+            width: 97%;
             z-index: 13;
             @media (min-width: 870px) {
                 background-color: transparent !important;
                 width: 100%;
             }
             .teams-container {
-                // position: relative;
                 &__header-projekty {
                     color: white;
                     font-weight: bold;
@@ -268,21 +269,24 @@ section.team {
                 display: flex;
                 flex-wrap: wrap;
                 min-height: 200px;
-                max-height: 400px;
-                overflow-y: auto;
+                max-height: 1100px;
                 padding: 15px 3px 15px 6px;
                 z-index: 13;
-                @media (min-width: 870px) {
-                    border: none;
-                }
+                border: none;
+                // @media (min-width: 870px) {
+                //     border: none;
+                // }
                 &__person {
                     // background-color: rgba(230, 215, 84, 0.397);
                     display: flex;
                     margin: 5px;
-                    width: 97px;
+                    width: 80px;
                     height: 82px;
                     text-align: center;
                     line-height: 13px;
+                    @media(min-width: 490px) {
+                        width: 97px;
+                    }
                     &__photo {
                         border-radius: 50% !important;
                         width: 45px;
