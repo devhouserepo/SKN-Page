@@ -1435,28 +1435,28 @@ section.projects .projects-container .single-container__blur {
 }
 
 section.projects .projects-container #devhouse-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/devhouse.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/devhouse.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/devhouse.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/devhouse.png");
 }
 
 section.projects .projects-container #thinkit-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/thinkit.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/thinkit.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/thinkit.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/thinkit.png");
 }
 
 section.projects .projects-container #lead-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/leadinit.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/leadinit.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/leadinit.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/leadinit.png");
 }
 
 section.projects .projects-container #startup-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/startup.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/startup.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/startup.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/startup.png");
 }
 
 section.projects .projects-container #bootcamp-background {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../assets/images/projects_photos/bootcamp.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../assets/images/projects_photos/bootcamp.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("../../assets/images/projects_photos/bootcamp.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../../assets/images/projects_photos/bootcamp.png");
 }
 
 section.projects .projects-container #twoj-projekt-background {
@@ -3764,9 +3764,17 @@ section.team .team-container .giant-header-members {
 
 @media (min-width: 1560px) {
   section.team .team-container .giant-header-members {
-    font-size: 110px;
-    left: 30%;
-    top: 345px;
+    font-size: 120px;
+    left: 28%;
+    top: 330px;
+  }
+}
+
+@media (min-width: 1700px) {
+  section.team .team-container .giant-header-members {
+    font-size: 120px;
+    left: 25%;
+    top: 350px;
   }
 }
 
@@ -3860,18 +3868,34 @@ section.team .team-container .max-info__paragraphs__linkedin-btn:hover {
 section.team .team-container .max-info__svg {
   display: none;
   position: absolute;
-  z-index: 1;
-  width: 1400px;
-  height: 125%;
-  top: 18px;
-  right: -253px;
+  top: 0;
+  left: -910px;
+  stroke-width: 3px;
+  stroke: white;
+  fill: none;
+  opacity: 0.7;
+  overflow: hidden;
+  height: 1500px;
+  width: 1350px;
+  z-index: -1;
 }
 
-section.team .team-container .max-info__svg__line {
-  stroke-dasharray: 1500;
-  stroke-dashoffset: 1500;
-  -webkit-animation: dash 3s linear forwards;
-          animation: dash 3s linear forwards;
+@media (min-width: 1000px) {
+  section.team .team-container .max-info__svg {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  section.team .team-container .max-info__svg {
+    top: 35px;
+  }
+}
+
+@media (min-width: 1300px) {
+  section.team .team-container .max-info__svg {
+    left: -810px;
+  }
 }
 
 section.team .team-container .thumbnails-section {
@@ -4266,10 +4290,8 @@ section.team .team-container .selected-project {
 }
 
 .modal-first .modal-body .form-recruitment .form-item input[type="text"], .modal-first .modal-body .form-recruitment .form-item textarea[type="text"],
-.modal-first .modal-body .form-recruitment .form-item input[type="email"],
-.modal-first .modal-body .form-recruitment .form-item textarea[type="email"],
-.modal-first .modal-body .form-recruitment .form-item input[type="number"],
-.modal-first .modal-body .form-recruitment .form-item textarea[type="number"],
+.modal-first .modal-body .form-recruitment .form-item input[type="email"], .modal-first .modal-body .form-recruitment .form-item textarea[type="email"],
+.modal-first .modal-body .form-recruitment .form-item input[type="number"], .modal-first .modal-body .form-recruitment .form-item textarea[type="number"],
 .modal-first .modal-body .form-recruitment .form-item textarea {
   width: 100%;
   padding: 12px 17px;
@@ -4282,10 +4304,8 @@ section.team .team-container .selected-project {
 }
 
 .modal-first .modal-body .form-recruitment .form-item input[type="text"]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type="text"]:focus,
-.modal-first .modal-body .form-recruitment .form-item input[type="email"]:focus,
-.modal-first .modal-body .form-recruitment .form-item textarea[type="email"]:focus,
-.modal-first .modal-body .form-recruitment .form-item input[type="number"]:focus,
-.modal-first .modal-body .form-recruitment .form-item textarea[type="number"]:focus,
+.modal-first .modal-body .form-recruitment .form-item input[type="email"]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type="email"]:focus,
+.modal-first .modal-body .form-recruitment .form-item input[type="number"]:focus, .modal-first .modal-body .form-recruitment .form-item textarea[type="number"]:focus,
 .modal-first .modal-body .form-recruitment .form-item textarea:focus {
   border: 2px solid #555;
 }
