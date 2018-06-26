@@ -31,7 +31,7 @@ section.team {
         @media (min-width: 870px) {
             margin: 7% auto auto auto;
             grid-template-columns: 1fr 50%;
-            grid-template-rows: 100px 100px auto auto;
+            grid-template-rows: minmax(30px, auto) minmax(30px, auto) auto;
             // grid-template-areas:
             //     ". thumbnails-section"
             //     ". thumbnails-section"
@@ -93,6 +93,9 @@ section.team {
                 font-size: 120px;
                 left: 25%;
                 top: 350px;
+            }
+            @media (min-height: 600px) and (max-height: 810px) {
+                top: 210px;
             }
         }
         p {

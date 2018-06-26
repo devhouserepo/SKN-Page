@@ -246,15 +246,12 @@ $(document).ready(function () {
   let maxInfo = document.querySelector('[data-name="max-info"]')
   console.log(maxInfo)
 
-  function findDivHeight(HTMLNode) {
-    console.log(`this is max-info height: ${HTMLNode.offsetHeight}`)
-  }
+  // function findDivHeight(HTMLNode) {
+  //   console.log(`this is max-info height: ${HTMLNode.offsetHeight}`)
+  // }
 
-  findDivHeight(maxInfo)
+  // findDivHeight(maxInfo)
 
-  function drawTeamSVG(teamSVGNode) {
-
-  }
 
   let teamDevhouse = "#team-devhouse";
   let teamStartUp = "#team-startup";
