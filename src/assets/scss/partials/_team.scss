@@ -31,12 +31,13 @@ section.team {
         @media (min-width: 870px) {
             margin: 7% auto auto auto;
             grid-template-columns: 1fr 50%;
-            grid-template-rows: 100px 100px auto auto;
-            grid-template-areas:
-                ". thumbnails-section"
-                ". thumbnails-section"
-                "max-info thumbnails-section"
-                "max-info thumbnails-section";
+            grid-template-rows: minmax(30px, auto) minmax(30px, auto) auto;
+            // grid-template-areas:
+            //     ". thumbnails-section"
+            //     ". thumbnails-section"
+            //     "max-info thumbnails-section"
+            //     "max-info thumbnails-section";
+            height: 100%;
             width: 80%;
         }
         @media (min-width: 1250px) {
@@ -93,6 +94,9 @@ section.team {
                 left: 25%;
                 top: 350px;
             }
+            @media (min-height: 600px) and (max-height: 810px) {
+                top: 210px;
+            }
         }
         p {
             color: white;
@@ -106,6 +110,8 @@ section.team {
             margin: 55px 7px 0 7px;
             position: relative;
             @media (min-width: 870px) {
+                // grid-row-start: 4;
+                grid-column-start: 1;
                 margin: 0px 7px 0 7px;
             }
             &__big-photo {
@@ -179,18 +185,18 @@ section.team {
                 @media (min-width: 1000px) {
                     display: block;
                 }
-                // @media (min-width: 1300px) {
-                //     top: -33px;
-                //     left: 40px;
-                //     transform-origin: top center;
-                //     transform: scaleY(1.2);
-                // }
                 @media (min-width: 1000px) {
                     top: 35px;
                 }
-                @media (min-width: 1300px) {
-                    left: -810px;
+                @media (min-width: 1150px) {
+                    left: -870px;
                 }
+                @media (min-width: 1190px) {
+                    left: -830px;
+                }
+                // @media (min-width: 1300px) {
+                //     left: -820px;
+                // }
                 // &__line {
                 //     stroke-dasharray: 1500;
                 //     stroke-dashoffset: 1500;
@@ -205,6 +211,8 @@ section.team {
             z-index: 13;
             @media (min-width: 870px) {
                 background-color: transparent !important;
+                grid-row-start: 1;
+                grid-column-start: 2;
                 width: 100%;
             }
             .teams-container {

@@ -242,6 +242,17 @@ $(document).ready(function () {
     })
   }
 
+  let teamSVGPath = document.querySelector('[data-name="team-svg-path"]')
+  let maxInfo = document.querySelector('[data-name="max-info"]')
+  console.log(maxInfo)
+
+  // function findDivHeight(HTMLNode) {
+  //   console.log(`this is max-info height: ${HTMLNode.offsetHeight}`)
+  // }
+
+  // findDivHeight(maxInfo)
+
+
   let teamDevhouse = "#team-devhouse";
   let teamStartUp = "#team-startup";
   let teamLEAD = "#team-lead";

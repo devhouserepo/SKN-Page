@@ -3692,8 +3692,8 @@ section.team .team-container {
   section.team .team-container {
     margin: 7% auto auto auto;
     grid-template-columns: 1fr 50%;
-    grid-template-rows: 100px 100px auto auto;
-    grid-template-areas: ". thumbnails-section" ". thumbnails-section" "max-info thumbnails-section" "max-info thumbnails-section";
+    grid-template-rows: minmax(30px, auto) minmax(30px, auto) auto;
+    height: 100%;
     width: 80%;
   }
 }
@@ -3780,6 +3780,12 @@ section.team .team-container .giant-header-members {
   }
 }
 
+@media (min-height: 600px) and (max-height: 810px) {
+  section.team .team-container .giant-header-members {
+    top: 210px;
+  }
+}
+
 section.team .team-container p {
   color: white;
 }
@@ -3796,6 +3802,7 @@ section.team .team-container .max-info {
 
 @media (min-width: 870px) {
   section.team .team-container .max-info {
+    grid-column-start: 1;
     margin: 0px 7px 0 7px;
   }
 }
@@ -3894,9 +3901,15 @@ section.team .team-container .max-info__svg {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1150px) {
   section.team .team-container .max-info__svg {
-    left: -810px;
+    left: -870px;
+  }
+}
+
+@media (min-width: 1190px) {
+  section.team .team-container .max-info__svg {
+    left: -830px;
   }
 }
 
@@ -3909,6 +3922,8 @@ section.team .team-container .thumbnails-section {
 @media (min-width: 870px) {
   section.team .team-container .thumbnails-section {
     background-color: transparent !important;
+    grid-row-start: 1;
+    grid-column-start: 2;
     width: 100%;
   }
 }
