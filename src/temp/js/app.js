@@ -1,15 +1,15 @@
 $(document).ready(function () {
-  //Checking which element overflows the document
-  var docWidth = document.documentElement.offsetWidth;
+  // //Checking which element overflows the document
+  // var docWidth = document.documentElement.offsetWidth;
 
-  [].forEach.call(
-    document.querySelectorAll('*'),
-    function (el) {
-      if (el.offsetWidth > docWidth) {
-        console.log(el);
-      }
-    }
-  );
+  // [].forEach.call(
+  //   document.querySelectorAll('*'),
+  //   function (el) {
+  //     if (el.offsetWidth > docWidth) {
+  //       console.log(el);
+  //     }
+  //   }
+  // );
 
 
 
@@ -161,6 +161,8 @@ $(document).ready(function () {
         props[randomNumber].linkedin +
         `" target="_blank"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
       );
+    } else {
+      $(".max-info__paragraphs__about").css('margin-bottom','100px');
     }
   }
 
@@ -211,6 +213,8 @@ $(document).ready(function () {
               data[index].linkedin +
               `"><img src="../assets/images/linkedin_white.png" width="80px"></a>`
             )
+          } else {
+            $(".max-info__paragraphs__about").css('margin-bottom','100px');
           }
         })
     })

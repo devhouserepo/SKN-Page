@@ -1,5 +1,12 @@
+@mixin background-gradient-different-bottom {
+    background: -webkit-linear-gradient(top, #000039 49%,#00042d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #000039 49%,#00042d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000039', endColorstr='#00042d',GradientType=0 );
+}
+
+
 section.team {
-    // background-color: rgb(233, 80, 10);
+    @include background-gradient-different-bottom;
     font-family: "Roboto", sans-serif;
     display: flex;
     position: relative;
@@ -92,7 +99,7 @@ section.team {
            @media (min-width: 1700px) {
                 font-size: 120px;
                 left: 25%;
-                top: 350px;
+                top: 400px;
             }
             @media (min-height: 600px) and (max-height: 810px) {
                 top: 210px;
