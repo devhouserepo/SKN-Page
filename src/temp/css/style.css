@@ -3652,6 +3652,11 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
 }
 
 section.team {
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(49%, #000039), to(#00042d));
+  background: linear-gradient(to bottom, #000039 49%, #00042d 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000039', endColorstr='#00042d',GradientType=0 );
   font-family: "Roboto", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3776,7 +3781,7 @@ section.team .team-container .giant-header-members {
   section.team .team-container .giant-header-members {
     font-size: 120px;
     left: 25%;
-    top: 350px;
+    top: 400px;
   }
 }
 
