@@ -184,12 +184,17 @@
   .section {
 
     &__reference {
+      padding-left: 0;
+      padding-right: 0;
       width: 100%;
+      margin-top: 70px;
+      margin-bottom: 30px;
       .mobile {
       display: flex !important;
       background: #ffffff;
       max-width: 700px;
-      height: 650px;
+      height: 680px;
+      clip-path: polygon( 20% 0%, 70% 0%, 100% 0, 100% 90%, 80% 100%, 30% 100%, 0 100%, 0% 10%);
       //position: relative;
       //top: 54px;
       //left: -154px;
@@ -227,14 +232,17 @@
        //top: 110px;
        // left: 122px;
         .carousel-indicators {
+          bottom: 40px;
           li,
           .active {
-            width: 13px;
-            height: 13px;
+            width: 18px;
+            height: 18px;
             border-radius: 50px;
             border: 1px solid #838383;
             background-color: #fff;
             cursor: pointer;
+            margin-right: 7px;
+            margin-left: 7px;
           }
           .active {
             background-color: #ababab;
@@ -243,26 +251,28 @@
       }
       .carousel-item {
         //width: 320px;
-        min-height: 530px;
+        min-height: 590px;
         background: white;
         text-align: center;
         font-size: 0.8em;
         font-family: $text-font-1;
         letter-spacing: 0.4px;
-        padding: 20px 15px 0 15px;
+        padding: 50px 15px 0 15px;
         img:nth-child(1) {
-          width: 100px;
+          width: 115px;
           border-radius: 100px;
         }
         span {
           color: $bg-color-1;
-          display: block;
+          display: inline;
           margin: 3px 0 0 0;
+          line-height: 15px;
         }
         p:nth-child(2) {
         }
         p {
           margin: 25px 0 0 0;
+          font-size: 1.07rem;
         }
         img:nth-child(4) {
           margin: 40px 0 0 0;
@@ -345,12 +355,17 @@
   .section {
 
     &__reference {
+      padding-left: 0;
+      padding-right: 0;
       width: 100%;
+      margin-top: 20px;
+      margin-bottom: 30px;
       .mobile {
       display: flex !important;
       background: #ffffff;
       max-width: 700px;
       height: 650px;
+      clip-path: polygon( 20% 0%, 70% 0%, 100% 0, 100% 90%, 80% 100%, 30% 100%, 0 100%, 0% 10%);
       position: relative;
       top: 54px;
       //left: -154px;
@@ -388,14 +403,17 @@
         //top: 110px;
         //left: 160px;
         .carousel-indicators {
+          bottom: 40px;
           li,
           .active {
-            width: 13px;
-            height: 13px;
+            width: 18px;
+            height: 18px;
             border-radius: 50px;
             border: 1px solid #838383;
             background-color: #fff;
             cursor: pointer;
+            margin-right: 7px;
+            margin-left: 7px;
           }
           .active {
             background-color: #ababab;
@@ -410,20 +428,22 @@
         font-size: 0.8em;
         font-family: $text-font-1;
         letter-spacing: 0.4px;
-        padding: 20px 15px 0 15px;
+        padding: 50px 15px 0 15px;
         img:nth-child(1) {
-          width: 100px;
+          width: 115px;
           border-radius: 100px;
         }
         span {
           color: $bg-color-1;
-          display: block;
+          display: inline;
           margin: 3px 0 0 0;
+          line-height: 15px;
         }
         p:nth-child(2) {
         }
         p {
           margin: 25px 0 0 0;
+          font-size: 1.07rem;
         }
         img:nth-child(4) {
           margin: 40px 0 0 0;
@@ -508,11 +528,16 @@
 
     &__reference {
       width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 20px;
+      margin-bottom: 30px;
       .mobile {
       display: flex !important;
       background: #ffffff;
       max-width: 700px;
       height: 650px;
+      clip-path: polygon( 20% 0%, 70% 0%, 100% 0, 100% 90%, 80% 100%, 30% 100%, 0 100%, 0% 10%);
       //position: relative;
       //top: 54px;
       //left: -154px;
@@ -549,14 +574,17 @@
         //top: 110px;
         //left: 175px;
         .carousel-indicators {
+          bottom: 40px;
           li,
           .active {
-            width: 13px;
-            height: 13px;
+            width: 18px;
+            height: 18px;
             border-radius: 50px;
             border: 1px solid #838383;
             background-color: #fff;
             cursor: pointer;
+            margin-right: 7px;
+            margin-left: 7px;
           }
           .active {
             background-color: #ababab;
@@ -571,20 +599,22 @@
         font-size: 0.8em;
         font-family: $text-font-1;
         letter-spacing: 0.4px;
-        padding: 20px 15px 0 15px;
+        padding: 50px 25px 0 25px;
         img:nth-child(1) {
-          width: 100px;
+          width: 115px;
           border-radius: 100px;
         }
         span {
           color: $bg-color-1;
-          display: block;
+          display: inline;
           margin: 3px 0 0 0;
+          line-height: 15px;
         }
         p:nth-child(2) {
         }
         p {
           margin: 25px 0 0 0;
+          font-size: 1.07rem;
         }
         img:nth-child(4) {
           margin: 40px 0 0 0;
@@ -665,14 +695,18 @@ display: none;
 
 @media (min-width: 421px) and (max-width: 480px) {
   .section {
-
     &__reference {
       width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 20px;
+      margin-bottom: 30px;
       .mobile {
       display: flex !important;
       background: #ffffff;
       max-width: 700px;
       height: 650px;
+      clip-path: polygon( 20% 0%, 70% 0%, 100% 0, 100% 90%, 80% 100%, 30% 100%, 0 100%, 0% 10%);
       //position: relative;
       //top: 54px;
       //left: -154px;
@@ -710,14 +744,17 @@ display: none;
         //top: 110px;
         //left: 210px;
         .carousel-indicators {
+          bottom: 40px;
           li,
           .active {
-            width: 13px;
-            height: 13px;
+            width: 18px;
+            height: 18px;
             border-radius: 50px;
             border: 1px solid #838383;
             background-color: #fff;
             cursor: pointer;
+            margin-right: 7px;
+            margin-left: 7px;
           }
           .active {
             background-color: #ababab;
@@ -725,27 +762,29 @@ display: none;
         }
       }
       .carousel-item {
-        width: 320px;
+        width: auto;
         min-height: 530px;
         background: white;
         text-align: center;
         font-size: 0.8em;
         font-family: $text-font-1;
         letter-spacing: 0.4px;
-        padding: 20px 15px 0 15px;
+        padding: 50px 25px 0 25px;
         img:nth-child(1) {
-          width: 100px;
+          width: 115px;
           border-radius: 100px;
         }
         span {
           color: $bg-color-1;
-          display: block;
+          display: inline;
           margin: 3px 0 0 0;
+          line-height: 15px;
         }
         p:nth-child(2) {
         }
         p {
           margin: 25px 0 0 0;
+          font-size: 1.07rem;
         }
         img:nth-child(4) {
           margin: 40px 0 0 0;
@@ -829,11 +868,16 @@ display: none;
 
     &__reference {
       width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 20px;
+      margin-bottom: 30px;
       .mobile {
       display: initial !important;
       background: #ffffff;
       max-width: 700px;
-      height: 650px;
+      height: 600px;
+      clip-path: polygon( 30% 0%, 70% 0%, 100% 0, 100% 82%, 75% 100%, 30% 100%, 0 100%, 0% 20%);
       //position: relative;
       //top: 54px;
       //left: -154px;
@@ -873,14 +917,17 @@ display: none;
         //top: 110px;
         //left: 235px;
         .carousel-indicators {
+          bottom: -20px;
           li,
           .active {
-            width: 13px;
-            height: 13px;
+            width: 18px;
+            height: 18px;
             border-radius: 50px;
             border: 1px solid #838383;
             background-color: #fff;
             cursor: pointer;
+            margin-right: 7px;
+            margin-left: 7px;
           }
           .active {
             background-color: #ababab;
@@ -888,27 +935,29 @@ display: none;
         }
       }
       .carousel-item {
-        width: 320px;
+        width: auto;
         min-height: 530px;
         background: white;
         text-align: center;
         font-size: 0.8em;
         font-family: $text-font-1;
         letter-spacing: 0.4px;
-        padding: 20px 15px 0 15px;
+        padding: 50px 25px 0 25px;
         img:nth-child(1) {
-          width: 100px;
+          width: 115px;
           border-radius: 100px;
         }
         span {
           color: $bg-color-1;
-          display: block;
+          display: inline;
           margin: 3px 0 0 0;
+          line-height: 15px;
         }
         p:nth-child(2) {
         }
         p {
-          margin: 25px 0 0 0;
+          margin: 35px 0 0 0;
+          font-size: 1.07rem;
         }
         img:nth-child(4) {
           margin: 40px 0 0 0;
@@ -992,11 +1041,17 @@ display: none;
 
     &__reference {
       width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 20px;
+      margin-bottom: 30px;
       .mobile {
       display: flex !important;
       background: #ffffff;
       max-width: 700px;
-      height: 650px;
+      height: 600px;
+      clip-path: polygon( 30% 0%, 70% 0%, 100% 0, 100% 82%, 75% 100%, 30% 100%, 0 100%, 0% 20%);
+
       //position: relative;
       //top: 54px;
       //left: -154px;
@@ -1036,14 +1091,17 @@ display: none;
         //top: 110px;
         //left: 265px;
         .carousel-indicators {
+          bottom: 40px;
           li,
           .active {
-            width: 13px;
-            height: 13px;
+            width: 18px;
+            height: 18px;
             border-radius: 50px;
             border: 1px solid #838383;
             background-color: #fff;
             cursor: pointer;
+            margin-right: 7px;
+            margin-left: 7px;
           }
           .active {
             background-color: #ababab;
@@ -1051,27 +1109,29 @@ display: none;
         }
       }
       .carousel-item {
-        width: 320px;
+        width: auto;
         min-height: 530px;
         background: white;
         text-align: center;
         font-size: 0.8em;
         font-family: $text-font-1;
         letter-spacing: 0.4px;
-        padding: 20px 15px 0 15px;
+        padding: 50px 25px 0 25px;
         img:nth-child(1) {
-          width: 100px;
+          width: 115px;
           border-radius: 100px;
         }
         span {
           color: $bg-color-1;
-          display: block;
+          display: inline;
           margin: 3px 0 0 0;
+          line-height: 15px;
         }
         p:nth-child(2) {
         }
         p {
-          margin: 25px 0 0 0;
+          margin: 35px 0 0 0;
+          font-size: 1.07rem;
         }
         img:nth-child(4) {
           margin: 40px 0 0 0;

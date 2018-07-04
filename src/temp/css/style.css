@@ -2567,7 +2567,11 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
 
 @media (min-width: 320px) and (max-width: 320px) {
   .section__reference {
+    padding-left: 0;
+    padding-right: 0;
     width: 100%;
+    margin-top: 70px;
+    margin-bottom: 30px;
   }
   .section__reference .mobile {
     display: -webkit-box !important;
@@ -2575,7 +2579,9 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     display: flex !important;
     background: #ffffff;
     max-width: 700px;
-    height: 650px;
+    height: 680px;
+    -webkit-clip-path: polygon(20% 0%, 70% 0%, 100% 0, 100% 90%, 80% 100%, 30% 100%, 0 100%, 0% 10%);
+            clip-path: polygon(20% 0%, 70% 0%, 100% 0, 100% 90%, 80% 100%, 30% 100%, 0 100%, 0% 10%);
   }
   .section__reference .mobile::after {
     display: none;
@@ -2601,38 +2607,45 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     right: -623px;
     top: 450px;
   }
+  .section__reference .mobile .carousel .carousel-indicators {
+    bottom: 40px;
+  }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
-    width: 13px;
-    height: 13px;
+    width: 18px;
+    height: 18px;
     border-radius: 50px;
     border: 1px solid #838383;
     background-color: #fff;
     cursor: pointer;
+    margin-right: 7px;
+    margin-left: 7px;
   }
   .section__reference .mobile .carousel .carousel-indicators .active {
     background-color: #ababab;
   }
   .section__reference .mobile .carousel-item {
-    min-height: 530px;
+    min-height: 590px;
     background: white;
     text-align: center;
     font-size: 0.8em;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.4px;
-    padding: 20px 15px 0 15px;
+    padding: 50px 15px 0 15px;
   }
   .section__reference .mobile .carousel-item img:nth-child(1) {
-    width: 100px;
+    width: 115px;
     border-radius: 100px;
   }
   .section__reference .mobile .carousel-item span {
     color: #000039;
-    display: block;
+    display: inline;
     margin: 3px 0 0 0;
+    line-height: 15px;
   }
   .section__reference .mobile .carousel-item p {
     margin: 25px 0 0 0;
+    font-size: 1.07rem;
   }
   .section__reference .mobile .carousel-item img:nth-child(4) {
     margin: 40px 0 0 0;
@@ -2670,7 +2683,11 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
 
 @media (min-width: 321px) and (max-width: 380px) {
   .section__reference {
+    padding-left: 0;
+    padding-right: 0;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
   .section__reference .mobile {
     display: -webkit-box !important;
@@ -2679,6 +2696,8 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     background: #ffffff;
     max-width: 700px;
     height: 650px;
+    -webkit-clip-path: polygon(20% 0%, 70% 0%, 100% 0, 100% 90%, 80% 100%, 30% 100%, 0 100%, 0% 10%);
+            clip-path: polygon(20% 0%, 70% 0%, 100% 0, 100% 90%, 80% 100%, 30% 100%, 0 100%, 0% 10%);
     position: relative;
     top: 54px;
   }
@@ -2706,14 +2725,19 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     right: -623px;
     top: 450px;
   }
+  .section__reference .mobile .carousel .carousel-indicators {
+    bottom: 40px;
+  }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
-    width: 13px;
-    height: 13px;
+    width: 18px;
+    height: 18px;
     border-radius: 50px;
     border: 1px solid #838383;
     background-color: #fff;
     cursor: pointer;
+    margin-right: 7px;
+    margin-left: 7px;
   }
   .section__reference .mobile .carousel .carousel-indicators .active {
     background-color: #ababab;
@@ -2725,19 +2749,21 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     font-size: 0.8em;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.4px;
-    padding: 20px 15px 0 15px;
+    padding: 50px 15px 0 15px;
   }
   .section__reference .mobile .carousel-item img:nth-child(1) {
-    width: 100px;
+    width: 115px;
     border-radius: 100px;
   }
   .section__reference .mobile .carousel-item span {
     color: #000039;
-    display: block;
+    display: inline;
     margin: 3px 0 0 0;
+    line-height: 15px;
   }
   .section__reference .mobile .carousel-item p {
     margin: 25px 0 0 0;
+    font-size: 1.07rem;
   }
   .section__reference .mobile .carousel-item img:nth-child(4) {
     margin: 40px 0 0 0;
@@ -2776,6 +2802,10 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
 @media (min-width: 380px) and (max-width: 420px) {
   .section__reference {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
   .section__reference .mobile {
     display: -webkit-box !important;
@@ -2784,6 +2814,8 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     background: #ffffff;
     max-width: 700px;
     height: 650px;
+    -webkit-clip-path: polygon(20% 0%, 70% 0%, 100% 0, 100% 90%, 80% 100%, 30% 100%, 0 100%, 0% 10%);
+            clip-path: polygon(20% 0%, 70% 0%, 100% 0, 100% 90%, 80% 100%, 30% 100%, 0 100%, 0% 10%);
   }
   .section__reference .mobile::after {
     display: none;
@@ -2809,14 +2841,19 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     right: -623px;
     top: 450px;
   }
+  .section__reference .mobile .carousel .carousel-indicators {
+    bottom: 40px;
+  }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
-    width: 13px;
-    height: 13px;
+    width: 18px;
+    height: 18px;
     border-radius: 50px;
     border: 1px solid #838383;
     background-color: #fff;
     cursor: pointer;
+    margin-right: 7px;
+    margin-left: 7px;
   }
   .section__reference .mobile .carousel .carousel-indicators .active {
     background-color: #ababab;
@@ -2828,19 +2865,21 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     font-size: 0.8em;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.4px;
-    padding: 20px 15px 0 15px;
+    padding: 50px 25px 0 25px;
   }
   .section__reference .mobile .carousel-item img:nth-child(1) {
-    width: 100px;
+    width: 115px;
     border-radius: 100px;
   }
   .section__reference .mobile .carousel-item span {
     color: #000039;
-    display: block;
+    display: inline;
     margin: 3px 0 0 0;
+    line-height: 15px;
   }
   .section__reference .mobile .carousel-item p {
     margin: 25px 0 0 0;
+    font-size: 1.07rem;
   }
   .section__reference .mobile .carousel-item img:nth-child(4) {
     margin: 40px 0 0 0;
@@ -2879,6 +2918,10 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
 @media (min-width: 421px) and (max-width: 480px) {
   .section__reference {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
   .section__reference .mobile {
     display: -webkit-box !important;
@@ -2887,6 +2930,8 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     background: #ffffff;
     max-width: 700px;
     height: 650px;
+    -webkit-clip-path: polygon(20% 0%, 70% 0%, 100% 0, 100% 90%, 80% 100%, 30% 100%, 0 100%, 0% 10%);
+            clip-path: polygon(20% 0%, 70% 0%, 100% 0, 100% 90%, 80% 100%, 30% 100%, 0 100%, 0% 10%);
   }
   .section__reference .mobile::after {
     display: none;
@@ -2912,39 +2957,46 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     right: -623px;
     top: 450px;
   }
+  .section__reference .mobile .carousel .carousel-indicators {
+    bottom: 40px;
+  }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
-    width: 13px;
-    height: 13px;
+    width: 18px;
+    height: 18px;
     border-radius: 50px;
     border: 1px solid #838383;
     background-color: #fff;
     cursor: pointer;
+    margin-right: 7px;
+    margin-left: 7px;
   }
   .section__reference .mobile .carousel .carousel-indicators .active {
     background-color: #ababab;
   }
   .section__reference .mobile .carousel-item {
-    width: 320px;
+    width: auto;
     min-height: 530px;
     background: white;
     text-align: center;
     font-size: 0.8em;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.4px;
-    padding: 20px 15px 0 15px;
+    padding: 50px 25px 0 25px;
   }
   .section__reference .mobile .carousel-item img:nth-child(1) {
-    width: 100px;
+    width: 115px;
     border-radius: 100px;
   }
   .section__reference .mobile .carousel-item span {
     color: #000039;
-    display: block;
+    display: inline;
     margin: 3px 0 0 0;
+    line-height: 15px;
   }
   .section__reference .mobile .carousel-item p {
     margin: 25px 0 0 0;
+    font-size: 1.07rem;
   }
   .section__reference .mobile .carousel-item img:nth-child(4) {
     margin: 40px 0 0 0;
@@ -2983,12 +3035,18 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
 @media (min-width: 480px) and (max-width: 530px) {
   .section__reference {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
   .section__reference .mobile {
     display: initial !important;
     background: #ffffff;
     max-width: 700px;
-    height: 650px;
+    height: 600px;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 82%, 75% 100%, 30% 100%, 0 100%, 0% 20%);
+            clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 82%, 75% 100%, 30% 100%, 0 100%, 0% 20%);
   }
   .section__reference .mobile .col-7 {
     position: relative;
@@ -3017,39 +3075,46 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     right: -623px;
     top: 450px;
   }
+  .section__reference .mobile .carousel .carousel-indicators {
+    bottom: -20px;
+  }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
-    width: 13px;
-    height: 13px;
+    width: 18px;
+    height: 18px;
     border-radius: 50px;
     border: 1px solid #838383;
     background-color: #fff;
     cursor: pointer;
+    margin-right: 7px;
+    margin-left: 7px;
   }
   .section__reference .mobile .carousel .carousel-indicators .active {
     background-color: #ababab;
   }
   .section__reference .mobile .carousel-item {
-    width: 320px;
+    width: auto;
     min-height: 530px;
     background: white;
     text-align: center;
     font-size: 0.8em;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.4px;
-    padding: 20px 15px 0 15px;
+    padding: 50px 25px 0 25px;
   }
   .section__reference .mobile .carousel-item img:nth-child(1) {
-    width: 100px;
+    width: 115px;
     border-radius: 100px;
   }
   .section__reference .mobile .carousel-item span {
     color: #000039;
-    display: block;
+    display: inline;
     margin: 3px 0 0 0;
+    line-height: 15px;
   }
   .section__reference .mobile .carousel-item p {
-    margin: 25px 0 0 0;
+    margin: 35px 0 0 0;
+    font-size: 1.07rem;
   }
   .section__reference .mobile .carousel-item img:nth-child(4) {
     margin: 40px 0 0 0;
@@ -3088,6 +3153,10 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
 @media (min-width: 530px) and (max-width: 575px) {
   .section__reference {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
   .section__reference .mobile {
     display: -webkit-box !important;
@@ -3095,7 +3164,9 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     display: flex !important;
     background: #ffffff;
     max-width: 700px;
-    height: 650px;
+    height: 600px;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 82%, 75% 100%, 30% 100%, 0 100%, 0% 20%);
+            clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 82%, 75% 100%, 30% 100%, 0 100%, 0% 20%);
   }
   .section__reference .mobile .col-7 {
     position: relative;
@@ -3124,39 +3195,46 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
     right: -623px;
     top: 450px;
   }
+  .section__reference .mobile .carousel .carousel-indicators {
+    bottom: 40px;
+  }
   .section__reference .mobile .carousel .carousel-indicators li,
   .section__reference .mobile .carousel .carousel-indicators .active {
-    width: 13px;
-    height: 13px;
+    width: 18px;
+    height: 18px;
     border-radius: 50px;
     border: 1px solid #838383;
     background-color: #fff;
     cursor: pointer;
+    margin-right: 7px;
+    margin-left: 7px;
   }
   .section__reference .mobile .carousel .carousel-indicators .active {
     background-color: #ababab;
   }
   .section__reference .mobile .carousel-item {
-    width: 320px;
+    width: auto;
     min-height: 530px;
     background: white;
     text-align: center;
     font-size: 0.8em;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.4px;
-    padding: 20px 15px 0 15px;
+    padding: 50px 25px 0 25px;
   }
   .section__reference .mobile .carousel-item img:nth-child(1) {
-    width: 100px;
+    width: 115px;
     border-radius: 100px;
   }
   .section__reference .mobile .carousel-item span {
     color: #000039;
-    display: block;
+    display: inline;
     margin: 3px 0 0 0;
+    line-height: 15px;
   }
   .section__reference .mobile .carousel-item p {
-    margin: 25px 0 0 0;
+    margin: 35px 0 0 0;
+    font-size: 1.07rem;
   }
   .section__reference .mobile .carousel-item img:nth-child(4) {
     margin: 40px 0 0 0;
