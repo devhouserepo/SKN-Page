@@ -1,4 +1,9 @@
+
 $(document).ready(function () {
+
+
+
+
   // //Checking which element overflows the document
   // var docWidth = document.documentElement.offsetWidth;
 
@@ -326,3 +331,5 @@ $(document).ready(function () {
   // });
 
 });
+
+$("#carouselExampleIndicators3").carousel()
