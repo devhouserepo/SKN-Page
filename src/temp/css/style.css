@@ -2267,6 +2267,13 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
   }
 }
 
+@media (max-width: 550px) {
+  .partners__wrapper {
+    background: none;
+    height: 280px;
+  }
+}
+
 .partners__description {
   font-size: 20px;
   color: black;
@@ -2315,6 +2322,12 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
 @media (max-width: 500px) {
   .partners__title {
     font-size: 35px;
+  }
+}
+
+@media (max-width: 550px) {
+  .partners__title {
+    top: 55%;
   }
 }
 
@@ -2368,6 +2381,12 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 550px) {
+  .partners__image-wrapper {
+    margin-top: 10px;
+  }
 }
 
 .section {
