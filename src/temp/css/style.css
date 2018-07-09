@@ -4503,3 +4503,53 @@ section.team .team-container .selected-project {
 #exampleModalCenter2 {
   display: block;
 }
+
+.cookie-box {
+  color: white;
+  padding-left: 30px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  height: 90px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999999999999;
+  padding-right: 30px;
+}
+
+@media (max-width: 700px) {
+  .cookie-box {
+    height: auto;
+    padding-bottom: 15px;
+  }
+}
+
+#cookie-box {
+  display: none;
+}
+
+.cookie__link {
+  color: white !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.cookie__link:hover {
+  color: white;
+}
+
+.cookie__description {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cookie-close {
+  cursor: pointer;
+  top: 10px;
+  font-size: 1.1rem;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  right: 25px;
+}

@@ -58,3 +58,15 @@ $(".validateObjectTextArea")
 $(".btn-secondary--close").on("click", function() {
   $("#exampleModalCenter2").fadeOut();
 });
+
+
+// cookies
+
+if (!$.cookie('skn-cookie'))
+ {
+  $("#cookie-box").show()
+}
+const cookie = document.querySelector('.cookie-close').addEventListener("click",function(){
+  $.cookie('skn-cookie', '1', { expires: 365730 });
+     $("#cookie-box").remove();
+})
