@@ -2,7 +2,7 @@
   color: white;
   padding-left: 30px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: #000021;
   height: 90px;
   position: fixed;
   left: 0;
@@ -17,6 +17,9 @@
 }
 #cookie-box{
   display: none;
+  font-family: $text-font-1;
+  font-size: 0.8rem;
+  line-height: 16px;
 }
 .cookie__link{
   color: white!important;
@@ -28,7 +31,7 @@
 }
 
 .cookie__description{
-  margin-top: 30px;
+  margin-top: 37px;
   text-align: center;
 }
 
