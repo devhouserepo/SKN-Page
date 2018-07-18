@@ -333,3 +333,8 @@ $(document).ready(function () {
 });
 
 $("#carouselExampleIndicators3").carousel()
+
+
+$("#toggler").click(function () {
+  $(".navig").slideToggle(600);
+});
