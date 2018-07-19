@@ -4169,7 +4169,7 @@ section.team .team-container .selected-project {
   z-index: 999999 !important;
   -webkit-transition: background-color 0.4s linear;
   transition: background-color 0.4s linear;
-  background-color: rgba(33, 29, 29, 0.7);
+  background-color: rgba(0, 0, 57, 0.4);
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4248,7 +4248,7 @@ section.team .team-container .selected-project {
 
 @media (max-width: 575px) {
   .navigation__navbar {
-    background-color: rgba(33, 29, 29, 0.9);
+    background-color: rgba(0, 0, 57, 0.9);
   }
 }
 
@@ -4582,4 +4582,138 @@ section.team .team-container .selected-project {
   font-weight: bold;
   position: absolute;
   right: 25px;
+}
+
+.section__footer {
+  margin-top: 50px;
+  min-height: 100px;
+  background: #000033;
+}
+
+.section .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .footer-container .sitemap {
+  margin: 0 40px 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .footer-container .sitemap ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin: 20px 30px 40px 30px;
+  text-align: center;
+}
+
+.section .footer-container .sitemap ul li {
+  margin-top: 10px;
+}
+
+.section .footer-container .sitemap ul li a {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7rem;
+}
+
+.section .footer-container .copyright {
+  margin: 30px 60px 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .footer-container .copyright p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  margin: -10px 0 30px 0;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  bottom: 20%;
+  left: 0;
+  z-index: 9999999;
+}
+
+.social-media .facebook {
+  height: 40px;
+  width: 40px;
+  background: #3B5998;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.social-media .facebook i {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.social-media .facebook:hover {
+  width: 50px;
+}
+
+.social-media .linkedin {
+  cursor: pointer;
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background: #0077B5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.social-media .linkedin i {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.social-media .linkedin:hover {
+  width: 50px;
 }
