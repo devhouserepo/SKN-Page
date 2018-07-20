@@ -5,6 +5,12 @@
     bottom: 20%;
     left: 0;
     z-index: 9999999;
+    @media (max-width: 550px)
+    {
+        flex-direction: row;
+        top: 0;
+        margin-left: 20px;
+    }
     .facebook {
         height: 40px;
         width: 40px;
@@ -14,9 +20,16 @@
         justify-content: center;
         cursor: pointer;
         transition: all 0.5s;
+
         i {
             color: white;
             font-size: 1.6rem;
+            &::before {
+                @media (max-width: 550px)
+                {
+                    display: block;
+                }
+            }
         }
         &:hover {
             width: 50px;
@@ -33,9 +46,20 @@
         justify-content: center;
         cursor: pointer;
         transition: all 0.5s;
+        @media (max-width: 550px)
+        {
+            margin-top: 0;
+            margin-left: 10px;
+        }
         i {
             color: white;
             font-size: 1.6rem;
+            &::before {
+                @media (max-width: 550px)
+                {
+                    display: block;
+                }
+            }
         }
         &:hover {
             width: 50px;
