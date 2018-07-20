@@ -1638,6 +1638,7 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
 
 .section__contact {
   width: 100%;
+  min-height: 100vh;
   color: #ffffff;
 }
 
@@ -4602,6 +4603,15 @@ section.team .team-container .selected-project {
           align-items: center;
 }
 
+@media (max-width: 560px) {
+  .section .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .section .footer-container .sitemap {
   margin: 0 40px 0 40px;
   display: -webkit-box;
@@ -4639,6 +4649,13 @@ section.team .team-container .selected-project {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .section .footer-container .copyright {
+    margin: 0;
+  }
 }
 
 .section .footer-container .copyright p {
@@ -4662,6 +4679,17 @@ section.team .team-container .selected-project {
   z-index: 9999999;
 }
 
+@media (max-width: 550px) {
+  .social-media {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    top: 0;
+    margin-left: 20px;
+  }
+}
+
 .social-media .facebook {
   height: 40px;
   width: 40px;
@@ -4683,6 +4711,12 @@ section.team .team-container .selected-project {
 .social-media .facebook i {
   color: white;
   font-size: 1.6rem;
+}
+
+@media (max-width: 550px) {
+  .social-media .facebook i::before {
+    display: block;
+  }
 }
 
 .social-media .facebook:hover {
@@ -4709,9 +4743,22 @@ section.team .team-container .selected-project {
   transition: all 0.5s;
 }
 
+@media (max-width: 550px) {
+  .social-media .linkedin {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+}
+
 .social-media .linkedin i {
   color: white;
   font-size: 1.6rem;
+}
+
+@media (max-width: 550px) {
+  .social-media .linkedin i::before {
+    display: block;
+  }
 }
 
 .social-media .linkedin:hover {
