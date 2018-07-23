@@ -100,7 +100,7 @@
         display: none;
       }
       img {
-        margin: 490px 0 0 70px;
+        margin: 430px 0 0 70px;
         width: 200px;
         z-index: 2;
         position: relative;
@@ -147,14 +147,15 @@
       p:nth-child(5) {
         font-size: 1.1rem;
         line-height: 24px;
-        margin: 220px 0 0 15px;
+        margin: 200px 0 0 15px;
         position: relative;
         z-index: 999;
         letter-spacing: 0.8px;
         color: $text-color-1;
+        text-align: center;
           top:60px;
         span {
-          display: block;
+          display: inline;
         }
       }
       p:nth-child(6) {
@@ -193,7 +194,7 @@
         display: none;
       }
       img {
-        margin: 510px 0 0 80px;
+        margin: 500px 0 0 80px;
         width: 240px;
         z-index: 2;
         position: relative;
@@ -240,13 +241,14 @@
       p:nth-child(5) {
         font-size: 1.2rem;
         line-height: 24px;
-        margin: 270px 0 0 15px;
+        margin: 310px 0 0 15px;
         position: relative;
         z-index: 999;
         letter-spacing: 0.8px;
         color: $text-color-1;
+        text-align: center;
         span {
-          display: block;
+          display: inline;
         }
       }
       p:nth-child(6) {
@@ -257,6 +259,9 @@
         z-index: 999;
         letter-spacing: 0.8px;
         color: white;
+        span {
+          display: inline;
+        }
       }
     }
   }
@@ -338,7 +343,7 @@
         letter-spacing: 0.8px;
         color: $text-color-1;
         span {
-          display: block;
+          display: inline;
         }
       }
       p:nth-child(6) {
@@ -377,7 +382,7 @@
         display: none;
       }
       img {
-        margin: 540px 0 0 80px;
+        margin: 570px 0 0 80px;
         width: 250px;
         z-index: 2;
         position: relative;
@@ -424,7 +429,7 @@
       p:nth-child(5) {
         font-size: 1.2rem;
         line-height: 24px;
-        margin: 340px 0 0 15px;
+        margin: 370px 0 0 15px;
         position: relative;
         z-index: 999;
         letter-spacing: 0.8px;
@@ -469,7 +474,7 @@
         display: none;
       }
       img {
-        margin: 560px 0 0 90px;
+        margin: 500px 0 0 90px;
         width: 270px;
         z-index: 2;
         position: relative;
@@ -516,13 +521,17 @@
       p:nth-child(5) {
         font-size: 1.4rem;
         line-height: 26px;
-        margin: 310px 0 0 15px;
+        margin: 330px 0 0 15px;
         position: relative;
         z-index: 999;
         letter-spacing: 0.8px;
         color: $text-color-1;
+        text-align: center;
         span {
-          display: block;
+          display: inline;
+          .non {
+            display: block;
+          }
         }
       }
       p:nth-child(6) {
@@ -577,6 +586,9 @@
         width: 330px;
         position: relative;
         z-index: 999;
+        .non {
+          display: none;
+        }
       }
       p:nth-child(6) {
         font-size: 0.7rem;

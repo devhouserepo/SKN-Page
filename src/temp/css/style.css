@@ -171,7 +171,7 @@ table {
     display: none;
   }
   .header__content img {
-    margin: 490px 0 0 70px;
+    margin: 430px 0 0 70px;
     width: 200px;
     z-index: 2;
     position: relative;
@@ -218,15 +218,16 @@ table {
   .header__content p:nth-child(5), .header__content p:nth-child(6) {
     font-size: 1.1rem;
     line-height: 24px;
-    margin: 220px 0 0 15px;
+    margin: 200px 0 0 15px;
     position: relative;
     z-index: 999;
     letter-spacing: 0.8px;
     color: #ffffff;
+    text-align: center;
     top: 60px;
   }
   .header__content p:nth-child(5) span, .header__content p:nth-child(6) span {
-    display: block;
+    display: inline;
   }
   .header__content p:nth-child(6) {
     font-size: 1rem;
@@ -263,7 +264,7 @@ table {
     display: none;
   }
   .header__content img {
-    margin: 510px 0 0 80px;
+    margin: 500px 0 0 80px;
     width: 240px;
     z-index: 2;
     position: relative;
@@ -310,14 +311,15 @@ table {
   .header__content p:nth-child(5), .header__content p:nth-child(6) {
     font-size: 1.2rem;
     line-height: 24px;
-    margin: 270px 0 0 15px;
+    margin: 310px 0 0 15px;
     position: relative;
     z-index: 999;
     letter-spacing: 0.8px;
     color: #ffffff;
+    text-align: center;
   }
   .header__content p:nth-child(5) span, .header__content p:nth-child(6) span {
-    display: block;
+    display: inline;
   }
   .header__content p:nth-child(6) {
     font-size: 1.2rem;
@@ -327,6 +329,9 @@ table {
     z-index: 999;
     letter-spacing: 0.8px;
     color: white;
+  }
+  .header__content p:nth-child(6) span {
+    display: inline;
   }
 }
 
@@ -408,7 +413,7 @@ table {
     color: #ffffff;
   }
   .header__content p:nth-child(5) span, .header__content p:nth-child(6) span {
-    display: block;
+    display: inline;
   }
   .header__content p:nth-child(6) {
     font-size: 1.2rem;
@@ -445,7 +450,7 @@ table {
     display: none;
   }
   .header__content img {
-    margin: 540px 0 0 80px;
+    margin: 570px 0 0 80px;
     width: 250px;
     z-index: 2;
     position: relative;
@@ -492,7 +497,7 @@ table {
   .header__content p:nth-child(5), .header__content p:nth-child(6) {
     font-size: 1.2rem;
     line-height: 24px;
-    margin: 340px 0 0 15px;
+    margin: 370px 0 0 15px;
     position: relative;
     z-index: 999;
     letter-spacing: 0.8px;
@@ -536,7 +541,7 @@ table {
     display: none;
   }
   .header__content img {
-    margin: 560px 0 0 90px;
+    margin: 500px 0 0 90px;
     width: 270px;
     z-index: 2;
     position: relative;
@@ -583,13 +588,17 @@ table {
   .header__content p:nth-child(5), .header__content p:nth-child(6) {
     font-size: 1.4rem;
     line-height: 26px;
-    margin: 310px 0 0 15px;
+    margin: 330px 0 0 15px;
     position: relative;
     z-index: 999;
     letter-spacing: 0.8px;
     color: #ffffff;
+    text-align: center;
   }
   .header__content p:nth-child(5) span, .header__content p:nth-child(6) span {
+    display: inline;
+  }
+  .header__content p:nth-child(5) span .non, .header__content p:nth-child(6) span .non {
     display: block;
   }
   .header__content p:nth-child(6) {
@@ -640,6 +649,9 @@ table {
     width: 330px;
     position: relative;
     z-index: 999;
+  }
+  .header__content p:nth-child(5) .non, .header__content p:nth-child(6) .non {
+    display: none;
   }
   .header__content p:nth-child(6) {
     font-size: 0.7rem;
@@ -2195,7 +2207,7 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
 
 @media (max-width: 420px) {
   #form-object {
-    left: -60px;
+    left: 0;
   }
   .section__box {
     margin-top: -60px;
@@ -2204,19 +2216,19 @@ section.projects .projects-container .lines-wrapper .lines__svg-2 {
 
 @media (max-width: 380px) {
   #form-object {
-    left: -90px;
+    left: 0;
   }
 }
 
 @media (max-width: 360px) {
   #form-object {
-    left: -110px;
+    left: 0;
   }
 }
 
 @media (max-width: 330px) {
   #form-object {
-    left: -120px;
+    left: 0;
   }
 }
 
@@ -4379,6 +4391,7 @@ section.team .team-container .selected-project {
 .modal {
   font-family: "Roboto", sans-serif;
   color: #000000;
+  z-index: 999999999999999;
 }
 
 .modal .close:focus {
@@ -4723,6 +4736,13 @@ section.team .team-container .selected-project {
   width: 50px;
 }
 
+@media (max-width: 550px) {
+  .social-media .facebook:hover {
+    width: 40px;
+    height: 50px;
+  }
+}
+
 .social-media .linkedin {
   cursor: pointer;
   margin-top: 10px;
@@ -4763,4 +4783,11 @@ section.team .team-container .selected-project {
 
 .social-media .linkedin:hover {
   width: 50px;
+}
+
+@media (max-width: 550px) {
+  .social-media .linkedin:hover {
+    width: 40px;
+    height: 50px;
+  }
 }
