@@ -143,6 +143,10 @@ table {
   display: block;
 }
 
+.header__content p:nth-child(5) span .non, .header__content p:nth-child(6) span .non {
+  display: none;
+}
+
 .header__content p:nth-child(6) {
   margin: 20px 0 0 700px;
 }
@@ -228,6 +232,9 @@ table {
   }
   .header__content p:nth-child(5) span, .header__content p:nth-child(6) span {
     display: inline;
+  }
+  .header__content p:nth-child(5) span .non, .header__content p:nth-child(6) span .non {
+    display: block;
   }
   .header__content p:nth-child(6) {
     font-size: 1rem;
@@ -320,6 +327,9 @@ table {
   }
   .header__content p:nth-child(5) span, .header__content p:nth-child(6) span {
     display: inline;
+  }
+  .header__content p:nth-child(5) span .non, .header__content p:nth-child(6) span .non {
+    display: block;
   }
   .header__content p:nth-child(6) {
     font-size: 1.2rem;
