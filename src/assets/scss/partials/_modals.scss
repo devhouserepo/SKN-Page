@@ -1,6 +1,7 @@
 .modal {
   font-family: $text-font-1;
   color: $text-color-2;
+  z-index: 999999999999999;
   .close {
     &:focus {
       outline: none;
