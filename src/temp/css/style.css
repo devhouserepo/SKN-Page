@@ -143,6 +143,10 @@ table {
   display: block;
 }
 
+.header__content p:nth-child(5) span .non, .header__content p:nth-child(6) span .non {
+  display: none;
+}
+
 .header__content p:nth-child(6) {
   margin: 20px 0 0 700px;
 }
@@ -228,6 +232,9 @@ table {
   }
   .header__content p:nth-child(5) span, .header__content p:nth-child(6) span {
     display: inline;
+  }
+  .header__content p:nth-child(5) span .non, .header__content p:nth-child(6) span .non {
+    display: block;
   }
   .header__content p:nth-child(6) {
     font-size: 1rem;
@@ -321,6 +328,9 @@ table {
   .header__content p:nth-child(5) span, .header__content p:nth-child(6) span {
     display: inline;
   }
+  .header__content p:nth-child(5) span .non, .header__content p:nth-child(6) span .non {
+    display: block;
+  }
   .header__content p:nth-child(6) {
     font-size: 1.2rem;
     line-height: 21px;
@@ -332,6 +342,9 @@ table {
   }
   .header__content p:nth-child(6) span {
     display: inline;
+  }
+  .header__content p:nth-child(6) span .non {
+    display: block;
   }
 }
 
@@ -414,6 +427,9 @@ table {
   }
   .header__content p:nth-child(5) span, .header__content p:nth-child(6) span {
     display: inline;
+  }
+  .header__content p:nth-child(5) span .non, .header__content p:nth-child(6) span .non {
+    display: block;
   }
   .header__content p:nth-child(6) {
     font-size: 1.2rem;
@@ -504,6 +520,9 @@ table {
     color: #ffffff;
   }
   .header__content p:nth-child(5) span, .header__content p:nth-child(6) span {
+    display: block;
+  }
+  .header__content p:nth-child(5) span .non, .header__content p:nth-child(6) span .non {
     display: block;
   }
   .header__content p:nth-child(6) {
@@ -4543,6 +4562,13 @@ section.team .team-container .selected-project {
 
 #exampleModalCenter2 {
   display: block;
+}
+
+.RODO {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
 }
 
 .cookie-box {
