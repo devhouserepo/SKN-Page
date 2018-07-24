@@ -72,7 +72,8 @@
           }
         }
         &__row-checkbox-departmentChoice,
-        &__row-checkbox-projectRecruitment {
+        &__row-checkbox-projectRecruitment,
+        {
           input {
             margin: 10px 0px 10px 15px;
             cursor: pointer;
@@ -115,4 +116,9 @@
 }
 #exampleModalCenter2 {
   display: block;
+}
+
+.RODO {
+  display: flex;
+  padding-bottom: 15px;
 }
