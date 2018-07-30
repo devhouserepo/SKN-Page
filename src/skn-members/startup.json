@@ -1,14 +1,6 @@
 [
-     {
-      "id": 1,
-      "first_name": "Łukasz",
-      "last_name": "Szczerbiński",
-      "info": "Łukasz jest wiceprezesem SKN-u. Studiuje Informatyczne Systemy Zarządzania i pracuje jako Project Manager, realizując projekty informatyczne. Uważa, że działalność w Kole daje możliwości, których nie oferują same studia.",
-      "linkedin": "https://www.linkedin.com/in/%C5%82ukasz-szczerbi%C5%84ski/",
-      "photo": "./assets/images/members/lukasz-szczerbinski.jpg"
-    },
     {
-      "id": 2,
+      "id": 1,
       "first_name": "Zuza",
       "last_name": "Walkiewicz",
       "info": "Zuza jest studentką Informatycznych Systemów Zarządzania i pracuje jako tester systemów informatycznych. Interesuje się tematyką UX, marketingiem, a także kwestiami związanymi z analizą procesów biznesowych. SKN Konsultingu IT dało jej możliwość rozwoju, zaangażowania w projekty oraz poznania inspirujących ludzi.",
@@ -16,7 +8,7 @@
       "photo": "./assets/images/members/zuza-walkiewicz.jpg"
     },
     {
-      "id": 3,
+      "id": 2,
       "first_name": "Klaudia",
       "last_name": "Jarębska",
       "info": "Klaudia obecnie studiuje Inżynierię Zarządzania w IT na Politechnice Warszawskiej. W kole należy do działu analitycznego projektów. Na co dzień interesuje się innowacjami technologicznymi, rozwiązaniami biznesowymi oraz chmurami danych. Uważa, że to właśnie kreatywność ludzi jest motoryką rozwoju świata.",
@@ -24,23 +16,15 @@
       "photo": "./assets/images/members/klaudia-jarebska.jpg"
     },
     {
-      "id": 4,
-      "first_name": "Kasia",
-      "last_name": "Włodarczyk",
-      "info": "Kasia jest głównym koordynatorem marketingu w SKN-ie. Wierzy, że  o sukcesie decydują tylko ludzie i ich motywacja. Jest miłośniczką gór i wszystkiego, co ekstremalne.",
-      "linkedin": "https://www.linkedin.com/in/katarzyna-w%C5%82odarczyk-513683134/",
-      "photo": "./assets/images/members/kasia-wlodarczyk.jpg"
-    },
-    {
-    "id": 5,
-    "first_name": "Aleksandra",
-    "last_name": "Grunwald",
-    "info": "Ola jest programistką front-end. Z wykształcenia projektantem produktu i grafiki (Uniwersytet Artystyczny w Poznaniu). W SKN-ie Konsultingu IT działa w projektach StartUp game i DevHouse.",
-    "linkedin": "https://www.linkedin.com/in/aleksandragrunwald/",
-    "photo": "./assets/images/members/aleksandra-grunwald.png"
+      "id": 3,
+      "first_name": "Aleksandra",
+      "last_name": "Grunwald",
+      "info": "Ola jest programistką front-end. Z wykształcenia projektantem produktu i grafiki (Uniwersytet Artystyczny w Poznaniu). W SKN-ie Konsultingu IT działa w projektach StartUp game i DevHouse.",
+      "linkedin": "https://www.linkedin.com/in/aleksandragrunwald/",
+      "photo": "./assets/images/members/aleksandra-grunwald.png"
   },
     {
-      "id": 6,
+      "id": 4,
       "first_name": "Cyryl",
       "last_name": "Kocięcki",
       "info": "Cyryl jest współzałożycielem SKN-u, absolwentem specjalizacji International Management na Akademii Leona Koźmińskiego, a  obecnie kończy specjalizację Corporate Finance. W Startup game jest analitykiem i odpowiadam za tworzenie modelu ekonomicznego startupu",
@@ -48,7 +32,7 @@
       "photo": "./assets/images/members/cyryl-kociecki.jpg"
     },
     {
-      "id": 7,
+      "id": 5,
       "first_name": "Maciek",
       "last_name": "Chmielewski",
       "info": "Maciej w kole pełni rolę analityka. Jest absolwentem wydziału MEiL Politechniki Warszawskiej, a aktualnie studentem Finansów i Rachunkowości na Akademii Leona Koźmińskiego. Zawodowo związany z sektorem usług finansowych. Działalność w kole ceni sobie ze względu na możliwość kontaktu z branżą nowych technologii.",
@@ -56,7 +40,7 @@
       "photo": "./assets/images/members/maciej-chmielewski.jpg"
     },
     {
-      "id": 8,
+      "id": 6,
       "first_name": "Anton",
       "last_name": "Katyrenchuk",
       "info": "Anton jest programistą, w Kole pełni rolę Java Developera. Studiuje informatykę na Polsko-Japońskiej Akademii Technik Komputerowych. Wierzy, że w przyszłości koło stanie się jedną z najlepszych firm w Polsce.",
@@ -64,7 +48,7 @@
       "photo": "./assets/images/members/anton-katyrenchuk.jpg"
     },
     {
-      "id": 9,
+      "id": 7,
       "first_name": "Denys",
       "last_name": "Shushpanov",
       "info": "Denis pasjonuje się informatyką i rozwija swoje umietności, zarówno miękkie, jak i techniczne, uczestnicząc w projektach koła jako backend developer. Jego zdaniem każdy, kto chce rozwijać się wszechstronnie, musi podejmować większe wyzwania niż zaliczenie przedmiotów w bieżącym semestrze, na przyklad brać udział w organizacji studenckiej. Studiuje Computer Science na Politechnice Warszawskiej. Lubi spędzać czas ze znajomymi, na siłowni, jeżdżąc rowerem, a najlepiej - wszystko razem 🙂",
@@ -72,11 +56,20 @@
       "photo": "./assets/images/members/denys-shushpanov.jpg"
     },
     {
-      "id": 10,
+      "id": 8,
       "first_name": "Franek",
       "last_name": "Okrzesik",
       "info": "Franek jest inżynierem, po kilku latach pracy jako programista i automatyk przestał kodzić i jest bliski ukończenia studiów z Zarządzania Projektami na SGH. Uważa, ze w każdym przedsięwzięciu najważniejsze jest dostarczanie realnej wartości dla klienta, aktualnie pracuje w biurze zarządzania projektami. W kole działa w jednym z projektów jako Product Owner - łącze miedzy IT i biznesem.",
       "linkedin": "https://www.linkedin.com/in/franciszek-okrzesik/",
       "photo": "./assets/images/members/franciszek-okrzesik.jpg"
+    }
+    ,
+    {
+      "id": 9,
+      "first_name": "Martyna",
+      "last_name": "Guzik",
+      "info": "Martyna pełni rolę analityka w kole. Jest na V roku na kierunku Finanse i Rachunkowość w Szkole Głównej Handlowej. Interesuje się rynkiem kapitałowym, tańcem i programowaniem neurolingwistycznym. Jest zdania, że zawsze warto wychodzić poza krąg zainteresowań, poznawać nowe rzeczy i właśnie z tego powodu została członkinią SKN Konsultingu IT.",
+      "linkedin": "http://linkedin.com/in/martyna-guzik-b9506a95",
+      "photo": "./assets/images/members/martyna-guzik.jpg"
     }
   ]
