@@ -8,7 +8,15 @@
     "photo": "./assets/images/members/piotr-mikrut.png"
   },
   {
-    "id": 2,
+      "id": 2,
+      "first_name": "Łukasz",
+      "last_name": "Szczerbiński",
+      "info": "Łukasz jest wiceprezesem SKN-u. Studiuje Informatyczne Systemy Zarządzania i pracuje jako Project Manager, realizując projekty informatyczne. Uważa, że działalność w Kole daje możliwości, których nie oferują same studia.",
+      "linkedin": "https://www.linkedin.com/in/%C5%82ukasz-szczerbi%C5%84ski/",
+      "photo": "./assets/images/members/lukasz-szczerbinski.jpg"
+    },
+  {
+    "id": 3,
     "first_name": "Weronika",
     "last_name": "Sochacka",
     "info": "Weronika studiuje finanse i rachunkowość w SGH. Interesuje się social media, SEO i językiem niemieckim. W SKN-ie uczy się Frontendu i działa w teamie marketingu. Prywatnie kocha koty i uwielbia malować paznokcie.",
@@ -16,7 +24,7 @@
     "photo": "./assets/images/members/weronika-sochacka.png"
   },
   {
-    "id": 3,
+    "id": 4,
     "first_name": "Aleksandra",
     "last_name": "Grunwald",
     "info": "Ola jest programistką front-end. Z wykształcenia projektantem produktu i grafiki (Uniwersytet Artystyczny w Poznaniu). W SKN-ie Konsultingu IT działa w projektach StartUp game i DevHouse.",
@@ -24,7 +32,7 @@
     "photo": "./assets/images/members/aleksandra-grunwald.png"
   },
   {
-    "id": 4,
+    "id": 5,
     "first_name": "Adam",
     "last_name": "Rogulski",
     "info": "Adam jest Front End developerem - pasjonatem semantycznego i dobrze zaprojektowanego kodu, a w Kole działa w Devhouse. Hobbystycznie realizuje się jako fizjoterapeuta i trener personalny. W wolnych chwilach ćwiczy, gotuje i gra w Wiedźmina.",
@@ -32,7 +40,7 @@
     "photo": "./assets/images/members/adam-rogulski.png"
   },
   {
-    "id": 5,
+    "id": 6,
     "first_name": "Aleksander",
     "last_name": "Ziółkowski",
     "info": "Aleksander na co dzień zajmuje się analizą danych w instytucji finansowej. W SKN-ie jest członkiem zespołu Devhouse, gdzie jest odpowiedzialny za część pracy związanej z front endem. Jest zwolennikiem nowych technologii oraz aktywności na świeżym powietrzu.",
@@ -40,7 +48,7 @@
     "photo": "./assets/images/members/aleksander-ziolkowski.png"
   },
   {
-    "id": 6,
+    "id": 7,
     "first_name": "Piotr",
     "last_name": "Kniaź",
     "info": "Piotr jest z wykształcenia dietetykiem, a z pasji i zawodu programistą w firmie Seraaq. Pisze głównie w JavaScript i PHP.",
@@ -48,7 +56,7 @@
     "photo": "./assets/images/members/piotr-kniaz.png"
   },
   {
-    "id": 7,
+    "id": 8,
     "first_name": "Piotr",
     "last_name": "Pilis",
     "info": "Piotr jest Full-stack developerem, przedsiębiorcą, studentem. Posiada 3 letnie doświadczenie w rozwijaniu aplikacji webowych. Uważa, że działanie w kole naukowym to szansa na poznanie ambitnych ludzi.",
@@ -56,7 +64,7 @@
     "photo": "./assets/images/members/piotr-pilis.jpg"
   },
   {
-    "id": 8,
+    "id": 9,
     "first_name": "Małgorzata",
     "last_name": "Maciejowska",
     "info": "Gosia pracuje na stanowisku HTML specialist, zajmuje się projektowaniem, programowaniem oraz obróbką graficzną szablonów. Kodowanie to dla niej przyjemność. Uważa, że SKN pozwali na dalszy rozwój oraz doskonalenie nabytej już wiedzy.",
