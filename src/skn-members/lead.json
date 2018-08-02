@@ -27,7 +27,7 @@
       "id": 4,
       "first_name": "Jan",
       "last_name": "Dubiński",
-      "info": "Janek zajmuje się 2. edycją programu LEAD. Podczas studiów inżynierskich zainteresował się tematyką Machine Learningu i Data Science, co skłoniło go do studiowania informatyki. Koło traktuje jako świetną okazję do poznania nowych ludzi oraz poszerzenia swojej wiedzy.",
+      "info": "Janek zajmuje się programem LEAD. Podczas studiów inżynierskich zainteresował się tematyką Machine Learningu i Data Science, co skłoniło go do studiowania informatyki. Koło traktuje jako świetną okazję do poznania nowych ludzi oraz poszerzenia swojej wiedzy.",
       "linkedin": "",
       "photo": "./assets/images/members/jan-dubinski.png"
     },
@@ -43,7 +43,7 @@
       "id": 6,
       "first_name": "Cyryl",
       "last_name": "Kocięcki",
-      "info": "Cyryl jest współzałożycielem SKN-u, absolwentem specjalizacji International Management na Akademii Leona Koźmińskiego, a  obecnie kończy specjalizację Corporate Finance. W przeszłości pracował jako project manager i UI designer. Od dwóch lat pracuje w Microsoft Polska, obecnie w roli analityka biznesowego/citizen data scientist odpowiadającego za stronę merytoryczną i efektywność kampanii marketingowych w obszarze trzech chmur (Microsoft 365, Azure, Dynamics 365) w dziale Marketing and Operations. W SKN odpowiada głównie za organizację i rozwój flagowego programu LEAD in IT.",
+      "info": "Cyryl jest współzałożycielem SKN-u, absolwentem International Management na Akademii Leona Koźmińskiego, a  obecnie kończy specjalizację Corporate Finance. W przeszłości pracował m.in. jako project manager. Od dwóch lat pracuje w Microsoft, obecnie jako analityk biznesowy i odpowiada za efektywność kampanii marketingowych w obszarze trzech chmur. W SKN zajmuje się organizacją programu LEAD in IT.",
       "linkedin": "https://www.linkedin.com/in/cyryl-koci%C4%99cki-98325386/",
       "photo": "./assets/images/members/cyryl-kociecki.jpg"
     },
@@ -51,7 +51,7 @@
       "id": 7,
       "first_name": "Piotr",
       "last_name": "Filarski",
-      "info": "Piotr pracuje nad 2 edycją Programu LEAD. Studiuje informatykę rozwijając swoje zainteresowanie nowymi technologiami. Jego zdaniem Koło jest najlepszym miejscem na zawarcie nowych znajomości.",
+      "info": "Piotr pracuje nad Programem LEAD. Studiuje informatykę, rozwijając swoje zainteresowanie nowymi technologiami. Jego zdaniem Koło jest najlepszym miejscem na zawarcie nowych znajomości.",
       "linkedin": "https://www.linkedin.com/in/piotrfilarski/",
       "photo": "./assets/images/members/piotr-filarski.jpg"
     }

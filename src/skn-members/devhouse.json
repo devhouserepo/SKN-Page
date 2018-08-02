@@ -3,7 +3,7 @@
     "id": 1,
     "first_name": "Piotr",
     "last_name": "Mikrut",
-    "info": "Piotr jest współzałożycielem i prezesem SKN-u, gdzie pełni również rolę scrum mastera zespołu Devhouse. Na co dzień pracuje jak project manager w software housie. Jest uzależniony od dobrej kawy, vlogów oraz wcielenia pomysłów w życie!",
+    "info": "Piotr jest współzałożycielem i prezesem SKN-u, gdzie pełni również rolę scrum mastera zespołu Devhouse. Na co dzień pracuje jak project manager w software housie. Jest uzależniony od dobrej kawy, vlogów oraz wcielania pomysłów w życie!",
     "linkedin": "https://www.linkedin.com/in/piotr-mikrut-06b9a199/",
     "photo": "./assets/images/members/piotr-mikrut.png"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "first_name": "Adam",
     "last_name": "Rogulski",
-    "info": "Adam jest Front End developerem - pasjonatem semantycznego i dobrze zaprojektowanego kodu, a w Kole działa w Devhouse. Hobbystycznie realizuje się jako fizjoterapeuta i trener personalny. W wolnych chwilach ćwiczy, gotuje i gra w Wiedźmina.",
+    "info": "Adam jest Front End developerem - pasjonatem semantycznego i dobrze zaprojektowanego kodu, a w Kole działa w DevHouse. Hobbystycznie realizuje się jako fizjoterapeuta i trener personalny. W wolnych chwilach ćwiczy, gotuje i gra w Wiedźmina.",
     "linkedin": "https://www.linkedin.com/in/adam-rogulski/",
     "photo": "./assets/images/members/adam-rogulski.png"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "first_name": "Aleksander",
     "last_name": "Ziółkowski",
-    "info": "Aleksander na co dzień zajmuje się analizą danych w instytucji finansowej. W SKN-ie jest członkiem zespołu Devhouse, gdzie jest odpowiedzialny za część pracy związanej z front endem. Jest zwolennikiem nowych technologii oraz aktywności na świeżym powietrzu.",
+    "info": "Aleksander na co dzień zajmuje się analizą danych w instytucji finansowej. W SKN-ie jest członkiem zespołu DevHouse, gdzie jest odpowiedzialny za część pracy związanej z front endem. Jest zwolennikiem nowych technologii oraz aktywności na świeżym powietrzu.",
     "linkedin": "",
     "photo": "./assets/images/members/aleksander-ziolkowski.png"
   },
@@ -62,13 +62,5 @@
     "info": "Piotr jest Full-stack developerem, przedsiębiorcą, studentem. Posiada 3 letnie doświadczenie w rozwijaniu aplikacji webowych. Uważa, że działanie w kole naukowym to szansa na poznanie ambitnych ludzi.",
     "linkedin": "https://www.linkedin.com/in/piotrpilis/",
     "photo": "./assets/images/members/piotr-pilis.jpg"
-  },
-  {
-    "id": 9,
-    "first_name": "Małgorzata",
-    "last_name": "Maciejowska",
-    "info": "Gosia pracuje na stanowisku HTML specialist, zajmuje się projektowaniem, programowaniem oraz obróbką graficzną szablonów. Kodowanie to dla niej przyjemność. Uważa, że SKN pozwali na dalszy rozwój oraz doskonalenie nabytej już wiedzy.",
-    "linkedin": "https://www.linkedin.com/in/małgorzata-maciejowska-705a5390/",
-    "photo": "./assets/images/members/malgorzata-maciejowska.jpg"
   }
 ]

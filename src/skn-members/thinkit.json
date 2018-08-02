@@ -35,7 +35,7 @@
     "id": 5,
     "first_name": "Mateusz",
     "last_name": "Wasiak",
-    "info": "Mateusz studiuje mechatronikę na PW. Pomaga w projekcie Think IT, pełniąc funkcje operacyjne. Uważa że działalność w kole pomaga mu nabyć nowe zdolności i rozwijać mocne strony, takie jak dobra organizacja pracy.",
+    "info": "Mateusz studiuje mechatronikę na PW. Pomaga w projekcie Think IT, pełniąc funkcje operacyjne. Uważa, że działalność w kole pomaga mu nabyć nowe zdolności i rozwijać mocne strony, takie jak dobra organizacja pracy.",
     "linkedin": "",
     "photo": "./assets/images/members/mateusz-wasiak.jpg"
   },
@@ -67,7 +67,7 @@
       "id": 9,
       "first_name": "Natalia",
       "last_name": "Boćkowska",
-      "info": "Studentka Zarządzania i Inżynierii Produkcji, w kole działa w projekcie ThinkIT oraz w marketingu. Ambitna, pracowita, zawsze dążąca do postawionego celu. W wolnym czasie uwielbia chodzic do teatru a jej największa pasją jest jazda na nartach.",
+      "info": "Studentka Zarządzania i Inżynierii Produkcji, w kole działa w projekcie ThinkIT oraz w marketingu. Ambitna, pracowita, zawsze dążąca do postawionego celu. W wolnym czasie uwielbia chodzić do teatru, a jej największą pasją jest jazda na nartach.",
       "linkedin": "https://www.linkedin.com/in/natalia-bo%C4%87kowska-945a4615b/",
       "photo": "./assets/images/members/natalia-bockowska.jpg"
     },
